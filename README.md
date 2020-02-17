@@ -1,113 +1,181 @@
-# {package_name}
-
-[![GitHub Actions Status](https://github.com/ridedott/npm-package-template/workflows/Continuous%20Integration/badge.svg?branch=master)](https://github.com/ridedott/npm-package-template/actions)
+[![license](https://img.shields.io/github/license/ridedott/release-me-action)](https://github.com/ridedott/release-me-action/blob/master/LICENSE)
+[![GitHub Actions Status](https://github.com/ridedott/release-me-action/workflows/Continuous%20Delivery/badge.svg?branch=master)](https://github.com/ridedott/release-me-action/actions)
+[![Coveralls](https://coveralls.io/repos/github/ridedott/release-me-action/badge.svg)](https://coveralls.io/github/ridedott/release-me-action)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-<!-- Short and clear description of the package -->
+# Release Me Action
 
-## Usage
+This action uses
+[Semantic Release](https://github.com/semantic-release/semantic-release) to
+create a new release of the repository checked-out under `$GITHUB_WORKSPACE`,
+performing the following tasks:
 
-<!--  -->
+- analyzes commits based on the
+  [Angular Commit Message Conventions](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines)
+- updates the `CHANGELOG.md` file based on the analyzed commits
+- optionally, bumps the NPM package version number
+- optionally, commits workflow generated assets to the repository
+- optionally, adds workflow generated assets to the release
+- creates a GitHub release based on the analyzed commits
 
-## Getting Started
+# Usage
 
-These instructions will get you a copy of the project up and running on your
-local machine for development and testing purposes. See usage notes on how to
-consume this package in your project.
-
-<!-- Instructions -->
-
-### Prerequisites
-
-Minimal requirements to set up the project:
-
-- [Node.js](https://nodejs.org/en) v10, installation instructions can be found
-  on the official website, a recommended installation option is to use
-  [Node Version Manager](https://github.com/creationix/nvm#readme). It can be
-  installed in a
-  [few commands](https://nodejs.org/en/download/package-manager/#nvm).
-- A package manager [npm](https://www.npmjs.com). All instructions in the
-  documentation will follow the npm syntax.
-- Optionally a [Git](https://git-scm.com) client.
-
-### Installing
-
-Start by cloning the repository:
-
-```bash
-git clone git@github.com:ridedott/[package-name].git
+```yaml
+steps:
+  - env:
+      # Credentials used to perform the release and commit the updated assets
+      # to the repository.
+      # Required: true
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    name: Release
+    uses: ridedott/release-me-action@master
+    with:
+      # Configure semantic release to run from a specific branch.
+      # Default: master
+      branch: 'feat/my-feature-branch'
+      # Commit the new line separated glob patterns to the repository as part
+      # of the release process.
+      commit-assets: |
+        ./dist
+      # Bump the node module version and commit the changed package files to the
+      # repository as part of the release process.
+      # Default: false
+      node-module: true
+      # Attach the new line separated listed glob patterns to the release.
+      release-assets: |
+        ./generated/my-asset.tar.gz
 ```
 
-In case you don't have a git client, you can get the latest version directly by
-using [this link](https://github.com/ridedott/[package-name]/archive/master.zip)
-and extracting the downloaded archive.
+**IMPORTANT** `GITHUB_TOKEN` does not have the required permissions to operate
+on protected branches. If you are using this action to release to a protected
+branch, replace the `GITHUB_TOKEN` with a
+[GitHub Personal Access Token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)
+with the required permissions enabled on it.
 
-Go the the right directory and install dependencies:
+# Scenarios
 
-```bash
-cd [package-name]
-npm install
+- [Create a release](#create-a-release)
+- [Create a release to a different branch](#create-a-release-to-a-different-branch)
+- [Create a release and update repository contents](#create-a-release-and-update-repository-contents)
+- [Create a release with attached artifacts](#create-a-release-with-attached-artifacts)
+- [Create a release updating an npm package version](#create-a-release-updating-an-npm-package-version)
+- [Create a release on a protected branch](#create-a-release-on-a-protected-branch)
+- [Create a release of a node module and publish it to multiple registries](#create-a-release-of-a-node-module-and-publish-it-to-multiple-registries)
+
+## Create a release
+
+```yaml
+steps:
+  - env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    name: Release
+    uses: ridedott/release-me-action@master
 ```
 
-That's it! You can now go to the next step.
+## Create a release to a different branch
 
-## Tests
-
-### Formatting
-
-This project uses [Prettier](https://prettier.io) to automate formatting. All
-supported files are being reformatted in a pre-commit hook. You can also use one
-of the two scripts to validate and optionally fix all of the files:
-
-```bash
-npm run format
-npm run format:fix
+```yaml
+steps:
+  - env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    name: Release
+    uses: ridedott/release-me-action@master
+    with:
+      release-branch: 'releases'
 ```
 
-### Linting
+## Create a release and update repository contents
 
-This project uses [ESLint](https://eslint.org) to enable static analysis.
-TypeScript files are linted using a [custom configuration](./.eslintrc). You can
-use one of the following scripts to validate and optionally fix all of the
-files:
+Commit the listed glob patterns to the repository as part of the release
+process.
 
-```bash
-npm run lint
-npm run lint:fix
+```yaml
+steps:
+  - env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    name: Release
+    uses: ridedott/release-me-action@master
+    with:
+      commit-assets: |
+        ./dist
+        ./public
 ```
 
-### Coverage
+## Create a release with attached artifacts
 
-[Coveralls.io](https://coveralls.io)
+Attach the listed glob patterns to the release.
 
-## Publishing
+```yaml
+steps:
+  - env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    name: Release
+    uses: ridedott/release-me-action@master
+    with:
+      release-assets: |
+        ./generated/my-asset.tar.gz
+```
 
-Publishing is handled in an automated way and must not be performed manually.
+## Create a release updating an npm package version
 
-Each commit to the master branch is automatically deployed to the NPM registry
-with a version specified in `package.json`. All other commits are published as
-pre-releases.
+This configuration also updates `package.json` and `package-lock.json` or
+`yarn-lock.yaml` files alongside `CHANGELOG.md`.
 
-## Contributing
+```yaml
+steps:
+  - env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    name: Release
+    uses: ridedott/release-me-action@master
+    with:
+      node-module: true
+```
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md).
+## Create a release on a protected branch
 
-## Built with
+This configuration uses a
+[GitHub Personal Access Token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)
+to authenticate to GitHub.
 
-### Runtime libraries
+```yaml
+steps:
+  - env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
+    name: Release
+    uses: ridedott/release-me-action@master
+```
 
-### Automation
+## Create a release of a node module and publish it to multiple registries
 
-- [GitHub Actions](https://github.com/features/actions)
-- [Dependabot](https://dependabot.com/)
+This configuration showcases how to complement the release with publishing steps
+for multiple package registries.
 
-### Source
-
-- [TypeScript](https://www.typescriptlang.org)
-
-### Delivery
-
-## Versioning
-
-This project adheres to [Semantic Versioning](http://semver.org) v2.
+```yaml
+steps:
+  - env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    name: Release
+    uses: ridedott/release-me-action@master
+    with:
+      node-module: true
+  - name: Setup Node.js
+    uses: actions/setup-node@v1
+    with:
+      registry-url: 'https://npm.pkg.github.com'
+  - env:
+      NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    name: Publish to GitHub Packages
+    run: npm publish
+  - name: Setup Node.js
+      uses: actions/setup-node@v1
+      with:
+        registry-url: 'https://registry.npm.org'
+        # Scoped packages require the scope parameter to be set in the setup
+        # node step when publishing to the npm registry.
+        scope: '@my-organization'
+  - env:
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    name: Publish to npm
+    run: npm publish
+```

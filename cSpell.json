@@ -16,9 +16,8 @@
     "*.log",
     "*.yaml",
     "**/*.json",
-    "CHANGELOG.md",
-    "generated/**",
-    "lib/**",
+    "coverage",
+    "dist/**",
     "node_modules/**"
   ],
   "language": "en-US",
@@ -26,13 +25,10 @@
   "words": [
     "codeowners",
     "commitlint",
-    "coverallsapp",
-    "dependabot",
-    "dottbott",
     "editorconfig",
+    "gitignore",
     "prettierignore",
     "prettierrc",
-    "releaserc",
     "ridedott"
   ]
 }

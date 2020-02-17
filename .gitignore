@@ -8,14 +8,14 @@ yarn-error.log*
 # Firebase
 .runtimeconfig.json
 
-# Cache files
-.cache
-*.cache
-
 # Runtime environment supports npm an Yarn lockfiles. A decision was made to use
 # npm, therefore all other lock files are ignored.
 pnpm-lock.yaml
 yarn.lock
+
+# Cache files
+.cache
+*.cache
 
 # Runtime data
 pids
@@ -40,9 +40,6 @@ node_modules
 
 # MacOS-specific files
 .DS_Store
-
-# Build output
-lib
 
 # Coverage output
 coverage

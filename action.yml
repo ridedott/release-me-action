@@ -1,0 +1,29 @@
+branding:
+  color: gray-dark
+  icon: package
+description: A GitHub Action for Semantic Release.
+inputs:
+  commit-assets:
+    description:
+      Configures the list of assets to commit to the repository alongside the
+      changelog.
+    required: false
+  node-module:
+    default: 'false'
+    description:
+      Bumps the package version and updates the repository package.json and
+      package-lock.json or yarn-lock.yaml.
+    required: false
+  release-assets:
+    description:
+      Configures the list of assets to attach to the release alongside the
+      source code.
+    required: false
+  release-branch:
+    default: 'master'
+    description: Configures the branch that Semantic Release will release to.
+    required: false
+name: Release me!
+runs:
+  main: dist/index.js
+  using: node12

@@ -4,9 +4,6 @@ on:
   pull_request:
     branches:
       - master
-  push:
-    branches:
-      - master
 
 jobs:
   format:
@@ -24,9 +21,7 @@ jobs:
       - name: Cache dependencies
         uses: actions/cache@v1
         with:
-          key:
-            npm-${{ hashFiles(format('{0}{1}', github.workspace,
-            '/package-lock.json')) }}
+          key: npm-${{ hashFiles('package-lock.json') }}
           path: ~/.npm
           restore-keys: |
             npm-
@@ -49,9 +44,7 @@ jobs:
       - name: Cache dependencies
         uses: actions/cache@v1
         with:
-          key:
-            npm-${{ hashFiles(format('{0}{1}', github.workspace,
-            '/package-lock.json')) }}
+          key: npm-${{ hashFiles('package-lock.json') }}
           path: ~/.npm
           restore-keys: |
             npm-
@@ -74,9 +67,7 @@ jobs:
       - name: Cache dependencies
         uses: actions/cache@v1
         with:
-          key:
-            npm-${{ hashFiles(format('{0}{1}', github.workspace,
-            '/package-lock.json')) }}
+          key: npm-${{ hashFiles('package-lock.json') }}
           path: ~/.npm
           restore-keys: |
             npm-
@@ -99,9 +90,7 @@ jobs:
       - name: Cache dependencies
         uses: actions/cache@v1
         with:
-          key:
-            npm-${{ hashFiles(format('{0}{1}', github.workspace,
-            '/package-lock.json')) }}
+          key: npm-${{ hashFiles('package-lock.json') }}
           path: ~/.npm
           restore-keys: |
             npm-
@@ -128,9 +117,7 @@ jobs:
       - name: Cache dependencies
         uses: actions/cache@v1
         with:
-          key:
-            npm-${{ hashFiles(format('{0}{1}', github.workspace,
-            '/package-lock.json')) }}
+          key: npm-${{ hashFiles('package-lock.json') }}
           path: ~/.npm
           restore-keys: |
             npm-
@@ -138,17 +125,17 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
       - name: Types
         run: npm run types
-  auto-merge:
-    name: Auto merge Dependabot updates
-    runs-on: ubuntu-latest
+  merge-me:
+    name: Merge me!
     needs:
       - format
       - lint
       - spellcheck
       - test
       - types
+    runs-on: ubuntu-latest
     steps:
-      - name: Auto merge
-        uses: ridedott/dependabot-auto-merge-action@master
+      - name: Merge me!
+        uses: ridedott/merge-me-action@master
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_DOTTBOTT }}

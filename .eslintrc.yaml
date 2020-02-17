@@ -2,7 +2,17 @@ env:
   es6: true
   node: true
 extends: '@ridedott/eslint-config'
+overrides:
+  - env:
+      jest: true
+    files:
+      - src/**/*.spec.ts
+    rules:
+      '@typescript-eslint/no-magic-numbers': off
+      max-lines-per-function: off
 parserOptions:
-  ecmaVersion: 10
+  ecmaVersion: 2020
   project: tsconfig.json
   sourceType: module
+rules:
+  '@typescript-eslint/restrict-template-expressions': off

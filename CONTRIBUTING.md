@@ -1,4 +1,4 @@
-# Contributing to {package_name}
+# Contributing to release-me-action
 
 We'd love for you to contribute to our source code and to make our project even
 better than it is today! Here are the guidelines we'd like you to follow:
@@ -12,8 +12,8 @@ better than it is today! Here are the guidelines we'd like you to follow:
 
 ## <a name="question"></a> Got a Question or Problem?
 
-If you have questions about how to use this project, please direct these to our
-[Slack Channel](https://ridedott.slack.com/messages/CDYNSCMJB).
+If you have questions about how to use this project, please open an issue on
+GitHub.
 
 ## <a name="issue"></a> Found an Issue?
 
@@ -49,7 +49,8 @@ features, by not reporting duplicate issues.
 
 Before you submit your merge request consider the following guidelines:
 
-- Search [GitHub repository](https://github.com/ridedott/functions/issues) for
+- Search
+  [GitHub repository](https://github.com/ridedott/release-me-action/issues) for
   an open or closed Pull Request that relates to your submission. You don't want
   to duplicate effort.
 - Make your changes in a new branch:
