@@ -1,0 +1,27 @@
+# See https://help.github.com/articles/about-codeowners/
+# for more info about CODEOWNERS file
+
+.github/ISSUE_TEMPLATE                    @ridedott/platform
+.github/pull_request_template.md          @ridedott/platform
+
+.vscode                                   @ridedott/platform
+
+decisions/DECISION_TEMPLATE.md            @ridedott/platform
+decisions/README.md                       @ridedott/platform
+
+rfcs/README.md                            @ridedott/platform
+rfcs/RFC_TEMPLATE.md                      @ridedott/platform
+
+.editorconfig                             @ridedott/platform
+
+.prettierignore                           @ridedott/platform
+.prettierrc.yml                           @ridedott/platform
+
+CODEOWNERS                                @ridedott/platform
+
+commitlint.config.js                      @ridedott/platform
+CONTRIBUTING.md                           @ridedott/platform
+
+renovate.json                             @ridedott/platform
+tsconfig.json                             @ridedott/platform
+tsconfig.production.json                  @ridedott/platform

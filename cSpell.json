@@ -1,0 +1,38 @@
+{
+  "dictionaries": [
+    "companies",
+    "filetypes",
+    "misc",
+    "node",
+    "npm",
+    "softwareTerms",
+    "typescript"
+  ],
+  "flagWords": [],
+  "ignorePaths": [
+    ".eslintrc",
+    "*.config.js",
+    "*.json",
+    "*.log",
+    "*.yaml",
+    "**/*.json",
+    "CHANGELOG.md",
+    "generated/**",
+    "lib/**",
+    "node_modules/**"
+  ],
+  "language": "en-US",
+  "version": "0.1",
+  "words": [
+    "codeowners",
+    "commitlint",
+    "coverallsapp",
+    "dependabot",
+    "dottbott",
+    "editorconfig",
+    "prettierignore",
+    "prettierrc",
+    "releaserc",
+    "ridedott"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "resolveJsonModule": true,
+    "rootDir": ".",
+    "tsBuildInfoFile": "./.cache/typescript"
+  },
+  "extends": "./tsconfig.production.json",
+  "include": ["./**/*"]
+}

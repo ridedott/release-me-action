@@ -1,0 +1,33 @@
+{
+  "cSpell.diagnosticLevel": "Error",
+  "cSpell.ignorePaths": [
+    ".eslintrc",
+    "*.config.js",
+    "*.json",
+    "*.log",
+    "*.yaml",
+    "**/*.json",
+    "coverage/**",
+    "lib/**",
+    "node_modules/**",
+    "src/**/*.snap"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.codeAction.disableRuleComment": {
+    "enable": true,
+    "location": "sameLine"
+  },
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.enable": true,
+  "eslint.options": {
+    "resolvePluginsRelativeTo": "./node_modules/@ridedott/eslint-config"
+  },
+  "eslint.run": "onType",
+  "jest.autoEnable": false,
+  "jest.pathToConfig": "./jest.config.js",
+  "typescript.tsdk": "./node_modules/typescript/lib"
+}
