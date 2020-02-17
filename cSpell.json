@@ -16,6 +16,7 @@
     "*.log",
     "*.yaml",
     "**/*.json",
+    "CHANGELOG.md",
     "coverage",
     "dist/**",
     "lib/**",
