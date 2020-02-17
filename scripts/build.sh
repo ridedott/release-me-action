@@ -16,6 +16,7 @@ ncc build src/index.ts \
 --external @semantic-release/release-notes-generator \
 --external semantic-release \
 --minify \
+--out dist \
 --source-map
 
 # Revert https://github.com/zeit/ncc/issues/457.

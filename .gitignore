@@ -43,3 +43,6 @@ node_modules
 
 # Coverage output
 coverage
+
+# Build output
+lib
