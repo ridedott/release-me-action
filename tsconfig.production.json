@@ -7,8 +7,9 @@
     "declarationMap": true,
     "downlevelIteration": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["es2017"],
+    "lib": ["ES2019"],
     "module": "commonjs",
+    "moduleResolution": "node",
     "noImplicitAny": false,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
@@ -19,7 +20,7 @@
     "sourceMap": true,
     "strict": true,
     "strictNullChecks": true,
-    "target": "es2017"
+    "target": "ES2019"
   },
   "files": ["./src/index.ts"]
 }

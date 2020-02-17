@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generatePlugins configures the git plugin to commit the specified assets as part of the release process 1`] = `
+Array [
+  "@semantic-release/commit-analyzer",
+  "@semantic-release/release-notes-generator",
+  "@semantic-release/changelog",
+  Array [
+    "@semantic-release/exec",
+    Object {
+      "prepareCmd": "npx prettier --write CHANGELOG.md",
+    },
+  ],
+  Array [
+    "@semantic-release/git",
+    Object {
+      "assets": Array [
+        "./CHANGELOG.md",
+        "./src",
+      ],
+      "message": "chore(release): v\${nextRelease.version}",
+    },
+  ],
+  Array [
+    "@semantic-release/github",
+    Object {
+      "assets": Array [],
+      "failComment": false,
+      "releasedLabels": false,
+      "successComment": false,
+    },
+  ],
+]
+`;
+
+exports[`generatePlugins configures the git plugin to commit the updated package files when the isNodeModule parameter is set to true 1`] = `
+Array [
+  "@semantic-release/commit-analyzer",
+  "@semantic-release/release-notes-generator",
+  "@semantic-release/changelog",
+  Array [
+    "@semantic-release/exec",
+    Object {
+      "prepareCmd": "npx prettier --write CHANGELOG.md",
+    },
+  ],
+  Array [
+    "@semantic-release/npm",
+    Object {
+      "npmPublish": false,
+    },
+  ],
+  Array [
+    "@semantic-release/git",
+    Object {
+      "assets": Array [
+        "./CHANGELOG.md",
+        "./package.json",
+        "./package-lock.json",
+        "./yarn-lock.yaml",
+      ],
+      "message": "chore(release): v\${nextRelease.version}",
+    },
+  ],
+  Array [
+    "@semantic-release/github",
+    Object {
+      "assets": Array [],
+      "failComment": false,
+      "releasedLabels": false,
+      "successComment": false,
+    },
+  ],
+]
+`;
+
+exports[`generatePlugins configures the git plugin to omit committing the updated package files when isNodeModule is set to false 1`] = `
+Array [
+  "@semantic-release/commit-analyzer",
+  "@semantic-release/release-notes-generator",
+  "@semantic-release/changelog",
+  Array [
+    "@semantic-release/exec",
+    Object {
+      "prepareCmd": "npx prettier --write CHANGELOG.md",
+    },
+  ],
+  Array [
+    "@semantic-release/git",
+    Object {
+      "assets": Array [
+        "./CHANGELOG.md",
+      ],
+      "message": "chore(release): v\${nextRelease.version}",
+    },
+  ],
+  Array [
+    "@semantic-release/github",
+    Object {
+      "assets": Array [],
+      "failComment": false,
+      "releasedLabels": false,
+      "successComment": false,
+    },
+  ],
+]
+`;
+
+exports[`generatePlugins configures the github plugin to release the specified assets as part of the release process 1`] = `
+Array [
+  "@semantic-release/commit-analyzer",
+  "@semantic-release/release-notes-generator",
+  "@semantic-release/changelog",
+  Array [
+    "@semantic-release/exec",
+    Object {
+      "prepareCmd": "npx prettier --write CHANGELOG.md",
+    },
+  ],
+  Array [
+    "@semantic-release/git",
+    Object {
+      "assets": Array [
+        "./CHANGELOG.md",
+      ],
+      "message": "chore(release): v\${nextRelease.version}",
+    },
+  ],
+  Array [
+    "@semantic-release/github",
+    Object {
+      "assets": Array [
+        "./src",
+      ],
+      "failComment": false,
+      "releasedLabels": false,
+      "successComment": false,
+    },
+  ],
+]
+`;
+
+exports[`generatePlugins configures the npm plugin to bump the package versions when the isNodeModule parameter is set to true 1`] = `
+Array [
+  "@semantic-release/commit-analyzer",
+  "@semantic-release/release-notes-generator",
+  "@semantic-release/changelog",
+  Array [
+    "@semantic-release/exec",
+    Object {
+      "prepareCmd": "npx prettier --write CHANGELOG.md",
+    },
+  ],
+  Array [
+    "@semantic-release/npm",
+    Object {
+      "npmPublish": false,
+    },
+  ],
+  Array [
+    "@semantic-release/git",
+    Object {
+      "assets": Array [
+        "./CHANGELOG.md",
+        "./package.json",
+        "./package-lock.json",
+        "./yarn-lock.yaml",
+      ],
+      "message": "chore(release): v\${nextRelease.version}",
+    },
+  ],
+  Array [
+    "@semantic-release/github",
+    Object {
+      "assets": Array [],
+      "failComment": false,
+      "releasedLabels": false,
+      "successComment": false,
+    },
+  ],
+]
+`;
+
+exports[`generatePlugins excludes the npm plugin when called with the isNodeModule parameter set to false 1`] = `
+Array [
+  "@semantic-release/commit-analyzer",
+  "@semantic-release/release-notes-generator",
+  "@semantic-release/changelog",
+  Array [
+    "@semantic-release/exec",
+    Object {
+      "prepareCmd": "npx prettier --write CHANGELOG.md",
+    },
+  ],
+  Array [
+    "@semantic-release/git",
+    Object {
+      "assets": Array [
+        "./CHANGELOG.md",
+      ],
+      "message": "chore(release): v\${nextRelease.version}",
+    },
+  ],
+  Array [
+    "@semantic-release/github",
+    Object {
+      "assets": Array [],
+      "failComment": false,
+      "releasedLabels": false,
+      "successComment": false,
+    },
+  ],
+]
+`;

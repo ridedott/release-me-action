@@ -1,5 +1,6 @@
+// eslint-disable-next-line immutable/no-mutation
 module.exports = {
-  coveragePathIgnorePatterns: ['/node_modules/', '/test/'],
+  coveragePathIgnorePatterns: ['/node_modules/'],
   coverageReporters: ['lcov', 'text', 'text-summary'],
   coverageThreshold: {
     global: {
