@@ -35,14 +35,34 @@ describe('parseInputDryRun', (): void => {
 });
 
 describe('parseInputReleaseBranch', (): void => {
-  it('returns a valid branches configuration array', (): void => {
+  it("returns undefined if the input parameter value is set to 'master'", (): void => {
     expect.assertions(1);
 
     getInputSpy.mockReturnValue('master');
 
     const result = parseInputReleaseBranch();
 
-    expect(result).toStrictEqual('master');
+    expect(result).toBeUndefined();
+  });
+
+  it("returns undefined if the input parameter value is set to an empty string''", (): void => {
+    expect.assertions(1);
+
+    getInputSpy.mockReturnValue('');
+
+    const result = parseInputReleaseBranch();
+
+    expect(result).toBeUndefined();
+  });
+
+  it('returns a valid branches configuration array', (): void => {
+    expect.assertions(1);
+
+    getInputSpy.mockReturnValue('test');
+
+    const result = parseInputReleaseBranch();
+
+    expect(result).toStrictEqual([{ name: 'test', prerelease: false }]);
   });
 });
 
