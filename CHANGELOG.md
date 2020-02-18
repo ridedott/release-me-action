@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/ridedott/release-me-action/compare/v1.1.0...v1.1.1) (2020-02-18)
+
+### Bug Fixes
+
+- configure release branch correctly
+  ([9aa0db8](https://github.com/ridedott/release-me-action/commit/9aa0db8d9b390a54a51446fee10d679df92ad86a))
+
 # [1.1.0](https://github.com/ridedott/release-me-action/compare/v1.0.1...v1.1.0) (2020-02-18)
 
 ### Features
