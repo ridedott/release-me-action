@@ -2,6 +2,7 @@ import * as actionsCore from '@actions/core';
 
 import {
   parseInputCommitAssets,
+  parseInputDryRun,
   parseInputNodeModule,
   parseInputReleaseAssets,
   parseInputReleaseBranch,
@@ -16,6 +17,18 @@ describe('parseInputNodeModule', (): void => {
     getInputSpy.mockReturnValue('true');
 
     const result = parseInputNodeModule();
+
+    expect(result).toStrictEqual(true);
+  });
+});
+
+describe('parseInputDryRun', (): void => {
+  it("returns true when the value of the dry-run input is set to 'true'", (): void => {
+    expect.assertions(1);
+
+    getInputSpy.mockReturnValue('true');
+
+    const result = parseInputDryRun();
 
     expect(result).toStrictEqual(true);
   });

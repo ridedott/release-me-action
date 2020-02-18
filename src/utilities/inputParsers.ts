@@ -18,6 +18,8 @@ const parseFileList = (input: string): string[] =>
 export const parseInputNodeModule = (): boolean =>
   getInput('node-module') === 'true';
 
+export const parseInputDryRun = (): boolean => getInput('dry-run') === 'true';
+
 export const parseInputReleaseBranch = (): string => getInput('release-branch');
 
 export const parseInputCommitAssets = (): string[] =>

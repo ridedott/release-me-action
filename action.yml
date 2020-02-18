@@ -8,6 +8,10 @@ inputs:
       Configures the list of assets to commit to the repository alongside the
       changelog.
     required: false
+  dry-run:
+    default: 'false'
+    description: Configures Semantic Release to run in dry-run mode.
+    required: false
   node-module:
     default: 'false'
     description:
