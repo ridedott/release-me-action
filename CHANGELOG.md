@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/ridedott/release-me-action/compare/v1.0.1...v1.1.0) (2020-02-18)
+
+### Features
+
+- add ability to configure dry runs
+  ([03efb23](https://github.com/ridedott/release-me-action/commit/03efb235a2ee42b83f12ba2ffa132dc3e9ed5b34))
+
 ## [1.0.1](https://github.com/ridedott/release-me-action/compare/v1.0.0...v1.0.1) (2020-02-17)
 
 ### Chores
