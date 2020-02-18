@@ -38,6 +38,9 @@ steps:
       # of the release process.
       commit-assets: |
         ./dist
+      # Run semantic release in dry-run mode.
+      # Default: false
+      dry-run: true
       # Bump the node module version and commit the changed package files to the
       # repository as part of the release process.
       # Default: false
@@ -56,6 +59,7 @@ with the required permissions enabled on it.
 # Scenarios
 
 - [Create a release](#create-a-release)
+- [Test a release](#test-a-release)
 - [Create a release to a different branch](#create-a-release-to-a-different-branch)
 - [Create a release and update repository contents](#create-a-release-and-update-repository-contents)
 - [Create a release with attached artifacts](#create-a-release-with-attached-artifacts)
@@ -71,6 +75,21 @@ steps:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     name: Release
     uses: ridedott/release-me-action@master
+```
+
+## Test a release
+
+Runs semantic release in dry-run mode, omitting to commit any assets or perform
+the actual release.
+
+```yaml
+steps:
+  - env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    name: Release
+    uses: ridedott/release-me-action@master
+    with:
+      dry-run: true
 ```
 
 ## Create a release to a different branch

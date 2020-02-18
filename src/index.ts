@@ -4,6 +4,7 @@ import { Config, Options, Result } from 'semantic-release';
 import { generatePlugins } from './utilities/generatePlugins';
 import {
   parseInputCommitAssets,
+  parseInputDryRun,
   parseInputNodeModule,
   parseInputReleaseAssets,
   parseInputReleaseBranch,
@@ -51,6 +52,7 @@ export const release = async (): Promise<void> => {
   await semanticRelease({
     /* eslint-disable unicorn/prevent-abbreviations */
     branch: parseInputReleaseBranch(),
+    dryRun: parseInputDryRun(),
     parserOpts: parseOptions,
     plugins: generatePlugins({
       commitAssets: parseInputCommitAssets(),
