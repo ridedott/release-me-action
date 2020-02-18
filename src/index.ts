@@ -49,9 +49,11 @@ export const release = async (): Promise<void> => {
     'semantic-release'
   )) as unknown) as SemanticRelease;
 
+  const branches = parseInputReleaseBranch();
+
   await semanticRelease({
     /* eslint-disable unicorn/prevent-abbreviations */
-    branch: parseInputReleaseBranch(),
+    ...(branches === undefined ? {} : { branches }),
     dryRun: parseInputDryRun(),
     parserOpts: parseOptions,
     plugins: generatePlugins({

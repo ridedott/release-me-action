@@ -1,6 +1,11 @@
 import { getInput } from '@actions/core';
 import * as fs from 'fs';
 
+interface BranchObjectConfiguration {
+  name: string;
+  prerelease: boolean;
+}
+
 const parseFileList = (input: string): string[] =>
   input
     .split('\n')
@@ -20,7 +25,17 @@ export const parseInputNodeModule = (): boolean =>
 
 export const parseInputDryRun = (): boolean => getInput('dry-run') === 'true';
 
-export const parseInputReleaseBranch = (): string => getInput('release-branch');
+export const parseInputReleaseBranch = ():
+  | Array<string | BranchObjectConfiguration>
+  | undefined => {
+  const input = getInput('release-branch');
+
+  if (input.length === 0 || input === 'master') {
+    return undefined;
+  }
+
+  return [{ name: input, prerelease: false }];
+};
 
 export const parseInputCommitAssets = (): string[] =>
   parseFileList(getInput('commit-assets'));
