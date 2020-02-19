@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/ridedott/release-me-action/compare/v1.1.5...v1.1.6) (2020-02-19)
+
+### Documentation
+
+- fix incorrect action parameter reference
+  ([8992e4c](https://github.com/ridedott/release-me-action/commit/8992e4c9e36900c85f0d47917e461744fff267c5))
+
 ## [1.1.5](https://github.com/ridedott/release-me-action/compare/v1.1.4...v1.1.5) (2020-02-19)
 
 ### Chores
