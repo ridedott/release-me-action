@@ -33,7 +33,7 @@ steps:
     with:
       # Configure semantic release to run from a specific branch.
       # Default: master
-      branch: 'feat/my-feature-branch'
+      release-branch: 'feat/my-feature-branch'
       # Commit the new line separated glob patterns to the repository as part
       # of the release process.
       commit-assets: |
@@ -79,8 +79,8 @@ steps:
 
 ## Test a release
 
-Runs semantic release in dry-run mode, omitting to commit any assets or perform
-the actual release.
+Runs semantic release in dry-run mode on a branch different to master, omitting
+to commit any assets or perform the actual release.
 
 ```yaml
 steps:
@@ -90,6 +90,7 @@ steps:
     uses: ridedott/release-me-action@master
     with:
       dry-run: true
+      release-branch: 'my-branch'
 ```
 
 ## Create a release to a different branch
@@ -187,12 +188,12 @@ steps:
     name: Publish to GitHub Packages
     run: npm publish
   - name: Setup Node.js
-      uses: actions/setup-node@v1
-      with:
-        registry-url: 'https://registry.npm.org'
-        # Scoped packages require the scope parameter to be set in the setup
-        # node step when publishing to the npm registry.
-        scope: '@my-organization'
+    uses: actions/setup-node@v1
+    with:
+      registry-url: 'https://registry.npm.org'
+      # Scoped packages require the scope parameter to be set in the setup
+      # node step when publishing to the npm registry.
+      scope: '@my-organization'
   - env:
       NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
     name: Publish to npm
