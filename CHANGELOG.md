@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/ridedott/release-me-action/compare/v1.1.4...v1.1.5) (2020-02-19)
+
+### Chores
+
+- **deps-dev:** bump @ridedott/eslint-config from 0.4.81 to 1.0.1
+  ([cf67200](https://github.com/ridedott/release-me-action/commit/cf67200e91e600451249b986a9430bad2c2b8d05))
+
 ## [1.1.4](https://github.com/ridedott/release-me-action/compare/v1.1.3...v1.1.4) (2020-02-19)
 
 ### Chores
