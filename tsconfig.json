@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
-    "incremental": true,
-    "rootDir": ".",
-    "tsBuildInfoFile": "./.cache/typescript"
+    "rootDir": "."
   },
   "extends": "./tsconfig.production.json",
   "include": ["./**/*"]
