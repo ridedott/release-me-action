@@ -35,16 +35,6 @@ describe('parseInputDryRun', (): void => {
 });
 
 describe('parseInputReleaseBranch', (): void => {
-  it("returns undefined if the input parameter value is set to 'master'", (): void => {
-    expect.assertions(1);
-
-    getInputSpy.mockReturnValue('master');
-
-    const result = parseInputReleaseBranch();
-
-    expect(result).toBeUndefined();
-  });
-
   it("returns undefined if the input parameter value is set to an empty string''", (): void => {
     expect.assertions(1);
 

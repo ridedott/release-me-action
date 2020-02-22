@@ -30,7 +30,7 @@ export const parseInputReleaseBranch = ():
   | undefined => {
   const input = getInput('release-branch');
 
-  if (input.length === 0 || input === 'master') {
+  if (input.length === 0) {
     return undefined;
   }
 
