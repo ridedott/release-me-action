@@ -1,3 +1,10 @@
+## [1.1.16](https://github.com/ridedott/release-me-action/compare/v1.1.15...v1.1.16) (2020-02-24)
+
+### Chores
+
+- **deps:** bump @semantic-release/release-notes-generator from 9.0.0 to 9.0.1
+  ([16f8e67](https://github.com/ridedott/release-me-action/commit/16f8e674ab31e9931d4b1c8f1bff8199ea66fb4b))
+
 ## [1.1.15](https://github.com/ridedott/release-me-action/compare/v1.1.14...v1.1.15) (2020-02-23)
 
 ### Chores
