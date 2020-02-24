@@ -32,7 +32,7 @@ steps:
     uses: ridedott/release-me-action@master
     with:
       # Configure semantic release to run from a specific branch.
-      # Default: master
+      # Default: @semantic-release/semantic-release Javascript API branches parameter default value
       release-branch: 'feat/my-feature-branch'
       # Commit the new line separated glob patterns to the repository as part
       # of the release process.
