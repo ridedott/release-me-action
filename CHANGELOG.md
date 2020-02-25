@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/ridedott/release-me-action/compare/v1.2.0...v1.2.1) (2020-02-25)
+
+### Chores
+
+- **deps-dev:** bump lint-staged from 10.0.7 to 10.0.8
+  ([8afcbc7](https://github.com/ridedott/release-me-action/commit/8afcbc7bd9cfbe2c052c72ec530070b632b31b28))
+
 # [1.2.0](https://github.com/ridedott/release-me-action/compare/v1.1.16...v1.2.0) (2020-02-25)
 
 ### Features
