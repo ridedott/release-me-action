@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/ridedott/release-me-action/compare/v1.1.16...v1.2.0) (2020-02-25)
+
+### Features
+
+- suppress default branches configuration for release-branch master
+  ([6fef0c2](https://github.com/ridedott/release-me-action/commit/6fef0c24f170437ef89753adf61736adfb7cc61a))
+
 ## [1.1.16](https://github.com/ridedott/release-me-action/compare/v1.1.15...v1.1.16) (2020-02-24)
 
 ### Chores
