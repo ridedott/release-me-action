@@ -24,7 +24,6 @@ inputs:
       source code.
     required: false
   release-branch:
-    default: 'master'
     description: Configures the branch that Semantic Release will release to.
     required: false
 name: Release me!

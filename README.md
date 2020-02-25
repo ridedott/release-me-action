@@ -1,4 +1,5 @@
 [![license](https://img.shields.io/github/license/ridedott/release-me-action)](https://github.com/ridedott/release-me-action/blob/master/LICENSE)
+[![GitHub Actions Status](https://github.com/ridedott/release-me-action/workflows/Continuous%20Integration/badge.svg?branch=master)](https://github.com/ridedott/release-me-action/actions)
 [![GitHub Actions Status](https://github.com/ridedott/release-me-action/workflows/Continuous%20Delivery/badge.svg?branch=master)](https://github.com/ridedott/release-me-action/actions)
 [![Coveralls](https://coveralls.io/repos/github/ridedott/release-me-action/badge.svg)](https://coveralls.io/github/ridedott/release-me-action)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
@@ -32,7 +33,9 @@ steps:
     uses: ridedott/release-me-action@master
     with:
       # Configure semantic release to run from a specific branch.
-      # Default: master
+      # If not specified semantic-release will use its default branches
+      # configuration, as specified in their Javascript API documentation:
+      # https://github.com/semantic-release/semantic-release/blob/master/docs/usage/configuration.md#branches
       release-branch: 'feat/my-feature-branch'
       # Commit the new line separated glob patterns to the repository as part
       # of the release process.
