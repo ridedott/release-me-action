@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/ridedott/release-me-action/compare/v1.2.3...v1.2.4) (2020-02-28)
+
+### Chores
+
+- **deps-dev:** bump cspell from 4.0.53 to 4.0.54
+  ([fc809ea](https://github.com/ridedott/release-me-action/commit/fc809eadb69077dea4637ed95ae225909cce91fb))
+
 ## [1.2.3](https://github.com/ridedott/release-me-action/compare/v1.2.2...v1.2.3) (2020-02-26)
 
 ### Chores
