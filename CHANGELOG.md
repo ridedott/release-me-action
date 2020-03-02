@@ -1,3 +1,10 @@
+## [1.2.7](https://github.com/ridedott/release-me-action/compare/v1.2.6...v1.2.7) (2020-03-02)
+
+### Chores
+
+- **deps:** bump @actions/core from 1.2.2 to 1.2.3
+  ([b0dff6f](https://github.com/ridedott/release-me-action/commit/b0dff6f5dbcac8854d977316981ea979df6a6861))
+
 ## [1.2.6](https://github.com/ridedott/release-me-action/compare/v1.2.5...v1.2.6) (2020-02-28)
 
 ### Chores
