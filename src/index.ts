@@ -23,17 +23,14 @@ const parseOptions = {
   mergePattern: /^Merge pull request #(\d+) from (.*)$/,
 };
 
-const releaseRules = [
+// These rules extend the default rules provided by commit-analyzer.
+const releaseRulesExtension = [
   { release: 'patch', type: 'build' },
   { release: 'patch', type: 'ci' },
   { release: 'patch', type: 'chore' },
   { release: 'patch', type: 'docs' },
-  { release: 'minor', type: 'feat' },
-  { release: 'patch', type: 'fix' },
   { release: 'patch', type: 'improvement' },
-  { release: 'patch', type: 'perf' },
   { release: 'patch', type: 'refactor' },
-  { release: 'patch', type: 'revert' },
   { release: 'patch', type: 'style' },
   { release: 'patch', type: 'test' },
 ];
@@ -61,7 +58,7 @@ export const release = async (): Promise<void> => {
       isNodeModule: parseInputNodeModule(),
       releaseAssets: parseInputReleaseAssets(),
     }),
-    releaseRules,
+    releaseRules: releaseRulesExtension,
     writerOpts: writerOptions,
     /* eslint-enable unicorn/prevent-abbreviations */
   });
