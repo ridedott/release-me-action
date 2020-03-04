@@ -1,3 +1,10 @@
+## [1.2.8](https://github.com/ridedott/release-me-action/compare/v1.2.7...v1.2.8) (2020-03-04)
+
+### Bug Fixes
+
+- resolve issue where breaking changes do not update major version
+  ([98a104f](https://github.com/ridedott/release-me-action/commit/98a104f1265cf6ce3c53593d9ca0f0f1c50f0f94))
+
 ## [1.2.7](https://github.com/ridedott/release-me-action/compare/v1.2.6...v1.2.7) (2020-03-02)
 
 ### Chores
