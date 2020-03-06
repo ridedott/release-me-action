@@ -1,3 +1,10 @@
+## [1.2.9](https://github.com/ridedott/release-me-action/compare/v1.2.8...v1.2.9) (2020-03-06)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 13.7.7 to 13.9.0
+  ([7f81fd3](https://github.com/ridedott/release-me-action/commit/7f81fd39640d74113ac2fc524a1b157abd9dedd2))
+
 ## [1.2.8](https://github.com/ridedott/release-me-action/compare/v1.2.7...v1.2.8) (2020-03-04)
 
 ### Bug Fixes
