@@ -9,6 +9,7 @@ import {
   parseInputReleaseAssets,
   parseInputReleaseBranch,
 } from './utilities/inputParsers';
+import { installDependencies } from './utilities/installDependencies';
 import { transform } from './utilities/transform';
 
 type SemanticRelease = (
@@ -39,6 +40,8 @@ const writerOptions = {
 };
 
 export const release = async (): Promise<void> => {
+  await installDependencies();
+
   const semanticRelease = ((await import(
     'semantic-release'
   )) as unknown) as SemanticRelease;
