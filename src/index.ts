@@ -23,16 +23,16 @@ const parseOptions = {
   mergePattern: /^Merge pull request #(\d+) from (.*)$/,
 };
 
-// These rules extend the default rules provided by commit-analyzer.
+/**
+ * These rules extend the default rules provided by commit-analyzer.
+ * Added rules are types supported by commitizen but not supported in standard
+ * commit-analyzer. Rules are based on Angular contribution guidelines:
+ * https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular#type
+ */
 const releaseRulesExtension = [
-  { release: 'patch', type: 'build' },
-  { release: 'patch', type: 'ci' },
-  { release: 'patch', type: 'chore' },
-  { release: 'patch', type: 'docs' },
+  { release: 'patch', scope: 'deps', type: 'chore' },
   { release: 'patch', type: 'improvement' },
   { release: 'patch', type: 'refactor' },
-  { release: 'patch', type: 'style' },
-  { release: 'patch', type: 'test' },
 ];
 
 const writerOptions = {
