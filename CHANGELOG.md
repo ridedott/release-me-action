@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/ridedott/release-me-action/compare/v1.2.10...v1.3.0) (2020-03-08)
+
+### Features
+
+- override rules that are not supported by commit-analyzer
+  ([77b5180](https://github.com/ridedott/release-me-action/commit/77b5180a1dbddb11cd3632cd4f15b5d094c7b97d))
+
 ## [1.2.10](https://github.com/ridedott/release-me-action/compare/v1.2.9...v1.2.10) (2020-03-07)
 
 ### Chores
