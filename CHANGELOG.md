@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/ridedott/release-me-action/compare/v1.3.2...v1.3.3) (2020-03-19)
+
+### Chores
+
+- **deps:** bump @semantic-release/github from 7.0.4 to 7.0.5
+  ([da1c387](https://github.com/ridedott/release-me-action/commit/da1c3874acefd31c8c68adb9c5a15bd556f7d99e))
+
 ## [1.3.2](https://github.com/ridedott/release-me-action/compare/v1.3.1...v1.3.2) (2020-03-19)
 
 ### Chores
