@@ -23,8 +23,8 @@ inputs:
       Configures the list of assets to attach to the release alongside the
       source code.
     required: false
-  release-branch:
-    description: Configures the branch that Semantic Release will release to.
+  release-branches:
+    description: Configures the branches that Semantic Release will release to.
     required: false
 name: Release me!
 runs:

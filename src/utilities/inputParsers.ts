@@ -34,7 +34,11 @@ export const parseInputReleaseBranch = ():
     return undefined;
   }
 
-  return [{ name: input, prerelease: false }];
+  try {
+    return JSON.parse(input);
+  } catch (_) {
+    return [{ name: input, prerelease: false }];
+  }
 };
 
 export const parseInputCommitAssets = (): string[] =>

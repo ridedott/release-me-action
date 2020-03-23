@@ -54,6 +54,32 @@ describe('parseInputReleaseBranch', (): void => {
 
     expect(result).toStrictEqual([{ name: 'test', prerelease: false }]);
   });
+
+  it('returns a valid branches configuration array passed as json-string', (): void => {
+    expect.assertions(1);
+
+    getInputSpy.mockReturnValue(
+      JSON.stringify([
+        '+([0-9])?(.{+([0-9]),x}).x',
+        'master',
+        'next',
+        'next-major',
+        { name: 'beta', prerelease: true },
+        { name: 'alpha', prerelease: true },
+      ]),
+    );
+
+    const result = parseInputReleaseBranch();
+
+    expect(result).toStrictEqual([
+      '+([0-9])?(.{+([0-9]),x}).x',
+      'master',
+      'next',
+      'next-major',
+      { name: 'beta', prerelease: true },
+      { name: 'alpha', prerelease: true },
+    ]);
+  });
 });
 
 describe('parseInputCommitAssets', (): void => {
