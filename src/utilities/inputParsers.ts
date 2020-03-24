@@ -6,6 +6,14 @@ interface BranchObjectConfiguration {
   prerelease: boolean;
 }
 
+enum InputParameters {
+  DryRun = 'dry-run',
+  ReleaseBranches = 'release-branches',
+  CommitAssets = 'commit-assets',
+  ReleaseAssets = 'release-assets',
+  NodeModule = 'node-module',
+}
+
 const parseFileList = (input: string): string[] =>
   input
     .split('\n')
@@ -21,24 +29,29 @@ const parseFileList = (input: string): string[] =>
     }, []);
 
 export const parseInputNodeModule = (): boolean =>
-  getInput('node-module') === 'true';
+  getInput(InputParameters.NodeModule) === 'true';
 
-export const parseInputDryRun = (): boolean => getInput('dry-run') === 'true';
+export const parseInputDryRun = (): boolean =>
+  getInput(InputParameters.DryRun) === 'true';
 
 export const parseInputReleaseBranch = ():
   | Array<string | BranchObjectConfiguration>
   | undefined => {
-  const input = getInput('release-branch');
+  const input = getInput(InputParameters.ReleaseBranches);
 
   if (input.length === 0) {
     return undefined;
   }
 
-  return [{ name: input, prerelease: false }];
+  try {
+    return JSON.parse(input);
+  } catch (_) {
+    return [{ name: input, prerelease: false }];
+  }
 };
 
 export const parseInputCommitAssets = (): string[] =>
-  parseFileList(getInput('commit-assets'));
+  parseFileList(getInput(InputParameters.CommitAssets));
 
 export const parseInputReleaseAssets = (): string[] =>
-  parseFileList(getInput('release-assets'));
+  parseFileList(getInput(InputParameters.ReleaseAssets));
