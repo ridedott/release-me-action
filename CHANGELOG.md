@@ -1,3 +1,33 @@
+# [2.0.0](https://github.com/ridedott/release-me-action/compare/v1.3.3...v2.0.0) (2020-03-24)
+
+### Chores
+
+- **deps-dev:** bump @ridedott/eslint-config from 1.0.11 to 1.0.12
+  ([0a7a449](https://github.com/ridedott/release-me-action/commit/0a7a44940e33f1134094b9a47433832cc7f13b72))
+- **deps-dev:** bump @ridedott/eslint-config from 1.0.12 to 1.0.14
+  ([4c5110a](https://github.com/ridedott/release-me-action/commit/4c5110a89e6f7b3bfff7c5fa9c4bb0100a61f7c7))
+- **deps-dev:** bump @types/node from 13.9.2 to 13.9.3
+  ([d88ef8e](https://github.com/ridedott/release-me-action/commit/d88ef8e626b21c47d92ee23d28a5957d213a2c65))
+- **deps-dev:** bump @zeit/ncc from 0.21.1 to 0.22.0
+  ([81e8b86](https://github.com/ridedott/release-me-action/commit/81e8b860f6d9a5ee9ffb628a3272305857eb7784))
+- **deps-dev:** bump lint-staged from 10.0.8 to 10.0.9
+  ([81e9d66](https://github.com/ridedott/release-me-action/commit/81e9d660ac3c459be2eab45e30e8e75f68d6e80f))
+- **deps-dev:** bump prettier from 1.19.1 to 2.0.0
+  ([07bd9f1](https://github.com/ridedott/release-me-action/commit/07bd9f16aa3cb9f8d2ef2faf24351485d2f6b0d0))
+- **deps-dev:** bump prettier from 2.0.0 to 2.0.1
+  ([3547657](https://github.com/ridedott/release-me-action/commit/354765720fe89fc6289ac0b4b573c6600f2cb2c3))
+- **deps-dev:** bump prettier from 2.0.1 to 2.0.2
+  ([9729de3](https://github.com/ridedott/release-me-action/commit/9729de3192922ea9bc240171e249ea5c6e0a6c83))
+
+### Features
+
+- support of multiple release branches
+  ([52f2ba6](https://github.com/ridedott/release-me-action/commit/52f2ba6f7dc54eeb4b3313bf36b0e391711d19f7))
+
+### BREAKING CHANGE
+
+- rename release_brance parameter to release_branches, support JSON as input
+
 ## [1.3.3](https://github.com/ridedott/release-me-action/compare/v1.3.2...v1.3.3) (2020-03-19)
 
 ### Chores
