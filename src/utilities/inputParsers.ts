@@ -28,7 +28,7 @@ export const parseInputDryRun = (): boolean => getInput('dry-run') === 'true';
 export const parseInputReleaseBranch = ():
   | Array<string | BranchObjectConfiguration>
   | undefined => {
-  const input = getInput('release-branch');
+  const input = getInput('release-branches');
   console.log('input', input);
 
   if (input.length === 0) {
