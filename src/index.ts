@@ -51,6 +51,7 @@ export const release = async (): Promise<void> => {
   await semanticRelease({
     /* eslint-disable unicorn/prevent-abbreviations */
     ...(branches === undefined ? {} : { branches }),
+    debug: true,
     dryRun: parseInputDryRun(),
     parserOpts: parseOptions,
     plugins: generatePlugins({
