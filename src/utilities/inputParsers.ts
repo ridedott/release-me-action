@@ -29,6 +29,7 @@ export const parseInputReleaseBranch = ():
   | Array<string | BranchObjectConfiguration>
   | undefined => {
   const input = getInput('release-branch');
+  console.log('input', input);
 
   if (input.length === 0) {
     return undefined;
