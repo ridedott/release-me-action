@@ -30,7 +30,14 @@ const parseOptions = {
  * https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular#type
  */
 const releaseRulesExtension = [
+  { release: 'patch', type: 'ci' },
   { release: 'patch', scope: 'deps', type: 'chore' },
+  {
+    message: '*typescript*',
+    release: 'patch',
+    scope: 'deps-dev',
+    type: 'chore',
+  },
   { release: 'patch', type: 'improvement' },
   { release: 'patch', type: 'refactor' },
 ];
