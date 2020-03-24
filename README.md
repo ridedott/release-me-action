@@ -36,14 +36,7 @@ steps:
       # If not specified semantic-release will use its default branches
       # configuration, as specified in their Javascript API documentation:
       # https://github.com/semantic-release/semantic-release/blob/master/docs/usage/configuration.md#branches
-      release-branches: [
-        '+([0-9])?(.{+([0-9]),x}).x',
-        'master',
-        'next',
-        'next-major',
-        { name: 'beta', prerelease: true },
-        { name: 'alpha', prerelease: true },
-      ],
+      release-branches: '["+([0-9])?(.{+([0-9]),x}).x","master","next","next-major",{"name":"beta","prerelease":true},{"name":"alpha","prerelease":true}]',
       # Commit the new line separated glob patterns to the repository as part
       # of the release process.
       commit-assets: |
@@ -100,7 +93,7 @@ steps:
     uses: ridedott/release-me-action@master
     with:
       dry-run: true
-      release-branch: 'my-branch'
+      release-branches: 'my-branch'
 ```
 
 ## Create a release to a different branch
@@ -112,7 +105,7 @@ steps:
     name: Release
     uses: ridedott/release-me-action@master
     with:
-      release-branch: 'releases'
+      release-branches: 'releases'
 ```
 
 ## Create a release and update repository contents
