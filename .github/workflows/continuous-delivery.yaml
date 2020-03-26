@@ -30,6 +30,7 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
       - name: Build
         run: npm run build
+        id: build_package
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_DOTTBOTT }}
         name: Release
