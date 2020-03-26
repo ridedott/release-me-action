@@ -30,7 +30,7 @@ outputs:
   version:
     description: Released version.
   type:
-    description: Released type
+    description: Released type.
 name: Release me!
 runs:
   main: dist/index.js
