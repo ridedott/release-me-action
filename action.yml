@@ -27,9 +27,9 @@ inputs:
     description: Configures the branches that Semantic Release will release to.
     required: false
 outputs:
-  released-version:
+  version:
     description: Released version.
-  released-type:
+  type:
     description: Released type
 name: Release me!
 runs:

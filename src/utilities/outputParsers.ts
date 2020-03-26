@@ -2,8 +2,8 @@ import { setOutput } from '@actions/core';
 import { Result } from 'semantic-release';
 
 enum OutputParameters {
-  ReleasedVersion = 'released-version',
-  ReleasedType = 'released-type',
+  ReleasedVersion = 'version',
+  ReleasedType = 'type',
 }
 
 export const reportResults = (result: Result): void => {
