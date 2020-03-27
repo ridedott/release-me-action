@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/ridedott/release-me-action/compare/v2.0.1...v2.1.0) (2020-03-27)
+
+### Features
+
+- enable outputs with results
+  ([ccba41f](https://github.com/ridedott/release-me-action/commit/ccba41fb575c755079153735354037e6cb57717a))
+
 ## [2.0.1](https://github.com/ridedott/release-me-action/compare/v2.0.0...v2.0.1) (2020-03-27)
 
 ### Chores
