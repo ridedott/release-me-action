@@ -3,7 +3,7 @@ import { Result } from 'semantic-release';
 
 enum OutputParameters {
   Version = 'version',
-  Type = 'type',
+  Level = 'level',
   Released = 'released',
 }
 
@@ -18,5 +18,5 @@ export const reportResults = (result: Result): void => {
 
   setOutput(OutputParameters.Released, 'true');
   setOutput(OutputParameters.Version, nextRelease.version);
-  setOutput(OutputParameters.Type, nextRelease.type);
+  setOutput(OutputParameters.Level, nextRelease.type);
 };

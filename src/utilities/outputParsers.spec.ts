@@ -34,7 +34,7 @@ describe('reportResults', (): void => {
       'version',
       input.nextRelease.version,
     );
-    expect(setOutputSpy).toHaveBeenCalledWith('type', input.nextRelease.type);
+    expect(setOutputSpy).toHaveBeenCalledWith('level', input.nextRelease.type);
     expect(setOutputSpy).toHaveBeenCalledWith('released', 'true');
   });
 

@@ -28,9 +28,9 @@ inputs:
     required: false
 outputs:
   version:
-    description: Released version.
-  type:
-    description: Released type (major, minor or patch).
+    description: Released version in format of X.Y.Z (Major.Minor.Patch).
+  level:
+    description: Released level (Major, Minor or Patch).
   released:
     description: Release status (boolean string).
 name: Release me!
