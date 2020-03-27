@@ -31,6 +31,8 @@ outputs:
     description: Released version.
   type:
     description: Released type.
+  status:
+    description: Release status.
 name: Release me!
 runs:
   main: dist/index.js

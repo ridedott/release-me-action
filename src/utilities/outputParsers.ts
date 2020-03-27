@@ -1,20 +1,27 @@
-import { setFailed, setOutput } from '@actions/core';
+import { setOutput } from '@actions/core';
 import { Result } from 'semantic-release';
 
 enum OutputParameters {
-  ReleasedVersion = 'version',
-  ReleasedType = 'type',
+  Version = 'version',
+  Type = 'type',
+  Status = 'status',
+}
+
+enum OutputStatuses {
+  Released = 'released',
+  Noop = 'noop',
 }
 
 export const reportResults = (result: Result): void => {
   if (result === false) {
-    setFailed('Repository changes do not meet criteria to trigger a release.');
+    setOutput(OutputParameters.Status, OutputStatuses.Noop);
 
     return;
   }
 
   const { nextRelease } = result;
 
-  setOutput(OutputParameters.ReleasedVersion, nextRelease.version);
-  setOutput(OutputParameters.ReleasedType, nextRelease.type);
+  setOutput(OutputParameters.Status, 'true');
+  setOutput(OutputParameters.Version, nextRelease.version);
+  setOutput(OutputParameters.Type, nextRelease.type);
 };
