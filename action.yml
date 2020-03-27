@@ -26,6 +26,13 @@ inputs:
   release-branches:
     description: Configures the branches that Semantic Release will release to.
     required: false
+outputs:
+  version:
+    description: Released version in format of X.Y.Z (major.minor.patch).
+  level:
+    description: Released level (major, minor or patch).
+  released:
+    description: Release status (boolean string).
 name: Release me!
 runs:
   main: dist/index.js

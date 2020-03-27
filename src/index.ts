@@ -10,6 +10,7 @@ import {
   parseInputReleaseBranch,
 } from './utilities/inputParsers';
 import { installDependencies } from './utilities/installDependencies';
+import { reportResults } from './utilities/outputParsers';
 import { transform } from './utilities/transform';
 
 type SemanticRelease = (
@@ -48,7 +49,7 @@ export const release = async (): Promise<void> => {
 
   const branches = parseInputReleaseBranch();
 
-  await semanticRelease({
+  const result: Result = await semanticRelease({
     /* eslint-disable unicorn/prevent-abbreviations */
     ...(branches === undefined ? {} : { branches }),
     dryRun: parseInputDryRun(),
@@ -62,6 +63,8 @@ export const release = async (): Promise<void> => {
     writerOpts: writerOptions,
     /* eslint-enable unicorn/prevent-abbreviations */
   });
+
+  reportResults(result);
 };
 
 release().catch((error: Error): void => {
