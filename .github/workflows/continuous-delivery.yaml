@@ -39,7 +39,6 @@ jobs:
           commit-assets: |
             ./dist
           node-module: true
-
       - name: Output
         if: steps.build_package.outputs.released == 'true'
         run: |
