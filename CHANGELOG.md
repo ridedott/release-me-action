@@ -1,3 +1,24 @@
+## [2.0.1](https://github.com/ridedott/release-me-action/compare/v2.0.0...v2.0.1) (2020-03-27)
+
+### Chores
+
+- **deps:** bump @semantic-release/changelog from 5.0.0 to 5.0.1
+  ([ba8a97c](https://github.com/ridedott/release-me-action/commit/ba8a97cdc35e1fcfa9bd8f7cde182ea01165e4ba))
+- **deps-dev:** bump @ridedott/eslint-config from 1.0.14 to 1.0.15
+  ([9879162](https://github.com/ridedott/release-me-action/commit/987916211292cfd684e1fe1aa6675a7d36a07c08))
+- **deps-dev:** bump @ridedott/eslint-config from 1.0.15 to 1.0.16
+  ([7f2b46b](https://github.com/ridedott/release-me-action/commit/7f2b46bd86e243e9c3927dedf543c47e48d976b6))
+- **deps-dev:** bump @types/node from 13.9.3 to 13.9.4
+  ([d905044](https://github.com/ridedott/release-me-action/commit/d905044ba08fc5c7ae40fe6b37da3846e63cf132))
+- **deps-dev:** bump jest from 25.1.0 to 25.2.0
+  ([7797da5](https://github.com/ridedott/release-me-action/commit/7797da5ffe0e86cf680ecb7568d5a099d1d41618))
+- **deps-dev:** bump jest from 25.2.0 to 25.2.1
+  ([eff15f1](https://github.com/ridedott/release-me-action/commit/eff15f15d254ca47eb7fb45e5e8fbfbf8fd17dfc))
+- **deps-dev:** bump jest from 25.2.1 to 25.2.2
+  ([dbfac66](https://github.com/ridedott/release-me-action/commit/dbfac66493f43e1cc07fd6948c0a24a5c428f9b0))
+- **deps-dev:** bump jest from 25.2.2 to 25.2.3
+  ([3280824](https://github.com/ridedott/release-me-action/commit/32808243a0ea898ce676fb097c890f91bd65d76a))
+
 # [2.0.0](https://github.com/ridedott/release-me-action/compare/v1.3.3...v2.0.0) (2020-03-24)
 
 ### Chores
