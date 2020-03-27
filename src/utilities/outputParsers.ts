@@ -16,7 +16,7 @@ export const reportResults = (result: Result): void => {
 
   const { nextRelease } = result;
 
-  setOutput(OutputParameters.Released, 'false');
+  setOutput(OutputParameters.Released, 'true');
   setOutput(OutputParameters.Version, nextRelease.version);
   setOutput(OutputParameters.Type, nextRelease.type);
 };

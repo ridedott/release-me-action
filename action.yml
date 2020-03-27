@@ -32,7 +32,7 @@ outputs:
   type:
     description: Released type (major, minor or patch).
   released:
-    description: Release status (boolean).
+    description: Release status (boolean string).
 name: Release me!
 runs:
   main: dist/index.js

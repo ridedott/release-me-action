@@ -4,11 +4,10 @@ import { Result } from 'semantic-release';
 import { reportResults } from './outputParsers';
 
 const setOutputSpy = jest.spyOn(actionsCore, 'setOutput').mockImplementation();
-const setFailedSpy = jest.spyOn(actionsCore, 'setFailed').mockImplementation();
 
 describe('reportResults', (): void => {
   it('sets output based on nextRelease', (): void => {
-    expect.assertions(3);
+    expect.assertions(4);
 
     const input: Result = {
       commits: [],
@@ -35,14 +34,14 @@ describe('reportResults', (): void => {
       input.nextRelease.version,
     );
     expect(setOutputSpy).toHaveBeenCalledWith('type', input.nextRelease.type);
+    expect(setOutputSpy).toHaveBeenCalledWith('released', 'true');
   });
 
   it('throws an error if there is no released version', (): void => {
-    expect.assertions(2);
+    expect.assertions(1);
 
     reportResults(false);
 
-    expect(setFailedSpy).toHaveBeenCalledTimes(1);
-    expect(setOutputSpy).toHaveBeenCalledTimes(0);
+    expect(setOutputSpy).toHaveBeenCalledWith('released', 'false');
   });
 });

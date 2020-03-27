@@ -39,7 +39,8 @@ jobs:
           commit-assets: |
             ./dist
           node-module: true
+
       - name: Output
+        if: steps.build_package.outputs.released == 'true'
         run: |
-          echo ${{ steps.build_package.outputs.status }}
           echo released version: ${{ steps.build_package.outputs.version }}, type: ${{ steps.build_package.outputs.type }}
