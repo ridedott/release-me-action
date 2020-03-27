@@ -30,9 +30,9 @@ outputs:
   version:
     description: Released version.
   type:
-    description: Released type.
-  status:
-    description: Release status.
+    description: Released type (major, minor or patch).
+  released:
+    description: Release status (boolean).
 name: Release me!
 runs:
   main: dist/index.js
