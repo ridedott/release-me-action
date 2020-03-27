@@ -1,4 +1,4 @@
-import { setOutput } from '@actions/core';
+import { setFailed, setOutput } from '@actions/core';
 import { Result } from 'semantic-release';
 
 enum OutputParameters {
@@ -8,7 +8,9 @@ enum OutputParameters {
 
 export const reportResults = (result: Result): void => {
   if (result === false) {
-    throw new Error('No new version has been released.');
+    setFailed('Repository changes do not meet criteria to trigger a release.');
+
+    return;
   }
 
   const { nextRelease } = result;

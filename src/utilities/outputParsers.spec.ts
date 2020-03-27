@@ -4,6 +4,7 @@ import { Result } from 'semantic-release';
 import { reportResults } from './outputParsers';
 
 const setOutputSpy = jest.spyOn(actionsCore, 'setOutput').mockImplementation();
+const setFailedSpy = jest.spyOn(actionsCore, 'setFailed').mockImplementation();
 
 describe('reportResults', (): void => {
   it('sets output based on nextRelease', (): void => {
@@ -39,11 +40,9 @@ describe('reportResults', (): void => {
   it('throws an error if there is no released version', (): void => {
     expect.assertions(2);
 
-    const input: Result = false;
+    reportResults(false);
 
-    expect((): void => reportResults(input)).toThrowErrorMatchingInlineSnapshot(
-      `"No new version has been released."`,
-    );
+    expect(setFailedSpy).toHaveBeenCalledTimes(1);
     expect(setOutputSpy).toHaveBeenCalledTimes(0);
   });
 });
