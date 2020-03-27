@@ -7,7 +7,7 @@ const setOutputSpy = jest.spyOn(actionsCore, 'setOutput').mockImplementation();
 
 describe('reportResults', (): void => {
   it('sets output based on nextRelease', (): void => {
-    expect.assertions(4);
+    expect.assertions(5);
 
     const input: Result = {
       commits: [],
@@ -29,6 +29,7 @@ describe('reportResults', (): void => {
     const result = reportResults(input);
 
     expect(result).toBeUndefined();
+    expect(setOutputSpy).toHaveBeenCalledTimes(3);
     expect(setOutputSpy).toHaveBeenCalledWith(
       'version',
       input.nextRelease.version,
@@ -38,10 +39,11 @@ describe('reportResults', (): void => {
   });
 
   it('throws an error if there is no released version', (): void => {
-    expect.assertions(1);
+    expect.assertions(2);
 
     reportResults(false);
 
+    expect(setOutputSpy).toHaveBeenCalledTimes(1);
     expect(setOutputSpy).toHaveBeenCalledWith('released', 'false');
   });
 });
