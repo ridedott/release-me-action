@@ -108,6 +108,33 @@ steps:
       release-branches: 'releases'
 ```
 
+## Create a prerelease release to a channel (e.g. "beta")
+
+```yaml
+on:
+  push:
+    branches:
+      - master
+      - beta
+
+steps:
+  - env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    name: Release
+    uses: ridedott/release-me-action@master
+    with:
+      release-branches: '["master",{"name":"beta","prerelease":true}]',
+  - name: Setup Node.js
+    uses: actions/setup-node@v1
+    with:
+      registry-url: "https://npm.pkg.github.com"
+  - env:
+      NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN_WORKAROUND }}
+    name: Publish to GitHub Packages
+    run: |
+      npm publish --tag=beta
+```
+
 ## Create a release and update repository contents
 
 Commit the listed glob patterns to the repository as part of the release
