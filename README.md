@@ -108,13 +108,15 @@ steps:
       release-branches: 'releases'
 ```
 
-## Create a prerelease release to a channel (e.g. "beta")
+## Create a pre-release release to a channel (e.g. "beta")
+
+For pre-releases it is more useful to have a separate workflow: (e.g.
+continuous-delivery-beta.yaml):
 
 ```yaml
 on:
   push:
     branches:
-      - master
       - beta
 
 steps:
@@ -123,7 +125,7 @@ steps:
     name: Release
     uses: ridedott/release-me-action@master
     with:
-      release-branches: '["master",{"name":"beta","prerelease":true}]',
+      release-branches: '[{"name":"beta","prerelease":true}]',
   - name: Setup Node.js
     uses: actions/setup-node@v1
     with:
