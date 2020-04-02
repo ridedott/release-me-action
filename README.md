@@ -111,7 +111,7 @@ steps:
 ## Create a pre-release release to a channel (e.g. "beta")
 
 For pre-releases it is recommended to create a separate workflow: (e.g.
-continuous-delivery-beta.yaml):
+continuous-delivery-beta.yaml) which will run only on `beta` branch:
 
 ```yaml
 on:
