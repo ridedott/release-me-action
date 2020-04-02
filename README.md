@@ -108,6 +108,35 @@ steps:
       release-branches: 'releases'
 ```
 
+## Create a pre-release release to a channel (e.g. "beta")
+
+For pre-releases it is recommended to create a separate workflow: (e.g.
+continuous-delivery-beta.yaml) which will run only on `beta` branch:
+
+```yaml
+on:
+  push:
+    branches:
+      - beta
+
+steps:
+  - name: Beta release
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    uses: ridedott/release-me-action@master
+    with:
+      release-branches: '[{"name":"beta","prerelease":true}]',
+  - name: Setup Node.js
+    uses: actions/setup-node@v1
+    with:
+      registry-url: "https://npm.pkg.github.com"
+  - name: Publish to GitHub Packages
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN_WORKAROUND }}
+    run: |
+      npm publish --tag=beta
+```
+
 ## Create a release and update repository contents
 
 Commit the listed glob patterns to the repository as part of the release
