@@ -120,9 +120,9 @@ on:
       - beta
 
 steps:
-  - env:
+  - name: Beta release
+    env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    name: Release
     uses: ridedott/release-me-action@master
     with:
       release-branches: '[{"name":"beta","prerelease":true}]',
@@ -130,9 +130,9 @@ steps:
     uses: actions/setup-node@v1
     with:
       registry-url: "https://npm.pkg.github.com"
-  - env:
+  - name: Publish to GitHub Packages
+    env:
       NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN_WORKAROUND }}
-    name: Publish to GitHub Packages
     run: |
       npm publish --tag=beta
 ```
