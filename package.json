@@ -25,7 +25,7 @@
     "@types/jest": "^25.2.1",
     "@types/node": "^13.11.0",
     "@types/semantic-release": "^15.13.1",
-    "@zeit/ncc": "^0.22.0",
+    "@zeit/ncc": "^0.22.1",
     "commitizen": "^4.0.3",
     "cspell": "^4.0.55",
     "eslint": "^6.8.0",
