@@ -73,13 +73,14 @@ describe('transform', (): void => {
   it('adds the commit short hash as a root property of the commit when it exists on the input', (): void => {
     expect.assertions(1);
 
-    const result = transform(
-      makeCommit({
-        commit: {
-          short: 'short-hash',
-        },
-      }),
-    ) as Commit;
+    const result =
+      transform(
+        makeCommit({
+          commit: {
+            short: 'short-hash',
+          },
+        }),
+      ) as Commit;
 
     expect(result.shortHash).toStrictEqual('short-hash');
   });
