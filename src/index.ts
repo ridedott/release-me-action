@@ -43,8 +43,9 @@ const writerOptions = {
 export const release = async (): Promise<void> => {
   await installDependencies();
 
-  const semanticRelease =
-    ((await import('semantic-release')) as unknown) as SemanticRelease;
+  const semanticRelease = ((await import(
+    'semantic-release'
+  )) as unknown) as SemanticRelease;
 
   const branches = parseInputReleaseBranch();
 
