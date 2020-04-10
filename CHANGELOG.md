@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/ridedott/release-me-action/compare/v2.1.2...v2.2.0) (2020-04-10)
+
+### Features
+
+- allow globs to be passed to release-assets
+  ([04a435d](https://github.com/ridedott/release-me-action/commit/04a435d94a80b8cf589871ee169f9ed5bba02317))
+
 ## [2.1.2](https://github.com/ridedott/release-me-action/compare/v2.1.1...v2.1.2) (2020-04-10)
 
 ### Chores
