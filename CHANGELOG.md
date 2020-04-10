@@ -1,3 +1,74 @@
+## [2.1.1](https://github.com/ridedott/release-me-action/compare/v2.1.0...v2.1.1) (2020-04-10)
+
+### Bug Fixes
+
+- correctly release `build`, `chore`, `ci` and `docs` types
+  ([6e9b88a](https://github.com/ridedott/release-me-action/commit/6e9b88aa6afab2b884c4b6d51f8ca2f356c72bc5))
+
+### Chores
+
+- **deps-dev:** bump @ridedott/eslint-config from 1.0.16 to 1.0.18
+  ([cfd1976](https://github.com/ridedott/release-me-action/commit/cfd19767de3556d76db6fe7586adbdebbf708483))
+- **deps-dev:** bump @ridedott/eslint-config from 1.0.18 to 1.0.19
+  ([5543d10](https://github.com/ridedott/release-me-action/commit/5543d10ea9e50147f76a2396e172b70b765a90ba))
+- **deps-dev:** bump @types/jest from 25.1.4 to 25.1.5
+  ([05e7a01](https://github.com/ridedott/release-me-action/commit/05e7a01568303c04cebf11831e3166a0bad8c0cd))
+- **deps-dev:** bump @types/jest from 25.1.5 to 25.2.0
+  ([3e5005e](https://github.com/ridedott/release-me-action/commit/3e5005e5147a8745eccd684f469bac63eb6d97fa))
+- **deps-dev:** bump @types/jest from 25.2.0 to 25.2.1
+  ([43e94b6](https://github.com/ridedott/release-me-action/commit/43e94b6b537d17173753fa5f27b62b29b6188fb3))
+- **deps-dev:** bump @types/node from 13.11.0 to 13.11.1
+  ([7702c2b](https://github.com/ridedott/release-me-action/commit/7702c2b0bbbd43a3d244264657d65ac5518b6a3c))
+- **deps-dev:** bump @types/node from 13.9.4 to 13.9.5
+  ([571f573](https://github.com/ridedott/release-me-action/commit/571f5739c947cef11455a26bc6ab6f9b9b5866a2))
+- **deps-dev:** bump @types/node from 13.9.5 to 13.9.6
+  ([50c2699](https://github.com/ridedott/release-me-action/commit/50c2699a538680b74455b25a00e6c0f48ea9fd7c))
+- **deps-dev:** bump @types/node from 13.9.6 to 13.9.7
+  ([cbe39ce](https://github.com/ridedott/release-me-action/commit/cbe39ce5c8fc7937cc68a815f4a37e4ca39c7cff))
+- **deps-dev:** bump @types/node from 13.9.7 to 13.9.8
+  ([d4a154c](https://github.com/ridedott/release-me-action/commit/d4a154c786c90194660ca3330dfbb76f94ec22d8))
+- **deps-dev:** bump @types/node from 13.9.8 to 13.11.0
+  ([c005caa](https://github.com/ridedott/release-me-action/commit/c005caa5ffc384bc3e6d801f620a0dbeb2c59004))
+- **deps-dev:** bump @zeit/ncc from 0.22.0 to 0.22.1
+  ([37480d4](https://github.com/ridedott/release-me-action/commit/37480d4ffdc5b15faf6c374da1b10b8a05b359e5))
+- **deps-dev:** bump commitizen from 4.0.3 to 4.0.4
+  ([c2af700](https://github.com/ridedott/release-me-action/commit/c2af700015e2ea997c0b8149737257a23b3a8c24))
+- **deps-dev:** bump husky from 4.2.3 to 4.2.4
+  ([0b8bae6](https://github.com/ridedott/release-me-action/commit/0b8bae6e683be785944bb8306e635bd0d4d79d17))
+- **deps-dev:** bump husky from 4.2.4 to 4.2.5
+  ([09ed893](https://github.com/ridedott/release-me-action/commit/09ed893de52598267bcd4fd85ff5b2d2a29ebf1f))
+- **deps-dev:** bump jest from 25.2.3 to 25.2.4
+  ([bd09f24](https://github.com/ridedott/release-me-action/commit/bd09f24a4e9a25e800d435d0b0ed5f6779ccc4c2))
+- **deps-dev:** bump jest from 25.2.4 to 25.2.6
+  ([3d4a891](https://github.com/ridedott/release-me-action/commit/3d4a891edef86d8b88c36b54e4baf2a09cc8f9c3))
+- **deps-dev:** bump jest from 25.2.6 to 25.2.7
+  ([e081207](https://github.com/ridedott/release-me-action/commit/e0812079d48fc188fba218ddde1187fd879eb81e))
+- **deps-dev:** bump jest from 25.2.7 to 25.3.0
+  ([4965b64](https://github.com/ridedott/release-me-action/commit/4965b64b6c55d126f32902f5b8e9418809f53f6b))
+- **deps-dev:** bump lint-staged from 10.0.10 to 10.1.0
+  ([6c882b8](https://github.com/ridedott/release-me-action/commit/6c882b848a68c412fc3a4a93d0812e03c83cff8c))
+- **deps-dev:** bump lint-staged from 10.0.9 to 10.0.10
+  ([8c2ff2a](https://github.com/ridedott/release-me-action/commit/8c2ff2a36ba8ebac61cbce31655a8bdee9541020))
+- **deps-dev:** bump lint-staged from 10.1.0 to 10.1.1
+  ([2694014](https://github.com/ridedott/release-me-action/commit/26940146cc4566005a09b72d4641727b57ecac20))
+- **deps-dev:** bump lint-staged from 10.1.1 to 10.1.2
+  ([b759596](https://github.com/ridedott/release-me-action/commit/b759596cd8f14062b0fb4d7d96603c61831d4d0e))
+- **deps-dev:** bump lint-staged from 10.1.2 to 10.1.3
+  ([1aad971](https://github.com/ridedott/release-me-action/commit/1aad97121f0586f33421130a89509e819de8ff6f))
+- **deps-dev:** bump prettier from 2.0.2 to 2.0.3
+  ([13d21d4](https://github.com/ridedott/release-me-action/commit/13d21d45cf9444855c9b13beb1cbda69e798ece7))
+- **deps-dev:** bump prettier from 2.0.3 to 2.0.4
+  ([bfec30e](https://github.com/ridedott/release-me-action/commit/bfec30eecc9b1941086eb6862bae13bff9e616e6))
+- **deps-dev:** bump ts-jest from 25.2.1 to 25.3.0
+  ([c0e2a31](https://github.com/ridedott/release-me-action/commit/c0e2a317dc18aa1513f29d49f3e976d195b49631))
+- **deps-dev:** bump ts-jest from 25.3.0 to 25.3.1
+  ([40f1948](https://github.com/ridedott/release-me-action/commit/40f19483a6c25b79fc4194f752474af44db594a6))
+
+### Documentation
+
+- add pre-release instructions
+  ([d58f9cb](https://github.com/ridedott/release-me-action/commit/d58f9cb00c2745a5c426d6408d48b1bfb3e3818e))
+
 # [2.1.0](https://github.com/ridedott/release-me-action/compare/v2.0.1...v2.1.0) (2020-03-27)
 
 ### Features
