@@ -88,8 +88,6 @@ describe('parseInputCommitAssets', (): void => {
 
     getInputSpy.mockReturnValue(`
     ./src
-    ./lib
-    ./random
     `);
 
     const result = parseInputCommitAssets();
