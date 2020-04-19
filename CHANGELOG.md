@@ -1,3 +1,10 @@
+## [2.2.11](https://github.com/ridedott/release-me-action/compare/v2.2.10...v2.2.11) (2020-04-19)
+
+### Chores
+
+- **deps-dev:** bump jest from 25.3.0 to 25.4.0
+  ([fd44c42](https://github.com/ridedott/release-me-action/commit/fd44c424605aa52007ec035c34692a57d9cd8ef0))
+
 ## [2.2.10](https://github.com/ridedott/release-me-action/compare/v2.2.9...v2.2.10) (2020-04-19)
 
 ### Chores
