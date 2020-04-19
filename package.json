@@ -27,7 +27,7 @@
     "@types/semantic-release": "^15.13.1",
     "@zeit/ncc": "^0.22.1",
     "commitizen": "^4.0.4",
-    "cspell": "^4.0.56",
+    "cspell": "^4.0.57",
     "eslint": "^6.8.0",
     "husky": "^4.2.5",
     "jest": "^25.3.0",
