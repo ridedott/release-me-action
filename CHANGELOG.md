@@ -1,3 +1,10 @@
+## [2.2.14](https://github.com/ridedott/release-me-action/compare/v2.2.13...v2.2.14) (2020-04-21)
+
+### Chores
+
+- **deps-dev:** bump prettier from 2.0.4 to 2.0.5
+  ([cb79e0a](https://github.com/ridedott/release-me-action/commit/cb79e0ab2534906eaa5091c3c5fcb070a9ab0769))
+
 ## [2.2.13](https://github.com/ridedott/release-me-action/compare/v2.2.12...v2.2.13) (2020-04-21)
 
 ### Chores
