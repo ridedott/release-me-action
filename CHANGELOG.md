@@ -1,3 +1,10 @@
+## [2.2.17](https://github.com/ridedott/release-me-action/compare/v2.2.16...v2.2.17) (2020-04-24)
+
+### Documentation
+
+- add output section and example
+  ([fe03d9e](https://github.com/ridedott/release-me-action/commit/fe03d9e6427e33eab7d703235064fb0aed04ad6a))
+
 ## [2.2.16](https://github.com/ridedott/release-me-action/compare/v2.2.15...v2.2.16) (2020-04-22)
 
 ### Chores
