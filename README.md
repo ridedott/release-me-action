@@ -80,6 +80,26 @@ steps:
     uses: ridedott/release-me-action@master
 ```
 
+## Output release details
+
+Output parameters supported:
+
+- version: Released version in format of X.Y.Z (major.minor.patch).
+- level: Released level (major, minor or patch).
+- released: Release status (boolean string).
+
+```yaml
+steps:
+  - name: Release
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    uses: ridedott/release-me-action@master
+  - name: Output
+        if: steps.build_package.outputs.released == 'true'
+        run: |
+          echo released version: ${{ steps.build_package.outputs.version }}, type: ${{ steps.build_package.outputs.level }}
+```
+
 ## Test a release
 
 Runs semantic release in dry-run mode on a branch different to master, omitting
