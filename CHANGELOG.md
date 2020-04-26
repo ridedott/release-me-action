@@ -1,3 +1,10 @@
+## [2.2.19](https://github.com/ridedott/release-me-action/compare/v2.2.18...v2.2.19) (2020-04-26)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 13.13.3 to 13.13.4
+  ([bf25456](https://github.com/ridedott/release-me-action/commit/bf25456e9015f743ad7c14463acb5ffd3b93b3d4))
+
 ## [2.2.18](https://github.com/ridedott/release-me-action/compare/v2.2.17...v2.2.18) (2020-04-26)
 
 ### Chores
