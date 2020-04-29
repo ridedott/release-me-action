@@ -1,3 +1,12 @@
+## [2.2.21](https://github.com/ridedott/release-me-action/compare/v2.2.20...v2.2.21) (2020-04-29)
+
+### Chores
+
+- **deps-dev:** bump jest from 25.5.0 to 25.5.1
+  ([1daa310](https://github.com/ridedott/release-me-action/commit/1daa31056ab87bcedf8f379f73b1bbdc2d743ca7))
+- **deps-dev:** bump lint-staged from 10.1.7 to 10.2.0
+  ([d6a3ec2](https://github.com/ridedott/release-me-action/commit/d6a3ec2a12ff31f2e1912220346b288c3d655747))
+
 ## [2.2.20](https://github.com/ridedott/release-me-action/compare/v2.2.19...v2.2.20) (2020-04-28)
 
 ### Chores
