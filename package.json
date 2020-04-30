@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "@actions/core": "^1.2.4",
-    "@actions/exec": "^1.0.3",
+    "@actions/exec": "^1.0.4",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/commit-analyzer": "^8.0.1",
     "@semantic-release/exec": "^5.0.0",
