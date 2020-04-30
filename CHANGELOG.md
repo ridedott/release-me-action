@@ -1,3 +1,10 @@
+## [2.2.26](https://github.com/ridedott/release-me-action/compare/v2.2.25...v2.2.26) (2020-04-30)
+
+### Chores
+
+- **deps-dev:** bump commitizen from 4.0.4 to 4.0.5
+  ([a9b1cca](https://github.com/ridedott/release-me-action/commit/a9b1cca83a9b196d74885a40e0111611f90d60d5))
+
 ## [2.2.25](https://github.com/ridedott/release-me-action/compare/v2.2.24...v2.2.25) (2020-04-30)
 
 ### Chores
