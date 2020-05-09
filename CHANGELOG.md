@@ -1,3 +1,10 @@
+## [2.2.38](https://github.com/ridedott/release-me-action/compare/v2.2.37...v2.2.38) (2020-05-09)
+
+### Chores
+
+- **deps-dev:** bump ts-jest from 25.5.0 to 25.5.1
+  ([bba9c0a](https://github.com/ridedott/release-me-action/commit/bba9c0a1fee9aaee52a664224077fbfbfe95245c))
+
 ## [2.2.37](https://github.com/ridedott/release-me-action/compare/v2.2.36...v2.2.37) (2020-05-07)
 
 ### Chores
