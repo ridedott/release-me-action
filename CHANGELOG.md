@@ -1,3 +1,12 @@
+## [2.2.39](https://github.com/ridedott/release-me-action/compare/v2.2.38...v2.2.39) (2020-05-13)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 13.13.5 to 14.0.0
+  ([3afb1a1](https://github.com/ridedott/release-me-action/commit/3afb1a1d2920e47d7d763e8541fa718370902119))
+- **deps-dev:** bump typescript from 3.8.3 to 3.9.2
+  ([613aac8](https://github.com/ridedott/release-me-action/commit/613aac8196fbb347290e6f4f4af75c7d5498cdf7))
+
 ## [2.2.38](https://github.com/ridedott/release-me-action/compare/v2.2.37...v2.2.38) (2020-05-09)
 
 ### Chores
