@@ -1,3 +1,10 @@
+## [2.2.42](https://github.com/ridedott/release-me-action/compare/v2.2.41...v2.2.42) (2020-05-14)
+
+### Chores
+
+- **deps:** bump @semantic-release/github from 7.0.5 to 7.0.6
+  ([bc602e3](https://github.com/ridedott/release-me-action/commit/bc602e3e80f99368ad3efd6bab4903ddc043e117))
+
 ## [2.2.41](https://github.com/ridedott/release-me-action/compare/v2.2.40...v2.2.41) (2020-05-13)
 
 ### Chores
