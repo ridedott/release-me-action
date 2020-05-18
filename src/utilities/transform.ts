@@ -10,7 +10,7 @@ const extractShortHash = (commit: Commit): string | undefined => {
    * being incorrect.
    */
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
+  // @ts-expect-error
   return commit.commit.short;
 };
 
