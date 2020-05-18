@@ -1,3 +1,10 @@
+## [2.2.49](https://github.com/ridedott/release-me-action/compare/v2.2.48...v2.2.49) (2020-05-18)
+
+### Chores
+
+- **deps-dev:** bump @types/jest from 25.2.2 to 25.2.3
+  ([9abe5bf](https://github.com/ridedott/release-me-action/commit/9abe5bfdb9f3b3fc57f54331d130f58cf554874f))
+
 ## [2.2.48](https://github.com/ridedott/release-me-action/compare/v2.2.47...v2.2.48) (2020-05-18)
 
 ### Chores
