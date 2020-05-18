@@ -1,3 +1,10 @@
+## [2.2.47](https://github.com/ridedott/release-me-action/compare/v2.2.46...v2.2.47) (2020-05-18)
+
+### Chores
+
+- **deps-dev:** bump @ridedott/eslint-config from 1.1.35 to 1.1.37
+  ([0082ced](https://github.com/ridedott/release-me-action/commit/0082cedc942847e8b9b6565b2307f6048820799f))
+
 ## [2.2.46](https://github.com/ridedott/release-me-action/compare/v2.2.45...v2.2.46) (2020-05-18)
 
 ### Chores
