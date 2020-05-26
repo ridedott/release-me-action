@@ -1,3 +1,10 @@
+## [2.2.61](https://github.com/ridedott/release-me-action/compare/v2.2.60...v2.2.61) (2020-05-26)
+
+### Chores
+
+- **deps-dev:** bump @types/semantic-release from 15.13.1 to 17.0.1
+  ([ef85a22](https://github.com/ridedott/release-me-action/commit/ef85a22e384e901c679ac85350275a90e01a3ade))
+
 ## [2.2.60](https://github.com/ridedott/release-me-action/compare/v2.2.59...v2.2.60) (2020-05-24)
 
 ### Chores
