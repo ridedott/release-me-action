@@ -1,9 +1,5 @@
 import { getInput } from '@actions/core';
-
-interface BranchObjectConfiguration {
-  name: string;
-  prerelease: boolean;
-}
+import { BranchSpec } from 'semantic-release';
 
 enum InputParameters {
   DryRun = 'dry-run',
@@ -25,9 +21,7 @@ export const parseInputNodeModule = (): boolean =>
 export const parseInputDryRun = (): boolean =>
   getInput(InputParameters.DryRun) === 'true';
 
-export const parseInputReleaseBranch = ():
-  | Array<string | BranchObjectConfiguration>
-  | undefined => {
+export const parseInputReleaseBranch = (): BranchSpec[] | undefined => {
   const input = getInput(InputParameters.ReleaseBranches);
 
   if (input.length === 0) {
@@ -35,9 +29,9 @@ export const parseInputReleaseBranch = ():
   }
 
   try {
-    return JSON.parse(input);
+    return JSON.parse(input) as BranchSpec[];
   } catch (_) {
-    return [{ name: input, prerelease: false }];
+    return [{ name: input }];
   }
 };
 

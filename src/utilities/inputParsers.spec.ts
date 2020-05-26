@@ -52,7 +52,7 @@ describe('parseInputReleaseBranch', (): void => {
 
     const result = parseInputReleaseBranch();
 
-    expect(result).toStrictEqual([{ name: 'test', prerelease: false }]);
+    expect(result).toStrictEqual([{ name: 'test' }]);
   });
 
   it('returns a valid branches configuration array passed as json-string', (): void => {

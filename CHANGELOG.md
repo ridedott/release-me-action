@@ -1,3 +1,17 @@
+## [2.2.60](https://github.com/ridedott/release-me-action/compare/v2.2.59...v2.2.60) (2020-05-24)
+
+### Chores
+
+- **deps:** bump @semantic-release/github from 7.0.6 to 7.0.7
+  ([9d19392](https://github.com/ridedott/release-me-action/commit/9d19392c65fe6d95bf9fbf74a7f786552b654a49))
+
+## [2.2.59](https://github.com/ridedott/release-me-action/compare/v2.2.58...v2.2.59) (2020-05-24)
+
+### Chores
+
+- **deps:** bump semantic-release from 17.0.7 to 17.0.8
+  ([4b51139](https://github.com/ridedott/release-me-action/commit/4b51139a108af5f56a4e2b2fa206d102f70a02bb))
+
 ## [2.2.58](https://github.com/ridedott/release-me-action/compare/v2.2.57...v2.2.58) (2020-05-22)
 
 ### Chores
