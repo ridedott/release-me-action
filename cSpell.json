@@ -29,6 +29,9 @@
     "commitlint",
     "editorconfig",
     "gitignore",
+    "premajor",
+    "preminor",
+    "prepatch",
     "prettierignore",
     "prettierrc",
     "ridedott"

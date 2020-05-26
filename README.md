@@ -32,11 +32,6 @@ steps:
     name: Release
     uses: ridedott/release-me-action@master
     with:
-      # Configure the semantic release branches parameter: https://semantic-release.gitbook.io/semantic-release/usage/workflow-configuration#branches-properties
-      # If not specified semantic-release will use its default branches
-      # configuration, as specified in their Javascript API documentation:
-      # https://github.com/semantic-release/semantic-release/blob/master/docs/usage/configuration.md#branches
-      release-branches: '["+([0-9])?(.{+([0-9]),x}).x","master","next","next-major",{"name":"beta","prerelease":"beta"},{"name":"alpha","prerelease":"alpha"}]',
       # Commit the new line separated glob patterns to the repository as part
       # of the release process.
       commit-assets: |
@@ -51,6 +46,17 @@ steps:
       # Attach the new line separated listed glob patterns to the release.
       release-assets: |
         ./generated/my-asset.tar.gz
+      # Configure the semantic release branches parameter: https://semantic-release.gitbook.io/semantic-release/usage/workflow-configuration#branches-properties
+      # If not specified semantic-release will use its default branches
+      # configuration, as specified in their Javascript API documentation:
+      # https://github.com/semantic-release/semantic-release/blob/master/docs/usage/configuration.md#branches
+      release-branches: '["+([0-9])?(.{+([0-9]),x}).x","master","next","next-major",{"name":"beta","prerelease":"beta"},{"name":"alpha","prerelease":"alpha"}]'
+      # Configure the semantic release commit analyzer rules that are used to
+      # determine the correct release version.
+      # https://www.npmjs.com/package/@semantic-release/commit-analyzer#releaserules
+      release-rules:
+        '[{ "release": "patch", "type": "build" }, { "release": "patch", "type":
+        "chore(deps)" }, { "release": "patch", "type": "chore(deps-dev)" }]'
 ```
 
 **IMPORTANT** `GITHUB_TOKEN` does not have the required permissions to operate

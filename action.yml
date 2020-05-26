@@ -26,6 +26,11 @@ inputs:
   release-branches:
     description: Configures the branches that Semantic Release will release to.
     required: false
+  release-rules:
+    description:
+      Configures the rules that Semantic Release will use to determine the
+      correct release version.
+    required: false
 outputs:
   version:
     description: Released version in format of X.Y.Z (major.minor.patch).
