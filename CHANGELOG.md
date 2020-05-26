@@ -1,3 +1,10 @@
+## [2.2.62](https://github.com/ridedott/release-me-action/compare/v2.2.61...v2.2.62) (2020-05-26)
+
+### Chores
+
+- **deps-dev:** bump @zeit/ncc from 0.22.2 to 0.22.3
+  ([a561e8f](https://github.com/ridedott/release-me-action/commit/a561e8fb35d15556201e62c055d2f47e00c180b6))
+
 ## [2.2.61](https://github.com/ridedott/release-me-action/compare/v2.2.60...v2.2.61) (2020-05-26)
 
 ### Chores
