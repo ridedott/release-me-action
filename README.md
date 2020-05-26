@@ -32,7 +32,7 @@ steps:
     name: Release
     uses: ridedott/release-me-action@master
     with:
-      # Configure semantic release to run from a specific branch.
+      # Configure the semantic release branches parameter: https://semantic-release.gitbook.io/semantic-release/usage/workflow-configuration#branches-properties
       # If not specified semantic-release will use its default branches
       # configuration, as specified in their Javascript API documentation:
       # https://github.com/semantic-release/semantic-release/blob/master/docs/usage/configuration.md#branches
@@ -113,7 +113,7 @@ steps:
     uses: ridedott/release-me-action@master
     with:
       dry-run: true
-      release-branches: 'my-branch'
+      release-branches: '["my-branch"]'
 ```
 
 ## Create a release to a different branch
@@ -125,7 +125,7 @@ steps:
     name: Release
     uses: ridedott/release-me-action@master
     with:
-      release-branches: 'releases'
+      release-branches: '["releases"]'
 ```
 
 ## Create a pre-release release to a channel (e.g. "beta")
@@ -145,7 +145,7 @@ steps:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     uses: ridedott/release-me-action@master
     with:
-      release-branches: '[{"name":"beta","prerelease":true}]',
+      release-branches: '[{"name":"beta","prerelease":"beta"}]',
   - name: Setup Node.js
     uses: actions/setup-node@v1
     with:
