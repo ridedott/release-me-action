@@ -40,7 +40,9 @@ describe('processInputReleaseBranches', (): void => {
 
     getInputSpy.mockReturnValue('test');
 
-    expect(processInputReleaseBranches).toThrow('Invalid JSON string for input parameter release-branches.');
+    expect(processInputReleaseBranches).toThrow(
+      'Invalid JSON string for input parameter release-branches.',
+    );
   });
 
   it.each([
@@ -64,23 +66,17 @@ describe('processInputReleaseBranches', (): void => {
     },
     {
       value: '[{"name": "test", "range": true}]',
-    }
+    },
   ])(
     'throws an error if the input parameter is set to an invalid value %j',
-    (
-      {
-        value,
-      }: {
-        value: string,
-      }
-      ): void => {
+    ({ value }: { value: string }): void => {
       expect.assertions(1);
 
       getInputSpy.mockReturnValue(value);
 
       // eslint-disable-next-line jest/require-to-throw-message
       expect(processInputReleaseBranches).toThrow();
-    }
+    },
   );
 
   it("returns undefined if the input parameter value is set to an empty string''", (): void => {

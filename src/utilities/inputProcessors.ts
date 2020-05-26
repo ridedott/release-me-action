@@ -10,19 +10,18 @@ enum InputParameters {
   NodeModule = 'node-module',
 }
 
-const inputReleaseBranchesSchema = joi.array().items(
-  joi.string(),
-  joi.object()
-    .keys({
-      channel: joi.alternatives().try(
-        joi.string(),
-        false
-      ).optional(),
+const inputReleaseBranchesSchema = joi
+  .array()
+  .items(
+    joi.string(),
+    joi.object().keys({
+      channel: joi.alternatives().try(joi.string(), false).optional(),
       name: joi.string().min(1).required(),
       prerelease: joi.string().optional(),
       range: joi.string().optional(),
-    })
-).min(1)
+    }),
+  )
+  .min(1);
 
 const parseFileList = (input: string): string[] =>
   input
@@ -34,18 +33,23 @@ const parseInputReleaseBranches = (input: string): BranchSpec[] => {
   try {
     return JSON.parse(input) as BranchSpec[];
   } catch (error) {
-    throw new Error('Invalid JSON string for input parameter release-branches.');
+    throw new Error(
+      'Invalid JSON string for input parameter release-branches.',
+    );
   }
 };
 
-export const validateInputReleaseBranches = (input: BranchSpec[]): BranchSpec[] => {
+const validateInputReleaseBranches = (input: BranchSpec[]): BranchSpec[] => {
   const { error, value } = inputReleaseBranchesSchema.validate(input, {
     stripUnknown: true,
-
   });
 
   if (error !== undefined) {
-    throw new Error(`Invalid value for input parameter release-branches: ${error.message}\n${JSON.stringify(error.details)} `);
+    throw new Error(
+      `Invalid value for input parameter release-branches: ${
+        error.message
+      }\n${JSON.stringify(error.details)} `,
+    );
   }
 
   return value;
@@ -68,8 +72,6 @@ export const processInputReleaseBranches = (): BranchSpec[] | undefined => {
 
   return validateInputReleaseBranches(parsedInput);
 };
-
-
 
 export const processInputCommitAssets = (): string[] =>
   parseFileList(getInput(InputParameters.CommitAssets));
