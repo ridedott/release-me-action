@@ -1,3 +1,10 @@
+## [2.2.63](https://github.com/ridedott/release-me-action/compare/v2.2.62...v2.2.63) (2020-05-29)
+
+### Chores
+
+- **deps-dev:** bump lint-staged from 10.2.6 to 10.2.7
+  ([59f96a3](https://github.com/ridedott/release-me-action/commit/59f96a32ae513d99d2d005a1cba101946dfcea35))
+
 ## [2.2.62](https://github.com/ridedott/release-me-action/compare/v2.2.61...v2.2.62) (2020-05-26)
 
 ### Chores
