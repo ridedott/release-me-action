@@ -42,4 +42,4 @@ jobs:
       - name: Output
         if: steps.release_package.outputs.released == 'true'
         run: |
-          echo released version: ${{ steps.release_package.outputs.version }}, type: ${{ steps.release_package.outputs.level }}
+          echo released version: ${{ steps.release.outputs.version }}, type: ${{ steps.release.outputs.level }}
