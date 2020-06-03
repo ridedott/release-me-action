@@ -3,7 +3,7 @@ name: Continuous Delivery
 on:
   push:
     branches:
-      - master
+      - 'chore/tag-releases'
 
 jobs:
   release:
@@ -39,13 +39,9 @@ jobs:
           commit-assets: |
             ./dist
           node-module: true
-      - env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_DOTTBOTT }}
-        id: tag
-        if: steps.released.outputs.released == 'true'
-        name: Tag
-        uses: Actions-R-Us/actions-tagger@v2
+          dry-run: true
+          release-branches: chore/tag-releases
       - name: Output
         if: steps.release.outputs.released == 'true'
         run: |
-          echo released version: ${{ steps.release.outputs.version }}, type: ${{ steps.release.outputs.level }} with tag ${{steps.tag.outputs.ref_name}}
+          echo released version: ${{ steps.release.outputs.version }}, type: ${{ steps.release.outputs.level }}
