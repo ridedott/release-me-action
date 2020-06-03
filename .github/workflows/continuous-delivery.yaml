@@ -43,10 +43,11 @@ jobs:
           release-branches: 'chore/tag-releases'
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_DOTTBOTT }}
+        id: tag
         if: steps.build_package.outputs.released == 'true'
         name: Tag
         uses: Actions-R-Us/actions-tagger@v2
       - name: Output
         if: steps.release.outputs.released == 'true'
         run: |
-          echo released version: ${{ steps.release.outputs.version }}, type: ${{ steps.release.outputs.level }}
+          echo released version: ${{ steps.release.outputs.version }}, type: ${{ steps.release.outputs.level }} with tag ${{steps.tag.outputs.ref_name}}
