@@ -1,3 +1,10 @@
+## [2.2.66](https://github.com/ridedott/release-me-action/compare/v2.2.65...v2.2.66) (2020-06-03)
+
+### Continuous Integration
+
+- fix the misplaced release step id
+  ([b70688b](https://github.com/ridedott/release-me-action/commit/b70688bd181864716e93ce878893c76b19614ca3))
+
 ## [2.2.65](https://github.com/ridedott/release-me-action/compare/v2.2.64...v2.2.65) (2020-06-02)
 
 ### Chores
