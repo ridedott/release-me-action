@@ -3,7 +3,7 @@ name: Continuous Delivery
 on:
   push:
     branches:
-      - master
+      - 'chore/tag-releases'
 
 jobs:
   release:
@@ -28,18 +28,18 @@ jobs:
             npm-
       - name: Install dependencies
         run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
-      - name: Build
-        run: npm run build
-        id: build_package
-      - env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_DOTTBOTT }}
-        name: Release
-        uses: ridedott/release-me-action@master
-        with:
-          commit-assets: |
-            ./dist
-          node-module: true
-      - name: Output
-        if: steps.build_package.outputs.released == 'true'
-        run: |
-          echo released version: ${{ steps.build_package.outputs.version }}, type: ${{ steps.build_package.outputs.level }}
+#      - name: Build
+#        run: npm run build
+#        id: build_package
+#      - env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_DOTTBOTT }}
+#        name: Release
+#        uses: ridedott/release-me-action@master
+#        with:
+#          commit-assets: |
+#            ./dist
+#          node-module: true
+#      - name: Output
+#        if: steps.build_package.outputs.released == 'true'
+#        run: |
+#          echo released version: ${{ steps.build_package.outputs.version }}, type: ${{ steps.build_package.outputs.level }}
