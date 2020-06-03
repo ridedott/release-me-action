@@ -32,7 +32,7 @@ jobs:
         run: npm run build
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_DOTTBOTT }}
-        id: release_package
+        id: release
         name: Release
         uses: ridedott/release-me-action@master
         with:
