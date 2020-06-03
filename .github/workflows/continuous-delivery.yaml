@@ -40,6 +40,6 @@ jobs:
             ./dist
           node-module: true
       - name: Output
-        if: steps.release_package.outputs.released == 'true'
+        if: steps.release.outputs.released == 'true'
         run: |
           echo released version: ${{ steps.release.outputs.version }}, type: ${{ steps.release.outputs.level }}
