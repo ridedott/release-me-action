@@ -32,7 +32,8 @@ steps:
     name: Release
     uses: ridedott/release-me-action@master
     with:
-      # Configure the semantic release branches parameter: https://semantic-release.gitbook.io/semantic-release/usage/workflow-configuration#branches-properties
+      # Configure the semantic release branches parameter:
+      # https://semantic-release.gitbook.io/semantic-release/usage/workflow-configuration#branches-properties
       # If not specified semantic-release will use its default branches
       # configuration, as specified in their Javascript API documentation:
       # https://github.com/semantic-release/semantic-release/blob/master/docs/usage/configuration.md#branches

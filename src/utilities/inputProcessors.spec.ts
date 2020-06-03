@@ -59,7 +59,7 @@ describe('processInputReleaseBranches', (): void => {
       value: '[{"name": "test", "channel": 1}]',
     },
     {
-      value: '[{"name": "test", "prerelease": true}]',
+      value: '[{"name": "test", "prerelease": false}]',
     },
     {
       value: '[{"name": "test", "prerelease": 1}]',
@@ -74,8 +74,11 @@ describe('processInputReleaseBranches', (): void => {
 
       getInputSpy.mockReturnValue(value);
 
-      // eslint-disable-next-line jest/require-to-throw-message
-      expect(processInputReleaseBranches).toThrow();
+      try {
+        processInputReleaseBranches();
+      } catch (error) {
+        expect(error).toBeInstanceOf(Error);
+      }
     },
   );
 

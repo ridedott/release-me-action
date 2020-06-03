@@ -17,7 +17,7 @@ const inputReleaseBranchesSchema = joi
     joi.object().keys({
       channel: joi.alternatives().try(joi.string(), false).optional(),
       name: joi.string().min(1).required(),
-      prerelease: joi.string().optional(),
+      prerelease: joi.alternatives().try(joi.string(), true).optional(),
       range: joi.string().optional(),
     }),
   )
