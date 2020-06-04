@@ -1,3 +1,10 @@
+## [2.2.70](https://github.com/ridedott/release-me-action/compare/v2.2.69...v2.2.70) (2020-06-04)
+
+### Chores
+
+- **deps-dev:** bump typescript from 3.9.3 to 3.9.5
+  ([4c66e44](https://github.com/ridedott/release-me-action/commit/4c66e445d0c088c12337b7ae446a86db7b24a02c))
+
 ## [2.2.69](https://github.com/ridedott/release-me-action/compare/v2.2.68...v2.2.69) (2020-06-04)
 
 ### Chores
