@@ -1,3 +1,10 @@
+## [2.2.71](https://github.com/ridedott/release-me-action/compare/v2.2.70...v2.2.71) (2020-06-05)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 14.0.10 to 14.0.11
+  ([935bbd1](https://github.com/ridedott/release-me-action/commit/935bbd173e63480eb7da250f92af4230c02c0ebb))
+
 ## [2.2.70](https://github.com/ridedott/release-me-action/compare/v2.2.69...v2.2.70) (2020-06-04)
 
 ### Chores
