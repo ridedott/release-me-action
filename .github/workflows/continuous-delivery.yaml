@@ -39,12 +39,3 @@ jobs:
           commit-assets: |
             ./dist
           node-module: true
-      - name: Output
-        if: steps.release.outputs.released == 'true'
-        run: |
-          echo released version: ${{ steps.release.outputs.version }}, type: ${{ steps.release.outputs.level }}
-          echo major: ${{ steps.release.outputs.major }}
-          echo minor: ${{ steps.release.outputs.minor }}
-          echo patch: ${{ steps.release.outputs.patch }}
-          echo pre-release: ${{ steps.release.outputs.pre-release }}
-          echo build: ${{ steps.release.outputs.build }}
