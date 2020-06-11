@@ -44,4 +44,4 @@ jobs:
         if: steps.release.outputs.released == 'true'
         name: Tag
         run: |
-          git tag v${{ steps.release.outputs.major }} --force
+          git tag 'v${{ steps.release.outputs.major }}' --force
