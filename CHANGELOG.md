@@ -1,3 +1,10 @@
+## [2.2.75](https://github.com/ridedott/release-me-action/compare/v2.2.74...v2.2.75) (2020-06-11)
+
+### Chores
+
+- output semantic version breakdown
+  ([be02544](https://github.com/ridedott/release-me-action/commit/be0254415f3d25d52813e5668490a84f5b2c478b))
+
 ## [2.2.74](https://github.com/ridedott/release-me-action/compare/v2.2.73...v2.2.74) (2020-06-10)
 
 ### Chores
