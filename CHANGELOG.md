@@ -1,3 +1,66 @@
+## [2.2.74](https://github.com/ridedott/release-me-action/compare/v2.2.73...v2.2.74) (2020-06-10)
+
+### Chores
+
+- **deps-dev:** bump @types/jest from 25.2.3 to 26.0.0
+  ([058d634](https://github.com/ridedott/release-me-action/commit/058d63416a6f67501cc54a1217b54ab239bf7237))
+
+## [2.2.73](https://github.com/ridedott/release-me-action/compare/v2.2.72...v2.2.73) (2020-06-10)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 14.0.12 to 14.0.13
+  ([580ce37](https://github.com/ridedott/release-me-action/commit/580ce3709d9279090397bfd9e2cf9778f29cac53))
+
+## [2.2.72](https://github.com/ridedott/release-me-action/compare/v2.2.71...v2.2.72) (2020-06-09)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 14.0.11 to 14.0.12
+  ([6d57757](https://github.com/ridedott/release-me-action/commit/6d577576fa44a44dd30bf616845924d9a4299aff))
+
+## [2.2.71](https://github.com/ridedott/release-me-action/compare/v2.2.70...v2.2.71) (2020-06-05)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 14.0.10 to 14.0.11
+  ([935bbd1](https://github.com/ridedott/release-me-action/commit/935bbd173e63480eb7da250f92af4230c02c0ebb))
+
+## [2.2.70](https://github.com/ridedott/release-me-action/compare/v2.2.69...v2.2.70) (2020-06-04)
+
+### Chores
+
+- **deps-dev:** bump typescript from 3.9.3 to 3.9.5
+  ([4c66e44](https://github.com/ridedott/release-me-action/commit/4c66e445d0c088c12337b7ae446a86db7b24a02c))
+
+## [2.2.69](https://github.com/ridedott/release-me-action/compare/v2.2.68...v2.2.69) (2020-06-04)
+
+### Chores
+
+- **deps-dev:** bump lint-staged from 10.2.8 to 10.2.9
+  ([9ec39c2](https://github.com/ridedott/release-me-action/commit/9ec39c25914527a47247811f4b5c5d408ad67bee))
+
+## [2.2.68](https://github.com/ridedott/release-me-action/compare/v2.2.67...v2.2.68) (2020-06-04)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 14.0.9 to 14.0.10
+  ([3862c12](https://github.com/ridedott/release-me-action/commit/3862c1269085c852bb5a2308794db02fd7043d39))
+
+## [2.2.67](https://github.com/ridedott/release-me-action/compare/v2.2.66...v2.2.67) (2020-06-03)
+
+### Chores
+
+- **deps-dev:** bump lint-staged from 10.2.7 to 10.2.8
+  ([16fce0c](https://github.com/ridedott/release-me-action/commit/16fce0c51119612e34781f73ff62363bbf997688))
+
+## [2.2.66](https://github.com/ridedott/release-me-action/compare/v2.2.65...v2.2.66) (2020-06-03)
+
+### Continuous Integration
+
+- fix the misplaced release step id
+  ([b70688b](https://github.com/ridedott/release-me-action/commit/b70688bd181864716e93ce878893c76b19614ca3))
+
 ## [2.2.65](https://github.com/ridedott/release-me-action/compare/v2.2.64...v2.2.65) (2020-06-02)
 
 ### Chores
