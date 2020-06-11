@@ -16,7 +16,7 @@ jobs:
         with:
           # Fetch all history.
           fetch-depth: 0
-          persist-credentials: false
+          persist-credentials: true
       - name: Setup Node.js
         uses: actions/setup-node@v1
       - name: Cache dependencies
@@ -39,3 +39,9 @@ jobs:
           commit-assets: |
             ./dist
           node-module: true
+      - env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_DOTTBOTT }}
+        if: steps.release.outputs.released == 'true'
+        name: Tag
+        run: |
+          git tag 'v${{ steps.release.outputs.major }}' --force
