@@ -54,10 +54,10 @@ describe('reportResults', (): void => {
       },
       nextRelease: {
         gitHead: 'refs/heads/master',
-        gitTag: '1.1.1-prerelease+meta',
+        gitTag: '1.1.1-prerelease+build',
         notes: 'Note',
         type: 'patch',
-        version: '1.1.1-prerelease+meta',
+        version: '1.1.1-prerelease+build',
       },
       releases: [],
     };
@@ -65,8 +65,8 @@ describe('reportResults', (): void => {
     reportResults(input);
 
     expect(setOutputSpy).toHaveBeenCalledTimes(8);
-    expect(setOutputSpy).toHaveBeenCalledWith('prerelease', 'prerelease');
-    expect(setOutputSpy).toHaveBeenCalledWith('meta', 'meta');
+    expect(setOutputSpy).toHaveBeenCalledWith('pre-release', 'prerelease');
+    expect(setOutputSpy).toHaveBeenCalledWith('build', 'build');
   });
 
   it('throws an error if there is no released version', (): void => {

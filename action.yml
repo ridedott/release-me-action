@@ -29,13 +29,13 @@ inputs:
 outputs:
   major:
     description: Major component of the released version.
-  meta:
-    description: Meta component of the released version.
+  build:
+    description: Build component of the released version.
   minor:
     description: Minor component of the released version.
   patch:
     description: Patch component of the released version.
-  prerelease:
+  pre-release:
     description: Pre-release component of the released version.
   level:
     description: Released level (major, minor or patch).
