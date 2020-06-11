@@ -12,7 +12,7 @@ enum OutputParameters {
   Version = 'version',
 }
 
-interface SemVerGroups {
+interface SemVerComponents {
   build?: string;
   major: string;
   minor: string;
@@ -20,7 +20,15 @@ interface SemVerGroups {
   preRelease?: string;
 }
 
-// eslint-disable-next-line max-statements
+const extractVersionComponents = (version: string): SemVerComponents => {
+  // eslint-disable-next-line unicorn/no-unsafe-regex
+  const semVerRegExp = /^(?<major>0|[1-9]\d*)\.(?<minor>0|[1-9]\d*)\.(?<patch>0|[1-9]\d*)(?:-(?<preRelease>(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+(?<build>[0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/gmu;
+
+  const { groups } = semVerRegExp.exec(version) as RegExpExecArray;
+
+  return (groups as unknown) as SemVerComponents;
+};
+
 export const reportResults = (result: Result): void => {
   if (result === false) {
     setOutput(OutputParameters.Released, 'false');
@@ -30,25 +38,17 @@ export const reportResults = (result: Result): void => {
 
   const { nextRelease } = result;
 
-  // eslint-disable-next-line unicorn/no-unsafe-regex
-  const semVerRegExp = /^(?<major>0|[1-9]\d*)\.(?<minor>0|[1-9]\d*)\.(?<patch>0|[1-9]\d*)(?:-(?<preRelease>(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+(?<build>[0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/gmu;
-
-  const { groups } = semVerRegExp.exec(nextRelease.version) as RegExpExecArray;
-
-  const {
-    build,
-    major,
-    minor,
-    patch,
-    preRelease,
-  } = (groups as unknown) as SemVerGroups;
-
-  setOutput(OutputParameters.Major, major);
+  const { build, major, minor, patch, preRelease } = extractVersionComponents(
+    nextRelease.version,
+  );
 
   if (build !== undefined) {
     setOutput(OutputParameters.Build, build);
   }
 
+  setOutput(OutputParameters.Level, nextRelease.type);
+
+  setOutput(OutputParameters.Major, major);
   setOutput(OutputParameters.Minor, minor);
   setOutput(OutputParameters.Patch, patch);
 
@@ -58,5 +58,4 @@ export const reportResults = (result: Result): void => {
 
   setOutput(OutputParameters.Released, 'true');
   setOutput(OutputParameters.Version, nextRelease.version);
-  setOutput(OutputParameters.Level, nextRelease.type);
 };
