@@ -16,7 +16,7 @@ jobs:
         with:
           # Fetch all history.
           fetch-depth: 0
-          persist-credentials: false
+          persist-credentials: true
       - name: Setup Node.js
         uses: actions/setup-node@v1
       - name: Cache dependencies
@@ -44,4 +44,4 @@ jobs:
       - name: Output
         if: steps.release.outputs.released == 'true'
         run: |
-          echo released version: ${{ steps.release.outputs.version }}, type: ${{ steps.release.outputs.level }}
+          echo released version: ${{ steps.release.outputs.major }}
