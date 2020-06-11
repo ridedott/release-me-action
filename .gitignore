@@ -46,3 +46,4 @@ coverage
 
 # Build output
 lib
+.local

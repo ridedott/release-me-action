@@ -27,12 +27,23 @@ inputs:
     description: Configures the branches that Semantic Release will release to.
     required: false
 outputs:
-  version:
-    description: Released version in format of X.Y.Z (major.minor.patch).
+  major:
+    description: Major component of the released version.
+  meta:
+    description: Meta component of the released version.
+  minor:
+    description: Minor component of the released version.
+  patch:
+    description: Patch component of the released version.
+  prerelease:
+    description: Pre-release component of the released version.
   level:
     description: Released level (major, minor or patch).
   released:
     description: Release status (boolean string).
+  version:
+    description:
+      Released version in format of X.Y.Z (major.minor.patch-prerelease+meta).
 name: Release me!
 runs:
   main: dist/index.js
