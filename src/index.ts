@@ -3,12 +3,12 @@ import { Config, Options, Result } from 'semantic-release';
 
 import { generatePlugins } from './utilities/generatePlugins';
 import {
-  parseInputCommitAssets,
-  parseInputDryRun,
-  parseInputNodeModule,
-  parseInputReleaseAssets,
-  parseInputReleaseBranch,
-} from './utilities/inputParsers';
+  processInputCommitAssets,
+  processInputDryRun,
+  processInputNodeModule,
+  processInputReleaseAssets,
+  processInputReleaseBranches,
+} from './utilities/inputProcessors';
 import { installDependencies } from './utilities/installDependencies';
 import { reportResults } from './utilities/outputParsers';
 import { transform } from './utilities/transform';
@@ -50,17 +50,17 @@ export const release = async (): Promise<void> => {
     'semantic-release'
   )) as unknown) as SemanticRelease;
 
-  const branches = parseInputReleaseBranch();
+  const branches = processInputReleaseBranches();
 
   const result: Result = await semanticRelease({
     /* eslint-disable unicorn/prevent-abbreviations */
     ...(branches === undefined ? {} : { branches }),
-    dryRun: parseInputDryRun(),
+    dryRun: processInputDryRun(),
     parserOpts: parseOptions,
     plugins: generatePlugins({
-      commitAssets: parseInputCommitAssets(),
-      isNodeModule: parseInputNodeModule(),
-      releaseAssets: parseInputReleaseAssets(),
+      commitAssets: processInputCommitAssets(),
+      isNodeModule: processInputNodeModule(),
+      releaseAssets: processInputReleaseAssets(),
     }),
     releaseRules: releaseRulesExtension,
     writerOpts: writerOptions,
