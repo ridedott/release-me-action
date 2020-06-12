@@ -32,6 +32,13 @@ steps:
     name: Release
     uses: ridedott/release-me-action@master
     with:
+      # Configure Semantic Release branches parameter:
+      # https://semantic-release.gitbook.io/semantic-release/usage/workflow-configuration#branches-properties
+      #
+      # If not specified, Semantic Release will use its default branches
+      # configuration, specified in the API documentation:
+      # https://github.com/semantic-release/semantic-release/blob/master/docs/usage/configuration.md#branches
+      release-branches: '["+([0-9])?(.{+([0-9]),x}).x","master","next","next-major",{"name":"beta","prerelease":"beta"},{"name":"alpha","prerelease":"alpha"}]',
       # Commit the new line separated glob patterns to the repository as part
       # of the release process.
       commit-assets: |
