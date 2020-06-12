@@ -1,3 +1,14 @@
+# [3.0.0](https://github.com/ridedott/release-me-action/compare/v2.2.76...v3.0.0) (2020-06-12)
+
+### Features
+
+- add release branches parameter validation
+  ([ab2c313](https://github.com/ridedott/release-me-action/commit/ab2c3136c1b4be4ad90dc53cd6794e4488d30f20))
+
+### BREAKING CHANGE
+
+- the release-branches input now only accepts a valid JSON string
+
 ## [2.2.76](https://github.com/ridedott/release-me-action/compare/v2.2.75...v2.2.76) (2020-06-12)
 
 ### Bug Fixes
