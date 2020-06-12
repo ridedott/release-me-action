@@ -30,16 +30,27 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
       - name: Build
         run: npm run build
-        id: build_package
       - env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_DOTTBOTT }}
+          GITHUB_TOKEN: ${{ secrets.DOTTBOTT_TOKEN }}
+        id: release
         name: Release
         uses: ridedott/release-me-action@master
         with:
           commit-assets: |
             ./dist
           node-module: true
-      - name: Output
-        if: steps.build_package.outputs.released == 'true'
+      - if: steps.release.outputs.released == 'true'
+        name: Authenticate
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+          persist-credentials: true
+          token: ${{ secrets.DOTTBOTT_TOKEN }}
+      - if: steps.release.outputs.released == 'true'
+        name: Tag
         run: |
-          echo released version: ${{ steps.build_package.outputs.version }}, type: ${{ steps.build_package.outputs.level }}
+          git config --global user.name '{{ secrets.DOTTBOTT_USER_NAME }}'
+          git config --global user.email '{{ secrets.DOTTBOTT_USER_EMAIL }}'
+          git push origin :refs/tags/'v${{ steps.release.outputs.major }}'
+          git tag 'v${{ steps.release.outputs.major }}' --force
+          git push --tags
