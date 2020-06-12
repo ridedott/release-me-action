@@ -16,8 +16,7 @@ jobs:
         with:
           # Fetch all history.
           fetch-depth: 0
-          persist-credentials: true
-          token: ${{ secrets.GITHUB_TOKEN_DOTTBOTT }}
+          persist-credentials: false
       - name: Setup Node.js
         uses: actions/setup-node@v1
       - name: Cache dependencies
@@ -31,14 +30,18 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
       - name: Build
         run: npm run build
-      - id: release
+      - env:
+          GITHUB_TOKEN: ${{ secrets.DOTTBOTT_TOKEN }}
+        id: release
         name: Release
         uses: ridedott/release-me-action@master
         with:
           commit-assets: |
             ./dist
           node-module: true
-      - if: steps.release.outputs.released == 'true'
+      - env:
+          GITHUB_TOKEN: ${{ secrets.DOTTBOTT_TOKEN }}
+        if: steps.release.outputs.released == 'true'
         name: Tag
         run: |
           git push origin :refs/tags/'v${{ steps.release.outputs.major }}'
