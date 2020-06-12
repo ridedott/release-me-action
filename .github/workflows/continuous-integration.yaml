@@ -9,28 +9,6 @@ on:
       - master
 
 jobs:
-  tag:
-    name: Tag
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-          persist-credentials: false
-      - name: Authenticate
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 1
-          persist-credentials: true
-          token: ${{ secrets.DOTTBOTT_TOKEN }}
-      - name: Tag
-        run: |
-          git config --global user.name '{{ secrets.RIDEDOTT_GITHUB_USER_NAME }}'
-          git config --global user.email '{{ secrets.RIDEDOTT_GITHUB_USER_EMAIL }}'
-          git push origin :refs/tags/'v${{ steps.release.outputs.major }}'
-          git tag 'v${{ steps.release.outputs.major }}' --force
-          git push --tags
   format:
     name: Format
     runs-on: ubuntu-latest
