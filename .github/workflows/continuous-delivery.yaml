@@ -44,6 +44,8 @@ jobs:
         if: steps.release.outputs.released == 'true'
         name: Tag
         run: |
+          git config --global user.name '{{ secrets.RIDEDOTT_GITHUB_USER_NAME }}'
+          git config --global user.email '{{ secrets.RIDEDOTT_GITHUB_USER_EMAIL }}'
           git push origin :refs/tags/'v${{ steps.release.outputs.major }}'
-          git tag --force --annotate 'v${{ steps.release.outputs.major }}'
-          git push origin master --tags
+          git tag 'v${{ steps.release.outputs.major }}' --force
+          git push --tags
