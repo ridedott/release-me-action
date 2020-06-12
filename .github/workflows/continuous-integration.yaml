@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          persist-credentials: true
+          token: ${{ secrets.DOTTBOTT_TOKEN }}
       - name: Tag
         run: |
           git push origin :refs/tags/'v${{ steps.release.outputs.major }}'
