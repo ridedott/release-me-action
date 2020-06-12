@@ -39,13 +39,15 @@ jobs:
           commit-assets: |
             ./dist
           node-module: true
-      - name: Authenticate
+      - if: steps.release.outputs.released == 'true'
+        name: Authenticate
         uses: actions/checkout@v2
         with:
           fetch-depth: 1
           persist-credentials: true
           token: ${{ secrets.DOTTBOTT_TOKEN }}
-      - name: Tag
+      - if: steps.release.outputs.released == 'true'
+        name: Tag
         run: |
           git config --global user.name '{{ secrets.RIDEDOTT_GITHUB_USER_NAME }}'
           git config --global user.email '{{ secrets.RIDEDOTT_GITHUB_USER_EMAIL }}'
