@@ -16,8 +16,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.DOTTBOTT_TOKEN }}
-      - name: Tag
+          fetch-depth: 0
+          persist-credentials: false
+      - env:
+          GITHUB_TOKEN: ${{ secrets.DOTTBOTT_TOKEN }}
+        name: Tag
         run: |
           git config --global user.name '{{ secrets.RIDEDOTT_GITHUB_USER_NAME }}'
           git config --global user.email '{{ secrets.RIDEDOTT_GITHUB_USER_EMAIL }}'
