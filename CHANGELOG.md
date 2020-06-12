@@ -1,3 +1,22 @@
+## [2.2.76](https://github.com/ridedott/release-me-action/compare/v2.2.75...v2.2.76) (2020-06-12)
+
+### Bug Fixes
+
+- persist the correct credentials in the checkout step
+  ([b62ff97](https://github.com/ridedott/release-me-action/commit/b62ff97b3a9b95e438b41eba5997c40b5614bc9b))
+
+### Chores
+
+- **deps-dev:** bump lint-staged from 10.2.9 to 10.2.10
+  ([b9d2119](https://github.com/ridedott/release-me-action/commit/b9d211932be31581c935704b38e4d46b864b898a))
+- tag release-me-action releases with the major version
+  ([c908531](https://github.com/ridedott/release-me-action/commit/c908531df7da3dc46957d665eaad76dfb7f8be54))
+
+### Continuous Integration
+
+- use organisation token in the pipelines
+  ([9c925fc](https://github.com/ridedott/release-me-action/commit/9c925fc7c99ac5d680a5a8529a88becec8cfbafc))
+
 ## [2.2.75](https://github.com/ridedott/release-me-action/compare/v2.2.74...v2.2.75) (2020-06-11)
 
 ### Chores
