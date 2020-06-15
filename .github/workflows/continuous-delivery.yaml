@@ -43,7 +43,7 @@ jobs:
             [
               { "release": "patch", "type": "build" },
               { "release": "patch", "type": "chore", "scope": "deps" },
-              { "release": "patch", "type": "chore", "scope": "deps-dev", "message": "*typescript*" },
+              { "release": "patch", "type": "chore", "scope": "deps-dev", "message": "bump typescript from*" },
               { "release": "patch", "type": "ci" },
               { "release": "patch", "type": "docs" },
               { "release": "patch", "type": "improvement" },
