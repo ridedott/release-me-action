@@ -1,3 +1,10 @@
+## [3.1.2](https://github.com/ridedott/release-me-action/compare/v3.1.1...v3.1.2) (2020-06-15)
+
+### Continuous Integration
+
+- limit releases to only occur on relevant dependency updates
+  ([4378927](https://github.com/ridedott/release-me-action/commit/4378927d59d430d02996a6b61765c0f2cf1470b3))
+
 ## [3.1.1](https://github.com/ridedott/release-me-action/compare/v3.1.0...v3.1.1) (2020-06-15)
 
 ### Chores
