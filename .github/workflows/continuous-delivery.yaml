@@ -45,7 +45,6 @@ jobs:
               { "release": "patch", "type": "chore", "scope": "deps" },
               { "release": "patch", "type": "chore", "scope": "deps-dev", "message": "bump typescript from*" },
               { "release": "patch", "type": "ci" },
-              { "release": "patch", "type": "docs" },
               { "release": "patch", "type": "improvement" },
               { "release": "patch", "type": "refactor" }
             ]
