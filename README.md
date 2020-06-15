@@ -32,9 +32,11 @@ steps:
     name: Release
     uses: ridedott/release-me-action@master
     with:
-      # Configure semantic release to run from a specific branch.
-      # If not specified semantic-release will use its default branches
-      # configuration, as specified in their Javascript API documentation:
+      # Configure Semantic Release branches parameter:
+      # https://semantic-release.gitbook.io/semantic-release/usage/workflow-configuration#branches-properties
+      #
+      # If not specified, Semantic Release will use its default branches
+      # configuration, specified in the API documentation:
       # https://github.com/semantic-release/semantic-release/blob/master/docs/usage/configuration.md#branches
       release-branches: '["+([0-9])?(.{+([0-9]),x}).x","master","next","next-major",{"name":"beta","prerelease":"beta"},{"name":"alpha","prerelease":"alpha"}]',
       # Commit the new line separated glob patterns to the repository as part
@@ -51,6 +53,12 @@ steps:
       # Attach the new line separated listed glob patterns to the release.
       release-assets: |
         ./generated/my-asset.tar.gz
+      # Configure the semantic release commit analyzer rules that are used to
+      # determine the correct release version.
+      # https://www.npmjs.com/package/@semantic-release/commit-analyzer#releaserules
+      release-rules:
+        '[{ "release": "patch", "type": "build" }, { "release": "patch", "type":
+        "chore(deps)" }, { "release": "patch", "type": "chore(deps-dev)" }]'
 ```
 
 **IMPORTANT** `GITHUB_TOKEN` does not have the required permissions to operate
@@ -113,7 +121,7 @@ steps:
     uses: ridedott/release-me-action@master
     with:
       dry-run: true
-      release-branches: 'my-branch'
+      release-branches: '["my-branch"]'
 ```
 
 ## Create a release to a different branch
@@ -125,7 +133,7 @@ steps:
     name: Release
     uses: ridedott/release-me-action@master
     with:
-      release-branches: 'releases'
+      release-branches: '["releases"]'
 ```
 
 ## Create a pre-release release to a channel (e.g. "beta")
@@ -145,7 +153,7 @@ steps:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     uses: ridedott/release-me-action@master
     with:
-      release-branches: '[{"name":"beta","prerelease":true}]',
+      release-branches: '[{"name":"beta","prerelease":"beta"}]',
   - name: Setup Node.js
     uses: actions/setup-node@v1
     with:

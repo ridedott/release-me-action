@@ -1,3 +1,47 @@
+# [3.1.0](https://github.com/ridedott/release-me-action/compare/v3.0.0...v3.1.0) (2020-06-15)
+
+### Features
+
+- implement the ability to configure release rules
+  ([b80b37c](https://github.com/ridedott/release-me-action/commit/b80b37ce67c12ace2509527adc8ce1f99e31f40a))
+
+# [3.0.0](https://github.com/ridedott/release-me-action/compare/v2.2.76...v3.0.0) (2020-06-12)
+
+### Features
+
+- add release branches parameter validation
+  ([ab2c313](https://github.com/ridedott/release-me-action/commit/ab2c3136c1b4be4ad90dc53cd6794e4488d30f20))
+
+### BREAKING CHANGE
+
+- the release-branches input now only accepts a valid JSON string
+
+## [2.2.76](https://github.com/ridedott/release-me-action/compare/v2.2.75...v2.2.76) (2020-06-12)
+
+### Bug Fixes
+
+- persist the correct credentials in the checkout step
+  ([b62ff97](https://github.com/ridedott/release-me-action/commit/b62ff97b3a9b95e438b41eba5997c40b5614bc9b))
+
+### Chores
+
+- **deps-dev:** bump lint-staged from 10.2.9 to 10.2.10
+  ([b9d2119](https://github.com/ridedott/release-me-action/commit/b9d211932be31581c935704b38e4d46b864b898a))
+- tag release-me-action releases with the major version
+  ([c908531](https://github.com/ridedott/release-me-action/commit/c908531df7da3dc46957d665eaad76dfb7f8be54))
+
+### Continuous Integration
+
+- use organisation token in the pipelines
+  ([9c925fc](https://github.com/ridedott/release-me-action/commit/9c925fc7c99ac5d680a5a8529a88becec8cfbafc))
+
+## [2.2.75](https://github.com/ridedott/release-me-action/compare/v2.2.74...v2.2.75) (2020-06-11)
+
+### Chores
+
+- output semantic version breakdown
+  ([be02544](https://github.com/ridedott/release-me-action/commit/be0254415f3d25d52813e5668490a84f5b2c478b))
+
 ## [2.2.74](https://github.com/ridedott/release-me-action/compare/v2.2.73...v2.2.74) (2020-06-10)
 
 ### Chores
