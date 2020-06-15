@@ -39,6 +39,18 @@ jobs:
           commit-assets: |
             ./dist
           node-module: true
+          release-rules: |
+            [
+              { "release": "patch", "type": "build" },
+              { "release": "patch", "type": "chore", "scope": "deps" },
+              { "release": "patch", "type": "chore", "scope": "deps-dev", "message": "bump typescript from*" },
+              { "release": "patch", "type": "chore", "scope": "deps-dev", "message": "bump @zeit/ncc from*" },
+              { "release": false, "type": "chore", "scope": "deps-dev" },
+              { "release": "patch", "type": "chore" },
+              { "release": "patch", "type": "ci" },
+              { "release": "patch", "type": "improvement" },
+              { "release": "patch", "type": "refactor" }
+            ]
       - if: steps.release.outputs.released == 'true'
         name: Authenticate
         uses: actions/checkout@v2
