@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/ridedott/release-me-action/compare/v3.0.0...v3.1.0) (2020-06-15)
+
+### Features
+
+- implement the ability to configure release rules
+  ([b80b37c](https://github.com/ridedott/release-me-action/commit/b80b37ce67c12ace2509527adc8ce1f99e31f40a))
+
 # [3.0.0](https://github.com/ridedott/release-me-action/compare/v2.2.76...v3.0.0) (2020-06-12)
 
 ### Features
