@@ -43,8 +43,8 @@ jobs:
         name: Authenticate
         uses: actions/checkout@v2
         with:
-          fetch-depth: 1
           persist-credentials: true
+          ref: master
           token: ${{ secrets.DOTTBOTT_TOKEN }}
       - if: steps.release.outputs.released == 'true'
         name: Tag
