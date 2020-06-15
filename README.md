@@ -53,11 +53,6 @@ steps:
       # Attach the new line separated listed glob patterns to the release.
       release-assets: |
         ./generated/my-asset.tar.gz
-      # Configure the semantic release branches parameter: https://semantic-release.gitbook.io/semantic-release/usage/workflow-configuration#branches-properties
-      # If not specified semantic-release will use its default branches
-      # configuration, as specified in the Javascript API documentation:
-      # https://github.com/semantic-release/semantic-release/blob/master/docs/usage/configuration.md#branches
-      release-branches: '["+([0-9])?(.{+([0-9]),x}).x","master","next","next-major",{"name":"beta","prerelease":"beta"},{"name":"alpha","prerelease":"alpha"}]'
       # Configure the semantic release commit analyzer rules that are used to
       # determine the correct release version.
       # https://www.npmjs.com/package/@semantic-release/commit-analyzer#releaserules
