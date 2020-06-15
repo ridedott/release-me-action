@@ -1,7 +1,6 @@
 import * as actionsCore from '@actions/core';
 
 import {
-  DEFAULT_RELEASE_RULES,
   processInputCommitAssets,
   processInputDryRun,
   processInputNodeModule,
@@ -170,7 +169,14 @@ describe('processInputReleaseRules', (): void => {
 
     const result = processInputReleaseRules();
 
-    expect(result).toStrictEqual(DEFAULT_RELEASE_RULES);
+    expect(result).toStrictEqual([
+      { release: 'patch', type: 'build' },
+      { release: 'patch', type: 'chore' },
+      { release: 'patch', type: 'ci' },
+      { release: 'patch', type: 'docs' },
+      { release: 'patch', type: 'improvement' },
+      { release: 'patch', type: 'refactor' },
+    ]);
   });
 
   it('returns a valid branches configuration array passed as json-string', (): void => {
