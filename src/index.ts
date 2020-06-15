@@ -8,6 +8,7 @@ import {
   processInputNodeModule,
   processInputReleaseAssets,
   processInputReleaseBranches,
+  processInputReleaseRules,
 } from './utilities/inputProcessors';
 import { installDependencies } from './utilities/installDependencies';
 import { reportResults } from './utilities/outputParsers';
@@ -24,21 +25,6 @@ const parseOptions = {
   mergePattern: /^Merge pull request #(\d+) from (.*)$/,
 };
 
-/**
- * These rules extend the default rules provided by commit-analyzer.
- * Added rules are types supported by commitizen but not supported in standard
- * commit-analyzer. Rules are based on Angular contribution guidelines:
- * https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular#type
- */
-const releaseRulesExtension = [
-  { release: 'patch', type: 'build' },
-  { release: 'patch', type: 'chore' },
-  { release: 'patch', type: 'ci' },
-  { release: 'patch', type: 'docs' },
-  { release: 'patch', type: 'improvement' },
-  { release: 'patch', type: 'refactor' },
-];
-
 const writerOptions = {
   transform,
 };
@@ -51,6 +37,7 @@ export const release = async (): Promise<void> => {
   )) as unknown) as SemanticRelease;
 
   const branches = processInputReleaseBranches();
+  const releaseRules = processInputReleaseRules();
 
   const result: Result = await semanticRelease({
     /* eslint-disable unicorn/prevent-abbreviations */
@@ -62,7 +49,8 @@ export const release = async (): Promise<void> => {
       isNodeModule: processInputNodeModule(),
       releaseAssets: processInputReleaseAssets(),
     }),
-    releaseRules: releaseRulesExtension,
+    preset: 'angular',
+    releaseRules,
     writerOpts: writerOptions,
     /* eslint-enable unicorn/prevent-abbreviations */
   });

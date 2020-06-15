@@ -53,6 +53,12 @@ steps:
       # Attach the new line separated listed glob patterns to the release.
       release-assets: |
         ./generated/my-asset.tar.gz
+      # Configure the semantic release commit analyzer rules that are used to
+      # determine the correct release version.
+      # https://www.npmjs.com/package/@semantic-release/commit-analyzer#releaserules
+      release-rules:
+        '[{ "release": "patch", "type": "build" }, { "release": "patch", "type":
+        "chore(deps)" }, { "release": "patch", "type": "chore(deps-dev)" }]'
 ```
 
 **IMPORTANT** `GITHUB_TOKEN` does not have the required permissions to operate
