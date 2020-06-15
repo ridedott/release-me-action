@@ -39,12 +39,19 @@ jobs:
           commit-assets: |
             ./dist
           node-module: true
+          release-rules:
+            '[ { "release": "patch", "type": "build" }, { "release": "patch",
+            "type": "chore", "scope": "deps" }, { "release": "patch", "type":
+            "chore", "scope": "deps-dev", "message": "*typescript*" }, {
+            "release": "patch", "type": "ci" }, { "release": "patch", "type":
+            "docs" }, { "release": "patch", "type": "improvement" }, {
+            "release": "patch", "type": "refactor" }, ]'
       - if: steps.release.outputs.released == 'true'
         name: Authenticate
         uses: actions/checkout@v2
         with:
-          fetch-depth: 1
           persist-credentials: true
+          ref: master
           token: ${{ secrets.DOTTBOTT_TOKEN }}
       - if: steps.release.outputs.released == 'true'
         name: Tag
