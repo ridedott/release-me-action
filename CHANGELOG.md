@@ -1,3 +1,10 @@
+## [3.1.3](https://github.com/ridedott/release-me-action/compare/v3.1.2...v3.1.3) (2020-06-17)
+
+### Chores
+
+- **deps-dev:** bump lint-staged from 10.2.10 to 10.2.11
+  ([14f391a](https://github.com/ridedott/release-me-action/commit/14f391a819c773d29f95df2c79bdfa081268a102))
+
 ## [3.1.2](https://github.com/ridedott/release-me-action/compare/v3.1.1...v3.1.2) (2020-06-15)
 
 ### Continuous Integration
