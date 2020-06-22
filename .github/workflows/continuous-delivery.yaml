@@ -3,7 +3,7 @@ name: Continuous Delivery
 on:
   push:
     branches:
-      - master
+      - 'test/release-rules'
 
 jobs:
   release:
@@ -34,17 +34,22 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.DOTTBOTT_TOKEN }}
         id: release
         name: Release
-        uses: ridedott/release-me-action@master
+        uses: ridedott/release-me-action@test/release-rules
         with:
           commit-assets: |
             ./dist
+          dry-run: true
           node-module: true
+          release-branches: |
+            [
+              'test/release-rules'
+            ]
           release-rules: |
             [
               { "release": "patch", "type": "build" },
               { "release": "patch", "type": "chore", "scope": "deps" },
-              { "release": "patch", "type": "chore", "scope": "deps-dev", "message": "bump typescript from*" },
-              { "release": "patch", "type": "chore", "scope": "deps-dev", "message": "bump @zeit/ncc from*" },
+              { "release": "patch", "type": "chore", "scope": "deps-dev", "scope": "bump typescript from*" },
+              { "release": "patch", "type": "chore", "scope": "deps-dev", "scope": "bump @zeit/ncc from*" },
               { "release": false, "type": "chore", "scope": "deps-dev" },
               { "release": "patch", "type": "chore" },
               { "release": "patch", "type": "ci" },
