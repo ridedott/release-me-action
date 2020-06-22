@@ -59,7 +59,7 @@ export const release = async (): Promise<void> => {
 };
 
 release().catch((error: Error): void => {
-  console.error(error);
+  console.log(error);
 
   setFailed(JSON.stringify(error));
 });
