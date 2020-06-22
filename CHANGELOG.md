@@ -1,3 +1,10 @@
+## [3.1.5](https://github.com/ridedott/release-me-action/compare/v3.1.4...v3.1.5) (2020-06-22)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/config-conventional from 8.3.4 to 9.0.1
+  ([cfe79f7](https://github.com/ridedott/release-me-action/commit/cfe79f7ae09b45b25775296cd9e3a457881d5dfa))
+
 ## [3.1.4](https://github.com/ridedott/release-me-action/compare/v3.1.3...v3.1.4) (2020-06-22)
 
 ### Chores
