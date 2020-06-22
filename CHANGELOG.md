@@ -1,3 +1,10 @@
+## [3.1.4](https://github.com/ridedott/release-me-action/compare/v3.1.3...v3.1.4) (2020-06-22)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 8.3.5 to 9.0.1
+  ([487d0cf](https://github.com/ridedott/release-me-action/commit/487d0cf8625d9084823953b6f744319988b9f6b3))
+
 ## [3.1.3](https://github.com/ridedott/release-me-action/compare/v3.1.2...v3.1.3) (2020-06-17)
 
 ### Chores
