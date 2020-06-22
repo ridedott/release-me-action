@@ -60,5 +60,6 @@ export const release = async (): Promise<void> => {
 
 release().catch((error: Error): void => {
   console.error(error);
+
   setFailed(JSON.stringify(error));
 });
