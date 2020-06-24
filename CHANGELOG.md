@@ -1,3 +1,10 @@
+## [3.1.8](https://github.com/ridedott/release-me-action/compare/v3.1.7...v3.1.8) (2020-06-24)
+
+### Chores
+
+- **deps-dev:** bump @types/hapi\_\_joi from 17.1.2 to 17.1.3
+  ([de5ce15](https://github.com/ridedott/release-me-action/commit/de5ce15359960b0a3670130643f8b104270c5e65))
+
 ## [3.1.7](https://github.com/ridedott/release-me-action/compare/v3.1.6...v3.1.7) (2020-06-24)
 
 ### Chores
