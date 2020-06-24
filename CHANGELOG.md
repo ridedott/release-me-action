@@ -1,3 +1,10 @@
+## [3.1.9](https://github.com/ridedott/release-me-action/compare/v3.1.8...v3.1.9) (2020-06-24)
+
+### Chores
+
+- **deps-dev:** bump @types/jest from 26.0.0 to 26.0.2
+  ([33e3940](https://github.com/ridedott/release-me-action/commit/33e3940217eaa570ad9f7e43adf230055fe990d5))
+
 ## [3.1.8](https://github.com/ridedott/release-me-action/compare/v3.1.7...v3.1.8) (2020-06-24)
 
 ### Chores
