@@ -37,7 +37,10 @@ export const release = async (): Promise<void> => {
   )) as unknown) as SemanticRelease;
 
   const branches = processInputReleaseBranches();
+  console.log(branches);
+
   const releaseRules = processInputReleaseRules();
+  console.log(releaseRules);
 
   const result: Result = await semanticRelease({
     /* eslint-disable unicorn/prevent-abbreviations */
