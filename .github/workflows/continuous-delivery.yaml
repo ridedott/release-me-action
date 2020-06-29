@@ -47,10 +47,9 @@ jobs:
           release-rules: |
             [
               { "release": "patch", "type": "build" },
-              { "release": "patch", "type": "chore" },
               { "release": "patch", "type": "chore", "scope": "deps-dev", "scope": "bump typescript from*" },
               { "release": "patch", "type": "chore", "scope": "deps-dev", "scope": "bump @zeit/ncc from*" },
-              { "release": false, "type": "chore", "scope": "deps-dev" },
+              { "release": "patch", "type": "chore", "scope": "!(deps-dev)" },
               { "release": "patch", "type": "ci" },
               { "release": "patch", "type": "improvement" },
               { "release": "patch", "type": "refactor" }
