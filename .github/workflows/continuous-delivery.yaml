@@ -42,7 +42,7 @@ jobs:
           node-module: true
           release-branches: |
             [
-              'test/release-rules'
+              "test/release-rules"
             ]
           release-rules: |
             [
