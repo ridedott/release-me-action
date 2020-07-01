@@ -3,7 +3,7 @@ name: Continuous Delivery
 on:
   push:
     branches:
-      - 'test/release-rules-2'
+      - master
 
 jobs:
   release:
@@ -17,33 +17,28 @@ jobs:
           # Fetch all history.
           fetch-depth: 0
           persist-credentials: false
-      #      - name: Setup Node.js
-      #        uses: actions/setup-node@v1
-      #      - name: Cache dependencies
-      #        uses: actions/cache@v1
-      #        with:
-      #          key: npm-${{ hashFiles('package-lock.json') }}
-      #          path: ~/.npm
-      #          restore-keys: |
-      #            npm-
-      #      - name: Install dependencies
-      #        run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
-      #      - name: Build
-      #        run: npm run build
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          key: npm-${{ hashFiles('package-lock.json') }}
+          path: ~/.npm
+          restore-keys: |
+            npm-
+      - name: Install dependencies
+        run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
+      - name: Build
+        run: npm run build
       - env:
           GITHUB_TOKEN: ${{ secrets.DOTTBOTT_TOKEN }}
         id: release
         name: Release
-        uses: ridedott/release-me-action@test/release-rules-2
+        uses: ridedott/release-me-action@master
         with:
           commit-assets: |
             ./dist
-          dry-run: true
           node-module: true
-          release-branches: |
-            [
-              "test/release-rules-2"
-            ]
           release-rules: |
             [
               { "release": "patch", "type": "build" },
@@ -55,19 +50,18 @@ jobs:
               { "release": "patch", "type": "improvement" },
               { "release": "patch", "type": "refactor" }
             ]
-
-#      - if: steps.release.outputs.released == 'true'
-#        name: Authenticate
-#        uses: actions/checkout@v2
-#        with:
-#          fetch-depth: 1
-#          persist-credentials: true
-#          token: ${{ secrets.DOTTBOTT_TOKEN }}
-#      - if: steps.release.outputs.released == 'true'
-#        name: Tag
-#        run: |
-#          git config --global user.name '{{ secrets.DOTTBOTT_USER_NAME }}'
-#          git config --global user.email '{{ secrets.DOTTBOTT_USER_EMAIL }}'
-#          git push origin :refs/tags/'v${{ steps.release.outputs.major }}'
-#          git tag 'v${{ steps.release.outputs.major }}' --force
-#          git push --tags
+      - if: steps.release.outputs.released == 'true'
+        name: Authenticate
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+          persist-credentials: true
+          token: ${{ secrets.DOTTBOTT_TOKEN }}
+      - if: steps.release.outputs.released == 'true'
+        name: Tag
+        run: |
+          git config --global user.name '{{ secrets.DOTTBOTT_USER_NAME }}'
+          git config --global user.email '{{ secrets.DOTTBOTT_USER_EMAIL }}'
+          git push origin :refs/tags/'v${{ steps.release.outputs.major }}'
+          git tag 'v${{ steps.release.outputs.major }}' --force
+          git push --tags
