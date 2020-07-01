@@ -1,3 +1,10 @@
+## [3.1.12](https://github.com/ridedott/release-me-action/compare/v3.1.11...v3.1.12) (2020-07-01)
+
+### Chores
+
+- limit development dependency releases
+  ([d0aa0e7](https://github.com/ridedott/release-me-action/commit/d0aa0e7f05aa9a79e7526330f1eb21eeaba8f82c))
+
 ## [3.1.11](https://github.com/ridedott/release-me-action/compare/v3.1.10...v3.1.11) (2020-06-25)
 
 ### Chores
