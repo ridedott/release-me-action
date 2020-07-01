@@ -17,19 +17,19 @@ jobs:
           # Fetch all history.
           fetch-depth: 0
           persist-credentials: false
-#      - name: Setup Node.js
-#        uses: actions/setup-node@v1
-#      - name: Cache dependencies
-#        uses: actions/cache@v1
-#        with:
-#          key: npm-${{ hashFiles('package-lock.json') }}
-#          path: ~/.npm
-#          restore-keys: |
-#            npm-
-#      - name: Install dependencies
-#        run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
-#      - name: Build
-#        run: npm run build
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+      #      - name: Cache dependencies
+      #        uses: actions/cache@v1
+      #        with:
+      #          key: npm-${{ hashFiles('package-lock.json') }}
+      #          path: ~/.npm
+      #          restore-keys: |
+      #            npm-
+      #      - name: Install dependencies
+      #        run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
+      #      - name: Build
+      #        run: npm run build
       - env:
           GITHUB_TOKEN: ${{ secrets.DOTTBOTT_TOKEN }}
         id: release
@@ -55,6 +55,7 @@ jobs:
               { "release": "patch", "type": "improvement" },
               { "release": "patch", "type": "refactor" }
             ]
+
 #      - if: steps.release.outputs.released == 'true'
 #        name: Authenticate
 #        uses: actions/checkout@v2
