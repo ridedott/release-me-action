@@ -47,8 +47,8 @@ jobs:
           release-rules: |
             [
               { "release": "patch", "type": "build" },
-              { "release": "patch", "type": "chore", "scope": "deps-dev", "subject": "bump typescript from*" },
-              { "release": "patch", "type": "chore", "scope": "deps-dev", "subject": "bump @zeit/ncc from*" },
+              { "release": "patch", "type": "chore", "scope": "deps-dev", "subject": "*typescript*" },
+              { "release": "patch", "type": "chore", "scope": "deps-dev", "subject": "*@zeit/ncc*" },
               { "release": "patch", "type": "chore" },
               { "release": false, "type": "chore", "scope": "deps-dev" },
               { "release": "patch", "type": "ci" },
