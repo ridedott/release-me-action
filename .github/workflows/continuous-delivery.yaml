@@ -3,7 +3,7 @@ name: Continuous Delivery
 on:
   push:
     branches:
-      - 'test/release-rules'
+      - 'test/release-rules-2'
 
 jobs:
   release:
@@ -50,7 +50,7 @@ jobs:
               { "release": "patch", "type": "chore", "scope": "deps-dev", "subject": "*typescript*" },
               { "release": "patch", "type": "chore", "scope": "deps-dev", "subject": "*@zeit/ncc*" },
               { "release": "patch", "type": "chore" },
-              { "release": false, "type": "chore", "scope": "deps-dev" },
+              { "release": false, "type": "chore", "scope": "deps-dev-2" },
               { "release": "patch", "type": "ci" },
               { "release": "patch", "type": "improvement" },
               { "release": "patch", "type": "refactor" }
