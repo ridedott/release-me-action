@@ -1,3 +1,66 @@
+## [3.1.11](https://github.com/ridedott/release-me-action/compare/v3.1.10...v3.1.11) (2020-06-25)
+
+### Chores
+
+- **deps:** bump semantic-release from 17.1.0 to 17.1.1
+  ([e1ae341](https://github.com/ridedott/release-me-action/commit/e1ae341ebe89a739e73c948e0853be83664eaf07))
+
+## [3.1.10](https://github.com/ridedott/release-me-action/compare/v3.1.9...v3.1.10) (2020-06-24)
+
+### Chores
+
+- **deps-dev:** bump @types/jest from 26.0.2 to 26.0.3
+  ([73dd312](https://github.com/ridedott/release-me-action/commit/73dd31278c384e97091504db2d8bb5c820de102f))
+
+## [3.1.9](https://github.com/ridedott/release-me-action/compare/v3.1.8...v3.1.9) (2020-06-24)
+
+### Chores
+
+- **deps-dev:** bump @types/jest from 26.0.0 to 26.0.2
+  ([33e3940](https://github.com/ridedott/release-me-action/commit/33e3940217eaa570ad9f7e43adf230055fe990d5))
+
+## [3.1.8](https://github.com/ridedott/release-me-action/compare/v3.1.7...v3.1.8) (2020-06-24)
+
+### Chores
+
+- **deps-dev:** bump @types/hapi\_\_joi from 17.1.2 to 17.1.3
+  ([de5ce15](https://github.com/ridedott/release-me-action/commit/de5ce15359960b0a3670130643f8b104270c5e65))
+
+## [3.1.7](https://github.com/ridedott/release-me-action/compare/v3.1.6...v3.1.7) (2020-06-24)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 14.0.13 to 14.0.14
+  ([c248020](https://github.com/ridedott/release-me-action/commit/c24802056bc8531fe73a029c3d89097621ea1ca5))
+
+## [3.1.6](https://github.com/ridedott/release-me-action/compare/v3.1.5...v3.1.6) (2020-06-23)
+
+### Chores
+
+- **deps:** bump semantic-release from 17.0.8 to 17.1.0
+  ([5babf85](https://github.com/ridedott/release-me-action/commit/5babf85f27fa61a6ea382f8b7bacffecc386715d))
+
+## [3.1.5](https://github.com/ridedott/release-me-action/compare/v3.1.4...v3.1.5) (2020-06-22)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/config-conventional from 8.3.4 to 9.0.1
+  ([cfe79f7](https://github.com/ridedott/release-me-action/commit/cfe79f7ae09b45b25775296cd9e3a457881d5dfa))
+
+## [3.1.4](https://github.com/ridedott/release-me-action/compare/v3.1.3...v3.1.4) (2020-06-22)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 8.3.5 to 9.0.1
+  ([487d0cf](https://github.com/ridedott/release-me-action/commit/487d0cf8625d9084823953b6f744319988b9f6b3))
+
+## [3.1.3](https://github.com/ridedott/release-me-action/compare/v3.1.2...v3.1.3) (2020-06-17)
+
+### Chores
+
+- **deps-dev:** bump lint-staged from 10.2.10 to 10.2.11
+  ([14f391a](https://github.com/ridedott/release-me-action/commit/14f391a819c773d29f95df2c79bdfa081268a102))
+
 ## [3.1.2](https://github.com/ridedott/release-me-action/compare/v3.1.1...v3.1.2) (2020-06-15)
 
 ### Continuous Integration
