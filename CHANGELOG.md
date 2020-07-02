@@ -1,3 +1,17 @@
+## [3.1.14](https://github.com/ridedott/release-me-action/compare/v3.1.13...v3.1.14) (2020-07-02)
+
+### Bug Fixes
+
+- **skip-release:** resolve incorrect release rules JSON
+  ([5e4198a](https://github.com/ridedott/release-me-action/commit/5e4198a6834098bf7c73a2b0a64a0914d7cb1809))
+
+### Chores
+
+- update Dependabot configuration file
+  ([eb8319e](https://github.com/ridedott/release-me-action/commit/eb8319ee99fa1299a7f0edfd4cce974fe314951f))
+- **skip-release:** facilitate skipping releases
+  ([12df38b](https://github.com/ridedott/release-me-action/commit/12df38bc18eb9ee424a574ff45806b39f183b007))
+
 ## [3.1.13](https://github.com/ridedott/release-me-action/compare/v3.1.12...v3.1.13) (2020-07-02)
 
 ### Chores
