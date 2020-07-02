@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - directory: '/'
+    package-ecosystem: github-actions
+    schedule:
+      interval: daily
+  - allow:
+      - dependency-type: direct
+    commit-message:
+      prefix: chore
+      include: scope
+    directory: '/'
+    open-pull-requests-limit: 99
+    package-ecosystem: npm
+    schedule:
+      interval: daily
+    versioning-strategy: increase
