@@ -1,5 +1,9 @@
 version: 2
 updates:
+  - directory: '/'
+    package-ecosystem: github-actions
+    schedule:
+      interval: daily
   - allow:
       - dependency-type: direct
     commit-message:
