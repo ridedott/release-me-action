@@ -129,7 +129,7 @@ jobs:
       - name: Types
         run: npm run types
   merge-me:
-    name: Auto merge Dependabot updates
+    name: Merge me!
     needs:
       - format
       - lint
@@ -138,7 +138,7 @@ jobs:
       - types
     runs-on: ubuntu-latest
     steps:
-      - name: Auto merge
-        uses: ridedott/dependabot-auto-merge-action@master
+      - name: Merge me!
+        uses: ridedott/merge-me-action@master
         with:
           GITHUB_TOKEN: ${{ secrets.DOTTBOTT_TOKEN }}
