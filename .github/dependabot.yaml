@@ -1,6 +1,10 @@
 version: 2
 updates:
-  - directory: '/'
+  - commit-message:
+      prefix: chore
+      include: scope
+    directory: '/'
+    open-pull-requests-limit: 99
     package-ecosystem: github-actions
     schedule:
       interval: daily
