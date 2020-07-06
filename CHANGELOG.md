@@ -1,3 +1,10 @@
+## [3.1.15](https://github.com/ridedott/release-me-action/compare/v3.1.14...v3.1.15) (2020-07-06)
+
+### Continuous Integration
+
+- update dependabot configuration
+  ([55f7740](https://github.com/ridedott/release-me-action/commit/55f774089945f8ead15d399fae6f9f611238fff7))
+
 ## [3.1.14](https://github.com/ridedott/release-me-action/compare/v3.1.13...v3.1.14) (2020-07-02)
 
 ### Bug Fixes
