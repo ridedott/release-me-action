@@ -141,4 +141,5 @@ jobs:
       - name: Merge me!
         uses: ridedott/merge-me-action@master
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_DOTTBOTT }}
+          GITHUB_LOGIN: dependabot[bot]
+          GITHUB_TOKEN: ${{ secrets.DOTTBOTT_TOKEN }}
