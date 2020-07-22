@@ -1,3 +1,47 @@
+## [3.1.16](https://github.com/ridedott/release-me-action/compare/v3.1.15...v3.1.16) (2020-07-22)
+
+### Chores
+
+- **deps:** bump actions/setup-node from v2.1.0 to v2.1.1
+  ([9c5eedc](https://github.com/ridedott/release-me-action/commit/9c5eedc2f87f709b5282649b83fb1ee917c3b893))
+- **deps:** bump npm from 6.14.3 to 6.14.6
+  ([b3c79b5](https://github.com/ridedott/release-me-action/commit/b3c79b50676bdfb4484ad9ecdbf636001d00a065))
+- **deps-dev:** bump @commitlint/cli from 9.0.1 to 9.1.1
+  ([fe2034d](https://github.com/ridedott/release-me-action/commit/fe2034de5917c08be82d83925880ff4d22796992))
+- **deps-dev:** bump @commitlint/config-conventional from 9.0.1 to 9.1.1
+  ([ef59c95](https://github.com/ridedott/release-me-action/commit/ef59c95806769af93c9b7ac7d17c91217a5b960e))
+- **deps-dev:** bump @types/hapi\_\_joi from 17.1.3 to 17.1.4
+  ([24c3059](https://github.com/ridedott/release-me-action/commit/24c30599743f835db7e3a808691967fa6804021f))
+- **deps-dev:** bump @types/jest from 26.0.3 to 26.0.4
+  ([43b5727](https://github.com/ridedott/release-me-action/commit/43b572751533634159a4cd6b4762ec0f4417e729))
+- **deps-dev:** bump @types/jest from 26.0.4 to 26.0.5
+  ([70a3d7b](https://github.com/ridedott/release-me-action/commit/70a3d7bfba2fc9d5e62cc5905d9eae13308652ba))
+- **deps-dev:** bump @types/node from 14.0.14 to 14.0.18
+  ([9fafa02](https://github.com/ridedott/release-me-action/commit/9fafa020d735efdec1954a72130dd8cd3ec199b5))
+- **deps-dev:** bump @types/node from 14.0.18 to 14.0.19
+  ([31280e3](https://github.com/ridedott/release-me-action/commit/31280e31baa91a836da3b567ecb166f9e14ee3bb))
+- **deps-dev:** bump @types/node from 14.0.19 to 14.0.20
+  ([deca191](https://github.com/ridedott/release-me-action/commit/deca19111abc8514b61b0654aa4cb435b330d33b))
+- **deps-dev:** bump @types/node from 14.0.20 to 14.0.23
+  ([c45c5c7](https://github.com/ridedott/release-me-action/commit/c45c5c7855f7e22e8a8458a4fba82376ee731c50))
+- **deps-dev:** bump @types/node from 14.0.23 to 14.0.24
+  ([2a7b2dd](https://github.com/ridedott/release-me-action/commit/2a7b2dd8d4658e3de5292f5dc7cd0db731d0edfd))
+- **deps-dev:** bump @types/semantic-release from 17.0.1 to 17.1.0
+  ([014d28b](https://github.com/ridedott/release-me-action/commit/014d28bc5aa2a628256c72a4b2ce1e085a3640f4))
+- **deps-dev:** bump typescript from 3.9.6 to 3.9.7
+  ([a54c6a0](https://github.com/ridedott/release-me-action/commit/a54c6a0071c6f1c3caa0f6859268376b0d787484))
+- bump actions/cache from v1 to v2
+  [skip release](<[1c1b921](https://github.com/ridedott/release-me-action/commit/1c1b9212d93580e3d910f47120c6a783526eafa7)>)
+- bump actions/setup-node from v1 to v2.1.0
+  [skip release](<[1645b7e](https://github.com/ridedott/release-me-action/commit/1645b7ea04a1e9b3f6d4f1b25363424d51efe1bb)>)
+- update the merge-me-action configuration to support dependabot
+  [skip release](<[4ab067b](https://github.com/ridedott/release-me-action/commit/4ab067b4ed7e93fb0775ac49918b8a9a619b7b09)>)
+
+### Continuous Integration
+
+- change release rules so that they ignore commits with a specific subject
+  [skip release](<[5d30c72](https://github.com/ridedott/release-me-action/commit/5d30c72b1f2bfd64e4d714706cb89abf25ef7d1f)>)
+
 ## [3.1.15](https://github.com/ridedott/release-me-action/compare/v3.1.14...v3.1.15) (2020-07-06)
 
 ### Continuous Integration
