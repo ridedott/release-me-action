@@ -1,3 +1,10 @@
+## [3.1.17](https://github.com/ridedott/release-me-action/compare/v3.1.16...v3.1.17) (2020-07-23)
+
+### Bug Fixes
+
+- escape brackets
+  ([8da2a35](https://github.com/ridedott/release-me-action/commit/8da2a35ba583de7e174248319736d34e89c4964b))
+
 ## [3.1.16](https://github.com/ridedott/release-me-action/compare/v3.1.15...v3.1.16) (2020-07-22)
 
 ### Chores
