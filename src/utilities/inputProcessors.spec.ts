@@ -176,7 +176,7 @@ describe('processInputReleaseRules', (): void => {
       { release: 'patch', type: 'docs' },
       { release: 'patch', type: 'improvement' },
       { release: 'patch', type: 'refactor' },
-      { release: false, subject: '*\\[skip release\\]*' },
+      { release: false, subject: "*\\[skip release\\]*" },
     ]);
   });
 
