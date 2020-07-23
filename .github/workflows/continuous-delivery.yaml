@@ -49,7 +49,7 @@ jobs:
               { "release": "patch", "type": "ci" },
               { "release": "patch", "type": "improvement" },
               { "release": "patch", "type": "refactor" },
-              { "release": false, "subject": "*[skip release]*" }
+              { "release": false, "subject": "*\\[skip release\\]*" }
             ]
       - if: steps.release.outputs.released == 'true'
         name: Authenticate
