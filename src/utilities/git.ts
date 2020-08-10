@@ -84,6 +84,12 @@ export const gitRepo = async (): Promise<{
   await execa('git', ['config', 'commit.gpgsign', 'false'], {
     cwd: cloneWorkingDirectory,
   });
+  await execa('git', ['config', 'user.email', 'test@ridedott.com'], {
+    cwd: cloneWorkingDirectory,
+  });
+  await execa('git', ['config', 'user.name', 'test@ridedott.com'], {
+    cwd: cloneWorkingDirectory,
+  });
   await execa('npm', ['init', '-y'], { cwd: cloneWorkingDirectory });
   await execa('git', ['add', '--all'], { cwd: cloneWorkingDirectory });
   await gitCommits(['feat: initial commit'], { cwd: cloneWorkingDirectory });
