@@ -28,12 +28,16 @@
     "codeowners",
     "commitlint",
     "editorconfig",
+    "execa",
     "gitignore",
+    "gpgsign",
+    "hardlinks",
     "premajor",
     "preminor",
     "prepatch",
     "prettierignore",
     "prettierrc",
-    "ridedott"
+    "ridedott",
+    "tempy"
   ]
 }
