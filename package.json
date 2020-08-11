@@ -15,10 +15,7 @@
     "@semantic-release/github": "^7.0.7",
     "@semantic-release/npm": "^7.0.5",
     "@semantic-release/release-notes-generator": "^9.0.1",
-    "execa": "^4.0.3",
-    "file-url": "^3.0.0",
-    "semantic-release": "^17.1.1",
-    "tempy": "^0.6.0"
+    "semantic-release": "^17.1.1"
   },
   "description": "GitHub Action for Semantic Release.",
   "devDependencies": {
@@ -34,11 +31,14 @@
     "commitizen": "^4.1.2",
     "cspell": "^4.0.63",
     "eslint": "^7.6.0",
+    "execa": "^4.0.3",
+    "file-url": "^3.0.0",
     "husky": "^4.2.5",
     "jest": "^25.5.4",
     "lint-staged": "^10.2.11",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.5",
+    "tempy": "^0.6.0",
     "ts-jest": "^25.5.1",
     "typescript": "^3.9.7"
   },
