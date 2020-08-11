@@ -46,7 +46,6 @@ export const release = async (
     {
       /* eslint-disable unicorn/prevent-abbreviations */
       ...(branches === undefined ? {} : { branches }),
-      ci: true,
       dryRun: processInputDryRun(),
       parserOpts: parseOptions,
       plugins: generatePlugins({

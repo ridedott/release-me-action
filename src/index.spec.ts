@@ -66,7 +66,9 @@ describe('release', (): void => {
     await gitCommits(['feat: add a minor change'], { cwd });
     await gitPush('origin', 'master', { cwd });
 
-    const configurationOverride = { cwd };
+    const configurationOverride = {
+      cwd,
+    };
 
     const result = await release(optionsOverride, configurationOverride);
 
@@ -89,7 +91,9 @@ describe('release', (): void => {
     );
     await gitPush('origin', 'master', { cwd });
 
-    const configurationOverride = { cwd };
+    const configurationOverride = {
+      cwd,
+    };
 
     const result = await release(optionsOverride, configurationOverride);
 
@@ -109,7 +113,9 @@ describe('release', (): void => {
     await gitCommits(['fix: add a minor change'], { cwd });
     await gitPush('origin', 'master', { cwd });
 
-    const configurationOverride = { cwd };
+    const configurationOverride = {
+      cwd,
+    };
 
     const result = await release(optionsOverride, configurationOverride);
 
@@ -129,7 +135,9 @@ describe('release', (): void => {
     await gitCommits(['perf: add a minor change'], { cwd });
     await gitPush('origin', 'master', { cwd });
 
-    const configurationOverride = { cwd };
+    const configurationOverride = {
+      cwd,
+    };
 
     const result = await release(optionsOverride, configurationOverride);
 
