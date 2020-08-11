@@ -42,6 +42,7 @@ export const release = async (
   const branches = processInputReleaseBranches();
   const releaseRules = processInputReleaseRules();
 
+  /* istanbul ignore next */
   const result: Result = await semanticRelease(
     {
       /* eslint-disable unicorn/prevent-abbreviations */
