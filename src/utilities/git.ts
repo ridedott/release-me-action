@@ -6,12 +6,15 @@ import { directory } from 'tempy';
 /**
  * Initialize local `remote` git repository in a temporary directory.
  */
-export const initGitRemote = async (): Promise<string> => {
+export const initGitRemote = async (): Promise<{
+  cwd: string;
+  remoteRepositoryUrl: string;
+}> => {
   const cwd = directory();
 
   await execa('git', ['init', '--bare'], { cwd });
 
-  return fileUrl(cwd);
+  return { cwd, remoteRepositoryUrl: fileUrl(cwd) };
 };
 
 /**
@@ -77,7 +80,7 @@ export const gitRepo = async (): Promise<{
   cwd: string;
   repositoryUrl: string;
 }> => {
-  const remoteRepositoryUrl = await initGitRemote();
+  const { remoteRepositoryUrl } = await initGitRemote();
 
   const cloneWorkingDirectory = await gitShallowClone(remoteRepositoryUrl);
 
