@@ -146,4 +146,133 @@ describe('release', (): void => {
       expect(result.nextRelease.version).toStrictEqual('1.0.1');
     }
   });
+
+  it('"build" makes a patch release using the default release rules', async (): Promise<
+    void
+  > => {
+    expect.assertions(2);
+
+    // Generate git
+    const { cwd } = await gitRepo();
+    await gitCommits(['build: add a minor change'], { cwd });
+    await gitPush('origin', 'master', { cwd });
+
+    const configurationOverride = {
+      cwd,
+    };
+
+    const result = await release(optionsOverride, configurationOverride);
+
+    if (result !== false) {
+      expect(result.nextRelease.type).toStrictEqual('patch');
+      expect(result.nextRelease.version).toStrictEqual('1.0.1');
+    }
+  });
+
+  it('"ci" makes a patch release using the default release rules', async (): Promise<
+    void
+  > => {
+    expect.assertions(2);
+
+    // Generate git
+    const { cwd } = await gitRepo();
+    await gitCommits(['ci: add a minor change'], { cwd });
+    await gitPush('origin', 'master', { cwd });
+
+    const configurationOverride = {
+      cwd,
+    };
+
+    const result = await release(optionsOverride, configurationOverride);
+
+    if (result !== false) {
+      expect(result.nextRelease.type).toStrictEqual('patch');
+      expect(result.nextRelease.version).toStrictEqual('1.0.1');
+    }
+  });
+
+  it('"docs" makes a patch release using the default release rules', async (): Promise<
+    void
+  > => {
+    expect.assertions(2);
+
+    // Generate git
+    const { cwd } = await gitRepo();
+    await gitCommits(['docs: add a minor change'], { cwd });
+    await gitPush('origin', 'master', { cwd });
+
+    const configurationOverride = {
+      cwd,
+    };
+
+    const result = await release(optionsOverride, configurationOverride);
+
+    if (result !== false) {
+      expect(result.nextRelease.type).toStrictEqual('patch');
+      expect(result.nextRelease.version).toStrictEqual('1.0.1');
+    }
+  });
+
+  it('"improvement" makes a patch release using the default release rules', async (): Promise<
+    void
+  > => {
+    expect.assertions(2);
+
+    // Generate git
+    const { cwd } = await gitRepo();
+    await gitCommits(['improvement: add a minor change'], { cwd });
+    await gitPush('origin', 'master', { cwd });
+
+    const configurationOverride = {
+      cwd,
+    };
+
+    const result = await release(optionsOverride, configurationOverride);
+
+    if (result !== false) {
+      expect(result.nextRelease.type).toStrictEqual('patch');
+      expect(result.nextRelease.version).toStrictEqual('1.0.1');
+    }
+  });
+
+  it('"refactor" makes a patch release using the default release rules', async (): Promise<
+    void
+  > => {
+    expect.assertions(2);
+
+    // Generate git
+    const { cwd } = await gitRepo();
+    await gitCommits(['refactor: add a minor change'], { cwd });
+    await gitPush('origin', 'master', { cwd });
+
+    const configurationOverride = {
+      cwd,
+    };
+
+    const result = await release(optionsOverride, configurationOverride);
+
+    if (result !== false) {
+      expect(result.nextRelease.type).toStrictEqual('patch');
+      expect(result.nextRelease.version).toStrictEqual('1.0.1');
+    }
+  });
+
+  it('makes no release when subject includes skip release', async (): Promise<
+    void
+  > => {
+    expect.assertions(1);
+
+    // Generate git
+    const { cwd } = await gitRepo();
+    await gitCommits(['feat: [skip release]'], { cwd });
+    await gitPush('origin', 'master', { cwd });
+
+    const configurationOverride = {
+      cwd,
+    };
+
+    const result = await release(optionsOverride, configurationOverride);
+
+    expect(result).toStrictEqual(false);
+  });
 });
