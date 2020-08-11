@@ -53,16 +53,15 @@ describe('git utility', (): void => {
     > => {
       expect.assertions(1);
 
-      const { remoteRepositoryUrl } = await initGitRemote();
-      const cloneWorkingDirectory = await gitShallowClone(remoteRepositoryUrl);
+      const { cwd } = await gitRepo();
 
       await gitCommits(['feat: initial commit'], {
-        cwd: cloneWorkingDirectory,
+        cwd,
       });
 
       const commitMessage = (
         await execa('git', ['log', '-1', '--pretty=%s'], {
-          cwd: cloneWorkingDirectory,
+          cwd,
         })
       ).stdout;
 
@@ -74,17 +73,16 @@ describe('git utility', (): void => {
     > => {
       expect.assertions(1);
 
-      const { remoteRepositoryUrl } = await initGitRemote();
-      const cloneWorkingDirectory = await gitShallowClone(remoteRepositoryUrl);
+      const { cwd } = await gitRepo();
 
       await gitCommits(
         ['feat: initial commit', 'feat: second commit', 'feat: third commit'],
-        { cwd: cloneWorkingDirectory },
+        { cwd },
       );
 
       const commitMessages = (
         await execa('git', ['log', '-3', '--pretty=%s'], {
-          cwd: cloneWorkingDirectory,
+          cwd,
         })
       ).stdout;
 
@@ -102,27 +100,20 @@ describe('git utility', (): void => {
     > => {
       expect.assertions(1);
 
-      const { remoteRepositoryUrl } = await initGitRemote();
-      const cloneWorkingDirectory = await gitShallowClone(remoteRepositoryUrl);
+      const { cwd } = await gitRepo();
 
-      await gitCommits(['feat: initial commit'], {
-        cwd: cloneWorkingDirectory,
+      await gitCommits(['feat: second commit'], {
+        cwd,
       });
-      await gitTagVersion('v1.0.0', { cwd: cloneWorkingDirectory });
-
-      const reference = (
-        await execa('git', ['rev-list', '--tags', '--max-count=1)'], {
-          cwd: cloneWorkingDirectory,
-        })
-      ).stdout;
+      await gitTagVersion('v1.1.0', { cwd });
 
       const tagName = (
-        await execa('git', ['describe', '--tags', reference], {
-          cwd: cloneWorkingDirectory,
+        await execa('git', ['describe', '--tags'], {
+          cwd,
         })
       ).stdout;
 
-      expect(tagName).toStrictEqual('v1.0.0');
+      expect(tagName).toContain('v1.1.0');
     });
   });
 
@@ -158,14 +149,8 @@ describe('git utility', (): void => {
         })
       ).stdout;
 
-      const reference = (
-        await execa('git', ['rev-list', '--tags', '--max-count=1)'], {
-          cwd,
-        })
-      ).stdout;
-
       const tagName = (
-        await execa('git', ['describe', '--tags', reference], {
+        await execa('git', ['describe', '--tags'], {
           cwd,
         })
       ).stdout;
@@ -174,7 +159,7 @@ describe('git utility', (): void => {
       expect(configurationUserName).toStrictEqual('test@ridedott.com');
       expect(configurationUserEmail).toStrictEqual('test@ridedott.com');
       expect(configurationGpgSign).toStrictEqual('false');
-      expect(tagName).toStrictEqual('v1.0.0');
+      expect(tagName).toContain('v1.0.0');
     });
   });
 
@@ -190,6 +175,15 @@ describe('git utility', (): void => {
       } = await initGitRemote();
       const cloneWorkingDirectory = await gitShallowClone(remoteRepositoryUrl);
 
+      await execa('git', ['config', 'user.email', 'test@ridedott.com'], {
+        cwd: cloneWorkingDirectory,
+      });
+      await execa('git', ['config', 'user.name', 'test@ridedott.com'], {
+        cwd: cloneWorkingDirectory,
+      });
+      await execa('git', ['config', 'commit.gpgsign', 'false'], {
+        cwd: cloneWorkingDirectory,
+      });
       await gitCommits(['feat: initial commit'], {
         cwd: cloneWorkingDirectory,
       });

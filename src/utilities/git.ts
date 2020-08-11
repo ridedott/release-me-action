@@ -84,13 +84,13 @@ export const gitRepo = async (): Promise<{
 
   const cloneWorkingDirectory = await gitShallowClone(remoteRepositoryUrl);
 
-  await execa('git', ['config', 'commit.gpgsign', 'false'], {
-    cwd: cloneWorkingDirectory,
-  });
   await execa('git', ['config', 'user.email', 'test@ridedott.com'], {
     cwd: cloneWorkingDirectory,
   });
   await execa('git', ['config', 'user.name', 'test@ridedott.com'], {
+    cwd: cloneWorkingDirectory,
+  });
+  await execa('git', ['config', 'commit.gpgsign', 'false'], {
     cwd: cloneWorkingDirectory,
   });
   await execa('npm', ['init', '-y'], { cwd: cloneWorkingDirectory });
@@ -102,21 +102,6 @@ export const gitRepo = async (): Promise<{
   });
 
   return { cwd: cloneWorkingDirectory, repositoryUrl: remoteRepositoryUrl };
-};
-
-/**
- * Checkout a branch on the git repository present in the `cwd` option.
- */
-export const gitCheckout = async (
-  branch: string,
-  create: boolean,
-  execaOptions: execa.Options,
-): Promise<void> => {
-  await execa(
-    'git',
-    create ? ['checkout', '-b', branch] : ['checkout', branch],
-    execaOptions,
-  );
 };
 
 /**
