@@ -69,5 +69,5 @@ export const release = async (
 release()
   .then(reportResults)
   .catch((error: Error): void => {
-  setFailed(JSON.stringify(error));
-});
+    setFailed(JSON.stringify(error));
+  });
