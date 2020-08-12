@@ -12,6 +12,6 @@ module.exports = {
   },
   preset: 'ts-jest',
   resetMocks: true,
-  roots: ['<rootDir>/src'],
+  roots: ['<rootDir>/src', '<rootDir>/__mocks__'],
   testEnvironment: 'node',
 };

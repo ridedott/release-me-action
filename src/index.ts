@@ -29,7 +29,10 @@ const writerOptions = {
   transform,
 };
 
-export const release = async (): Promise<void> => {
+export const release = async (
+  overrideOptions?: Options,
+  overrideConfig?: Config,
+): Promise<Result> => {
   await installDependencies();
 
   const semanticRelease = ((await import(
@@ -39,25 +42,32 @@ export const release = async (): Promise<void> => {
   const branches = processInputReleaseBranches();
   const releaseRules = processInputReleaseRules();
 
-  const result: Result = await semanticRelease({
-    /* eslint-disable unicorn/prevent-abbreviations */
-    ...(branches === undefined ? {} : { branches }),
-    dryRun: processInputDryRun(),
-    parserOpts: parseOptions,
-    plugins: generatePlugins({
-      commitAssets: processInputCommitAssets(),
-      isNodeModule: processInputNodeModule(),
-      releaseAssets: processInputReleaseAssets(),
-    }),
-    preset: 'angular',
-    releaseRules,
-    writerOpts: writerOptions,
-    /* eslint-enable unicorn/prevent-abbreviations */
-  });
+  /* istanbul ignore next */
+  const result: Result = await semanticRelease(
+    {
+      /* eslint-disable unicorn/prevent-abbreviations */
+      ...(branches === undefined ? {} : { branches }),
+      dryRun: processInputDryRun(),
+      parserOpts: parseOptions,
+      plugins: generatePlugins({
+        commitAssets: processInputCommitAssets(),
+        isNodeModule: processInputNodeModule(),
+        releaseAssets: processInputReleaseAssets(),
+      }),
+      preset: 'angular',
+      releaseRules,
+      writerOpts: writerOptions,
+      ...(overrideOptions === undefined ? {} : overrideOptions),
+      /* eslint-enable unicorn/prevent-abbreviations */
+    },
+    { ...(overrideConfig === undefined ? {} : overrideConfig) },
+  );
 
-  reportResults(result);
+  return result;
 };
 
-release().catch((error: Error): void => {
-  setFailed(JSON.stringify(error));
-});
+release()
+  .then(reportResults)
+  .catch((error: Error): void => {
+    setFailed(JSON.stringify(error));
+  });

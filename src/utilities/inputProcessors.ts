@@ -2,7 +2,7 @@ import { getInput } from '@actions/core';
 import * as joi from '@hapi/joi';
 import { BranchSpec } from 'semantic-release';
 
-enum InputParameters {
+export enum InputParameters {
   CommitAssets = 'commit-assets',
   DryRun = 'dry-run',
   NodeModule = 'node-module',
