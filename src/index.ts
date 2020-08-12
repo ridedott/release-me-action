@@ -63,11 +63,11 @@ export const release = async (
     { ...(overrideConfig === undefined ? {} : overrideConfig) },
   );
 
-  reportResults(result);
-
   return result;
 };
 
-release().catch((error: Error): void => {
+release()
+  .then(reportResults)
+  .catch((error: Error): void => {
   setFailed(JSON.stringify(error));
 });
