@@ -21,7 +21,7 @@
   "devDependencies": {
     "@commitlint/cli": "^9.1.2",
     "@commitlint/config-conventional": "^9.1.2",
-    "@ridedott/eslint-config": "^2.2.7",
+    "@ridedott/eslint-config": "^2.2.9",
     "@types/conventional-changelog-writer": "^4.0.0",
     "@types/hapi__joi": "^17.1.4",
     "@types/jest": "^26.0.10",
