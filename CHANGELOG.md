@@ -1,3 +1,81 @@
+## [3.1.18](https://github.com/ridedott/release-me-action/compare/v3.1.17...v3.1.18) (2020-08-27)
+
+### Chores
+
+- **deps:** bump @actions/core from 1.2.4 to 1.2.5
+  ([af855f3](https://github.com/ridedott/release-me-action/commit/af855f3ab71ab6a46980f31fe491bd4b4767bdf4))
+- **deps-dev:** bump @commitlint/cli from 9.1.1 to 9.1.2
+  ([6cc17f6](https://github.com/ridedott/release-me-action/commit/6cc17f689bfb7231682ab7525b2ea8c82eb56d1c))
+- **deps-dev:** bump @commitlint/config-conventional from 9.1.1 to 9.1.2
+  ([881a346](https://github.com/ridedott/release-me-action/commit/881a3460414e36db535641bcaa417c8e7d5537c7))
+- **deps-dev:** bump @ridedott/eslint-config from 1.1.44 to 2.1.21
+  ([37983b3](https://github.com/ridedott/release-me-action/commit/37983b3a6dac16ec1c6ff9b2855a9a7a6d8f2d4a))
+- **deps-dev:** bump @ridedott/eslint-config from 2.1.21 to 2.1.22
+  ([d19449d](https://github.com/ridedott/release-me-action/commit/d19449dabdb9753bfbaa44027e5359dedc6ad129))
+- **deps-dev:** bump @ridedott/eslint-config from 2.1.22 to 2.1.23
+  ([33ad875](https://github.com/ridedott/release-me-action/commit/33ad875f7c0d9f6861c7d5aa48ddc84341eaa1bd))
+- **deps-dev:** bump @ridedott/eslint-config from 2.1.23 to 2.1.24
+  ([0cca5ba](https://github.com/ridedott/release-me-action/commit/0cca5ba5eb5bd8348150a6b421ae41ab9fa64a7d))
+- **deps-dev:** bump @ridedott/eslint-config from 2.1.24 to 2.1.25
+  ([dd4e2d3](https://github.com/ridedott/release-me-action/commit/dd4e2d3aec9689717d6246a2c6a5d71a5163cff2))
+- **deps-dev:** bump @ridedott/eslint-config from 2.1.25 to 2.1.26
+  ([4515600](https://github.com/ridedott/release-me-action/commit/4515600953466b97de908035ad7ee5f930535fcd))
+- **deps-dev:** bump @ridedott/eslint-config from 2.1.26 to 2.1.28
+  ([cb003a2](https://github.com/ridedott/release-me-action/commit/cb003a255161a8d7dbb11554fb2fe48ad88dbf2f))
+- **deps-dev:** bump @ridedott/eslint-config from 2.1.28 to 2.2.1
+  ([d8df6b0](https://github.com/ridedott/release-me-action/commit/d8df6b0967767354da14ae153e1e6e02120b3e5d))
+- **deps-dev:** bump @ridedott/eslint-config from 2.2.1 to 2.2.2
+  ([a0b5fba](https://github.com/ridedott/release-me-action/commit/a0b5fba0c159efc7c3f75041ad001b54333a32b5))
+- **deps-dev:** bump @ridedott/eslint-config from 2.2.2 to 2.2.4
+  ([2fe5501](https://github.com/ridedott/release-me-action/commit/2fe55012201bf1b25cec90bf0be52aae2fbb74de))
+- **deps-dev:** bump @ridedott/eslint-config from 2.2.4 to 2.2.6
+  ([b1fc6af](https://github.com/ridedott/release-me-action/commit/b1fc6afaeefb7458fe1b45ab9470b75afe814038))
+- **deps-dev:** bump @ridedott/eslint-config from 2.2.6 to 2.2.7
+  ([15d5fee](https://github.com/ridedott/release-me-action/commit/15d5fee406a3eb4580209dc6c456d9bd37bc724e))
+- **deps-dev:** bump @ridedott/eslint-config from 2.2.7 to 2.2.9
+  ([c017308](https://github.com/ridedott/release-me-action/commit/c017308130ec2385202d10722c03515632838426))
+- **deps-dev:** bump @types/jest from 26.0.5 to 26.0.7
+  ([d787b17](https://github.com/ridedott/release-me-action/commit/d787b1788bf48e1e59a4ba39f18bbcce1553589d))
+- **deps-dev:** bump @types/jest from 26.0.7 to 26.0.8
+  ([4d350f1](https://github.com/ridedott/release-me-action/commit/4d350f17fb8ebca7a5c502e573daeea932e4c166))
+- **deps-dev:** bump @types/jest from 26.0.8 to 26.0.9
+  ([53edf0d](https://github.com/ridedott/release-me-action/commit/53edf0d4bc0687abaa25dac2a62ab42576c18a2e))
+- **deps-dev:** bump @types/jest from 26.0.9 to 26.0.10
+  ([b02b42c](https://github.com/ridedott/release-me-action/commit/b02b42cba023cad903bc73b726fad3237bfa869d))
+- **deps-dev:** bump @types/node from 14.0.24 to 14.0.25
+  ([7def85d](https://github.com/ridedott/release-me-action/commit/7def85d998c80b27e95388d27776242d2eaa1c7f))
+- **deps-dev:** bump @types/node from 14.0.25 to 14.0.26
+  ([920e308](https://github.com/ridedott/release-me-action/commit/920e3083a8eda2f25426d84c7365aadde8d62d02))
+- **deps-dev:** bump @types/node from 14.0.26 to 14.0.27
+  ([4d3c635](https://github.com/ridedott/release-me-action/commit/4d3c63507f492a3304d9a59c9491edf839ad4305))
+- **deps-dev:** bump @types/node from 14.0.27 to 14.6.0
+  ([213885c](https://github.com/ridedott/release-me-action/commit/213885c94bff17c9b7bcacc44b81a80f12d0d742))
+- **deps-dev:** bump commitizen from 4.1.2 to 4.1.5
+  ([1c8e628](https://github.com/ridedott/release-me-action/commit/1c8e6285f563e310764753c9231deeb8a5a00248))
+- **deps-dev:** bump commitizen from 4.1.5 to 4.2.0
+  ([c0a82d0](https://github.com/ridedott/release-me-action/commit/c0a82d0bd9e31cfc63a96fc661c126971076a638))
+- **deps-dev:** bump commitizen from 4.2.0 to 4.2.1
+  ([b171a0a](https://github.com/ridedott/release-me-action/commit/b171a0a70f837f0b7faa4ca138f7080b5ee7a467))
+- **deps-dev:** bump cspell from 4.0.63 to 4.1.0
+  ([1e0ee76](https://github.com/ridedott/release-me-action/commit/1e0ee76319104b67fc54a5c56045acf6a7087552))
+- **deps-dev:** bump eslint from 6.8.0 to 7.5.0
+  ([5c92b28](https://github.com/ridedott/release-me-action/commit/5c92b28bc35e1fa5a284fc6f32c3365fa2c207ed))
+- **deps-dev:** bump eslint from 7.5.0 to 7.6.0
+  ([bbb7fc0](https://github.com/ridedott/release-me-action/commit/bbb7fc05f12cd30eb0c17ecfe038da56f7efb3cf))
+- **deps-dev:** bump eslint from 7.6.0 to 7.7.0
+  ([8449ed8](https://github.com/ridedott/release-me-action/commit/8449ed8e096e8819d19b8552fd50b84aa74c9cbd))
+- **deps-dev:** bump lint-staged from 10.2.11 to 10.2.13
+  ([bc0347f](https://github.com/ridedott/release-me-action/commit/bc0347f9b7f53740f3715553b52c0079bfa6ded9))
+- **deps-dev:** bump prettier from 2.0.5 to 2.1.0
+  ([bb5dd6f](https://github.com/ridedott/release-me-action/commit/bb5dd6f96556b65896e5d0208b54bc2544458ce1))
+- **deps-dev:** bump prettier from 2.1.0 to 2.1.1
+  ([632e5c9](https://github.com/ridedott/release-me-action/commit/632e5c9b64bfaf1d38ede0cefc5629c242127558))
+
+### Tests
+
+- add tests for the release output
+  ([ef8b86e](https://github.com/ridedott/release-me-action/commit/ef8b86ed5c21137e87ef00b140f3cfce3643660b))
+
 ## [3.1.17](https://github.com/ridedott/release-me-action/compare/v3.1.16...v3.1.17) (2020-07-23)
 
 ### Bug Fixes

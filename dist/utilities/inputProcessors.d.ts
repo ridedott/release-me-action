@@ -1,4 +1,12 @@
 import { BranchSpec } from 'semantic-release';
+export declare enum InputParameters {
+    CommitAssets = "commit-assets",
+    DryRun = "dry-run",
+    NodeModule = "node-module",
+    ReleaseAssets = "release-assets",
+    ReleaseBranches = "release-branches",
+    ReleaseRules = "release-rules"
+}
 interface ReleaseRule {
     release: string | false;
     scope?: string;
