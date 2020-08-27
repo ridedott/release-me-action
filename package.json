@@ -5,7 +5,7 @@
     }
   },
   "dependencies": {
-    "@actions/core": "^1.2.4",
+    "@actions/core": "^1.2.5",
     "@actions/exec": "^1.0.4",
     "@hapi/joi": "^17.1.1",
     "@semantic-release/changelog": "^5.0.1",
