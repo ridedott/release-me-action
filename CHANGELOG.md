@@ -1,3 +1,28 @@
+## [3.1.19](https://github.com/ridedott/release-me-action/compare/v3.1.18...v3.1.19) (2020-09-07)
+
+### Chores
+
+- **deps:** bump @semantic-release/npm from 7.0.5 to 7.0.6
+  ([c51ceba](https://github.com/ridedott/release-me-action/commit/c51cebac289fed62aa1b0c3128f6bae2c44b1664))
+- **deps-dev:** bump @types/jest from 26.0.10 to 26.0.12
+  ([43d3bb6](https://github.com/ridedott/release-me-action/commit/43d3bb6577ce399dffcd8c79cf83a003af89d938))
+- **deps-dev:** bump @types/jest from 26.0.12 to 26.0.13
+  ([5f1cad1](https://github.com/ridedott/release-me-action/commit/5f1cad1b18464da8860db1356810659440b46785))
+- **deps-dev:** bump @types/node from 14.6.0 to 14.6.1
+  ([cb376eb](https://github.com/ridedott/release-me-action/commit/cb376eb3db6d08a5a0c3e5600359701483ee6e2f))
+- **deps-dev:** bump @types/node from 14.6.1 to 14.6.2
+  ([5615d89](https://github.com/ridedott/release-me-action/commit/5615d89d7547444b5ee593630f263a3c0b452406))
+- **deps-dev:** bump @types/node from 14.6.2 to 14.6.3
+  ([1f2f853](https://github.com/ridedott/release-me-action/commit/1f2f8533f395643a970c54d9ad63ecbeba20e1bc))
+- **deps-dev:** bump @types/node from 14.6.3 to 14.6.4
+  ([82a1566](https://github.com/ridedott/release-me-action/commit/82a156623b14217c962892d223a1748f4e1ea601))
+- **deps-dev:** bump eslint from 7.7.0 to 7.8.0
+  ([97dafdd](https://github.com/ridedott/release-me-action/commit/97dafdd7601e2da46059e60d25eeef86cc7dbd50))
+- **deps-dev:** bump eslint from 7.8.0 to 7.8.1
+  ([d65633b](https://github.com/ridedott/release-me-action/commit/d65633b87def36674e73c13b6fcbeb1d0f4ef7e7))
+- **deps-dev:** bump lint-staged from 10.2.13 to 10.3.0
+  ([82f552e](https://github.com/ridedott/release-me-action/commit/82f552eef6ad4761f802af712801aa8320b8f39e))
+
 ## [3.1.18](https://github.com/ridedott/release-me-action/compare/v3.1.17...v3.1.18) (2020-08-27)
 
 ### Chores
