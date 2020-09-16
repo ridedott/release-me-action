@@ -32,6 +32,7 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
       - name: Format
         run: npm run format
+    timeout-minutes: 5
   lint:
     name: Lint
     runs-on: ubuntu-latest
@@ -55,6 +56,7 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
       - name: Lint
         run: npm run lint
+    timeout-minutes: 5
   spellcheck:
     name: Spellcheck
     runs-on: ubuntu-latest
@@ -78,6 +80,7 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
       - name: Spellcheck
         run: npm run spellcheck
+    timeout-minutes: 5
   test:
     name: Test
     runs-on: ubuntu-latest
@@ -105,6 +108,7 @@ jobs:
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+    timeout-minutes: 5
   types:
     name: Types
     runs-on: ubuntu-latest
@@ -128,6 +132,7 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
       - name: Types
         run: npm run types
+    timeout-minutes: 5
   merge-me:
     name: Merge me!
     needs:
@@ -143,3 +148,4 @@ jobs:
         with:
           GITHUB_LOGIN: dependabot[bot]
           GITHUB_TOKEN: ${{ secrets.DOTTBOTT_TOKEN }}
+    timeout-minutes: 5

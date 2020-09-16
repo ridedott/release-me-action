@@ -66,3 +66,4 @@ jobs:
           git push origin :refs/tags/'v${{ steps.release.outputs.major }}'
           git tag 'v${{ steps.release.outputs.major }}' --force
           git push --tags
+    timeout-minutes: 10
