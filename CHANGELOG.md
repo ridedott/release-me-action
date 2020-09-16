@@ -1,3 +1,31 @@
+## [3.1.21](https://github.com/ridedott/release-me-action/compare/v3.1.20...v3.1.21) (2020-09-16)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 9.1.2 to 11.0.0
+  ([0815c61](https://github.com/ridedott/release-me-action/commit/0815c6115b2081a0e3cbdadeaab6a745fc55ef8a))
+- **deps-dev:** bump @commitlint/config-conventional from 9.1.2 to 11.0.0
+  ([1ea76ab](https://github.com/ridedott/release-me-action/commit/1ea76ab92536dd411de02c17c6c4d33664317f4d))
+- **deps-dev:** bump @types/node from 14.10.0 to 14.10.1
+  ([37e0a6a](https://github.com/ridedott/release-me-action/commit/37e0a6af7eabf1811745a0b0a3603669e5ed34bb))
+- **deps-dev:** bump @types/node from 14.10.1 to 14.10.2
+  ([759f5bc](https://github.com/ridedott/release-me-action/commit/759f5bcc020df73e4d6246a21e20a93e1fcd9cda))
+- **deps-dev:** bump @types/node from 14.6.4 to 14.10.0
+  ([17dc133](https://github.com/ridedott/release-me-action/commit/17dc1332ec68fe3536d53557aaed43b1a3409c69))
+- **deps-dev:** bump eslint from 7.8.1 to 7.9.0
+  ([59caa13](https://github.com/ridedott/release-me-action/commit/59caa1389a8f1803550f1a0ea67f1800b9f05763))
+- **deps-dev:** bump husky from 4.2.5 to 4.3.0
+  ([3d3056d](https://github.com/ridedott/release-me-action/commit/3d3056d7444afbce1b8535f562fc2021bcbb3fdd))
+- **deps-dev:** bump prettier from 2.1.1 to 2.1.2
+  ([95a5ac8](https://github.com/ridedott/release-me-action/commit/95a5ac8d700b55972ae2a3568fcdb4e61c42fbbe))
+- **deps-dev:** bump tempy from 0.6.0 to 0.7.0
+  ([43a18fd](https://github.com/ridedott/release-me-action/commit/43a18fd8e558310f5683863bf4956c59feced808))
+
+### Continuous Integration
+
+- add timeout on every job
+  ([67a7b5a](https://github.com/ridedott/release-me-action/commit/67a7b5a639acff03556601c1ed69e941da6974e4))
+
 ## [3.1.20](https://github.com/ridedott/release-me-action/compare/v3.1.19...v3.1.20) (2020-09-08)
 
 ### Chores
