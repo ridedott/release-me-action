@@ -1,3 +1,16 @@
+## [3.1.23](https://github.com/ridedott/release-me-action/compare/v3.1.22...v3.1.23) (2020-09-24)
+
+### Chores
+
+- **deps:** bump @actions/core from 1.2.5 to 1.2.6
+  ([376f7d9](https://github.com/ridedott/release-me-action/commit/376f7d9ae0533568f66a01ebbc628d3c5863b0a3))
+- **deps-dev:** bump @types/hapi\_\_joi from 17.1.4 to 17.1.5
+  ([9580643](https://github.com/ridedott/release-me-action/commit/95806439403bc2761cbe9742d53ec4e69f7a2ca6))
+- **deps-dev:** bump @types/jest from 26.0.13 to 26.0.14
+  ([a6f88b5](https://github.com/ridedott/release-me-action/commit/a6f88b57dbad276a430948d2c5bcfdfade8f2241))
+- **deps-dev:** bump @types/node from 14.11.1 to 14.11.2
+  ([45319c8](https://github.com/ridedott/release-me-action/commit/45319c8daa7f2573847e706fee1fd1130ebd5124))
+
 ## [3.1.22](https://github.com/ridedott/release-me-action/compare/v3.1.21...v3.1.22) (2020-09-18)
 
 ### Chores
