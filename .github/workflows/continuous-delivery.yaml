@@ -18,7 +18,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Setup Node.js
-        uses: actions/setup-node@v2.1.1
+        uses: actions/setup-node@v2.1.2
       - name: Cache dependencies
         uses: actions/cache@v2
         with:
