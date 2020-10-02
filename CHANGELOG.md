@@ -1,3 +1,16 @@
+## [3.1.24](https://github.com/ridedott/release-me-action/compare/v3.1.23...v3.1.24) (2020-10-02)
+
+### Chores
+
+- **deps:** bump actions/setup-node from v2.1.1 to v2.1.2
+  ([85b8ff1](https://github.com/ridedott/release-me-action/commit/85b8ff16059abfcae3855fb56e70df42d61aefc0))
+- **deps-dev:** bump @types/hapi\_\_joi from 17.1.5 to 17.1.6
+  ([8c154f9](https://github.com/ridedott/release-me-action/commit/8c154f98f3cd6b68a810b43a268225efb3b9530f))
+- **deps-dev:** bump eslint from 7.9.0 to 7.10.0
+  ([afc1c0c](https://github.com/ridedott/release-me-action/commit/afc1c0c285ea03fd785c987e88133c0d75294d76))
+- **deps-dev:** bump tempy from 0.7.0 to 0.7.1
+  ([4713300](https://github.com/ridedott/release-me-action/commit/47133008e2ffc874da12b052b4cdf3feb695100c))
+
 ## [3.1.23](https://github.com/ridedott/release-me-action/compare/v3.1.22...v3.1.23) (2020-09-24)
 
 ### Chores
