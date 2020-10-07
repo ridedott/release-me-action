@@ -1,3 +1,17 @@
+# [3.2.0](https://github.com/ridedott/release-me-action/compare/v3.1.24...v3.2.0) (2020-10-07)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 14.11.2 to 14.11.4
+  ([15e435c](https://github.com/ridedott/release-me-action/commit/15e435cdec4c04e367dec00b2c69b9a57bd15776))
+- **deps-dev:** bump @types/node from 14.11.4 to 14.11.5
+  ([f6ca1b6](https://github.com/ridedott/release-me-action/commit/f6ca1b6dcf3db3e3dbc06f3c5a5bf9f29072005b))
+
+### Features
+
+- enable logHeapUsage jest option
+  ([1272670](https://github.com/ridedott/release-me-action/commit/12726702780d8fb9da69ddb3c486feeb22602351))
+
 ## [3.1.24](https://github.com/ridedott/release-me-action/compare/v3.1.23...v3.1.24) (2020-10-02)
 
 ### Chores
