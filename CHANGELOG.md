@@ -1,3 +1,15 @@
+## [3.2.1](https://github.com/ridedott/release-me-action/compare/v3.2.0...v3.2.1) (2020-10-09)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 14.11.5 to 14.11.7
+  ([a6a2bd7](https://github.com/ridedott/release-me-action/commit/a6a2bd70adad267e2d42fdfe67f8981ba5856152))
+
+### Continuous Integration
+
+- cache only the top level package-lock
+  ([84981d1](https://github.com/ridedott/release-me-action/commit/84981d121787483191992b91d6995b5f19581a6d))
+
 # [3.2.0](https://github.com/ridedott/release-me-action/compare/v3.1.24...v3.2.0) (2020-10-07)
 
 ### Chores
