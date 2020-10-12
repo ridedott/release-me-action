@@ -1,3 +1,14 @@
+## [3.2.2](https://github.com/ridedott/release-me-action/compare/v3.2.1...v3.2.2) (2020-10-12)
+
+### Chores
+
+- **deps:** bump semantic-release from 17.1.2 to 17.2.0
+  ([7142f17](https://github.com/ridedott/release-me-action/commit/7142f17c57b74fc16383681c5f8db597d1c1c066))
+- **deps-dev:** bump @types/node from 14.11.7 to 14.11.8
+  ([ec68a69](https://github.com/ridedott/release-me-action/commit/ec68a69903a93f8b22ae483320be520532f61934))
+- **deps-dev:** bump eslint from 7.10.0 to 7.11.0
+  ([bed86d8](https://github.com/ridedott/release-me-action/commit/bed86d82b2623e4437161b433fe65c841e8005ff))
+
 ## [3.2.1](https://github.com/ridedott/release-me-action/compare/v3.2.0...v3.2.1) (2020-10-09)
 
 ### Chores
