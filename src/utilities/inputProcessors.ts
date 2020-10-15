@@ -80,7 +80,7 @@ const parseFileList = (input: string): string[] =>
 const parseInputReleaseBranches = (input: string): BranchSpec[] => {
   try {
     return JSON.parse(input) as BranchSpec[];
-  } catch (error) {
+  } catch (error: unknown) {
     throw new Error(
       'Invalid JSON string for input parameter release-branches.',
     );
@@ -90,7 +90,7 @@ const parseInputReleaseBranches = (input: string): BranchSpec[] => {
 const parseInputReleaseRules = (input: string): ReleaseRule[] => {
   try {
     return JSON.parse(input) as ReleaseRule[];
-  } catch (error) {
+  } catch (error: unknown) {
     throw new Error('Invalid JSON string for input parameter release-rules.');
   }
 };
