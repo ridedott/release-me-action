@@ -77,7 +77,7 @@ describe('processInputReleaseBranches', (): void => {
 
       try {
         processInputReleaseBranches();
-      } catch (error) {
+      } catch (error: unknown) {
         expect(error).toBeInstanceOf(Error);
       }
     },
