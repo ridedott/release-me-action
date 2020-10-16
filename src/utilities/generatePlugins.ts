@@ -1,16 +1,25 @@
 import { PluginSpec } from 'semantic-release';
 
+import { ReleaseRule } from './inputProcessors';
+
 export const generatePlugins = ({
   commitAssets,
   isNodeModule,
   releaseAssets,
+  releaseRules,
 }: {
   commitAssets: string[];
   isNodeModule: boolean;
   releaseAssets: string[];
+  releaseRules: ReleaseRule[];
 }): PluginSpec[] => {
   return [
-    '@semantic-release/commit-analyzer',
+    [
+      '@semantic-release/commit-analyzer',
+      {
+        releaseRules,
+      },
+    ],
     '@semantic-release/release-notes-generator',
     '@semantic-release/changelog',
     [
