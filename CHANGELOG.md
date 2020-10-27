@@ -1,3 +1,48 @@
+## [3.2.4](https://github.com/ridedott/release-me-action/compare/v3.2.3...v3.2.4) (2020-10-27)
+
+### Chores
+
+- **deps-dev:** bump @ridedott/eslint-config from 2.2.9 to 2.4.9
+  ([1c9f0ee](https://github.com/ridedott/release-me-action/commit/1c9f0eef864d64ee7f12014b2640006f7d5f8ab5))
+- **deps-dev:** bump @ridedott/eslint-config from 2.4.9 to 2.5.0
+  ([2aaf881](https://github.com/ridedott/release-me-action/commit/2aaf88186cee51c6c3278a96bde8a94ce7d1c5df))
+- **deps-dev:** bump @ridedott/eslint-config from 2.5.0 to 2.5.2
+  ([ac9eb94](https://github.com/ridedott/release-me-action/commit/ac9eb9425e4b54ff371f1d5d007df3c6056ccf98))
+- **deps-dev:** bump @ridedott/eslint-config from 2.5.2 to 2.5.3
+  ([6f2b439](https://github.com/ridedott/release-me-action/commit/6f2b439b29e8d1f5a385b803541b23705b4de9cb))
+- **deps-dev:** bump @ridedott/eslint-config from 2.5.3 to 2.5.5
+  ([7024c29](https://github.com/ridedott/release-me-action/commit/7024c29ba90c057b5fb79f3cdf2ce7c3bafc3bb8))
+- **deps-dev:** bump @ridedott/eslint-config from 2.5.5 to 2.5.8
+  ([c025079](https://github.com/ridedott/release-me-action/commit/c025079dc5cfe83cc80a044828116b90489f8421))
+- **deps-dev:** bump @ridedott/eslint-config from 2.5.8 to 2.5.9
+  ([a1eda1d](https://github.com/ridedott/release-me-action/commit/a1eda1d9b2ae9739a1f096891ffdc85425fbbfcf))
+- **deps-dev:** bump @ridedott/eslint-config from 2.5.9 to 2.5.12
+  ([c290038](https://github.com/ridedott/release-me-action/commit/c290038823492e6f77285f167f58a66159ea9eed))
+- **deps-dev:** bump @types/jest from 26.0.14 to 26.0.15
+  ([04aaafd](https://github.com/ridedott/release-me-action/commit/04aaafdf2fb7f6cfd67902efb8f79ecf347ec12a))
+- **deps-dev:** bump @types/node from 14.11.10 to 14.14.0
+  ([a0e3bbc](https://github.com/ridedott/release-me-action/commit/a0e3bbcb8c4963f6978b5bf8741d4ea5c06da9b9))
+- **deps-dev:** bump @types/node from 14.11.8 to 14.11.10
+  ([338193e](https://github.com/ridedott/release-me-action/commit/338193e7de9bcfe236f71ac364c86e40c8b5fee7))
+- **deps-dev:** bump @types/node from 14.14.0 to 14.14.2
+  ([0125766](https://github.com/ridedott/release-me-action/commit/0125766b213eeeb7141ccf7913d4413c30d5168d))
+- **deps-dev:** bump @types/node from 14.14.2 to 14.14.3
+  ([e0c9339](https://github.com/ridedott/release-me-action/commit/e0c9339c75603cf3e8c4207c1dc20df3d9742c37))
+- **deps-dev:** bump @types/semantic-release from 17.1.0 to 17.2.0
+  ([1c2f634](https://github.com/ridedott/release-me-action/commit/1c2f6344a70847eb960d15b397ab12a6750012a2))
+- **deps-dev:** bump commitizen from 4.2.1 to 4.2.2
+  ([0e5190d](https://github.com/ridedott/release-me-action/commit/0e5190d4e7b1574565fa216b0a241ffe1cf55716))
+- **deps-dev:** bump cspell from 4.1.0 to 4.1.2
+  ([a4c5e7e](https://github.com/ridedott/release-me-action/commit/a4c5e7e2d21bc51eb2918fe91d3dc7641416228e))
+- **deps-dev:** bump eslint from 7.11.0 to 7.12.0
+  ([bf486ab](https://github.com/ridedott/release-me-action/commit/bf486aba8da186f36e59fe179ab5484f8f23fe24))
+- **deps-dev:** bump lint-staged from 10.4.0 to 10.4.2
+  ([c5ff203](https://github.com/ridedott/release-me-action/commit/c5ff203709e5da06d1092e283ad8587358ba265b))
+- **deps-dev:** bump tempy from 0.7.1 to 1.0.0
+  ([abbfe96](https://github.com/ridedott/release-me-action/commit/abbfe960b0251f65ac10113439f445f63f7fbffc))
+- **deps-dev:** bump typescript from 4.0.3 to 4.0.5
+  ([17c13ac](https://github.com/ridedott/release-me-action/commit/17c13ac573384a824be057c3104e5cc3b819212a))
+
 ## [3.2.3](https://github.com/ridedott/release-me-action/compare/v3.2.2...v3.2.3) (2020-10-13)
 
 ### Chores
