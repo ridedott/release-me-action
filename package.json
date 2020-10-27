@@ -30,7 +30,7 @@
     "@zeit/ncc": "^0.22.3",
     "commitizen": "^4.2.2",
     "cspell": "^4.1.2",
-    "eslint": "^7.12.0",
+    "eslint": "^7.12.1",
     "execa": "^4.0.3",
     "file-url": "^3.0.0",
     "husky": "^4.3.0",
