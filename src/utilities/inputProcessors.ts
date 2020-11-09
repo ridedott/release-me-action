@@ -11,7 +11,7 @@ export enum InputParameters {
   ReleaseRules = 'release-rules',
 }
 
-interface ReleaseRule {
+export interface ReleaseRule {
   release: string | false;
   scope?: string;
   subject?: string;

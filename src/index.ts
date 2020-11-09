@@ -53,9 +53,9 @@ export const release = async (
         commitAssets: processInputCommitAssets(),
         isNodeModule: processInputNodeModule(),
         releaseAssets: processInputReleaseAssets(),
+        releaseRules,
       }),
       preset: 'angular',
-      releaseRules,
       writerOpts: writerOptions,
       ...(overrideOptions === undefined ? {} : overrideOptions),
       /* eslint-enable unicorn/prevent-abbreviations */
