@@ -1,3 +1,32 @@
+## [3.2.6](https://github.com/ridedott/release-me-action/compare/v3.2.5...v3.2.6) (2020-11-16)
+
+### Chores
+
+- **deps:** bump @semantic-release/github from 7.1.1 to 7.1.2
+  ([ec368ad](https://github.com/ridedott/release-me-action/commit/ec368addbacc8baae9857cc974d4519ebc7f96e5))
+- **deps-dev:** bump @ridedott/eslint-config from 2.5.17 to 2.5.18
+  ([092b090](https://github.com/ridedott/release-me-action/commit/092b09018ece3c467880db054bb1e37e14843bc7))
+- **deps-dev:** bump @ridedott/eslint-config from 2.5.18 to 2.5.22
+  ([61c2429](https://github.com/ridedott/release-me-action/commit/61c242907ab2f9f375334f0a873601e0ed76a848))
+- **deps-dev:** bump @ridedott/eslint-config from 2.5.22 to 2.5.23
+  ([c80aa7e](https://github.com/ridedott/release-me-action/commit/c80aa7e74921350737e34c170bf9fd55837880fd))
+- **deps-dev:** bump @ridedott/eslint-config from 2.5.23 to 2.5.24
+  ([cc1d406](https://github.com/ridedott/release-me-action/commit/cc1d406f047259466dea75ac5bacc10f934cc698))
+- **deps-dev:** bump @ridedott/eslint-config from 2.5.24 to 2.5.25
+  ([c31dcc1](https://github.com/ridedott/release-me-action/commit/c31dcc124c87fbc002ef54fc79c9695f88eeb493))
+- **deps-dev:** bump @ridedott/eslint-config from 2.5.25 to 2.5.29
+  ([cc2ae58](https://github.com/ridedott/release-me-action/commit/cc2ae5874b4b6f476827f5b60986db9eb6585740))
+- **deps-dev:** bump @types/node from 14.14.6 to 14.14.7
+  ([62af6af](https://github.com/ridedott/release-me-action/commit/62af6afc8fca63292bc5f0f14b2914ec5a94ae4c))
+- **deps-dev:** bump cspell from 4.1.2 to 4.1.3
+  ([7a62db0](https://github.com/ridedott/release-me-action/commit/7a62db03b9fcaecf5a2d566757d1d8137e146b00))
+- **deps-dev:** bump cspell from 4.1.3 to 4.1.5
+  ([7489b4e](https://github.com/ridedott/release-me-action/commit/7489b4e35543fd0765e3adb5aeb58d86c9a04b44))
+- **deps-dev:** bump eslint from 7.12.1 to 7.13.0
+  ([e6e8b72](https://github.com/ridedott/release-me-action/commit/e6e8b720fd747030cba08520146b22defa4084f9))
+- **deps-dev:** bump lint-staged from 10.5.0 to 10.5.1
+  ([92228a8](https://github.com/ridedott/release-me-action/commit/92228a8e037a275ced8723be9f009016704a2c09))
+
 ## [3.2.5](https://github.com/ridedott/release-me-action/compare/v3.2.4...v3.2.5) (2020-10-30)
 
 ### Chores
