@@ -1,3 +1,12 @@
+## [3.2.7](https://github.com/ridedott/release-me-action/compare/v3.2.6...v3.2.7) (2020-11-17)
+
+### Chores
+
+- **deps:** bump @semantic-release/npm from 7.0.6 to 7.0.8
+  ([c62b1f1](https://github.com/ridedott/release-me-action/commit/c62b1f1c77964f26c385a8bf874fe588df51cca2))
+- **deps-dev:** bump cspell from 4.1.5 to 4.2.0
+  ([3f35698](https://github.com/ridedott/release-me-action/commit/3f356980bb71150ef537464f9f00619191efcc78))
+
 ## [3.2.6](https://github.com/ridedott/release-me-action/compare/v3.2.5...v3.2.6) (2020-11-16)
 
 ### Chores
