@@ -56,9 +56,7 @@ describe('release', (): void => {
     });
   });
 
-  it('"feat" makes a minor release using the default release rules', async (): Promise<
-    void
-  > => {
+  it('"feat" makes a minor release using the default release rules', async (): Promise<void> => {
     expect.assertions(2);
 
     // Generate git
@@ -78,9 +76,7 @@ describe('release', (): void => {
     }
   });
 
-  it('"feat" with a BREAKING CHANGE makes a major release using the default release rules', async (): Promise<
-    void
-  > => {
+  it('"feat" with a BREAKING CHANGE makes a major release using the default release rules', async (): Promise<void> => {
     expect.assertions(2);
 
     // Generate git
@@ -103,9 +99,7 @@ describe('release', (): void => {
     }
   });
 
-  it('"fix" makes a patch release using the default release rules', async (): Promise<
-    void
-  > => {
+  it('"fix" makes a patch release using the default release rules', async (): Promise<void> => {
     expect.assertions(2);
 
     // Generate git
@@ -125,9 +119,7 @@ describe('release', (): void => {
     }
   });
 
-  it('"perf" makes a patch release using the default release rules', async (): Promise<
-    void
-  > => {
+  it('"perf" makes a patch release using the default release rules', async (): Promise<void> => {
     expect.assertions(2);
 
     // Generate git
@@ -147,9 +139,7 @@ describe('release', (): void => {
     }
   });
 
-  it('"build" makes a patch release using the default release rules', async (): Promise<
-    void
-  > => {
+  it('"build" makes a patch release using the default release rules', async (): Promise<void> => {
     expect.assertions(2);
 
     // Generate git
@@ -169,9 +159,7 @@ describe('release', (): void => {
     }
   });
 
-  it('"ci" makes a patch release using the default release rules', async (): Promise<
-    void
-  > => {
+  it('"ci" makes a patch release using the default release rules', async (): Promise<void> => {
     expect.assertions(2);
 
     // Generate git
@@ -191,9 +179,7 @@ describe('release', (): void => {
     }
   });
 
-  it('"docs" makes a patch release using the default release rules', async (): Promise<
-    void
-  > => {
+  it('"docs" makes a patch release using the default release rules', async (): Promise<void> => {
     expect.assertions(2);
 
     // Generate git
@@ -213,9 +199,7 @@ describe('release', (): void => {
     }
   });
 
-  it('"improvement" makes a patch release using the default release rules', async (): Promise<
-    void
-  > => {
+  it('"improvement" makes a patch release using the default release rules', async (): Promise<void> => {
     expect.assertions(2);
 
     // Generate git
@@ -235,9 +219,7 @@ describe('release', (): void => {
     }
   });
 
-  it('"refactor" makes a patch release using the default release rules', async (): Promise<
-    void
-  > => {
+  it('"refactor" makes a patch release using the default release rules', async (): Promise<void> => {
     expect.assertions(2);
 
     // Generate git
@@ -257,9 +239,7 @@ describe('release', (): void => {
     }
   });
 
-  it('makes no release when subject includes skip release', async (): Promise<
-    void
-  > => {
+  it('makes no release when subject includes skip release', async (): Promise<void> => {
     expect.assertions(1);
 
     // Generate git
