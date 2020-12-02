@@ -4,6 +4,7 @@ import { BranchSpec } from 'semantic-release';
 
 export enum InputParameters {
   CommitAssets = 'commit-assets',
+  DisableGenerateChangelog = 'disable-generate-changelog',
   DryRun = 'dry-run',
   NodeModule = 'node-module',
   ReleaseAssets = 'release-assets',
@@ -129,6 +130,9 @@ const validateInputReleaseRules = (input: ReleaseRule[]): ReleaseRule[] => {
 
 export const processInputNodeModule = (): boolean =>
   getInput(InputParameters.NodeModule) === 'true';
+
+export const processInputDisableGenerateChangelog = (): boolean =>
+  getInput(InputParameters.DisableGenerateChangelog) === 'true';
 
 export const processInputDryRun = (): boolean =>
   getInput(InputParameters.DryRun) === 'true';

@@ -181,6 +181,35 @@ Array [
 ]
 `;
 
+exports[`generatePlugins excludes the changelog plugin when called with the disableGenerateChangelog parameter set to true 1`] = `
+Array [
+  "@semantic-release/commit-analyzer",
+  "@semantic-release/release-notes-generator",
+  Array [
+    "@semantic-release/exec",
+    Object {
+      "prepareCmd": "npx prettier --write CHANGELOG.md",
+    },
+  ],
+  Array [
+    "@semantic-release/git",
+    Object {
+      "assets": Array [],
+      "message": "chore(release): v\${nextRelease.version}",
+    },
+  ],
+  Array [
+    "@semantic-release/github",
+    Object {
+      "assets": Array [],
+      "failComment": false,
+      "releasedLabels": false,
+      "successComment": false,
+    },
+  ],
+]
+`;
+
 exports[`generatePlugins excludes the npm plugin when called with the isNodeModule parameter set to false 1`] = `
 Array [
   "@semantic-release/commit-analyzer",

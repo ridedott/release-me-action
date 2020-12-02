@@ -1,12 +1,26 @@
 import { generatePlugins } from './generatePlugins';
 
 describe('generatePlugins', (): void => {
+  it('excludes the changelog plugin when called with the disableGenerateChangelog parameter set to true', (): void => {
+    expect.assertions(1);
+
+    expect(
+      generatePlugins({
+        commitAssets: [],
+        disableGenerateChangeLog: true,
+        isNodeModule: false,
+        releaseAssets: [],
+      }),
+    ).toMatchSnapshot();
+  });
+
   it('excludes the npm plugin when called with the isNodeModule parameter set to false', (): void => {
     expect.assertions(1);
 
     expect(
       generatePlugins({
         commitAssets: [],
+        disableGenerateChangeLog: false,
         isNodeModule: false,
         releaseAssets: [],
       }),
@@ -19,6 +33,7 @@ describe('generatePlugins', (): void => {
     expect(
       generatePlugins({
         commitAssets: [],
+        disableGenerateChangeLog: false,
         isNodeModule: false,
         releaseAssets: [],
       }),
@@ -31,6 +46,7 @@ describe('generatePlugins', (): void => {
     expect(
       generatePlugins({
         commitAssets: [],
+        disableGenerateChangeLog: false,
         isNodeModule: true,
         releaseAssets: [],
       }),
@@ -43,6 +59,7 @@ describe('generatePlugins', (): void => {
     expect(
       generatePlugins({
         commitAssets: [],
+        disableGenerateChangeLog: false,
         isNodeModule: true,
         releaseAssets: [],
       }),
@@ -55,6 +72,7 @@ describe('generatePlugins', (): void => {
     expect(
       generatePlugins({
         commitAssets: ['./src'],
+        disableGenerateChangeLog: false,
         isNodeModule: false,
         releaseAssets: [],
       }),
@@ -67,6 +85,7 @@ describe('generatePlugins', (): void => {
     expect(
       generatePlugins({
         commitAssets: [],
+        disableGenerateChangeLog: false,
         isNodeModule: false,
         releaseAssets: ['./src'],
       }),
