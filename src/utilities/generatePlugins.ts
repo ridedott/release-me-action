@@ -20,7 +20,7 @@ export const generatePlugins = ({
           [
             '@semantic-release/exec',
             {
-              prepareCmd: 'npx prettier --write CHANGELOG.md',
+              prepareCmd: 'npx prettier --parser markdown --write CHANGELOG.md',
             },
           ] as PluginSpec,
         ]
