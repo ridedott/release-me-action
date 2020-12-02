@@ -212,7 +212,7 @@ Array [
   Array [
     "@semantic-release/exec",
     Object {
-      "prepareCmd": "npx prettier --write CHANGELOG.md",
+      "prepareCmd": "npx prettier --parser markdown --write CHANGELOG.md",
     },
   ],
   Array [
