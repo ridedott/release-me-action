@@ -186,12 +186,6 @@ Array [
   "@semantic-release/commit-analyzer",
   "@semantic-release/release-notes-generator",
   Array [
-    "@semantic-release/exec",
-    Object {
-      "prepareCmd": "npx prettier --write CHANGELOG.md",
-    },
-  ],
-  Array [
     "@semantic-release/git",
     Object {
       "assets": Array [],

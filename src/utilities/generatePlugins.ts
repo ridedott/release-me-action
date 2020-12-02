@@ -15,14 +15,16 @@ export const generatePlugins = ({
     '@semantic-release/commit-analyzer',
     '@semantic-release/release-notes-generator',
     ...(disableGenerateChangeLog === false
-      ? ['@semantic-release/changelog']
+      ? [
+          '@semantic-release/changelog',
+          [
+            '@semantic-release/exec',
+            {
+              prepareCmd: 'npx prettier --write CHANGELOG.md',
+            },
+          ] as PluginSpec,
+        ]
       : []),
-    [
-      '@semantic-release/exec',
-      {
-        prepareCmd: 'npx prettier --write CHANGELOG.md',
-      },
-    ],
     ...(isNodeModule === true
       ? [
           [
