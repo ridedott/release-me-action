@@ -2,12 +2,12 @@ import { PluginSpec } from 'semantic-release';
 
 export const generatePlugins = ({
   commitAssets,
-  disableGenerateChangeLog,
+  disableGenerateChangeLog = false,
   isNodeModule,
   releaseAssets,
 }: {
   commitAssets: string[];
-  disableGenerateChangeLog: boolean;
+  disableGenerateChangeLog?: boolean;
   isNodeModule: boolean;
   releaseAssets: string[];
 }): PluginSpec[] => {

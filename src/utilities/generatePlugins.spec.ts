@@ -20,7 +20,6 @@ describe('generatePlugins', (): void => {
     expect(
       generatePlugins({
         commitAssets: [],
-        disableGenerateChangeLog: false,
         isNodeModule: false,
         releaseAssets: [],
       }),
@@ -33,7 +32,6 @@ describe('generatePlugins', (): void => {
     expect(
       generatePlugins({
         commitAssets: [],
-        disableGenerateChangeLog: false,
         isNodeModule: false,
         releaseAssets: [],
       }),
@@ -46,7 +44,6 @@ describe('generatePlugins', (): void => {
     expect(
       generatePlugins({
         commitAssets: [],
-        disableGenerateChangeLog: false,
         isNodeModule: true,
         releaseAssets: [],
       }),
@@ -59,7 +56,6 @@ describe('generatePlugins', (): void => {
     expect(
       generatePlugins({
         commitAssets: [],
-        disableGenerateChangeLog: false,
         isNodeModule: true,
         releaseAssets: [],
       }),
@@ -72,7 +68,6 @@ describe('generatePlugins', (): void => {
     expect(
       generatePlugins({
         commitAssets: ['./src'],
-        disableGenerateChangeLog: false,
         isNodeModule: false,
         releaseAssets: [],
       }),
@@ -85,7 +80,6 @@ describe('generatePlugins', (): void => {
     expect(
       generatePlugins({
         commitAssets: [],
-        disableGenerateChangeLog: false,
         isNodeModule: false,
         releaseAssets: ['./src'],
       }),
