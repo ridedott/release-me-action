@@ -4,7 +4,7 @@ import { Config, Options, Result } from 'semantic-release';
 import { generatePlugins } from './utilities/generatePlugins';
 import {
   processInputCommitAssets,
-  processInputDisableGenerateChangelog,
+  processInputDisableChangelog,
   processInputDryRun,
   processInputNodeModule,
   processInputReleaseAssets,
@@ -52,7 +52,7 @@ export const release = async (
       parserOpts: parseOptions,
       plugins: generatePlugins({
         commitAssets: processInputCommitAssets(),
-        disableGenerateChangeLog: processInputDisableGenerateChangelog(),
+        disableChangeLog: processInputDisableChangelog(),
         isNodeModule: processInputNodeModule(),
         releaseAssets: processInputReleaseAssets(),
       }),

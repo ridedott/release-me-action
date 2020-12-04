@@ -2,19 +2,19 @@ import { PluginSpec } from 'semantic-release';
 
 export const generatePlugins = ({
   commitAssets,
-  disableGenerateChangeLog = false,
+  disableChangeLog = false,
   isNodeModule,
   releaseAssets,
 }: {
   commitAssets: string[];
-  disableGenerateChangeLog?: boolean;
+  disableChangeLog?: boolean;
   isNodeModule: boolean;
   releaseAssets: string[];
 }): PluginSpec[] => {
   return [
     '@semantic-release/commit-analyzer',
     '@semantic-release/release-notes-generator',
-    ...(disableGenerateChangeLog === false
+    ...(disableChangeLog === false
       ? [
           '@semantic-release/changelog',
           [
@@ -39,7 +39,7 @@ export const generatePlugins = ({
       '@semantic-release/git',
       {
         assets: [
-          ...(disableGenerateChangeLog === false ? ['./CHANGELOG.md'] : []),
+          ...(disableChangeLog === false ? ['./CHANGELOG.md'] : []),
           ...commitAssets,
           ...(isNodeModule
             ? ['./package.json', './package-lock.json', './yarn-lock.yaml']

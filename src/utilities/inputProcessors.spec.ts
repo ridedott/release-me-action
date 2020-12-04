@@ -2,7 +2,7 @@ import * as actionsCore from '@actions/core';
 
 import {
   processInputCommitAssets,
-  processInputDisableGenerateChangelog,
+  processInputDisableChangelog,
   processInputDryRun,
   processInputNodeModule,
   processInputReleaseAssets,
@@ -30,7 +30,7 @@ describe('processInputDisableGenerateChangelog', (): void => {
 
     getInputSpy.mockReturnValue('true');
 
-    const result = processInputDisableGenerateChangelog();
+    const result = processInputDisableChangelog();
 
     expect(result).toStrictEqual(true);
   });

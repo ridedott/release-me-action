@@ -8,7 +8,7 @@ inputs:
       Configures the list of assets to commit to the repository alongside the
       changelog.
     required: false
-  disable-generate-changelog:
+  disable-changelog:
     default: 'false'
     description: Skips generating a CHANGELOG.md file.
     required: false

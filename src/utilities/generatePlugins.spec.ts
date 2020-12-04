@@ -1,13 +1,13 @@
 import { generatePlugins } from './generatePlugins';
 
 describe('generatePlugins', (): void => {
-  it('excludes the changelog plugin when called with the disableGenerateChangelog parameter set to true', (): void => {
+  it('excludes the changelog plugin when called with the disableChangelog parameter set to true', (): void => {
     expect.assertions(1);
 
     expect(
       generatePlugins({
         commitAssets: [],
-        disableGenerateChangeLog: true,
+        disableChangeLog: true,
         isNodeModule: false,
         releaseAssets: [],
       }),
