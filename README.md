@@ -99,7 +99,7 @@ steps:
     name: Release
     uses: ridedott/release-me-action@master
     with:
-      disable-generate-changelog: true
+      disable-changelog: true
 ```
 
 ## Output release details
