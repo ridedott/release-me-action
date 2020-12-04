@@ -8,6 +8,10 @@ inputs:
       Configures the list of assets to commit to the repository alongside the
       changelog.
     required: false
+  disable-changelog:
+    default: 'false'
+    description: Skips generating a CHANGELOG.md file.
+    required: false
   dry-run:
     default: 'false'
     description: Configures Semantic Release to run in dry-run mode.
