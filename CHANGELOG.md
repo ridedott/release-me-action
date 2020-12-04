@@ -1,3 +1,10 @@
+# [3.3.0](https://github.com/ridedott/release-me-action/compare/v3.2.13...v3.3.0) (2020-12-04)
+
+### Features
+
+- allow for disabling changelog creation
+  ([58c1051](https://github.com/ridedott/release-me-action/commit/58c1051c757522d0ed991b81f59cb8f3c9095a1c))
+
 ## [3.2.13](https://github.com/ridedott/release-me-action/compare/v3.2.12...v3.2.13) (2020-12-04)
 
 ### Chores
