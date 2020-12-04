@@ -1,3 +1,36 @@
+## [3.2.13](https://github.com/ridedott/release-me-action/compare/v3.2.12...v3.2.13) (2020-12-04)
+
+### Chores
+
+- **deps:** bump @semantic-release/npm from 7.0.8 to 7.0.9
+  ([8b1b832](https://github.com/ridedott/release-me-action/commit/8b1b832e0ed7b9edd5faf7e46783edc2668cee2b))
+- **deps-dev:** bump @ridedott/eslint-config from 2.5.34 to 2.5.36
+  ([6a4d9e9](https://github.com/ridedott/release-me-action/commit/6a4d9e9d09a7d2809c348dce6ade960175acbd9d))
+- **deps-dev:** bump @ridedott/eslint-config from 2.5.36 to 2.5.37
+  ([cf87e58](https://github.com/ridedott/release-me-action/commit/cf87e58f0d8c5c16e0d4da4024a2aeb7e9a8c381))
+- **deps-dev:** bump @ridedott/eslint-config from 2.5.37 to 2.5.38
+  ([db618ff](https://github.com/ridedott/release-me-action/commit/db618ff632e3d9314138c75d1d7b5344d90aed32))
+- **deps-dev:** bump @ridedott/eslint-config from 2.5.38 to 2.5.39
+  ([58fb160](https://github.com/ridedott/release-me-action/commit/58fb160abab59466e4d658a38281d1b1b8256253))
+- **deps-dev:** bump @ridedott/eslint-config from 2.5.39 to 2.5.40
+  ([5cddd1d](https://github.com/ridedott/release-me-action/commit/5cddd1d3cc195e029ffba53a6e06b4ca12c16184))
+- **deps-dev:** bump @ridedott/eslint-config from 2.5.40 to 2.5.41
+  ([5e5767b](https://github.com/ridedott/release-me-action/commit/5e5767bdd431ff2b4939c5dc1fe0771e53c1e4ce))
+- **deps-dev:** bump @types/jest from 26.0.15 to 26.0.16
+  ([b051387](https://github.com/ridedott/release-me-action/commit/b0513871b49f138b62a9bf427045dae6c1a2c24c))
+- **deps-dev:** bump @types/node from 14.14.9 to 14.14.10
+  ([0a05678](https://github.com/ridedott/release-me-action/commit/0a0567895950c2205a940a4f6dbb3f121466128c))
+- **deps-dev:** bump cspell from 4.2.2 to 4.2.3
+  ([3e5c98e](https://github.com/ridedott/release-me-action/commit/3e5c98e69cba1413fdea81ad33a1af9e44fe8f3d))
+- **deps-dev:** bump cspell from 4.2.3 to 4.2.5
+  ([3a924ab](https://github.com/ridedott/release-me-action/commit/3a924abb36c226c17cc8b465e80d92177dbc2179))
+- **deps-dev:** bump execa from 4.1.0 to 5.0.0
+  ([a3d5c67](https://github.com/ridedott/release-me-action/commit/a3d5c6716a54df44ab7befd99359be79d34f7e62))
+- **deps-dev:** bump lint-staged from 10.5.1 to 10.5.2
+  ([06cae8e](https://github.com/ridedott/release-me-action/commit/06cae8e338298705be3409cbc99a727c430deef0))
+- **deps-dev:** bump prettier from 2.1.2 to 2.2.1
+  ([44ffa36](https://github.com/ridedott/release-me-action/commit/44ffa36589d7e5ede7bf4f577de28396b3d9facb))
+
 ## [3.2.12](https://github.com/ridedott/release-me-action/compare/v3.2.11...v3.2.12) (2020-11-23)
 
 ### Chores
