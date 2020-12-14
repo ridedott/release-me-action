@@ -59,6 +59,10 @@ steps:
       release-rules:
         '[{ "release": "patch", "type": "build" }, { "release": "patch", "type":
         "chore(deps)" }, { "release": "patch", "type": "chore(deps-dev)" }]'
+      # Load a YAML configuration file from this file. Options defined in this file
+      # will behave the same as a semantic-release configuration file:
+      # https://semantic-release.gitbook.io/semantic-release/usage/configuration#configuration-file
+      config-file: ./path/to/config.yml
 ```
 
 **IMPORTANT** `GITHUB_TOKEN` does not have the required permissions to operate

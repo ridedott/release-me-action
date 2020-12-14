@@ -4,6 +4,7 @@ import { BranchSpec } from 'semantic-release';
 
 export enum InputParameters {
   CommitAssets = 'commit-assets',
+  ConfigFile = 'config-file',
   DryRun = 'dry-run',
   NodeModule = 'node-module',
   ReleaseAssets = 'release-assets',
@@ -143,6 +144,20 @@ export const processInputReleaseBranches = (): BranchSpec[] | undefined => {
   const parsedInput = parseInputReleaseBranches(input);
 
   return validateInputReleaseBranches(parsedInput);
+};
+
+export const processInputConfigFile = (): string | undefined => {
+  const file = parseFileList(getInput(InputParameters.ConfigFile)).shift();
+
+  if (file === undefined) {
+    return;
+  }
+
+  if (/\\.(?:yaml|yml)?/u.exec(file) === null) {
+    throw new Error(`Config file should be a YAML file`);
+  }
+
+  return file;
 };
 
 export const processInputReleaseRules = (): ReleaseRule[] => {

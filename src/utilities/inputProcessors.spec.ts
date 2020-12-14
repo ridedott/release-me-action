@@ -2,6 +2,7 @@ import * as actionsCore from '@actions/core';
 
 import {
   processInputCommitAssets,
+  processInputConfigFile,
   processInputDryRun,
   processInputNodeModule,
   processInputReleaseAssets,
@@ -226,5 +227,19 @@ describe('processInputReleaseAssets', (): void => {
     const result = processInputReleaseAssets();
 
     expect(result).toStrictEqual(['./src']);
+  });
+});
+
+describe('processInputConfigFile', (): void => {
+  it('returns a valid paths relative to the project root', (): void => {
+    expect.assertions(1);
+
+    getInputSpy.mockReturnValue(`
+    ./src
+    `);
+
+    const result = processInputConfigFile();
+
+    expect(result).toStrictEqual('./src');
   });
 });

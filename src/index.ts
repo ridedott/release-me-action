@@ -2,8 +2,10 @@ import { setFailed } from '@actions/core';
 import { Config, Options, Result } from 'semantic-release';
 
 import { generatePlugins } from './utilities/generatePlugins';
+import { getConfig } from './utilities/getConfig';
 import {
   processInputCommitAssets,
+  processInputConfigFile,
   processInputDryRun,
   processInputNodeModule,
   processInputReleaseAssets,
@@ -66,7 +68,12 @@ export const release = async (
   return result;
 };
 
-release()
+const configFile = processInputConfigFile();
+
+Promise.resolve(
+  configFile === undefined ? {} : getConfig(__dirname, configFile),
+)
+  .then(async (config: object): Promise<Result> => release(config))
   .then(reportResults)
   .catch((error: Error): void => {
     setFailed(JSON.stringify(error));
