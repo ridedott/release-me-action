@@ -9,10 +9,10 @@ it('returns an object from a specified YAML file', async (): Promise<void> => {
 
   readFileSpy.mockResolvedValue('{foo: true}');
 
-  const config = await getConfig('/root/', '/dir');
+  const config = await getConfig('./dir/config.js');
 
   expect(config).toStrictEqual({ foo: true });
-  expect(readFileSpy.mock.calls[0][0]).toStrictEqual('/root/dir');
+  expect(readFileSpy.mock.calls[0][0]).toStrictEqual('./dir/config.js');
 });
 
 it('throws if the YAML file is not parsed to an object', async (): Promise<void> => {
@@ -21,7 +21,7 @@ it('throws if the YAML file is not parsed to an object', async (): Promise<void>
   readFileSpy.mockResolvedValue('foo');
 
   try {
-    await getConfig('/root/', '/dir');
+    await getConfig('./dir/config.js');
   } catch (error: unknown) {
     expect(error).toBeInstanceOf(Error);
   }

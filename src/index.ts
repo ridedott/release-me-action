@@ -74,7 +74,7 @@ const configFile = processInputConfigFile();
 
 Promise.resolve(
   /* istanbul ignore next */
-  configFile === undefined ? {} : getConfig(__dirname, configFile),
+  configFile === undefined ? {} : getConfig(configFile),
 )
   .then(async (config: object): Promise<Result> => release(config))
   .then(reportResults)
