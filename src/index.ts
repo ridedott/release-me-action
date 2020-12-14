@@ -73,6 +73,7 @@ export const release = async (
 const configFile = processInputConfigFile();
 
 Promise.resolve(
+  /* istanbul ignore next */
   configFile === undefined ? {} : getConfig(__dirname, configFile),
 )
   .then(async (config: object): Promise<Result> => release(config))
