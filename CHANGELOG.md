@@ -1,3 +1,18 @@
+## [3.3.2](https://github.com/ridedott/release-me-action/compare/v3.3.1...v3.3.2) (2020-12-14)
+
+### Chores
+
+- **deps-dev:** bump @ridedott/eslint-config from 2.5.47 to 2.5.49
+  ([f5b7e61](https://github.com/ridedott/release-me-action/commit/f5b7e61ded308e384bd444efce9c164714b71206))
+- **deps-dev:** bump @types/node from 14.14.11 to 14.14.12
+  ([1c24d2f](https://github.com/ridedott/release-me-action/commit/1c24d2f1da875d5e839c2cc0ef3cd8719c36a6fb))
+- **deps-dev:** bump @types/node from 14.14.12 to 14.14.13
+  ([c6a7aae](https://github.com/ridedott/release-me-action/commit/c6a7aae37410350f3954ad6b30a25a937ddcbfd1))
+- **deps-dev:** bump husky from 4.3.5 to 4.3.6
+  ([e263032](https://github.com/ridedott/release-me-action/commit/e26303294a2518f612216aab67f4e1233720bc6d))
+- **deps-dev:** bump typescript from 4.1.2 to 4.1.3
+  ([ca5d88c](https://github.com/ridedott/release-me-action/commit/ca5d88cae90d8b343d46e7f35ad99d1f29dad49e))
+
 ## [3.3.1](https://github.com/ridedott/release-me-action/compare/v3.3.0...v3.3.1) (2020-12-11)
 
 ### Chores
