@@ -13,6 +13,10 @@ inputs:
       Specifies a configuration file from which to load a semantic-release
       configuration.
     required: false
+  disable-changelog:
+    default: 'false'
+    description: Skips generating a CHANGELOG.md file.
+    required: false
   dry-run:
     default: 'false'
     description: Configures Semantic Release to run in dry-run mode.

@@ -6,6 +6,7 @@ import { getConfig } from './utilities/getConfig';
 import {
   processInputCommitAssets,
   processInputConfigFile,
+  processInputDisableChangelog,
   processInputDryRun,
   processInputNodeModule,
   processInputReleaseAssets,
@@ -53,6 +54,7 @@ export const release = async (
       parserOpts: parseOptions,
       plugins: generatePlugins({
         commitAssets: processInputCommitAssets(),
+        disableChangeLog: processInputDisableChangelog(),
         isNodeModule: processInputNodeModule(),
         releaseAssets: processInputReleaseAssets(),
       }),

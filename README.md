@@ -14,7 +14,8 @@ performing the following tasks:
 
 - analyzes commits based on the
   [Angular Commit Message Conventions](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines)
-- updates the `CHANGELOG.md` file based on the analyzed commits
+- optionally, omits creating or updating the `CHANGELOG.md` file based on the
+  analyzed commits
 - optionally, bumps the NPM package version number
 - optionally, commits workflow generated assets to the repository
 - optionally, adds workflow generated assets to the release
@@ -74,6 +75,7 @@ with the required permissions enabled on it.
 # Scenarios
 
 - [Create a release](#create-a-release)
+- [Create a release without a CHANGELOG.md file](#create-a-release-without-changelog)
 - [Test a release](#test-a-release)
 - [Create a release to a different branch](#create-a-release-to-a-different-branch)
 - [Create a release and update repository contents](#create-a-release-and-update-repository-contents)
@@ -90,6 +92,18 @@ steps:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     name: Release
     uses: ridedott/release-me-action@master
+```
+
+## Create a release without a CHANGELOG.md file
+
+```yaml
+steps:
+  - env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    name: Release
+    uses: ridedott/release-me-action@master
+    with:
+      disable-changelog: true
 ```
 
 ## Output release details

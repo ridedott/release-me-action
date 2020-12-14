@@ -7,7 +7,7 @@ const setOutputSpy = jest.spyOn(actionsCore, 'setOutput').mockImplementation();
 
 describe('reportResults', (): void => {
   it('sets output based on nextRelease', (): void => {
-    expect.assertions(8);
+    expect.assertions(7);
 
     const input: Result = {
       commits: [],
@@ -26,9 +26,8 @@ describe('reportResults', (): void => {
       releases: [],
     };
 
-    const result = reportResults(input);
+    reportResults(input);
 
-    expect(result).toBeUndefined();
     expect(setOutputSpy).toHaveBeenCalledTimes(6);
     expect(setOutputSpy).toHaveBeenCalledWith(
       'version',
