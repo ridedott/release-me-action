@@ -244,15 +244,25 @@ describe('processInputReleaseAssets', (): void => {
 });
 
 describe('processInputConfigFile', (): void => {
-  it('returns a valid paths relative to the project root', (): void => {
+  it('returns a valid path relative to the project root', (): void => {
     expect.assertions(1);
 
-    getInputSpy.mockReturnValue(`
-    ./src
-    `);
+    getInputSpy.mockReturnValue('./src.yaml');
 
     const result = processInputConfigFile();
 
-    expect(result).toStrictEqual('./src');
+    expect(result).toStrictEqual('./src.yaml');
+  });
+
+  it('throws if the provided path is not a YAML file', (): void => {
+    expect.assertions(1);
+
+    getInputSpy.mockReturnValue('./src.json');
+
+    try {
+      processInputConfigFile();
+    } catch (error: unknown) {
+      expect(error).toBeInstanceOf(Error);
+    }
   });
 });

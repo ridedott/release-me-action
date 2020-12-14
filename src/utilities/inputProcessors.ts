@@ -157,7 +157,7 @@ export const processInputConfigFile = (): string | undefined => {
     return;
   }
 
-  if (/\\.(?:yaml|yml)?/u.exec(file) === null) {
+  if (/\.(?:yaml|yml)$/u.exec(file) === null) {
     throw new Error(`Config file should be a YAML file`);
   }
 
