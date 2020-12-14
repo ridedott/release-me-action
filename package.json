@@ -12,6 +12,7 @@
     "@semantic-release/commit-analyzer": "^8.0.1",
     "@semantic-release/exec": "^5.0.0",
     "@semantic-release/git": "^9.0.0",
+    "@google/semantic-release-replace-plugin": "^1.0.2",
     "@semantic-release/github": "^7.2.0",
     "@semantic-release/npm": "^7.0.9",
     "@semantic-release/release-notes-generator": "^9.0.1",
@@ -22,7 +23,6 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
-    "@google/semantic-release-replace-plugin": "^1.0.2",
     "@ridedott/eslint-config": "^2.5.49",
     "@types/conventional-changelog-writer": "^4.0.0",
     "@types/hapi__joi": "^17.1.6",
