@@ -11,9 +11,7 @@ import {
 
 describe('git utility', (): void => {
   describe('initGitRemote', (): void => {
-    it('initializes local `remote` git repository in a temporary directory', async (): Promise<
-      void
-    > => {
+    it('initializes local `remote` git repository in a temporary directory', async (): Promise<void> => {
       expect.assertions(1);
 
       const { cwd } = await initGitRemote();
@@ -29,9 +27,7 @@ describe('git utility', (): void => {
   });
 
   describe('gitShallowClone', (): void => {
-    it('creates a shallow clone of a `remote` git repository', async (): Promise<
-      void
-    > => {
+    it('creates a shallow clone of a `remote` git repository', async (): Promise<void> => {
       expect.assertions(1);
 
       const { remoteRepositoryUrl } = await initGitRemote();
@@ -48,9 +44,7 @@ describe('git utility', (): void => {
   });
 
   describe('gitCommits', (): void => {
-    it('creates commits on the git repository present in the `cwd` option', async (): Promise<
-      void
-    > => {
+    it('creates commits on the git repository present in the `cwd` option', async (): Promise<void> => {
       expect.assertions(1);
 
       const { cwd } = await gitRepo();
@@ -68,9 +62,7 @@ describe('git utility', (): void => {
       expect(commitMessage).toStrictEqual('feat: initial commit');
     });
 
-    it('creates commits in order on the git repository present in the `cwd` option', async (): Promise<
-      void
-    > => {
+    it('creates commits in order on the git repository present in the `cwd` option', async (): Promise<void> => {
       expect.assertions(1);
 
       const { cwd } = await gitRepo();
@@ -95,9 +87,7 @@ describe('git utility', (): void => {
   });
 
   describe('gitTagVersion', (): void => {
-    it('creates a tag on the head commit of the repository present in the `cwd` option', async (): Promise<
-      void
-    > => {
+    it('creates a tag on the head commit of the repository present in the `cwd` option', async (): Promise<void> => {
       expect.assertions(1);
 
       const { cwd } = await gitRepo();
@@ -118,9 +108,7 @@ describe('git utility', (): void => {
   });
 
   describe('gitRepo', (): void => {
-    it('creates a temporary git remote repository and a git clone repository', async (): Promise<
-      void
-    > => {
+    it('creates a temporary git remote repository and a git clone repository', async (): Promise<void> => {
       expect.assertions(5);
 
       const { cwd } = await gitRepo();
@@ -164,9 +152,7 @@ describe('git utility', (): void => {
   });
 
   describe('gitPush', (): void => {
-    it('pushes to the remote repository from the git repository present in the `cwd` option', async (): Promise<
-      void
-    > => {
+    it('pushes to the remote repository from the git repository present in the `cwd` option', async (): Promise<void> => {
       expect.assertions(1);
 
       const {

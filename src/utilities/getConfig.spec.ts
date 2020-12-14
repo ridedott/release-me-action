@@ -15,9 +15,7 @@ it('returns an object from a specified YAML file', async (): Promise<void> => {
   expect(readFileSpy.mock.calls[0][0]).toStrictEqual('/root/dir');
 });
 
-it('throws if the YAML file is not parsed to an object', async (): Promise<
-  void
-> => {
+it('throws if the YAML file is not parsed to an object', async (): Promise<void> => {
   expect.assertions(1);
 
   readFileSpy.mockResolvedValue('foo');
