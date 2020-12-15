@@ -2,6 +2,8 @@ import { getInput } from '@actions/core';
 import * as joi from '@hapi/joi';
 import { BranchSpec } from 'semantic-release';
 
+const MATCH_YAML_EXTENSION_REGEXP = /\.(?:ya?ml)$/u;
+
 export enum InputParameters {
   CommitAssets = 'commit-assets',
   ConfigFile = 'config-file',
@@ -151,15 +153,13 @@ export const processInputReleaseBranches = (): BranchSpec[] | undefined => {
 };
 
 export const processInputConfigFile = (): string | undefined => {
-  const file = parseFileList(getInput(InputParameters.ConfigFile)).shift();
+  const file = getInput(InputParameters.ConfigFile);
 
-  if (file === undefined) {
+  if (file === '') {
     return;
   }
 
-  const fileRegex = /\.(?:ya?ml)$/u;
-
-  if (fileRegex.exec(file) === null) {
+  if (MATCH_YAML_EXTENSION_REGEXP.exec(file) === null) {
     throw new Error('Config file should be a YAML file');
   }
 
