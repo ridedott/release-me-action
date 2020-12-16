@@ -34,7 +34,9 @@ export const release = async (
   const branches = processInputReleaseBranches();
 
   const { pluginsOverrides = [], ...otherOptionOverrides } =
-    overrideOptions ?? {};
+    overrideOptions ??
+    /* istanbul ignore next */
+    {};
 
   /* istanbul ignore next */
   const result: Result = await semanticRelease(
