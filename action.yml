@@ -11,7 +11,8 @@ inputs:
   config-file:
     description:
       Specifies a configuration file from which to load a semantic-release
-      configuration.
+      configuration. Note that this will do a shallow merge of the options
+      provided.
     required: false
   disable-changelog:
     default: 'false'

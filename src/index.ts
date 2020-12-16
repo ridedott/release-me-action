@@ -33,27 +33,19 @@ export const release = async (
 
   const branches = processInputReleaseBranches();
 
-  const { plugins: pluginsOverrides = [], ...otherOptionOverrides } =
-    overrideOptions ??
-    /* istanbul ignore next */
-    {};
-
   /* istanbul ignore next */
   const result: Result = await semanticRelease(
     {
       ...(branches === undefined ? {} : { branches }),
       dryRun: processInputDryRun(),
-      plugins: [
-        ...generatePlugins({
-          commitAssets: processInputCommitAssets(),
-          disableChangeLog: processInputDisableChangelog(),
-          isNodeModule: processInputNodeModule(),
-          releaseAssets: processInputReleaseAssets(),
-          releaseRules: processInputReleaseRules(),
-        }),
-        ...pluginsOverrides,
-      ],
-      ...otherOptionOverrides,
+      plugins: generatePlugins({
+        commitAssets: processInputCommitAssets(),
+        disableChangeLog: processInputDisableChangelog(),
+        isNodeModule: processInputNodeModule(),
+        releaseAssets: processInputReleaseAssets(),
+        releaseRules: processInputReleaseRules(),
+      }),
+      ...overrideOptions,
     },
     { ...(overrideConfig === undefined ? {} : overrideConfig) },
   );
