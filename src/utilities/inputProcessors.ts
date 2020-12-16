@@ -2,7 +2,7 @@ import { getInput } from '@actions/core';
 import * as joi from '@hapi/joi';
 import { BranchSpec } from 'semantic-release';
 
-const MATCH_YAML_EXTENSION_REGEXP = /\.(?:ya?ml)$/u;
+const MATCH_CONFIG_FILE_EXTENSION_REGEXP = /\.(?:ya?ml|js)$/u;
 
 export enum InputParameters {
   CommitAssets = 'commit-assets',
@@ -159,8 +159,8 @@ export const processInputConfigFile = (): string | undefined => {
     return;
   }
 
-  if (MATCH_YAML_EXTENSION_REGEXP.exec(file) === null) {
-    throw new Error('Config file should be a YAML file');
+  if (MATCH_CONFIG_FILE_EXTENSION_REGEXP.exec(file) === null) {
+    throw new Error('Config file should be a JavaScript or YAML file');
   }
 
   return file;

@@ -10,9 +10,11 @@ inputs:
     required: false
   config-file:
     description:
-      Specifies a configuration file from which to load a semantic-release
+      Specifies a YAML or JavaScript file from which to load a semantic-release
       configuration. Note that this will do a shallow merge of the options
-      provided.
+      provided. A JavaScript file should be a CommonJS module with a function as
+      default export. This function is passed the default options as its first
+      and only argument.
     required: false
   disable-changelog:
     default: 'false'

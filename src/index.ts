@@ -21,6 +21,19 @@ type SemanticRelease = (
   environment?: Config,
 ) => Promise<Result>;
 
+const branches = processInputReleaseBranches();
+const defaultOptions = {
+  ...(branches === undefined ? {} : { branches }),
+  dryRun: processInputDryRun(),
+  plugins: generatePlugins({
+    commitAssets: processInputCommitAssets(),
+    disableChangeLog: processInputDisableChangelog(),
+    isNodeModule: processInputNodeModule(),
+    releaseAssets: processInputReleaseAssets(),
+    releaseRules: processInputReleaseRules(),
+  }),
+};
+
 export const release = async (
   overrideOptions?: Options,
   overrideConfig?: Config,
@@ -31,20 +44,10 @@ export const release = async (
     'semantic-release'
   )) as unknown) as SemanticRelease;
 
-  const branches = processInputReleaseBranches();
-
   /* istanbul ignore next */
   const result: Result = await semanticRelease(
     {
-      ...(branches === undefined ? {} : { branches }),
-      dryRun: processInputDryRun(),
-      plugins: generatePlugins({
-        commitAssets: processInputCommitAssets(),
-        disableChangeLog: processInputDisableChangelog(),
-        isNodeModule: processInputNodeModule(),
-        releaseAssets: processInputReleaseAssets(),
-        releaseRules: processInputReleaseRules(),
-      }),
+      ...defaultOptions,
       ...overrideOptions,
     },
     { ...(overrideConfig === undefined ? {} : overrideConfig) },
@@ -57,7 +60,7 @@ const configFile = processInputConfigFile();
 
 Promise.resolve(
   /* istanbul ignore next */
-  configFile === undefined ? {} : getConfig(configFile),
+  configFile === undefined ? {} : getConfig(configFile, defaultOptions),
 )
   .then(async (config: object): Promise<Result> => release(config))
   .then(reportResults)
