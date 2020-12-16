@@ -1,5 +1,5 @@
 import { setFailed } from '@actions/core';
-import { Config, Options, Result } from 'semantic-release';
+import { Config, Options, PluginSpec, Result } from 'semantic-release';
 
 import { generatePlugins } from './utilities/generatePlugins';
 import { getConfig } from './utilities/getConfig';
@@ -45,6 +45,9 @@ export const release = async (
   const branches = processInputReleaseBranches();
   const releaseRules = processInputReleaseRules();
 
+  const { pluginsOverrides = [], ...otherOptionOverrides } =
+    overrideOptions ?? {};
+
   /* istanbul ignore next */
   const result: Result = await semanticRelease(
     {
@@ -52,16 +55,19 @@ export const release = async (
       ...(branches === undefined ? {} : { branches }),
       dryRun: processInputDryRun(),
       parserOpts: parseOptions,
-      plugins: generatePlugins({
-        commitAssets: processInputCommitAssets(),
-        disableChangeLog: processInputDisableChangelog(),
-        isNodeModule: processInputNodeModule(),
-        releaseAssets: processInputReleaseAssets(),
-      }),
+      plugins: [
+        ...generatePlugins({
+          commitAssets: processInputCommitAssets(),
+          disableChangeLog: processInputDisableChangelog(),
+          isNodeModule: processInputNodeModule(),
+          releaseAssets: processInputReleaseAssets(),
+        }),
+        ...pluginsOverrides,
+      ],
       preset: 'angular',
       releaseRules,
       writerOpts: writerOptions,
-      ...(overrideOptions === undefined ? {} : overrideOptions),
+      ...otherOptionOverrides,
       /* eslint-enable unicorn/prevent-abbreviations */
     },
     { ...(overrideConfig === undefined ? {} : overrideConfig) },
