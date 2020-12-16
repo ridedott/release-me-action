@@ -1,19 +1,45 @@
 import { PluginSpec } from 'semantic-release';
 
+import { ReleaseRule } from './inputProcessors';
+import { transform } from './transform';
+
+// eslint-disable-next-line max-lines-per-function
 export const generatePlugins = ({
   commitAssets,
   disableChangeLog = false,
   isNodeModule,
   releaseAssets,
+  releaseRules,
 }: {
   commitAssets: string[];
   disableChangeLog?: boolean;
   isNodeModule: boolean;
   releaseAssets: string[];
+  releaseRules: ReleaseRule[];
 }): PluginSpec[] => {
+  /* eslint-disable unicorn/prevent-abbreviations */
   return [
-    '@semantic-release/commit-analyzer',
-    '@semantic-release/release-notes-generator',
+    [
+      '@semantic-release/commit-analyzer',
+      {
+        parserOpts: {
+          mergeCorrespondence: ['id', 'source'],
+          // eslint-disable-next-line require-unicode-regexp
+          mergePattern: /^Merge pull request #\d+ from .*$/,
+        },
+        preset: 'angular',
+        releaseRules,
+      },
+    ],
+    [
+      '@semantic-release/release-notes-generator',
+      {
+        preset: 'angular',
+        writerOpts: {
+          transform,
+        },
+      },
+    ],
     ...(disableChangeLog === false
       ? [
           '@semantic-release/changelog',
@@ -59,4 +85,5 @@ export const generatePlugins = ({
       },
     ],
   ];
+  /* eslint-enable unicorn/prevent-abbreviations */
 };
