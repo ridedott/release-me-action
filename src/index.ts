@@ -33,7 +33,7 @@ export const release = async (
 
   const branches = processInputReleaseBranches();
 
-  const { pluginsOverrides = [], ...otherOptionOverrides } =
+  const { plugins: pluginsOverrides = [], ...otherOptionOverrides } =
     overrideOptions ??
     /* istanbul ignore next */
     {};
