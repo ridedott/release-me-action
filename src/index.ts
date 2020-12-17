@@ -21,21 +21,6 @@ type SemanticRelease = (
   environment?: Config,
 ) => Promise<Result>;
 
-const branches = processInputReleaseBranches();
-const configFile = processInputConfigFile();
-
-const defaultOptions = {
-  ...(branches === undefined ? {} : { branches }),
-  dryRun: processInputDryRun(),
-  plugins: generatePlugins({
-    commitAssets: processInputCommitAssets(),
-    disableChangeLog: processInputDisableChangelog(),
-    isNodeModule: processInputNodeModule(),
-    releaseAssets: processInputReleaseAssets(),
-    releaseRules: processInputReleaseRules(),
-  }),
-};
-
 export const release = async (
   overrideOptions?: Options,
   overrideConfig?: Config,
@@ -45,6 +30,21 @@ export const release = async (
   const semanticRelease = ((await import(
     'semantic-release'
   )) as unknown) as SemanticRelease;
+
+  const branches = processInputReleaseBranches();
+  const configFile = processInputConfigFile();
+
+  const defaultOptions = {
+    ...(branches === undefined ? {} : { branches }),
+    dryRun: processInputDryRun(),
+    plugins: generatePlugins({
+      commitAssets: processInputCommitAssets(),
+      disableChangeLog: processInputDisableChangelog(),
+      isNodeModule: processInputNodeModule(),
+      releaseAssets: processInputReleaseAssets(),
+      releaseRules: processInputReleaseRules(),
+    }),
+  };
 
   /* istanbul ignore next */
   const result: Result = await semanticRelease(
