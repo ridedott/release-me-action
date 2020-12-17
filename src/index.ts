@@ -62,14 +62,10 @@ Promise.resolve(
   /* istanbul ignore next */
   configFile === undefined ? {} : getConfig(configFile, defaultOptions),
 )
-  .then((config): object => {
-    // eslint-disable-next-line no-console
-    console.log(config);
-
-    return config;
-  })
   .then(async (config: object): Promise<Result> => release(config))
   .then(reportResults)
-  .catch((error: Error): void => {
+  .catch((error: unknown): void => {
+    // eslint-disable-next-line no-console
+    console.log('test');
     setFailed(JSON.stringify(error));
   });
