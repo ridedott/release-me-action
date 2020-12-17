@@ -1,3 +1,18 @@
+## [3.3.3](https://github.com/ridedott/release-me-action/compare/v3.3.2...v3.3.3) (2020-12-17)
+
+### Chores
+
+- **deps:** bump actions/setup-node from v2.1.3 to v2.1.4
+  ([256bdfe](https://github.com/ridedott/release-me-action/commit/256bdfe319000a6d9905d2580e07f0fb77670fe8))
+- **deps-dev:** bump @ridedott/eslint-config from 2.5.49 to 2.5.51
+  ([d121fa2](https://github.com/ridedott/release-me-action/commit/d121fa2ef8c2f45fd513ae3d6ce8e5646ede47a2))
+- **deps-dev:** bump @types/jest from 26.0.18 to 26.0.19
+  ([b5c63c4](https://github.com/ridedott/release-me-action/commit/b5c63c4c3c32c713c20df5c571accfd2e70113e3))
+- **deps-dev:** bump @types/node from 14.14.13 to 14.14.14
+  ([e0a3de9](https://github.com/ridedott/release-me-action/commit/e0a3de9131e69813c53f498929d9c440ff575cc3))
+- **deps-dev:** bump cspell from 4.2.5 to 5.0.6
+  ([53e79c9](https://github.com/ridedott/release-me-action/commit/53e79c9fe77c3ebba90248718272320a3e47384f))
+
 ## [3.3.2](https://github.com/ridedott/release-me-action/compare/v3.3.1...v3.3.2) (2020-12-14)
 
 ### Chores
