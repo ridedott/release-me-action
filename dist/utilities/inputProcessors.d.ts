@@ -1,6 +1,7 @@
 import { BranchSpec } from 'semantic-release';
 export declare enum InputParameters {
     CommitAssets = "commit-assets",
+    ConfigFile = "config-file",
     DisableChangelog = "disable-generate-changelog",
     DryRun = "dry-run",
     NodeModule = "node-module",
@@ -8,7 +9,7 @@ export declare enum InputParameters {
     ReleaseBranches = "release-branches",
     ReleaseRules = "release-rules"
 }
-interface ReleaseRule {
+export interface ReleaseRule {
     release: string | false;
     scope?: string;
     subject?: string;
@@ -25,8 +26,8 @@ export declare const processInputNodeModule: () => boolean;
 export declare const processInputDisableChangelog: () => boolean;
 export declare const processInputDryRun: () => boolean;
 export declare const processInputReleaseBranches: () => BranchSpec[] | undefined;
+export declare const processInputConfigFile: () => string | undefined;
 export declare const processInputReleaseRules: () => ReleaseRule[];
 export declare const processInputCommitAssets: () => string[];
 export declare const processInputReleaseAssets: () => string[];
-export {};
 //# sourceMappingURL=inputProcessors.d.ts.map

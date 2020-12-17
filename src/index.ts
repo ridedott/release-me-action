@@ -58,9 +58,6 @@ export const release = async (
   return result;
 };
 
-// eslint-disable-next-line no-console
-console.log('config', configFile);
-
 Promise.resolve(
   /* istanbul ignore next */
   configFile === undefined ? {} : getConfig(configFile, defaultOptions),
