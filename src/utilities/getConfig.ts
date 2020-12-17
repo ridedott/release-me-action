@@ -19,7 +19,11 @@ const getConfigJs = async (
   defaultOptions: Options,
 ): Promise<object> => {
   try {
-    const config = (await import(filePath)) as (object) => object;
+    const file = await fs.readFile(filePath, 'utf8');
+
+    // Not harmful: script runs in sandbox environment.
+    // eslint-disable-next-line no-eval
+    const config = eval(file) as (object) => object;
 
     return config(defaultOptions);
   } catch (error: unknown) {

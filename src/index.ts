@@ -50,10 +50,10 @@ export const release = async (
   const result: Result = await semanticRelease(
     {
       ...defaultOptions,
-      ...overrideOptions,
       ...(configFile === undefined
         ? {}
         : await getConfig(configFile, defaultOptions)),
+      ...overrideOptions,
     },
     overrideConfig ?? {},
   );
