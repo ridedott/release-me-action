@@ -51,6 +51,9 @@ export const release = async (
     {
       ...defaultOptions,
       ...overrideOptions,
+      ...(configFile === undefined
+        ? {}
+        : await getConfig(configFile, defaultOptions)),
     },
     overrideConfig ?? {},
   );
@@ -58,14 +61,8 @@ export const release = async (
   return result;
 };
 
-Promise.resolve(
-  /* istanbul ignore next */
-  configFile === undefined ? {} : getConfig(configFile, defaultOptions),
-)
-  .then(async (config: object): Promise<Result> => release(config))
+release()
   .then(reportResults)
   .catch((error: unknown): void => {
-    // eslint-disable-next-line no-console
-    console.log('test');
     setFailed(JSON.stringify(error));
   });

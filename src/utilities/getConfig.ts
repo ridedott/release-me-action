@@ -19,9 +19,7 @@ const getConfigJs = async (
   defaultOptions: Options,
 ): Promise<object> => {
   try {
-    // eslint-disable-next-line max-len
-    // eslint-disable-next-line @typescript-eslint/no-require-imports,@typescript-eslint/no-var-requires
-    const config = require(filePath);
+    const config = (await import(filePath)) as (object) => object;
 
     return config(defaultOptions);
   } catch (error: unknown) {

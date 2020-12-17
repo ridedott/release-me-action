@@ -1,1 +1,1 @@
-{"version":3,"file":"getConfig.d.ts","sourceRoot":"","sources":["file:///Users/joachim/Development/dott/release-me-action/src/utilities/getConfig.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,OAAO,EAAE,MAAM,kBAAkB,CAAC;AA6B3C,eAAO,MAAM,SAAS,aACV,MAAM,kBACA,OAAO,KACtB,QAAQ,MAAM,CAShB,CAAC"}
+{"version":3,"file":"getConfig.d.ts","sourceRoot":"","sources":["file:///Users/joachim/Development/dott/release-me-action/src/utilities/getConfig.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,OAAO,EAAE,MAAM,kBAAkB,CAAC;AA2B3C,eAAO,MAAM,SAAS,aACV,MAAM,kBACA,OAAO,KACtB,QAAQ,MAAM,CAShB,CAAC"}
