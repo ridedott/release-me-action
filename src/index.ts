@@ -22,6 +22,8 @@ type SemanticRelease = (
 ) => Promise<Result>;
 
 const branches = processInputReleaseBranches();
+const configFile = processInputConfigFile();
+
 const defaultOptions = {
   ...(branches === undefined ? {} : { branches }),
   dryRun: processInputDryRun(),
@@ -56,7 +58,8 @@ export const release = async (
   return result;
 };
 
-const configFile = processInputConfigFile();
+// eslint-disable-next-line no-console
+console.log('config', configFile);
 
 Promise.resolve(
   /* istanbul ignore next */
