@@ -1,5 +1,9 @@
 import { BranchSpec } from 'semantic-release';
+export interface AdditionalPluginsSpec {
+    [plugin: string]: string;
+}
 export declare enum InputParameters {
+    AdditionalPlugins = "additional-plugins",
     CommitAssets = "commit-assets",
     ConfigFile = "config-file",
     DisableChangelog = "disable-generate-changelog",
@@ -22,6 +26,7 @@ export interface ReleaseRule {
  * https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular#type
  */
 export declare const DEFAULT_RELEASE_RULES: ReleaseRule[];
+export declare const processInputAdditionalPlugins: () => AdditionalPluginsSpec | undefined;
 export declare const processInputNodeModule: () => boolean;
 export declare const processInputDisableChangelog: () => boolean;
 export declare const processInputDryRun: () => boolean;
