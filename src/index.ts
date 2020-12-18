@@ -37,8 +37,8 @@ export const release = async (
   const branches = processInputReleaseBranches();
   const configFile = processInputConfigFile();
 
+  /* istanbul ignore next */
   const defaultOptions = {
-    /* istanbul ignore next */
     ...(branches === undefined ? {} : { branches }),
     dryRun: processInputDryRun(),
     plugins: generatePlugins({

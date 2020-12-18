@@ -168,8 +168,14 @@ const validateInputReleaseRules = (input: unknown): ReleaseRule[] => {
   return value;
 };
 
-export const processInputAdditionalPlugins = (): AdditionalPluginsSpec => {
+export const processInputAdditionalPlugins = ():
+  | AdditionalPluginsSpec
+  | undefined => {
   const input = getInput(InputParameters.AdditionalPlugins);
+
+  if (input.length === 0) {
+    return;
+  }
 
   const parsedInput = parseInputAdditionalPlugins(input);
 
@@ -200,7 +206,7 @@ export const processInputReleaseBranches = (): BranchSpec[] | undefined => {
 export const processInputConfigFile = (): string | undefined => {
   const file = getInput(InputParameters.ConfigFile);
 
-  if (file === '') {
+  if (file.length === 0) {
     return;
   }
 
