@@ -33,6 +33,7 @@ steps:
     name: Release
     uses: ridedott/release-me-action@master
     with:
+
       # Configure Semantic Release branches parameter:
       # https://semantic-release.gitbook.io/semantic-release/usage/workflow-configuration#branches-properties
       #
@@ -63,7 +64,14 @@ steps:
       # Load a YAML configuration file from this file. Options defined in this file
       # will behave the same as a semantic-release configuration file:
       # https://semantic-release.gitbook.io/semantic-release/usage/configuration#configuration-file
+      # Note that this will do a shallow merge of the options provided. A JavaScript
+      # file should be a CommonJS module with a function as default export. This
+      # function is passed the default options as its first and only argument.
       config-file: ./path/to/config.yml
+      # Specify additional semantic-release plugins to install. Accepts packages
+      # in package.json format.
+      additional-plugins:
+        '{ "@google/semantic-release-replace-plugin": "^4.0.2" }'
 ```
 
 **IMPORTANT** `GITHUB_TOKEN` does not have the required permissions to operate
