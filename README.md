@@ -69,7 +69,8 @@ steps:
       # function is passed the default options as its first and only argument.
       config-file: ./path/to/config.yml
       # Specify additional semantic-release plugins to install. Accepts packages
-      # in package.json format.
+      # in package.json format. Note that this install process does not include a
+      # package.json file.
       additional-plugins:
         '{ "@google/semantic-release-replace-plugin": "^4.0.2" }'
 ```
