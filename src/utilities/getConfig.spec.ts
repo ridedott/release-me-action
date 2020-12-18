@@ -30,9 +30,14 @@ it('throws if the YAML file is not parsed to an object', async (): Promise<void>
 it('returns an object from a specified JS file', async (): Promise<void> => {
   expect.assertions(1);
 
-  readFileSpy.mockResolvedValue('foo');
+  readFileSpy.mockResolvedValue(`
+module.exports = (defaultConfig) => ({
+  ...defaultConfig,
+  foo: 'bar',
+});
+`);
 
-  const config = await getConfig('./__fixtures__/semantic-config.js', {
+  const config = await getConfig('./file.js', {
     default: true,
   });
   expect(config).toStrictEqual({
@@ -47,7 +52,7 @@ it('throws if the JS module could not be imported', async (): Promise<void> => {
   readFileSpy.mockResolvedValue('foo');
 
   try {
-    await getConfig('./invalid', {});
+    await getConfig('./invalid.js', {});
   } catch (error: unknown) {
     expect(error).toBeInstanceOf(Error);
   }
