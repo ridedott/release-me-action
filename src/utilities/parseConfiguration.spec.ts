@@ -1,6 +1,6 @@
 import { promises as fs } from 'fs';
 
-import { getConfig } from './getConfig';
+import { parseConfiguration } from './parseConfiguration';
 
 const readFileSpy = jest.spyOn(fs, 'readFile');
 
@@ -9,7 +9,7 @@ it('returns an object from a specified YAML file', async (): Promise<void> => {
 
   readFileSpy.mockResolvedValue('{foo: true}');
 
-  const config = await getConfig('./dir/config.yml', {});
+  const config = await parseConfiguration('./dir/config.yml', {});
 
   expect(config).toStrictEqual({ foo: true });
   expect(readFileSpy.mock.calls[0][0]).toStrictEqual('./dir/config.yml');
@@ -21,7 +21,7 @@ it('throws if the YAML file is not parsed to an object', async (): Promise<void>
   readFileSpy.mockResolvedValue('foo');
 
   try {
-    await getConfig('./dir/config.yml', {});
+    await parseConfiguration('./dir/config.yml', {});
   } catch (error: unknown) {
     expect(error).toBeInstanceOf(Error);
   }
@@ -37,7 +37,7 @@ module.exports = (defaultConfig) => ({
 });
 `);
 
-  const config = await getConfig('./file.js', {
+  const config = await parseConfiguration('./file.js', {
     default: true,
   });
   expect(config).toStrictEqual({
@@ -52,7 +52,7 @@ it('throws if the JS module could not be imported', async (): Promise<void> => {
   readFileSpy.mockResolvedValue('foo');
 
   try {
-    await getConfig('./invalid.js', {});
+    await parseConfiguration('./invalid.js', {});
   } catch (error: unknown) {
     expect(error).toBeInstanceOf(Error);
   }

@@ -2,7 +2,6 @@ import { setFailed } from '@actions/core';
 import { Config, Options, Result } from 'semantic-release';
 
 import { generatePlugins } from './utilities/generatePlugins';
-import { getConfig } from './utilities/getConfig';
 import {
   processInputAdditionalPlugins,
   processInputCommitAssets,
@@ -16,6 +15,7 @@ import {
 } from './utilities/inputProcessors';
 import { installDependencies } from './utilities/installDependencies';
 import { reportResults } from './utilities/outputParsers';
+import { parseConfiguration } from './utilities/parseConfiguration';
 
 type SemanticRelease = (
   options: Options,
@@ -56,7 +56,7 @@ export const release = async (
       ...defaultOptions,
       ...(configFile === undefined
         ? {}
-        : await getConfig(configFile, defaultOptions)),
+        : await parseConfiguration(configFile, defaultOptions)),
       ...overrideOptions,
     },
     overrideConfig ?? {},
