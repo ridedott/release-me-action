@@ -1,3 +1,37 @@
+## [3.3.4](https://github.com/ridedott/release-me-action/compare/v3.3.3...v3.3.4) (2020-12-30)
+
+### Chores
+
+- **deps:** bump semantic-release from 17.3.0 to 17.3.1
+  ([8e19c51](https://github.com/ridedott/release-me-action/commit/8e19c512eb2a5f0923a11341086a1ba744dc0da2))
+- **deps-dev:** bump @types/node from 14.14.14 to 14.14.16
+  ([045c5f7](https://github.com/ridedott/release-me-action/commit/045c5f7373546ba81c0872795bc4534865e55c67))
+- **deps-dev:** bump cspell from 5.0.6 to 5.0.7
+  ([54f3dd3](https://github.com/ridedott/release-me-action/commit/54f3dd36920c042fdc75f856f185b9bb00b28794))
+- **deps-dev:** bump cspell from 5.0.7 to 5.0.8
+  ([86a71e1](https://github.com/ridedott/release-me-action/commit/86a71e11b3cf374e462eea63127af91039cd4392))
+- **deps-dev:** bump cspell from 5.0.8 to 5.1.0
+  ([8093ff3](https://github.com/ridedott/release-me-action/commit/8093ff361a4992a9f7c5546b1bc674747d4d8df7))
+- **deps-dev:** bump cspell from 5.1.0 to 5.1.1
+  ([0d914e2](https://github.com/ridedott/release-me-action/commit/0d914e2955798ebf03ef18d54336caa60de981d2))
+- **deps-dev:** bump eslint from 7.15.0 to 7.16.0
+  ([e1d6898](https://github.com/ridedott/release-me-action/commit/e1d689882384b34f6c7bef59a6b728fa23abb578))
+
+## [3.3.3](https://github.com/ridedott/release-me-action/compare/v3.3.2...v3.3.3) (2020-12-17)
+
+### Chores
+
+- **deps:** bump actions/setup-node from v2.1.3 to v2.1.4
+  ([256bdfe](https://github.com/ridedott/release-me-action/commit/256bdfe319000a6d9905d2580e07f0fb77670fe8))
+- **deps-dev:** bump @ridedott/eslint-config from 2.5.49 to 2.5.51
+  ([d121fa2](https://github.com/ridedott/release-me-action/commit/d121fa2ef8c2f45fd513ae3d6ce8e5646ede47a2))
+- **deps-dev:** bump @types/jest from 26.0.18 to 26.0.19
+  ([b5c63c4](https://github.com/ridedott/release-me-action/commit/b5c63c4c3c32c713c20df5c571accfd2e70113e3))
+- **deps-dev:** bump @types/node from 14.14.13 to 14.14.14
+  ([e0a3de9](https://github.com/ridedott/release-me-action/commit/e0a3de9131e69813c53f498929d9c440ff575cc3))
+- **deps-dev:** bump cspell from 4.2.5 to 5.0.6
+  ([53e79c9](https://github.com/ridedott/release-me-action/commit/53e79c9fe77c3ebba90248718272320a3e47384f))
+
 ## [3.3.2](https://github.com/ridedott/release-me-action/compare/v3.3.1...v3.3.2) (2020-12-14)
 
 ### Chores
