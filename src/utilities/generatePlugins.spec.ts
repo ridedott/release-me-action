@@ -10,6 +10,7 @@ describe('generatePlugins', (): void => {
         disableChangeLog: true,
         isNodeModule: false,
         releaseAssets: [],
+        releaseRules: [],
       }),
     ).toMatchSnapshot();
   });
@@ -22,6 +23,7 @@ describe('generatePlugins', (): void => {
         commitAssets: [],
         isNodeModule: false,
         releaseAssets: [],
+        releaseRules: [],
       }),
     ).toMatchSnapshot();
   });
@@ -34,6 +36,7 @@ describe('generatePlugins', (): void => {
         commitAssets: [],
         isNodeModule: false,
         releaseAssets: [],
+        releaseRules: [],
       }),
     ).toMatchSnapshot();
   });
@@ -46,6 +49,7 @@ describe('generatePlugins', (): void => {
         commitAssets: [],
         isNodeModule: true,
         releaseAssets: [],
+        releaseRules: [],
       }),
     ).toMatchSnapshot();
   });
@@ -58,6 +62,7 @@ describe('generatePlugins', (): void => {
         commitAssets: [],
         isNodeModule: true,
         releaseAssets: [],
+        releaseRules: [],
       }),
     ).toMatchSnapshot();
   });
@@ -70,6 +75,7 @@ describe('generatePlugins', (): void => {
         commitAssets: ['./src'],
         isNodeModule: false,
         releaseAssets: [],
+        releaseRules: [],
       }),
     ).toMatchSnapshot();
   });
@@ -82,6 +88,7 @@ describe('generatePlugins', (): void => {
         commitAssets: [],
         isNodeModule: false,
         releaseAssets: ['./src'],
+        releaseRules: [],
       }),
     ).toMatchSnapshot();
   });

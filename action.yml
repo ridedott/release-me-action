@@ -3,10 +3,18 @@ branding:
   icon: package
 description: A GitHub Action for Semantic Release.
 inputs:
+  additional-plugins:
+    description: Configures the additional semantic-release plugins to install.
+    required: false
   commit-assets:
     description:
       Configures the list of assets to commit to the repository alongside the
       changelog.
+    required: false
+  config-file:
+    description:
+      Specifies a YAML or CommonJS module from which to load a semantic-release
+      configuration.
     required: false
   disable-changelog:
     default: 'false'
