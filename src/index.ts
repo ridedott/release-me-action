@@ -4,6 +4,7 @@ import { Config, Options, Result } from 'semantic-release';
 import { generatePlugins } from './utilities/generatePlugins';
 import { getConfig } from './utilities/getConfig';
 import {
+  processInputAdditionalPlugins,
   processInputCommitAssets,
   processInputConfigFile,
   processInputDisableChangelog,
@@ -25,7 +26,9 @@ export const release = async (
   overrideOptions?: Options,
   overrideConfig?: Config,
 ): Promise<Result> => {
-  await installDependencies();
+  const additionalPlugins = processInputAdditionalPlugins();
+
+  await installDependencies(additionalPlugins);
 
   const semanticRelease = ((await import(
     'semantic-release'

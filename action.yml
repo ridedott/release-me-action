@@ -3,6 +3,9 @@ branding:
   icon: package
 description: A GitHub Action for Semantic Release.
 inputs:
+  additional-plugins:
+    description: Configures the additional semantic-release plugins to install.
+    required: false
   commit-assets:
     description:
       Configures the list of assets to commit to the repository alongside the
@@ -10,11 +13,8 @@ inputs:
     required: false
   config-file:
     description:
-      Specifies a YAML or JavaScript file from which to load a semantic-release
-      configuration. Note that this will do a shallow merge of the options
-      provided. A JavaScript file should be a CommonJS module with a function as
-      default export. This function is passed the default options as its first
-      and only argument.
+      Specifies a YAML or CommonJS module from which to load a semantic-release
+      configuration.
     required: false
   disable-changelog:
     default: 'false'

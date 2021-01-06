@@ -1,6 +1,7 @@
 import * as actionsCore from '@actions/core';
 
 import {
+  processInputAdditionalPlugins,
   processInputCommitAssets,
   processInputConfigFile,
   processInputDisableChangelog,
@@ -261,6 +262,46 @@ describe('processInputConfigFile', (): void => {
 
     try {
       processInputConfigFile();
+    } catch (error: unknown) {
+      expect(error).toBeInstanceOf(Error);
+    }
+  });
+});
+
+describe('processInputAdditionalPlugins', (): void => {
+  it('returns an object in package.json format', (): void => {
+    expect.assertions(1);
+
+    getInputSpy.mockReturnValue(
+      '{"@google/semantic-release-replace-plugin":"^4.0.2"}',
+    );
+
+    const result = processInputAdditionalPlugins();
+
+    expect(result).toStrictEqual({
+      '@google/semantic-release-replace-plugin': '^4.0.2',
+    });
+  });
+
+  it('throws if the input is not valid JSON', (): void => {
+    expect.assertions(1);
+
+    getInputSpy.mockReturnValue('foo');
+
+    try {
+      processInputAdditionalPlugins();
+    } catch (error: unknown) {
+      expect(error).toBeInstanceOf(Error);
+    }
+  });
+
+  it('throws if the object is not in package.json format', (): void => {
+    expect.assertions(1);
+
+    getInputSpy.mockReturnValue('{"foo":1}');
+
+    try {
+      processInputAdditionalPlugins();
     } catch (error: unknown) {
       expect(error).toBeInstanceOf(Error);
     }
