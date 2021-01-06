@@ -1,3 +1,23 @@
+# [3.4.0](https://github.com/ridedott/release-me-action/compare/v3.3.4...v3.4.0) (2021-01-06)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 14.14.16 to 14.14.17
+  ([99f7467](https://github.com/ridedott/release-me-action/commit/99f7467d13d87a4b7db918a913e99acc76ec7da8))
+- **deps-dev:** bump @types/node from 14.14.17 to 14.14.19
+  ([313b8ec](https://github.com/ridedott/release-me-action/commit/313b8ec5577f45f2df54a9fba7fde6e5f24adb06))
+- **deps-dev:** bump cspell from 5.1.1 to 5.1.2
+  ([833ba8b](https://github.com/ridedott/release-me-action/commit/833ba8be4ed32cc91a1b661dab9110c666af3617))
+- **deps-dev:** bump cspell from 5.1.2 to 5.1.3
+  ([59e3b4e](https://github.com/ridedott/release-me-action/commit/59e3b4ef2c93551a53891df6fe9bb78892b9b6bc))
+- **deps-dev:** bump eslint from 7.16.0 to 7.17.0
+  ([1d54459](https://github.com/ridedott/release-me-action/commit/1d54459c1194b60cdc5630b77c84ebbdd4c8721d))
+
+### Features
+
+- add config-file option
+  ([0b643a7](https://github.com/ridedott/release-me-action/commit/0b643a7a197c7f55e627692daf52eed8cf1a78e0))
+
 ## [3.3.4](https://github.com/ridedott/release-me-action/compare/v3.3.3...v3.3.4) (2020-12-30)
 
 ### Chores
