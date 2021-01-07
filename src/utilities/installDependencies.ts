@@ -17,7 +17,7 @@ export const installDependencies = async (
   await exec('npm', [
     `--prefix ${actionRoot}`,
     `ci ${actionRoot}`,
-    '--only-production',
+    '--only=production',
     '--no-audit',
     '--no-progress',
     '--prefer-offline'
