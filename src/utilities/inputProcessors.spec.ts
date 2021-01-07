@@ -1,9 +1,7 @@
 import * as actionsCore from '@actions/core';
 
 import {
-  processInputAdditionalPlugins,
   processInputCommitAssets,
-  processInputConfigFile,
   processInputDisableChangelog,
   processInputDryRun,
   processInputNodeModule,
@@ -241,69 +239,5 @@ describe('processInputReleaseAssets', (): void => {
     const result = processInputReleaseAssets();
 
     expect(result).toStrictEqual(['./src']);
-  });
-});
-
-describe('processInputConfigFile', (): void => {
-  it('returns a valid path relative to the project root', (): void => {
-    expect.assertions(1);
-
-    getInputSpy.mockReturnValue('./src.yaml');
-
-    const result = processInputConfigFile();
-
-    expect(result).toStrictEqual('./src.yaml');
-  });
-
-  it('throws if the provided path is not a YAML file', (): void => {
-    expect.assertions(1);
-
-    getInputSpy.mockReturnValue('./src.json');
-
-    try {
-      processInputConfigFile();
-    } catch (error: unknown) {
-      expect(error).toBeInstanceOf(Error);
-    }
-  });
-});
-
-describe('processInputAdditionalPlugins', (): void => {
-  it('returns an object in package.json format', (): void => {
-    expect.assertions(1);
-
-    getInputSpy.mockReturnValue(
-      '{"@google/semantic-release-replace-plugin":"^4.0.2"}',
-    );
-
-    const result = processInputAdditionalPlugins();
-
-    expect(result).toStrictEqual({
-      '@google/semantic-release-replace-plugin': '^4.0.2',
-    });
-  });
-
-  it('throws if the input is not valid JSON', (): void => {
-    expect.assertions(1);
-
-    getInputSpy.mockReturnValue('foo');
-
-    try {
-      processInputAdditionalPlugins();
-    } catch (error: unknown) {
-      expect(error).toBeInstanceOf(Error);
-    }
-  });
-
-  it('throws if the object is not in package.json format', (): void => {
-    expect.assertions(1);
-
-    getInputSpy.mockReturnValue('{"foo":1}');
-
-    try {
-      processInputAdditionalPlugins();
-    } catch (error: unknown) {
-      expect(error).toBeInstanceOf(Error);
-    }
   });
 });
