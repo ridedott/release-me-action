@@ -12,6 +12,8 @@ export const installDependencies = async (
     ([plugin, version]: [string, string]): string => `${plugin}@${version}`,
   );
 
+  console.log(additionalPackages);
+
   await exec(pathResolve(actionRoot, 'scripts', 'install-dependencies.sh'), [
     actionRoot,
     ...additionalPackages,
