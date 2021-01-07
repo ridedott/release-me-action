@@ -14,8 +14,8 @@ export const installDependencies = async (
 
   console.log(additionalPackages);
 
-  await exec('npm', [
-    `--prefix "${actionRoot}"`,
-    `ci "${actionRoot}"`
+  await exec(`npm --prefix ${actionRoot}`, [
+    'ci',
+    `"${actionRoot}"`
   ]);
 };
