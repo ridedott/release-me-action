@@ -1,1 +1,1 @@
-{"version":3,"file":"installDependencies.d.ts","sourceRoot":"","sources":["file:///home/alex/code/dott/release-me-action/src/utilities/installDependencies.ts"],"names":[],"mappings":"AAGA,OAAO,EAAE,qBAAqB,EAAE,MAAM,mBAAmB,CAAC;AAE1D,eAAO,MAAM,mBAAmB,6DAE7B,QAAQ,IAAI,CAuBd,CAAC"}
+{"version":3,"file":"installDependencies.d.ts","sourceRoot":"","sources":["file:///home/alex/code/dott/release-me-action/src/utilities/installDependencies.ts"],"names":[],"mappings":"AAGA,OAAO,EAAE,qBAAqB,EAAE,MAAM,mBAAmB,CAAC;AAE1D,eAAO,MAAM,mBAAmB,6DAE7B,QAAQ,IAAI,CAsBd,CAAC"}

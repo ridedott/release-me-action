@@ -12,7 +12,7 @@ export const installDependencies = async (
     ([plugin, version]: [string, string]): string => `${plugin}@${version}`,
   );
 
-  await exec(`npm --prefix ${actionRoot} clean-install "${actionRoot}"`, [
+  await exec(`npm --prefix "${actionRoot}" clean-install "${actionRoot}"`, [
     '--only=production',
     '--no-audit',
     '--no-progress',
@@ -20,8 +20,7 @@ export const installDependencies = async (
   ]);
 
   if (additionalPackages.length > 0) {
-    await exec(`npm --prefix ${actionRoot}`, [
-      `install "${actionRoot}"`,
+    await exec(`npm --prefix "${actionRoot}" install "${actionRoot}"`, [
       ...additionalPackages,
       '--no-audit',
       '--no-progress',
