@@ -12,10 +12,21 @@ export const installDependencies = async (
     ([plugin, version]: [string, string]): string => `${plugin}@${version}`,
   );
 
-  console.log(additionalPackages);
-
   await exec(`npm --prefix ${actionRoot}`, [
-    'ci',
-    `"${actionRoot}"`
+    `clean-install "${actionRoot}"`,
+    '--only=production',
+    '--no-audit',
+    '--no-progress',
+    '--prefer-offline'
   ]);
+
+  if (additionalPackages.length > 0) {
+    await exec(`npm --prefix ${actionRoot}`, [
+      `install "${actionRoot}"`,
+      ...additionalPackages,
+      '--no-audit',
+      '--no-progress',
+      '--prefer-offline'
+    ])
+  }
 };
