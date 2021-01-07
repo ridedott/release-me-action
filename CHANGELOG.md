@@ -1,3 +1,15 @@
+## [3.4.1](https://github.com/ridedott/release-me-action/compare/v3.4.0...v3.4.1) (2021-01-07)
+
+### Chores
+
+- **deps-dev:** bump husky from 4.3.6 to 4.3.7
+  ([647419a](https://github.com/ridedott/release-me-action/commit/647419a18facfb1b0149b75ce49043e08baa05ef))
+
+### Reverts
+
+- feat: add config-file option
+  ([f300da4](https://github.com/ridedott/release-me-action/commit/f300da4c85e71a1eda51af2a0355bc8433fe0877))
+
 # [3.4.0](https://github.com/ridedott/release-me-action/compare/v3.3.4...v3.4.0) (2021-01-06)
 
 ### Chores
