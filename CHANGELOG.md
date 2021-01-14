@@ -1,3 +1,12 @@
+## [3.4.3](https://github.com/ridedott/release-me-action/compare/v3.4.2...v3.4.3) (2021-01-14)
+
+### Chores
+
+- **deps:** bump semantic-release from 17.3.1 to 17.3.2
+  ([fb767df](https://github.com/ridedott/release-me-action/commit/fb767df75e8666490a55d24dafc09065b0eb16b4))
+- **deps-dev:** bump @types/jest from 26.0.19 to 26.0.20
+  ([a1afe1e](https://github.com/ridedott/release-me-action/commit/a1afe1ef500b89a825935b6bfbc13a123554e690))
+
 ## [3.4.2](https://github.com/ridedott/release-me-action/compare/v3.4.1...v3.4.2) (2021-01-07)
 
 ### Chores
