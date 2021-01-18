@@ -1,3 +1,10 @@
+## [3.4.5](https://github.com/ridedott/release-me-action/compare/v3.4.4...v3.4.5) (2021-01-18)
+
+### Chores
+
+- **deps:** bump semantic-release from 17.3.2 to 17.3.3
+  ([7e6b71b](https://github.com/ridedott/release-me-action/commit/7e6b71b22c9df74ecc2986541b9284ae0c8c3465))
+
 ## [3.4.4](https://github.com/ridedott/release-me-action/compare/v3.4.3...v3.4.4) (2021-01-18)
 
 ### Chores
