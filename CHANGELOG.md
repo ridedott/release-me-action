@@ -1,3 +1,18 @@
+## [3.4.4](https://github.com/ridedott/release-me-action/compare/v3.4.3...v3.4.4) (2021-01-18)
+
+### Chores
+
+- **deps:** bump @semantic-release/npm from 7.0.9 to 7.0.10
+  ([d05ffac](https://github.com/ridedott/release-me-action/commit/d05ffac86dabdf9d3ee1d75009850c6c3306731c))
+- **deps-dev:** bump @types/node from 14.14.19 to 14.14.21
+  ([5572dce](https://github.com/ridedott/release-me-action/commit/5572dce62e826685639555313f6ec31eb7282250))
+- **deps-dev:** bump commitizen from 4.2.2 to 4.2.3
+  ([d86b259](https://github.com/ridedott/release-me-action/commit/d86b259bca1997caa48ce60247c169690d9a4f67))
+- **deps-dev:** bump eslint from 7.17.0 to 7.18.0
+  ([a08cb02](https://github.com/ridedott/release-me-action/commit/a08cb026f745a3d7be2ae0607cc2092e6ea5f2a7))
+- **deps-dev:** bump husky from 4.3.7 to 4.3.8
+  ([b052a7f](https://github.com/ridedott/release-me-action/commit/b052a7fc9004919ec446788ae6ab2584b8f5dbf9))
+
 ## [3.4.3](https://github.com/ridedott/release-me-action/compare/v3.4.2...v3.4.3) (2021-01-14)
 
 ### Chores
