@@ -9,7 +9,7 @@ import { Options } from 'semantic-release';
 const parseYamlConfiguration = async (filePath: string): Promise<object> => {
   const file = await fs.readFile(filePath, 'utf8');
 
-  const config = yaml.safeLoad(file) as string | object | undefined;
+  const config = yaml.load(file) as string | object | undefined;
 
   if (typeof config !== 'object') {
     throw new Error('Invalid config file contents; not an object');
