@@ -1,3 +1,15 @@
+# [3.5.0](https://github.com/ridedott/release-me-action/compare/v3.4.9...v3.5.0) (2021-02-04)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 14.14.24 to 14.14.25
+  ([a81483a](https://github.com/ridedott/release-me-action/commit/a81483af968f787d7a0e8aac5f5299a1df51566d))
+
+### Features
+
+- add config-file option to specify custom configuration
+  ([1d7cff3](https://github.com/ridedott/release-me-action/commit/1d7cff39eee24e849b750a4a09981e49cb5c41c1))
+
 ## [3.4.9](https://github.com/ridedott/release-me-action/compare/v3.4.8...v3.4.9) (2021-02-04)
 
 ### Chores
