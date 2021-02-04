@@ -1,3 +1,111 @@
+## [3.4.9](https://github.com/ridedott/release-me-action/compare/v3.4.8...v3.4.9) (2021-02-04)
+
+### Chores
+
+- update Dependabot configuration
+  ([8fd0813](https://github.com/ridedott/release-me-action/commit/8fd0813d7434522ba5409357067ac62acd275102))
+- **deps-dev:** bump @types/node from 14.14.22 to 14.14.24
+  ([f21102f](https://github.com/ridedott/release-me-action/commit/f21102ff3151ad008aa8f3b7771b338ea43b3eab))
+- **deps-dev:** bump cspell from 5.1.3 to 5.2.2
+  ([edcd5ed](https://github.com/ridedott/release-me-action/commit/edcd5ede351ae0791b832cb602e28bc2f72dd54e))
+- **deps-dev:** bump cspell from 5.2.2 to 5.2.4
+  ([35563b7](https://github.com/ridedott/release-me-action/commit/35563b75778f8e597025c1a61118a0f20ba22ff0))
+- **deps-dev:** bump eslint from 7.18.0 to 7.19.0
+  ([2ab1c02](https://github.com/ridedott/release-me-action/commit/2ab1c0288afbb804cebef8eeea5a476f3189271e))
+
+## [3.4.8](https://github.com/ridedott/release-me-action/compare/v3.4.7...v3.4.8) (2021-01-25)
+
+### Chores
+
+- **deps:** bump semantic-release from 17.3.6 to 17.3.7
+  ([cc17ec8](https://github.com/ridedott/release-me-action/commit/cc17ec87d58265484a39fbe805c7dab5351f8b4c))
+
+## [3.4.7](https://github.com/ridedott/release-me-action/compare/v3.4.6...v3.4.7) (2021-01-21)
+
+### Chores
+
+- **deps:** bump semantic-release from 17.3.4 to 17.3.6
+  ([7359009](https://github.com/ridedott/release-me-action/commit/7359009572fa53dce41121cf9a9639331271a8a4))
+- **deps-dev:** bump @types/node from 14.14.21 to 14.14.22
+  ([93c43a5](https://github.com/ridedott/release-me-action/commit/93c43a55458b877db3e38d8392364266efa0fdc4))
+
+## [3.4.6](https://github.com/ridedott/release-me-action/compare/v3.4.5...v3.4.6) (2021-01-20)
+
+### Chores
+
+- **deps:** bump semantic-release from 17.3.3 to 17.3.4
+  ([e92f1c9](https://github.com/ridedott/release-me-action/commit/e92f1c9c8658461ceaec4441ff50eb7b49d51d26))
+
+## [3.4.5](https://github.com/ridedott/release-me-action/compare/v3.4.4...v3.4.5) (2021-01-18)
+
+### Chores
+
+- **deps:** bump semantic-release from 17.3.2 to 17.3.3
+  ([7e6b71b](https://github.com/ridedott/release-me-action/commit/7e6b71b22c9df74ecc2986541b9284ae0c8c3465))
+
+## [3.4.4](https://github.com/ridedott/release-me-action/compare/v3.4.3...v3.4.4) (2021-01-18)
+
+### Chores
+
+- **deps:** bump @semantic-release/npm from 7.0.9 to 7.0.10
+  ([d05ffac](https://github.com/ridedott/release-me-action/commit/d05ffac86dabdf9d3ee1d75009850c6c3306731c))
+- **deps-dev:** bump @types/node from 14.14.19 to 14.14.21
+  ([5572dce](https://github.com/ridedott/release-me-action/commit/5572dce62e826685639555313f6ec31eb7282250))
+- **deps-dev:** bump commitizen from 4.2.2 to 4.2.3
+  ([d86b259](https://github.com/ridedott/release-me-action/commit/d86b259bca1997caa48ce60247c169690d9a4f67))
+- **deps-dev:** bump eslint from 7.17.0 to 7.18.0
+  ([a08cb02](https://github.com/ridedott/release-me-action/commit/a08cb026f745a3d7be2ae0607cc2092e6ea5f2a7))
+- **deps-dev:** bump husky from 4.3.7 to 4.3.8
+  ([b052a7f](https://github.com/ridedott/release-me-action/commit/b052a7fc9004919ec446788ae6ab2584b8f5dbf9))
+
+## [3.4.3](https://github.com/ridedott/release-me-action/compare/v3.4.2...v3.4.3) (2021-01-14)
+
+### Chores
+
+- **deps:** bump semantic-release from 17.3.1 to 17.3.2
+  ([fb767df](https://github.com/ridedott/release-me-action/commit/fb767df75e8666490a55d24dafc09065b0eb16b4))
+- **deps-dev:** bump @types/jest from 26.0.19 to 26.0.20
+  ([a1afe1e](https://github.com/ridedott/release-me-action/commit/a1afe1ef500b89a825935b6bfbc13a123554e690))
+
+## [3.4.2](https://github.com/ridedott/release-me-action/compare/v3.4.1...v3.4.2) (2021-01-07)
+
+### Chores
+
+- **deps:** bump js-yaml from 3.14.1 to 4.0.0
+  ([a71fe5f](https://github.com/ridedott/release-me-action/commit/a71fe5fb446145da5d091987d59eb71eb7d60204))
+
+## [3.4.1](https://github.com/ridedott/release-me-action/compare/v3.4.0...v3.4.1) (2021-01-07)
+
+### Chores
+
+- **deps-dev:** bump husky from 4.3.6 to 4.3.7
+  ([647419a](https://github.com/ridedott/release-me-action/commit/647419a18facfb1b0149b75ce49043e08baa05ef))
+
+### Reverts
+
+- feat: add config-file option
+  ([f300da4](https://github.com/ridedott/release-me-action/commit/f300da4c85e71a1eda51af2a0355bc8433fe0877))
+
+# [3.4.0](https://github.com/ridedott/release-me-action/compare/v3.3.4...v3.4.0) (2021-01-06)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 14.14.16 to 14.14.17
+  ([99f7467](https://github.com/ridedott/release-me-action/commit/99f7467d13d87a4b7db918a913e99acc76ec7da8))
+- **deps-dev:** bump @types/node from 14.14.17 to 14.14.19
+  ([313b8ec](https://github.com/ridedott/release-me-action/commit/313b8ec5577f45f2df54a9fba7fde6e5f24adb06))
+- **deps-dev:** bump cspell from 5.1.1 to 5.1.2
+  ([833ba8b](https://github.com/ridedott/release-me-action/commit/833ba8be4ed32cc91a1b661dab9110c666af3617))
+- **deps-dev:** bump cspell from 5.1.2 to 5.1.3
+  ([59e3b4e](https://github.com/ridedott/release-me-action/commit/59e3b4ef2c93551a53891df6fe9bb78892b9b6bc))
+- **deps-dev:** bump eslint from 7.16.0 to 7.17.0
+  ([1d54459](https://github.com/ridedott/release-me-action/commit/1d54459c1194b60cdc5630b77c84ebbdd4c8721d))
+
+### Features
+
+- add config-file option
+  ([0b643a7](https://github.com/ridedott/release-me-action/commit/0b643a7a197c7f55e627692daf52eed8cf1a78e0))
+
 ## [3.3.4](https://github.com/ridedott/release-me-action/compare/v3.3.3...v3.3.4) (2020-12-30)
 
 ### Chores

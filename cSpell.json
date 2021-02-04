@@ -39,6 +39,7 @@
     "prettierrc",
     "ridedott",
     "signale",
-    "tempy"
+    "tempy",
+    "yaml"
   ]
 }

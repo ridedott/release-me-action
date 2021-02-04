@@ -1,3 +1,5 @@
+/* cspell:ignore lcov */
+
 import type { Config } from '@jest/types';
 
 const configuration: Config.InitialOptions = {
