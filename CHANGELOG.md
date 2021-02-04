@@ -1,3 +1,18 @@
+## [3.4.9](https://github.com/ridedott/release-me-action/compare/v3.4.8...v3.4.9) (2021-02-04)
+
+### Chores
+
+- update Dependabot configuration
+  ([8fd0813](https://github.com/ridedott/release-me-action/commit/8fd0813d7434522ba5409357067ac62acd275102))
+- **deps-dev:** bump @types/node from 14.14.22 to 14.14.24
+  ([f21102f](https://github.com/ridedott/release-me-action/commit/f21102ff3151ad008aa8f3b7771b338ea43b3eab))
+- **deps-dev:** bump cspell from 5.1.3 to 5.2.2
+  ([edcd5ed](https://github.com/ridedott/release-me-action/commit/edcd5ede351ae0791b832cb602e28bc2f72dd54e))
+- **deps-dev:** bump cspell from 5.2.2 to 5.2.4
+  ([35563b7](https://github.com/ridedott/release-me-action/commit/35563b75778f8e597025c1a61118a0f20ba22ff0))
+- **deps-dev:** bump eslint from 7.18.0 to 7.19.0
+  ([2ab1c02](https://github.com/ridedott/release-me-action/commit/2ab1c0288afbb804cebef8eeea5a476f3189271e))
+
 ## [3.4.8](https://github.com/ridedott/release-me-action/compare/v3.4.7...v3.4.8) (2021-01-25)
 
 ### Chores
