@@ -2,8 +2,16 @@ import { getInput } from '@actions/core';
 import * as joi from '@hapi/joi';
 import { BranchSpec } from 'semantic-release';
 
+const MATCH_CONFIG_FILE_EXTENSION_REGEXP = /\.(?:ya?ml|js)$/u;
+
+export interface AdditionalPluginsSpec {
+  [plugin: string]: string;
+}
+
 export enum InputParameters {
+  AdditionalPlugins = 'additional-plugins',
   CommitAssets = 'commit-assets',
+  ConfigFile = 'config-file',
   DisableChangelog = 'disable-generate-changelog',
   DryRun = 'dry-run',
   NodeModule = 'node-module',
@@ -12,7 +20,7 @@ export enum InputParameters {
   ReleaseRules = 'release-rules',
 }
 
-interface ReleaseRule {
+export interface ReleaseRule {
   release: string | false;
   scope?: string;
   subject?: string;
@@ -34,6 +42,10 @@ export const DEFAULT_RELEASE_RULES: ReleaseRule[] = [
   { release: 'patch', type: 'refactor' },
   { release: false, subject: '*\\[skip release\\]*' },
 ];
+
+const inputAdditionalPluginsSchema = joi
+  .object()
+  .pattern(joi.string(), joi.string());
 
 const inputReleaseBranchesSchema = joi
   .array()
@@ -78,9 +90,19 @@ const parseFileList = (input: string): string[] =>
     .map((assetPath: string): string => assetPath.trim())
     .filter((assetPath: string): boolean => assetPath.length > 0);
 
-const parseInputReleaseBranches = (input: string): BranchSpec[] => {
+const parseInputAdditionalPlugins = (input: string): unknown => {
   try {
-    return JSON.parse(input) as BranchSpec[];
+    return JSON.parse(input);
+  } catch (error: unknown) {
+    throw new Error(
+      'Invalid JSON string for input parameter additional-plugins.',
+    );
+  }
+};
+
+const parseInputReleaseBranches = (input: string): unknown => {
+  try {
+    return JSON.parse(input);
   } catch (error: unknown) {
     throw new Error(
       'Invalid JSON string for input parameter release-branches.',
@@ -88,15 +110,33 @@ const parseInputReleaseBranches = (input: string): BranchSpec[] => {
   }
 };
 
-const parseInputReleaseRules = (input: string): ReleaseRule[] => {
+const parseInputReleaseRules = (input: string): unknown => {
   try {
-    return JSON.parse(input) as ReleaseRule[];
+    return JSON.parse(input);
   } catch (error: unknown) {
     throw new Error('Invalid JSON string for input parameter release-rules.');
   }
 };
 
-const validateInputReleaseBranches = (input: BranchSpec[]): BranchSpec[] => {
+const validateInputAdditionalPlugins = (
+  input: unknown,
+): AdditionalPluginsSpec => {
+  const { error, value } = inputAdditionalPluginsSchema.validate(input, {
+    stripUnknown: true,
+  });
+
+  if (error !== undefined) {
+    throw new Error(
+      `Invalid value for input parameter additional-plugins: ${
+        error.message
+      }\n${JSON.stringify(error.details)} `,
+    );
+  }
+
+  return value;
+};
+
+const validateInputReleaseBranches = (input: unknown): BranchSpec[] => {
   const { error, value } = inputReleaseBranchesSchema.validate(input, {
     stripUnknown: true,
   });
@@ -112,7 +152,7 @@ const validateInputReleaseBranches = (input: BranchSpec[]): BranchSpec[] => {
   return value;
 };
 
-const validateInputReleaseRules = (input: ReleaseRule[]): ReleaseRule[] => {
+const validateInputReleaseRules = (input: unknown): ReleaseRule[] => {
   const { error, value } = inputReleaseRulesSchema.validate(input, {
     stripUnknown: true,
   });
@@ -126,6 +166,20 @@ const validateInputReleaseRules = (input: ReleaseRule[]): ReleaseRule[] => {
   }
 
   return value;
+};
+
+export const processInputAdditionalPlugins = ():
+  | AdditionalPluginsSpec
+  | undefined => {
+  const input = getInput(InputParameters.AdditionalPlugins);
+
+  if (input.length === 0) {
+    return;
+  }
+
+  const parsedInput = parseInputAdditionalPlugins(input);
+
+  return validateInputAdditionalPlugins(parsedInput);
 };
 
 export const processInputNodeModule = (): boolean =>
@@ -147,6 +201,20 @@ export const processInputReleaseBranches = (): BranchSpec[] | undefined => {
   const parsedInput = parseInputReleaseBranches(input);
 
   return validateInputReleaseBranches(parsedInput);
+};
+
+export const processInputConfigFile = (): string | undefined => {
+  const file = getInput(InputParameters.ConfigFile);
+
+  if (file.length === 0) {
+    return;
+  }
+
+  if (MATCH_CONFIG_FILE_EXTENSION_REGEXP.exec(file) === null) {
+    throw new Error('Config file should be a JavaScript or YAML file');
+  }
+
+  return file;
 };
 
 export const processInputReleaseRules = (): ReleaseRule[] => {

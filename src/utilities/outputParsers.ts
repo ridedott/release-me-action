@@ -21,7 +21,7 @@ interface SemVerComponents {
 }
 
 const extractVersionComponents = (version: string): SemVerComponents => {
-  // eslint-disable-next-line unicorn/no-unsafe-regex
+  /* eslint-disable-next-line unicorn/no-unsafe-regex */
   const semVerRegExp = /^(?<major>0|[1-9]\d*)\.(?<minor>0|[1-9]\d*)\.(?<patch>0|[1-9]\d*)(?:-(?<preRelease>(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+(?<build>[0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/gmu;
 
   const { groups } = semVerRegExp.exec(version) as RegExpExecArray;

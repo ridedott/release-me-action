@@ -1,3 +1,5 @@
+<!-- cspell:ignore YALM -->
+
 [![license](https://img.shields.io/github/license/ridedott/release-me-action)](https://github.com/ridedott/release-me-action/blob/master/LICENSE)
 [![GitHub Actions Status](https://github.com/ridedott/release-me-action/workflows/Continuous%20Integration/badge.svg?branch=master)](https://github.com/ridedott/release-me-action/actions)
 [![GitHub Actions Status](https://github.com/ridedott/release-me-action/workflows/Continuous%20Delivery/badge.svg?branch=master)](https://github.com/ridedott/release-me-action/actions)
@@ -60,6 +62,15 @@ steps:
       release-rules:
         '[{ "release": "patch", "type": "build" }, { "release": "patch", "type":
         "chore(deps)" }, { "release": "patch", "type": "chore(deps-dev)" }]'
+      # Loads a custom Semantic Release configuration from this file. See
+      # https://semantic-release.gitbook.io/semantic-release/usage/configuration#configuration-file.
+      # Provided configuration will be shallow merged with defaults. Supported
+      # formats are YALM or CommonJS.
+      config-file: ./path/to/config.yaml
+      # Specify additional semantic-release plugins to install. Accepts packages
+      # in typical package.json format.
+      additional-plugins:
+        '{ "@google/semantic-release-replace-plugin": "^4.0.2" }'
 ```
 
 **IMPORTANT** `GITHUB_TOKEN` does not have the required permissions to operate

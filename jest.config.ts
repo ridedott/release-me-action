@@ -1,5 +1,8 @@
-// eslint-disable-next-line immutable/no-mutation
-module.exports = {
+/* cspell:ignore lcov */
+
+import type { Config } from '@jest/types';
+
+const configuration: Config.InitialOptions = {
   coveragePathIgnorePatterns: ['/node_modules/'],
   coverageReporters: ['lcov', 'text', 'text-summary'],
   coverageThreshold: {
@@ -16,3 +19,5 @@ module.exports = {
   roots: ['<rootDir>/src', '<rootDir>/__mocks__'],
   testEnvironment: 'node',
 };
+
+export default configuration;
