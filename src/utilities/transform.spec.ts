@@ -13,7 +13,7 @@ const makeCommit = (
    * This ts-ignore relates to the types provided by the commit-parser
    * being incorrect.
    */
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  /* eslint-disable-next-line @typescript-eslint/ban-ts-comment */
   // @ts-expect-error
   return {
     body: null,

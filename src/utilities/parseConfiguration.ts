@@ -5,7 +5,6 @@ import { Options } from 'semantic-release';
 /**
  * Read and evaluates a yaml file at the given path and returns a
  * semantic-release configuration object.
- * @param filePath
  */
 const parseYamlConfiguration = async (filePath: string): Promise<object> => {
   const file = await fs.readFile(filePath, 'utf8');
@@ -22,9 +21,9 @@ const parseYamlConfiguration = async (filePath: string): Promise<object> => {
 /**
  * Read and evaluates a javascript file at the given path and returns a
  * semantic-release configuration object.
- * @param filePath file path of the .js configuration file.
- * @param defaultOptions default action options that are passed to the function
- * exported by the configuration module
+ * @param filePath File path of the .js configuration file.
+ * @param defaultOptions Default action options that are passed to the function
+ * exported by the configuration module.
  */
 const parseJsConfiguration = async (
   filePath: string,
@@ -34,7 +33,7 @@ const parseJsConfiguration = async (
     const file = await fs.readFile(filePath, 'utf8');
 
     // Not harmful: script runs in sandbox environment.
-    // eslint-disable-next-line no-eval
+    /* eslint-disable-next-line no-eval */
     const config = eval(file) as (object) => object;
 
     return config(defaultOptions);
@@ -45,8 +44,8 @@ const parseJsConfiguration = async (
 
 /**
  * Returns a semantic release configuration object when given a filepath.
- * @param filePath file path of the .yaml or .js configuration file.
- * @param defaultOptions default action options that are passed to the function
+ * @param filePath File path of the .yaml or .js configuration file.
+ * @param defaultOptions Default action options that are passed to the function
  * exported by the .js configuration module.
  */
 export const parseConfiguration = async (

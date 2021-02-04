@@ -33,7 +33,6 @@ steps:
     name: Release
     uses: ridedott/release-me-action@master
     with:
-
       # Configure Semantic Release branches parameter:
       # https://semantic-release.gitbook.io/semantic-release/usage/workflow-configuration#branches-properties
       #
@@ -61,16 +60,13 @@ steps:
       release-rules:
         '[{ "release": "patch", "type": "build" }, { "release": "patch", "type":
         "chore(deps)" }, { "release": "patch", "type": "chore(deps-dev)" }]'
-      # Load a YAML configuration file from this file. Options defined in this file
-      # will behave the same as a semantic-release configuration file:
-      # https://semantic-release.gitbook.io/semantic-release/usage/configuration#configuration-file
-      # Note that this will do a shallow merge of the options provided. A JavaScript
-      # file should be a CommonJS module with a function as default export. This
-      # function is passed the default options as its first and only argument.
-      config-file: ./path/to/config.yml
+      # Loads a custom Semantic Release configuration from this file. See
+      # https://semantic-release.gitbook.io/semantic-release/usage/configuration#configuration-file.
+      # Provided configuration will be shallow merged with defaults. Supported
+      # formats are YALM or CommonJS.
+      config-file: ./path/to/config.yaml
       # Specify additional semantic-release plugins to install. Accepts packages
-      # in package.json format. Note that this install process does not include a
-      # package.json file.
+      # in typical package.json format.
       additional-plugins:
         '{ "@google/semantic-release-replace-plugin": "^4.0.2" }'
 ```

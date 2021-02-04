@@ -172,7 +172,7 @@ describe('processInputReleaseRules', (): void => {
 
       getInputSpy.mockReturnValue(value);
 
-      // eslint-disable-next-line jest/require-to-throw-message
+      /* eslint-disable-next-line jest/require-to-throw-message */
       expect(processInputReleaseRules).toThrow();
     },
   );
