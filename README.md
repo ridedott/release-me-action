@@ -1,3 +1,5 @@
+<!-- cspell:ignore YALM -->
+
 [![license](https://img.shields.io/github/license/ridedott/release-me-action)](https://github.com/ridedott/release-me-action/blob/master/LICENSE)
 [![GitHub Actions Status](https://github.com/ridedott/release-me-action/workflows/Continuous%20Integration/badge.svg?branch=master)](https://github.com/ridedott/release-me-action/actions)
 [![GitHub Actions Status](https://github.com/ridedott/release-me-action/workflows/Continuous%20Delivery/badge.svg?branch=master)](https://github.com/ridedott/release-me-action/actions)
