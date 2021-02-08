@@ -1,3 +1,10 @@
+## [3.5.1](https://github.com/ridedott/release-me-action/compare/v3.5.0...v3.5.1) (2021-02-08)
+
+### Chores
+
+- **deps:** bump actions/cache from v2 to v2.1.4
+  ([74d5d9b](https://github.com/ridedott/release-me-action/commit/74d5d9bced523b7b493bcb434b3de3a0976411e6))
+
 # [3.5.0](https://github.com/ridedott/release-me-action/compare/v3.4.9...v3.5.0) (2021-02-04)
 
 ### Chores
