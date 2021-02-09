@@ -1,3 +1,14 @@
+## [3.5.2](https://github.com/ridedott/release-me-action/compare/v3.5.1...v3.5.2) (2021-02-09)
+
+### Chores
+
+- **deps:** bump semantic-release from 17.3.7 to 17.3.8
+  ([d55df8d](https://github.com/ridedott/release-me-action/commit/d55df8d4be09aecb9366a45bcaa3119dd3e314a8))
+- **deps-dev:** bump husky from 4.3.8 to 5.0.9
+  ([38b0c72](https://github.com/ridedott/release-me-action/commit/38b0c722b0d90a00c1507094542e6c560b93b30c))
+- **deps-dev:** bump lint-staged from 10.5.3 to 10.5.4
+  ([bb52f4a](https://github.com/ridedott/release-me-action/commit/bb52f4a6bc0f2d21f9868f145de586322e5351f0))
+
 ## [3.5.1](https://github.com/ridedott/release-me-action/compare/v3.5.0...v3.5.1) (2021-02-08)
 
 ### Chores
