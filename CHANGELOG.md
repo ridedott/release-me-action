@@ -1,3 +1,12 @@
+## [3.5.3](https://github.com/ridedott/release-me-action/compare/v3.5.2...v3.5.3) (2021-02-10)
+
+### Chores
+
+- **deps-dev:** bump ts-jest from 26.5.0 to 26.5.1
+  ([e095b6e](https://github.com/ridedott/release-me-action/commit/e095b6eec4cbe51ac450304225847f77df73350a))
+- **deps-dev:** bump typescript from 4.1.3 to 4.1.4
+  ([b122b49](https://github.com/ridedott/release-me-action/commit/b122b4922bccd378c3d2de10be1deaabecee6a32))
+
 ## [3.5.2](https://github.com/ridedott/release-me-action/compare/v3.5.1...v3.5.2) (2021-02-09)
 
 ### Chores
