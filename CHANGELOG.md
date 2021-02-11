@@ -1,3 +1,10 @@
+## [3.5.4](https://github.com/ridedott/release-me-action/compare/v3.5.3...v3.5.4) (2021-02-11)
+
+### Chores
+
+- **deps-dev:** bump typescript from 4.1.4 to 4.1.5
+  ([8e6468f](https://github.com/ridedott/release-me-action/commit/8e6468f3fce1554d1b97ca505adf5e521d4258a5))
+
 ## [3.5.3](https://github.com/ridedott/release-me-action/compare/v3.5.2...v3.5.3) (2021-02-10)
 
 ### Chores
