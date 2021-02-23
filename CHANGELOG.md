@@ -1,3 +1,16 @@
+## [3.5.6](https://github.com/ridedott/release-me-action/compare/v3.5.5...v3.5.6) (2021-02-23)
+
+### Chores
+
+- **deps:** bump actions/setup-node from v2.1.4 to v2.1.5
+  ([9c24683](https://github.com/ridedott/release-me-action/commit/9c24683045f560a689b9e510ef3ed429cefdbbae))
+- **deps-dev:** bump @types/node from 14.14.30 to 14.14.31
+  ([805b011](https://github.com/ridedott/release-me-action/commit/805b0112915278f91ee493c439a0a95b217fb82d))
+- **deps-dev:** bump eslint from 7.19.0 to 7.20.0
+  ([a1b8631](https://github.com/ridedott/release-me-action/commit/a1b8631f37bfa70ddba3677da6e530be0c1cc05b))
+- **deps-dev:** bump husky from 5.0.9 to 5.1.0
+  ([cb7606c](https://github.com/ridedott/release-me-action/commit/cb7606c14dd77265a56c4cd7d15639f3a0a6af60))
+
 ## [3.5.5](https://github.com/ridedott/release-me-action/compare/v3.5.4...v3.5.5) (2021-02-19)
 
 ### Chores
