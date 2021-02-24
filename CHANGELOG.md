@@ -1,3 +1,18 @@
+## [3.5.7](https://github.com/ridedott/release-me-action/compare/v3.5.6...v3.5.7) (2021-02-24)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 11.0.0 to 12.0.0
+  ([7864cce](https://github.com/ridedott/release-me-action/commit/7864cce323078bee79cd8c5ee1bfd83bae6848c1))
+- **deps-dev:** bump @commitlint/config-conventional from 11.0.0 to 12.0.0
+  ([131b166](https://github.com/ridedott/release-me-action/commit/131b1666817cb01bebb38c0fd6604003c37036ad))
+- **deps-dev:** bump husky from 5.1.0 to 5.1.1
+  ([25fa989](https://github.com/ridedott/release-me-action/commit/25fa98947ff87ffdcbdc9c308ebb08320d9dd652))
+- **deps-dev:** bump ts-jest from 26.5.1 to 26.5.2
+  ([7fea3e8](https://github.com/ridedott/release-me-action/commit/7fea3e8d6fa83b3d6ba3adb96df38fd01986f295))
+- **deps-dev:** bump typescript from 4.1.5 to 4.2.2
+  ([9a33927](https://github.com/ridedott/release-me-action/commit/9a3392759b27c0b88a7cd74066db2b36b9b29e28))
+
 ## [3.5.6](https://github.com/ridedott/release-me-action/compare/v3.5.5...v3.5.6) (2021-02-23)
 
 ### Chores
