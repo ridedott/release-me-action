@@ -1,3 +1,24 @@
+## [3.5.9](https://github.com/ridedott/release-me-action/compare/v3.5.8...v3.5.9) (2021-03-04)
+
+### Chores
+
+- **deps:** bump semantic-release from 17.4.0 to 17.4.1
+  ([f65b117](https://github.com/ridedott/release-me-action/commit/f65b117b63aba62feaea0be6136a360984abebd6))
+- **deps-dev:** bump @commitlint/cli from 12.0.0 to 12.0.1
+  ([19b02ab](https://github.com/ridedott/release-me-action/commit/19b02ab6de474004da314d8dc98923a23bf1dab5))
+- **deps-dev:** bump @commitlint/config-conventional from 12.0.0 to 12.0.1
+  ([20f866c](https://github.com/ridedott/release-me-action/commit/20f866c67e4d50cdcba208caff5d10f8c8061120))
+- **deps-dev:** bump cspell from 5.2.4 to 5.3.1
+  ([7953bfa](https://github.com/ridedott/release-me-action/commit/7953bfac2bd282ce803b861ab37dd78e8e357010))
+- **deps-dev:** bump cspell from 5.3.1 to 5.3.4
+  ([578a006](https://github.com/ridedott/release-me-action/commit/578a006c614334b7080cfbc8192fe858872bb895))
+- **deps-dev:** bump eslint from 7.20.0 to 7.21.0
+  ([aa842b9](https://github.com/ridedott/release-me-action/commit/aa842b9c417dcc177dc5032048ebc798cc2d295a))
+- **deps-dev:** bump husky from 5.1.1 to 5.1.2
+  ([272fe87](https://github.com/ridedott/release-me-action/commit/272fe8700596ec73e4ccd3b54b97bf458ab164c6))
+- **deps-dev:** bump husky from 5.1.2 to 5.1.3
+  ([69e8e6b](https://github.com/ridedott/release-me-action/commit/69e8e6b0436f9a87d4face8cbbb5cb8162beb777))
+
 ## [3.5.8](https://github.com/ridedott/release-me-action/compare/v3.5.7...v3.5.8) (2021-02-26)
 
 ### Chores
