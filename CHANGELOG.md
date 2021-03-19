@@ -1,3 +1,16 @@
+## [3.5.11](https://github.com/ridedott/release-me-action/compare/v3.5.10...v3.5.11) (2021-03-19)
+
+### Chores
+
+- enable support for newer engine versions
+  ([40bb6eb](https://github.com/ridedott/release-me-action/commit/40bb6eb1b81b99bba99a6850f978986cdd13a2a2))
+- **deps-dev:** bump @types/node from 14.14.31 to 14.14.32
+  ([1067e56](https://github.com/ridedott/release-me-action/commit/1067e5636957d546ad91b7b4419f10aa40034605))
+- **deps-dev:** bump cspell from 5.3.4 to 5.3.5
+  ([ed69a39](https://github.com/ridedott/release-me-action/commit/ed69a39d2c227264a92c33f1de8bef01aa3ace41))
+- **deps-dev:** bump ts-jest from 26.5.2 to 26.5.3
+  ([52af2e1](https://github.com/ridedott/release-me-action/commit/52af2e18a86990b565aa91c1300664f77327b1f6))
+
 ## [3.5.10](https://github.com/ridedott/release-me-action/compare/v3.5.9...v3.5.10) (2021-03-05)
 
 ### Chores
