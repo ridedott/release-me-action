@@ -1,3 +1,19 @@
+## [3.5.13](https://github.com/ridedott/release-me-action/compare/v3.5.12...v3.5.13) (2021-04-02)
+
+### Bug Fixes
+
+- use correct order for release-rules
+  ([4123d94](https://github.com/ridedott/release-me-action/commit/4123d9402c68902e6ecfe79d49a78b1139146b67))
+
+## [3.5.12](https://github.com/ridedott/release-me-action/compare/v3.5.11...v3.5.12) (2021-04-02)
+
+### Chores
+
+- **deps:** bump @semantic-release/release-notes-generator from 9.0.1 to 9.0.2
+  ([06fa1b8](https://github.com/ridedott/release-me-action/commit/06fa1b86b4d1d523a88d1059697062a05d2d1bcf))
+- **deps-dev:** bump ts-jest from 26.5.3 to 26.5.4
+  ([f8d738f](https://github.com/ridedott/release-me-action/commit/f8d738f04fcf5d14262d8f688f7ffd44dafb9a70))
+
 ## [3.5.11](https://github.com/ridedott/release-me-action/compare/v3.5.10...v3.5.11) (2021-03-19)
 
 ### Chores
