@@ -1,3 +1,10 @@
+## [3.5.13](https://github.com/ridedott/release-me-action/compare/v3.5.12...v3.5.13) (2021-04-02)
+
+### Bug Fixes
+
+- use correct order for release-rules
+  ([4123d94](https://github.com/ridedott/release-me-action/commit/4123d9402c68902e6ecfe79d49a78b1139146b67))
+
 ## [3.5.12](https://github.com/ridedott/release-me-action/compare/v3.5.11...v3.5.12) (2021-04-02)
 
 ### Chores
