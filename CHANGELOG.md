@@ -1,3 +1,10 @@
+## [3.5.14](https://github.com/ridedott/release-me-action/compare/v3.5.13...v3.5.14) (2021-04-02)
+
+### Chores
+
+- **deps-dev:** bump @types/jest from 26.0.20 to 26.0.22
+  ([ca1069a](https://github.com/ridedott/release-me-action/commit/ca1069af59ab49e99c8105318822d5f398e0f279))
+
 ## [3.5.13](https://github.com/ridedott/release-me-action/compare/v3.5.12...v3.5.13) (2021-04-02)
 
 ### Bug Fixes
