@@ -1,3 +1,10 @@
+## [3.5.15](https://github.com/ridedott/release-me-action/compare/v3.5.14...v3.5.15) (2021-04-02)
+
+### Reverts
+
+- fix: use correct order for release-rules
+  ([daa1133](https://github.com/ridedott/release-me-action/commit/daa113379d743c7dc7b2a738434a19d02418df94))
+
 ## [3.5.14](https://github.com/ridedott/release-me-action/compare/v3.5.13...v3.5.14) (2021-04-02)
 
 ### Chores
