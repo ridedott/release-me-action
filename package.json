@@ -31,7 +31,7 @@
     "@types/semantic-release": "^17.2.0",
     "@zeit/ncc": "^0.22.3",
     "commitizen": "^4.2.3",
-    "cspell": "^5.3.5",
+    "cspell": "^5.3.11",
     "eslint": "^7.23.0",
     "execa": "^5.0.0",
     "file-url": "^3.0.0",
