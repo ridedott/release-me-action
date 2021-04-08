@@ -1,3 +1,19 @@
+## [3.5.16](https://github.com/ridedott/release-me-action/compare/v3.5.15...v3.5.16) (2021-04-08)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/config-conventional from 12.0.1 to 12.1.1
+  ([56d37d9](https://github.com/ridedott/release-me-action/commit/56d37d9b387b764898540f1ccab2671708b34251))
+- **deps-dev:** bump @types/node from 14.14.32 to 14.14.37
+  ([25afa45](https://github.com/ridedott/release-me-action/commit/25afa451d013753c8d6688e92ccf7d4a6cb2a613))
+- **deps-dev:** bump eslint from 7.21.0 to 7.23.0
+  ([0ef3a11](https://github.com/ridedott/release-me-action/commit/0ef3a11a2bf757608e771ba662d46d20d0edc384))
+
+### Continuous Integration
+
+- update merge-me action to new workflow
+  ([e88e352](https://github.com/ridedott/release-me-action/commit/e88e352ea885c8c011b0cec8cf402ffed0973a83))
+
 ## [3.5.15](https://github.com/ridedott/release-me-action/compare/v3.5.14...v3.5.15) (2021-04-02)
 
 ### Reverts
