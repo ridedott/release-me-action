@@ -1,3 +1,20 @@
+## [3.5.17](https://github.com/ridedott/release-me-action/compare/v3.5.16...v3.5.17) (2021-04-12)
+
+### Chores
+
+- **deps:** bump semantic-release from 17.4.1 to 17.4.2
+  ([6e0cb96](https://github.com/ridedott/release-me-action/commit/6e0cb96a800fe27ce5b7fddc497da42a2b983f07))
+- **deps-dev:** bump @commitlint/cli from 12.0.1 to 12.1.1
+  ([8a3b520](https://github.com/ridedott/release-me-action/commit/8a3b5201fa1ff7cfe37e21789dd07876585f81a8))
+- **deps-dev:** bump cspell from 5.3.5 to 5.3.12
+  ([e54b14d](https://github.com/ridedott/release-me-action/commit/e54b14d5553a743248673effd35bb933f1981cae))
+- **deps-dev:** bump eslint from 7.23.0 to 7.24.0
+  ([95b0b76](https://github.com/ridedott/release-me-action/commit/95b0b76d6f92856049584e4aff5b9ec8e01c9674))
+- **deps-dev:** bump husky from 5.1.3 to 6.0.0
+  ([43adb4d](https://github.com/ridedott/release-me-action/commit/43adb4d859ab27360a6765deccde91337bb4e991))
+- **deps-dev:** bump typescript from 4.2.3 to 4.2.4
+  ([43d4d8f](https://github.com/ridedott/release-me-action/commit/43d4d8f5b38a1d0b0134ed8fdbaad3bc52341773))
+
 ## [3.5.16](https://github.com/ridedott/release-me-action/compare/v3.5.15...v3.5.16) (2021-04-08)
 
 ### Chores
