@@ -1,3 +1,12 @@
+## [3.5.18](https://github.com/ridedott/release-me-action/compare/v3.5.17...v3.5.18) (2021-04-12)
+
+### Chores
+
+- **deps:** bump @semantic-release/npm from 7.0.10 to 7.1.1
+  ([7b8c56f](https://github.com/ridedott/release-me-action/commit/7b8c56fda585e2e153a9f57d7e1970b08768de60))
+- **deps-dev:** bump tempy from 1.0.0 to 1.0.1
+  ([eb4c0ad](https://github.com/ridedott/release-me-action/commit/eb4c0adf57851cdf424cd790a1c41d39b2074049))
+
 ## [3.5.17](https://github.com/ridedott/release-me-action/compare/v3.5.16...v3.5.17) (2021-04-12)
 
 ### Chores
