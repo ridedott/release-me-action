@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: 12
       - name: Cache dependencies
-        uses: actions/cache@v2.1.4
+        uses: actions/cache@v2.1.5
         with:
           key: npm-${{ hashFiles('./package-lock.json') }}
           path: ~/.npm
@@ -46,7 +46,7 @@ jobs:
         with:
           node-version: 12
       - name: Cache dependencies
-        uses: actions/cache@v2.1.4
+        uses: actions/cache@v2.1.5
         with:
           key: npm-${{ hashFiles('./package-lock.json') }}
           path: ~/.npm
@@ -70,7 +70,7 @@ jobs:
         with:
           node-version: 12
       - name: Cache dependencies
-        uses: actions/cache@v2.1.4
+        uses: actions/cache@v2.1.5
         with:
           key: npm-${{ hashFiles('./package-lock.json') }}
           path: ~/.npm
@@ -94,7 +94,7 @@ jobs:
         with:
           node-version: 12
       - name: Cache dependencies
-        uses: actions/cache@v2.1.4
+        uses: actions/cache@v2.1.5
         with:
           key: npm-${{ hashFiles('./package-lock.json') }}
           path: ~/.npm
@@ -122,7 +122,7 @@ jobs:
         with:
           node-version: 12
       - name: Cache dependencies
-        uses: actions/cache@v2.1.4
+        uses: actions/cache@v2.1.5
         with:
           key: npm-${{ hashFiles('./package-lock.json') }}
           path: ~/.npm
