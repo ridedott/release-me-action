@@ -1,3 +1,10 @@
+## [3.5.22](https://github.com/ridedott/release-me-action/compare/v3.5.21...v3.5.22) (2021-04-15)
+
+### Chores
+
+- **deps:** bump js-yaml from 4.0.0 to 4.1.0
+  ([198318c](https://github.com/ridedott/release-me-action/commit/198318c3264b2988cdbbc35bdb0c3f224d73560b))
+
 ## [3.5.21](https://github.com/ridedott/release-me-action/compare/v3.5.20...v3.5.21) (2021-04-14)
 
 ### Chores
