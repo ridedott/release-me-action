@@ -46,7 +46,8 @@
     "typescript": "^4.2.4"
   },
   "engines": {
-    "node": "12 || >=14"
+    "node": "^14",
+    "npm": ">=6"
   },
   "files": [
     "dist",
@@ -98,5 +99,6 @@
     "test:watch": "jest --watch --verbose false",
     "types": "tsc --noEmit"
   },
-  "version": "3.5.22"
+  "version": "3.5.22",
+  "enginesStrict": true
 }
