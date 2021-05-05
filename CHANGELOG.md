@@ -1,3 +1,22 @@
+## [3.5.23](https://github.com/ridedott/release-me-action/compare/v3.5.22...v3.5.23) (2021-05-05)
+
+### Chores
+
+- **deps:** bump @semantic-release/github from 7.2.1 to 7.2.2
+  ([ad32574](https://github.com/ridedott/release-me-action/commit/ad32574ac2149e5347ddf00d99f8159f6b7ffae7))
+- **deps-dev:** bump @types/jest from 26.0.22 to 26.0.23
+  ([bf5fd83](https://github.com/ridedott/release-me-action/commit/bf5fd8328342f27d29caf92f8d85988ef435a77d))
+- **deps-dev:** bump @types/node from 14.14.37 to 14.14.39
+  ([f65f90a](https://github.com/ridedott/release-me-action/commit/f65f90a48a121859609223c9ce37545e0b35d575))
+- **deps-dev:** bump @types/node from 14.14.39 to 14.14.41
+  ([997d1a3](https://github.com/ridedott/release-me-action/commit/997d1a3bf631bb968396f4cf192dc9221d89c7be))
+- **deps-dev:** bump @types/node from 14.14.41 to 15.0.1
+  ([eded846](https://github.com/ridedott/release-me-action/commit/eded846a6bddbbd464abb7cf6524db86288fcc29))
+- **deps-dev:** bump eslint from 7.24.0 to 7.25.0
+  ([b5d8150](https://github.com/ridedott/release-me-action/commit/b5d81506f512a40074a95f5d75e75719be08af3c))
+- **deps-dev:** bump ts-jest from 26.5.4 to 26.5.5
+  ([5b86382](https://github.com/ridedott/release-me-action/commit/5b8638297fc3a150743618ea26c3bf57b1a60919))
+
 ## [3.5.22](https://github.com/ridedott/release-me-action/compare/v3.5.21...v3.5.22) (2021-04-15)
 
 ### Chores
