@@ -1,3 +1,12 @@
+## [3.5.24](https://github.com/ridedott/release-me-action/compare/v3.5.23...v3.5.24) (2021-05-05)
+
+### Chores
+
+- **deps:** bump @semantic-release/npm from 7.1.1 to 7.1.3
+  ([1681f08](https://github.com/ridedott/release-me-action/commit/1681f086cc3d476bafccedc2fd03fe0c8267b0c0))
+- **deps-dev:** bump @types/node from 15.0.1 to 15.0.2
+  ([eed0598](https://github.com/ridedott/release-me-action/commit/eed059849e3e2b963cf86c3df58f4e43614cfe04))
+
 ## [3.5.23](https://github.com/ridedott/release-me-action/compare/v3.5.22...v3.5.23) (2021-05-05)
 
 ### Chores
