@@ -30,7 +30,7 @@
     "@types/node": "^15.0.2",
     "@types/semantic-release": "^17.2.0",
     "@zeit/ncc": "^0.22.3",
-    "commitizen": "^4.2.3",
+    "commitizen": "^4.2.4",
     "cspell": "^5.4.0",
     "eslint": "^7.25.0",
     "execa": "^5.0.0",
