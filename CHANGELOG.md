@@ -1,3 +1,16 @@
+## [3.5.25](https://github.com/ridedott/release-me-action/compare/v3.5.24...v3.5.25) (2021-05-10)
+
+### Chores
+
+- **deps:** bump @semantic-release/github from 7.2.2 to 7.2.3
+  ([707afa6](https://github.com/ridedott/release-me-action/commit/707afa63f67ce3149e167b645a3c7fa988183771))
+- **deps-dev:** bump commitizen from 4.2.3 to 4.2.4
+  ([8bdb4b8](https://github.com/ridedott/release-me-action/commit/8bdb4b8fbbfd1b2e0021b830e9db52744e499220))
+- **deps-dev:** bump cspell from 5.3.12 to 5.4.0
+  ([32e6292](https://github.com/ridedott/release-me-action/commit/32e6292651dfb3b37bb74bef9e4c7cda3515a621))
+- **deps-dev:** bump ts-jest from 26.5.5 to 26.5.6
+  ([c51c7a5](https://github.com/ridedott/release-me-action/commit/c51c7a5827ae0410042cb9dec9e00335b14f1cf3))
+
 ## [3.5.24](https://github.com/ridedott/release-me-action/compare/v3.5.23...v3.5.24) (2021-05-05)
 
 ### Chores
