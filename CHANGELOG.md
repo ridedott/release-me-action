@@ -1,3 +1,14 @@
+## [3.5.26](https://github.com/ridedott/release-me-action/compare/v3.5.25...v3.5.26) (2021-05-11)
+
+### Chores
+
+- **deps:** bump lodash from 4.17.15 to 4.17.21
+  ([a6a623b](https://github.com/ridedott/release-me-action/commit/a6a623b7d3ec3354801ca299ab9d4669c1186521))
+- **deps-dev:** bump eslint from 7.25.0 to 7.26.0
+  ([8f81331](https://github.com/ridedott/release-me-action/commit/8f8133137bd8e0da71d3f28e2d5e289d55b27801))
+- **deps-dev:** bump lint-staged from 10.5.4 to 11.0.0
+  ([c9c1d69](https://github.com/ridedott/release-me-action/commit/c9c1d69831848b8c4c895d59210de4f6d1280f50))
+
 ## [3.5.25](https://github.com/ridedott/release-me-action/compare/v3.5.24...v3.5.25) (2021-05-10)
 
 ### Chores
