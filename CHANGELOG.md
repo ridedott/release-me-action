@@ -1,3 +1,22 @@
+## [3.5.29](https://github.com/ridedott/release-me-action/compare/v3.5.28...v3.5.29) (2021-05-24)
+
+### Chores
+
+- **deps:** bump @actions/core from 1.2.7 to 1.3.0
+  ([a4d5501](https://github.com/ridedott/release-me-action/commit/a4d55017d10c6a88b672a92e6aa3abf57b1afd25))
+- **deps-dev:** bump @commitlint/config-conventional
+  ([c6c53a9](https://github.com/ridedott/release-me-action/commit/c6c53a94ef028b0c60c9b41b7f075ccd8872708c))
+- **deps-dev:** bump @types/node from 15.0.3 to 15.3.0
+  ([f052807](https://github.com/ridedott/release-me-action/commit/f052807a84286d7eb3702d019dcd96bc8fa614d8))
+- **deps-dev:** bump @types/node from 15.3.0 to 15.3.1
+  ([7c6bd13](https://github.com/ridedott/release-me-action/commit/7c6bd13b2a3c037bb7e292aba1fbb9fda4129611))
+- **deps-dev:** bump @types/node from 15.3.1 to 15.6.0
+  ([96d8109](https://github.com/ridedott/release-me-action/commit/96d81098d8671e557a77eaac4dbcff515e9231b0))
+- **deps-dev:** bump eslint from 7.26.0 to 7.27.0
+  ([d9126d0](https://github.com/ridedott/release-me-action/commit/d9126d0cecc620d7b79411a4a8c4eef298a3a9a7))
+- **deps-dev:** bump ts-node from 9.1.1 to 10.0.0
+  ([ddb23be](https://github.com/ridedott/release-me-action/commit/ddb23be242be2db389c88430e6ea03e740695e18))
+
 ## [3.5.28](https://github.com/ridedott/release-me-action/compare/v3.5.27...v3.5.28) (2021-05-13)
 
 ### Chores
