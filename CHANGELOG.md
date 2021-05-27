@@ -1,3 +1,14 @@
+## [3.5.30](https://github.com/ridedott/release-me-action/compare/v3.5.29...v3.5.30) (2021-05-27)
+
+### Chores
+
+- **deps-dev:** bump @jest/types from 26.6.2 to 27.0.1
+  ([71bb31e](https://github.com/ridedott/release-me-action/commit/71bb31e71b1ecb60e1fc4bcf80ac1826f756b20d))
+- **deps-dev:** bump @types/node from 15.6.0 to 15.6.1
+  ([9b89c0a](https://github.com/ridedott/release-me-action/commit/9b89c0a00cf0be65e733a1b8ac3c51487bf5599b))
+- **deps-dev:** bump typescript from 4.2.4 to 4.3.2
+  ([b1fa8b3](https://github.com/ridedott/release-me-action/commit/b1fa8b320b9e9c7f42796ce59138fb2f6eaae9c5))
+
 ## [3.5.29](https://github.com/ridedott/release-me-action/compare/v3.5.28...v3.5.29) (2021-05-24)
 
 ### Chores
