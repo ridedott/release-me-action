@@ -1,3 +1,10 @@
+## [3.5.32](https://github.com/ridedott/release-me-action/compare/v3.5.31...v3.5.32) (2021-05-30)
+
+### Chores
+
+- **deps:** bump ws from 7.4.3 to 7.4.6
+  ([c30bafb](https://github.com/ridedott/release-me-action/commit/c30bafb36ded2279c8ef5c1722eb2c8cefef45ed))
+
 ## [3.5.31](https://github.com/ridedott/release-me-action/compare/v3.5.30...v3.5.31) (2021-05-28)
 
 ### Chores
