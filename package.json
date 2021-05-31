@@ -23,7 +23,7 @@
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
     "@jest/types": "^27.0.1",
-    "@ridedott/eslint-config": "^2.5.51",
+    "@ridedott/eslint-config": "^2.13.33",
     "@types/conventional-changelog-writer": "^4.0.0",
     "@types/hapi__joi": "^17.1.6",
     "@types/jest": "^26.0.23",
