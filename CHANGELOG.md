@@ -1,3 +1,32 @@
+## [3.5.33](https://github.com/ridedott/release-me-action/compare/v3.5.32...v3.5.33) (2021-06-08)
+
+### Chores
+
+- **deps:** bump @actions/exec from 1.0.4 to 1.1.0
+  ([687bdb2](https://github.com/ridedott/release-me-action/commit/687bdb2a068ee6060c5aaa17cbff49ad2f0112d5))
+- **deps-dev:** bump @jest/types from 27.0.1 to 27.0.2
+  ([291ccd7](https://github.com/ridedott/release-me-action/commit/291ccd7b23eaaa5d1e62539205d165b7190809d0))
+- **deps-dev:** bump @types/node from 15.12.0 to 15.12.1
+  ([7bfb13a](https://github.com/ridedott/release-me-action/commit/7bfb13a0bc7093187e04c007601cbed2a5b17713))
+- **deps-dev:** bump @types/node from 15.12.1 to 15.12.2
+  ([5b02169](https://github.com/ridedott/release-me-action/commit/5b021698deb2f38febfd69ec32cfd33b3c503354))
+- **deps-dev:** bump @types/node from 15.6.1 to 15.9.0
+  ([f5a52d4](https://github.com/ridedott/release-me-action/commit/f5a52d446770c0af5d8bf038c18265f0606b83a3))
+- **deps-dev:** bump @types/node from 15.9.0 to 15.12.0
+  ([7336db8](https://github.com/ridedott/release-me-action/commit/7336db8d3f1a7c1f5ccda3d4db7b29f31333a4cd))
+- **deps-dev:** bump cspell from 5.4.1 to 5.5.2
+  ([5d21713](https://github.com/ridedott/release-me-action/commit/5d21713df75678ff94a21c5bbb694ed4ecd78663))
+- **deps-dev:** bump cspell from 5.5.2 to 5.6.0
+  ([a1109a2](https://github.com/ridedott/release-me-action/commit/a1109a2a66e973e7e751087f26d63d4e5bf7974a))
+- **deps-dev:** bump eslint from 7.27.0 to 7.28.0
+  ([1d0f981](https://github.com/ridedott/release-me-action/commit/1d0f9817730cacd506b7352c607148a5a18f0852))
+- **deps-dev:** bump execa from 5.0.0 to 5.0.1
+  ([5b5922a](https://github.com/ridedott/release-me-action/commit/5b5922a83b6ae15ad16bcb149c4932d3cfc8f1f9))
+- **deps-dev:** bump execa from 5.0.1 to 5.1.0
+  ([c113cb3](https://github.com/ridedott/release-me-action/commit/c113cb3f586ccbbbeef198d569329c132ce90746))
+- **deps-dev:** bump execa from 5.1.0 to 5.1.1
+  ([fa30abb](https://github.com/ridedott/release-me-action/commit/fa30abbf007e4ab65ae016c923efdbca1d321afc))
+
 ## [3.5.32](https://github.com/ridedott/release-me-action/compare/v3.5.31...v3.5.32) (2021-05-30)
 
 ### Chores
