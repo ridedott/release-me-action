@@ -1,3 +1,10 @@
+## [3.5.34](https://github.com/ridedott/release-me-action/compare/v3.5.33...v3.5.34) (2021-06-09)
+
+### Chores
+
+- **deps:** bump normalize-url from 6.0.0 to 6.0.1
+  ([3b2feed](https://github.com/ridedott/release-me-action/commit/3b2feed54c9260a75533d0c270292ff02ec3db04))
+
 ## [3.5.33](https://github.com/ridedott/release-me-action/compare/v3.5.32...v3.5.33) (2021-06-08)
 
 ### Chores
