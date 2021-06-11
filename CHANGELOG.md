@@ -1,3 +1,10 @@
+## [3.5.37](https://github.com/ridedott/release-me-action/compare/v3.5.36...v3.5.37) (2021-06-11)
+
+### Chores
+
+- **deps:** bump @semantic-release/release-notes-generator
+  ([2978179](https://github.com/ridedott/release-me-action/commit/29781795565809635861336c7310208a17c17524))
+
 ## [3.5.36](https://github.com/ridedott/release-me-action/compare/v3.5.35...v3.5.36) (2021-06-11)
 
 ### Chores
