@@ -1,3 +1,12 @@
+## [3.5.36](https://github.com/ridedott/release-me-action/compare/v3.5.35...v3.5.36) (2021-06-11)
+
+### Chores
+
+- **deps:** bump glob-parent from 5.1.0 to 5.1.2
+  ([9128a4a](https://github.com/ridedott/release-me-action/commit/9128a4a2d541105a9edccb8097e603ff7f819df7))
+- **deps-dev:** bump cspell from 5.6.0 to 5.6.1
+  ([9e7a0b0](https://github.com/ridedott/release-me-action/commit/9e7a0b015652e79a8b23e05b0c88708f508b44ed))
+
 ## [3.5.35](https://github.com/ridedott/release-me-action/compare/v3.5.34...v3.5.35) (2021-06-09)
 
 ### Chores
