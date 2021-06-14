@@ -1,3 +1,17 @@
+## [3.5.38](https://github.com/ridedott/release-me-action/compare/v3.5.37...v3.5.38) (2021-06-14)
+
+### Chores
+
+- **deps-dev:** bump cspell from 5.6.1 to 5.6.2
+  ([8ab6d51](https://github.com/ridedott/release-me-action/commit/8ab6d512cb30cf4e7bfe37be2e519dfdd8aae4bf))
+- **deps-dev:** bump cspell from 5.6.2 to 5.6.3
+  ([5968908](https://github.com/ridedott/release-me-action/commit/5968908a5f687bf0ac8ffbd8bdb4947491ae65cc))
+
+### Continuous Integration
+
+- update dependabot configuration
+  ([0213f63](https://github.com/ridedott/release-me-action/commit/0213f639b233a90723f4dd70eca5a43df19e6a12))
+
 ## [3.5.37](https://github.com/ridedott/release-me-action/compare/v3.5.36...v3.5.37) (2021-06-11)
 
 ### Chores
