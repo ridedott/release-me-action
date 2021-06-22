@@ -1,3 +1,15 @@
+## [3.5.42](https://github.com/ridedott/release-me-action/compare/v3.5.41...v3.5.42) (2021-06-22)
+
+### Chores
+
+- **deps-dev:** bump eslint from 7.28.0 to 7.29.0
+  ([25697e7](https://github.com/ridedott/release-me-action/commit/25697e784d8e6990ce92821db88801b21b5ad474))
+
+### Continuous Integration
+
+- use pull_request_target event as CI workflow trigger
+  ([d9422ef](https://github.com/ridedott/release-me-action/commit/d9422efa73458c43ef549a16a74902c93c628873))
+
 ## [3.5.41](https://github.com/ridedott/release-me-action/compare/v3.5.40...v3.5.41) (2021-06-21)
 
 ### Chores
