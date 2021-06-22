@@ -1,9 +1,12 @@
 name: Continuous Integration
 
 on:
-  pull_request:
+  pull_request_target:
     branches:
       - master
+    types:
+      - opened
+      - synchronize
   push:
     branches:
       - master
@@ -17,6 +20,7 @@ jobs:
         uses: actions/checkout@v2.3.4
         with:
           persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - name: Setup Node.js
         uses: actions/setup-node@v2.1.5
         with:
@@ -41,6 +45,7 @@ jobs:
         uses: actions/checkout@v2.3.4
         with:
           persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - name: Setup Node.js
         uses: actions/setup-node@v2.1.5
         with:
@@ -65,6 +70,7 @@ jobs:
         uses: actions/checkout@v2.3.4
         with:
           persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - name: Setup Node.js
         uses: actions/setup-node@v2.1.5
         with:
@@ -89,6 +95,7 @@ jobs:
         uses: actions/checkout@v2.3.4
         with:
           persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - name: Setup Node.js
         uses: actions/setup-node@v2.1.5
         with:
@@ -105,9 +112,11 @@ jobs:
       - name: Test
         run: npm run test:ci
       - name: Upload coverage to Coveralls
-        uses: coverallsapp/github-action@master
+        uses: mad-it/coveralls-github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          git-branch: ${{ github.event.pull_request.head.ref || github.ref }}
+          git-commit: ${{ github.event.pull_request.head.sha || github.sha }}
     timeout-minutes: 5
   types:
     name: Types
@@ -117,6 +126,7 @@ jobs:
         uses: actions/checkout@v2.3.4
         with:
           persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - name: Setup Node.js
         uses: actions/setup-node@v2.1.5
         with:
@@ -132,4 +142,19 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
       - name: Types
         run: npm run types
+    timeout-minutes: 5
+  merge-me:
+    name: Merge me!
+    needs:
+      - format
+      - lint
+      - spellcheck
+      - test
+      - types
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge me!
+        uses: ridedott/merge-me-action@master
+        with:
+          GITHUB_TOKEN: ${{ secrets.DOTTBOTT_TOKEN }}
     timeout-minutes: 5
