@@ -1,3 +1,10 @@
+## [3.5.43](https://github.com/ridedott/release-me-action/compare/v3.5.42...v3.5.43) (2021-06-22)
+
+### Reverts
+
+- ci: use pull_request_target event as CI workflow trigger
+  ([18f134b](https://github.com/ridedott/release-me-action/commit/18f134b7f1a77bacbcc7e67ae33432b9159c5f3a))
+
 ## [3.5.42](https://github.com/ridedott/release-me-action/compare/v3.5.41...v3.5.42) (2021-06-22)
 
 ### Chores
