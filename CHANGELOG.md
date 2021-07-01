@@ -1,3 +1,14 @@
+## [3.5.44](https://github.com/ridedott/release-me-action/compare/v3.5.43...v3.5.44) (2021-07-01)
+
+### Chores
+
+- **deps-dev:** bump @jest/types from 27.0.2 to 27.0.6
+  ([5a14b74](https://github.com/ridedott/release-me-action/commit/5a14b742c9b7f53c44c57f293239873abdf57ac0))
+- **deps-dev:** bump @types/node from 15.12.4 to 15.12.5
+  ([656a387](https://github.com/ridedott/release-me-action/commit/656a3871babd98ff399d16d618826f0c9f250685))
+- **deps-dev:** bump typescript from 4.3.4 to 4.3.5
+  ([f1b9873](https://github.com/ridedott/release-me-action/commit/f1b98739d32577aa6d2fc5b1ba901a397796c398))
+
 ## [3.5.43](https://github.com/ridedott/release-me-action/compare/v3.5.42...v3.5.43) (2021-06-22)
 
 ### Reverts
