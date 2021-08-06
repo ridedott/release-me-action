@@ -1,3 +1,10 @@
+## [3.5.48](https://github.com/ridedott/release-me-action/compare/v3.5.47...v3.5.48) (2021-08-06)
+
+### Chores
+
+- **deps:** bump actions/setup-node from 2.3.2 to 2.4.0
+  ([5996fef](https://github.com/ridedott/release-me-action/commit/5996fef270ef1fbe4dc4067624e8c138044b7030))
+
 ## [3.5.47](https://github.com/ridedott/release-me-action/compare/v3.5.46...v3.5.47) (2021-08-05)
 
 ### Chores
