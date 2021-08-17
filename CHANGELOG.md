@@ -1,3 +1,22 @@
+## [3.5.49](https://github.com/ridedott/release-me-action/compare/v3.5.48...v3.5.49) (2021-08-17)
+
+### Chores
+
+- **deps:** bump semantic-release from 17.4.4 to 17.4.5
+  ([8a3112a](https://github.com/ridedott/release-me-action/commit/8a3112ac8260110bca86294c0858ef9f0446d0d8))
+- **deps-dev:** bump @types/jest from 26.0.24 to 27.0.0
+  ([8c56be1](https://github.com/ridedott/release-me-action/commit/8c56be10ce6196c93fcfdc43ca3b0a9c576d4ec9))
+- **deps-dev:** bump @types/jest from 27.0.0 to 27.0.1
+  ([a5182e7](https://github.com/ridedott/release-me-action/commit/a5182e778c7fec978f3df81457f253c9c8742dd7))
+- **deps-dev:** bump cspell from 5.6.6 to 5.7.1
+  ([8e754e5](https://github.com/ridedott/release-me-action/commit/8e754e57cffcf8d85fe0105c888551877343f25b))
+- **deps-dev:** bump cspell from 5.7.1 to 5.7.2
+  ([3e43ce8](https://github.com/ridedott/release-me-action/commit/3e43ce84b8947d34307fcb8141c5cd244264f12a))
+- **deps-dev:** bump lint-staged from 11.1.1 to 11.1.2
+  ([db8ec49](https://github.com/ridedott/release-me-action/commit/db8ec491445d2d7a150a3a86e24791ba918b7149))
+- **deps-dev:** bump ts-node from 10.1.0 to 10.2.0
+  ([4913baa](https://github.com/ridedott/release-me-action/commit/4913baa9de5505c15a56b8feaa35725e8f5015dc))
+
 ## [3.5.48](https://github.com/ridedott/release-me-action/compare/v3.5.47...v3.5.48) (2021-08-06)
 
 ### Chores
