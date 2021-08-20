@@ -1,3 +1,12 @@
+## [3.5.50](https://github.com/ridedott/release-me-action/compare/v3.5.49...v3.5.50) (2021-08-20)
+
+### Chores
+
+- **deps:** bump @actions/core from 1.4.0 to 1.5.0
+  ([583bf2b](https://github.com/ridedott/release-me-action/commit/583bf2bcc8ad52bdf9098c18e44268972b08ef1f))
+- **deps-dev:** bump ts-node from 10.2.0 to 10.2.1
+  ([d0c2dc1](https://github.com/ridedott/release-me-action/commit/d0c2dc1f2d90d13592cc7973226b215649ba79b7))
+
 ## [3.5.49](https://github.com/ridedott/release-me-action/compare/v3.5.48...v3.5.49) (2021-08-17)
 
 ### Chores
