@@ -1,3 +1,14 @@
+## [3.5.52](https://github.com/ridedott/release-me-action/compare/v3.5.51...v3.5.52) (2021-08-26)
+
+### Chores
+
+- **deps:** bump semantic-release from 17.4.6 to 17.4.7
+  ([a82fd73](https://github.com/ridedott/release-me-action/commit/a82fd7359211be5b5994ce2a037caa775a5e2554))
+- **deps-dev:** bump cspell from 5.8.0 to 5.8.1
+  ([c983fd4](https://github.com/ridedott/release-me-action/commit/c983fd4c10f8f5bba22c2b61a3e3ad4cb4032be6))
+- **deps-dev:** bump husky from 7.0.1 to 7.0.2
+  ([39db716](https://github.com/ridedott/release-me-action/commit/39db71623633a853585a848120bde8d6f2150cab))
+
 ## [3.5.51](https://github.com/ridedott/release-me-action/compare/v3.5.50...v3.5.51) (2021-08-24)
 
 ### Chores
