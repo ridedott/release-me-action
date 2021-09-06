@@ -1,3 +1,18 @@
+## [3.5.54](https://github.com/ridedott/release-me-action/compare/v3.5.53...v3.5.54) (2021-09-06)
+
+### Chores
+
+- **deps:** bump @semantic-release/git from 9.0.0 to 9.0.1
+  ([1c473dc](https://github.com/ridedott/release-me-action/commit/1c473dc01586a908860f648f2e648c23ff95d01d))
+- **deps-dev:** bump @jest/types from 27.0.6 to 27.1.0
+  ([02c27ea](https://github.com/ridedott/release-me-action/commit/02c27ea3aa0a7d497c4348dd12b1054deacfc0e5))
+- **deps-dev:** bump @types/node from 15.14.0 to 16.7.8
+  ([ca56ef8](https://github.com/ridedott/release-me-action/commit/ca56ef859ee2384a2dd959ada6635840995ef872))
+- **deps-dev:** bump @types/node from 16.7.8 to 16.7.10
+  ([093a198](https://github.com/ridedott/release-me-action/commit/093a1989c1cb1077c837a073cbc8669edb2e2681))
+- **deps-dev:** bump cspell from 5.8.2 to 5.9.0
+  ([4167c73](https://github.com/ridedott/release-me-action/commit/4167c73059b2c7bac72b227379b463ade005f169))
+
 ## [3.5.53](https://github.com/ridedott/release-me-action/compare/v3.5.52...v3.5.53) (2021-08-27)
 
 ### Chores
