@@ -1,3 +1,38 @@
+## [3.5.55](https://github.com/ridedott/release-me-action/compare/v3.5.54...v3.5.55) (2021-09-10)
+
+### Bug Fixes
+
+- file-url
+  ([fa66833](https://github.com/ridedott/release-me-action/commit/fa66833a4d42c7dd4cf148c2679bc055467d84d6))
+
+### Chores
+
+- **deps-dev:** bump @jest/types from 27.1.0 to 27.1.1
+  ([e2742ef](https://github.com/ridedott/release-me-action/commit/e2742ef450fe1d261be84c72f2c1f01bc9355f36))
+- **deps-dev:** bump @types/node from 16.7.10 to 16.7.12
+  ([7c983e0](https://github.com/ridedott/release-me-action/commit/7c983e069f3a438a63a3ab1503be92e14b04b898))
+- **deps-dev:** bump @types/node from 16.7.12 to 16.7.13
+  ([8a211b9](https://github.com/ridedott/release-me-action/commit/8a211b9da3d5960b23ca334239a8062550c0e525))
+- **deps-dev:** bump @types/node from 16.7.13 to 16.9.0
+  ([748846a](https://github.com/ridedott/release-me-action/commit/748846a5384f2edf761523fe740b0c0045896992))
+- **deps-dev:** bump @types/node from 16.9.0 to 16.9.1
+  ([2cee4b1](https://github.com/ridedott/release-me-action/commit/2cee4b106513cc7fdfdd95a31488a8a600095f77))
+
+## [3.5.54](https://github.com/ridedott/release-me-action/compare/v3.5.53...v3.5.54) (2021-09-06)
+
+### Chores
+
+- **deps:** bump @semantic-release/git from 9.0.0 to 9.0.1
+  ([1c473dc](https://github.com/ridedott/release-me-action/commit/1c473dc01586a908860f648f2e648c23ff95d01d))
+- **deps-dev:** bump @jest/types from 27.0.6 to 27.1.0
+  ([02c27ea](https://github.com/ridedott/release-me-action/commit/02c27ea3aa0a7d497c4348dd12b1054deacfc0e5))
+- **deps-dev:** bump @types/node from 15.14.0 to 16.7.8
+  ([ca56ef8](https://github.com/ridedott/release-me-action/commit/ca56ef859ee2384a2dd959ada6635840995ef872))
+- **deps-dev:** bump @types/node from 16.7.8 to 16.7.10
+  ([093a198](https://github.com/ridedott/release-me-action/commit/093a1989c1cb1077c837a073cbc8669edb2e2681))
+- **deps-dev:** bump cspell from 5.8.2 to 5.9.0
+  ([4167c73](https://github.com/ridedott/release-me-action/commit/4167c73059b2c7bac72b227379b463ade005f169))
+
 ## [3.5.53](https://github.com/ridedott/release-me-action/compare/v3.5.52...v3.5.53) (2021-08-27)
 
 ### Chores
