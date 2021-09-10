@@ -1,3 +1,23 @@
+## [3.5.55](https://github.com/ridedott/release-me-action/compare/v3.5.54...v3.5.55) (2021-09-10)
+
+### Bug Fixes
+
+- file-url
+  ([fa66833](https://github.com/ridedott/release-me-action/commit/fa66833a4d42c7dd4cf148c2679bc055467d84d6))
+
+### Chores
+
+- **deps-dev:** bump @jest/types from 27.1.0 to 27.1.1
+  ([e2742ef](https://github.com/ridedott/release-me-action/commit/e2742ef450fe1d261be84c72f2c1f01bc9355f36))
+- **deps-dev:** bump @types/node from 16.7.10 to 16.7.12
+  ([7c983e0](https://github.com/ridedott/release-me-action/commit/7c983e069f3a438a63a3ab1503be92e14b04b898))
+- **deps-dev:** bump @types/node from 16.7.12 to 16.7.13
+  ([8a211b9](https://github.com/ridedott/release-me-action/commit/8a211b9da3d5960b23ca334239a8062550c0e525))
+- **deps-dev:** bump @types/node from 16.7.13 to 16.9.0
+  ([748846a](https://github.com/ridedott/release-me-action/commit/748846a5384f2edf761523fe740b0c0045896992))
+- **deps-dev:** bump @types/node from 16.9.0 to 16.9.1
+  ([2cee4b1](https://github.com/ridedott/release-me-action/commit/2cee4b106513cc7fdfdd95a31488a8a600095f77))
+
 ## [3.5.54](https://github.com/ridedott/release-me-action/compare/v3.5.53...v3.5.54) (2021-09-06)
 
 ### Chores
