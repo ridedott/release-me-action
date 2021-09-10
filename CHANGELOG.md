@@ -1,3 +1,10 @@
+## [3.5.56](https://github.com/ridedott/release-me-action/compare/v3.5.55...v3.5.56) (2021-09-10)
+
+### Reverts
+
+- fix: file-url
+  ([dd669d3](https://github.com/ridedott/release-me-action/commit/dd669d3635ec19f9ec269f4bf633d657eb0a3a62))
+
 ## [3.5.55](https://github.com/ridedott/release-me-action/compare/v3.5.54...v3.5.55) (2021-09-10)
 
 ### Bug Fixes
