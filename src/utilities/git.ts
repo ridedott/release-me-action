@@ -1,6 +1,6 @@
 /* eslint-disable no-await-in-loop */
 import * as execa from 'execa';
-import * as fileUrl from 'file-url';
+import fileUrl from 'file-url';
 import { directory } from 'tempy';
 
 /**
