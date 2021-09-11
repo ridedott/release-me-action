@@ -56,6 +56,9 @@ steps:
       # Attach the new line separated listed glob patterns to the release.
       release-assets: |
         ./generated/my-asset.tar.gz
+      # Do not generate CHANGELOG.md file
+      # Default: false
+      disable-generate-changelog: true
       # Configure the semantic release commit analyzer rules that are used to
       # determine the correct release version.
       # https://www.npmjs.com/package/@semantic-release/commit-analyzer#releaserules
@@ -82,7 +85,7 @@ with the required permissions enabled on it.
 # Scenarios
 
 - [Create a release](#create-a-release)
-- [Create a release without a CHANGELOG.md file](#create-a-release-without-changelog)
+- [Create a release without a CHANGELOG.md file](#create-a-release-without-a-changelogmd-file)
 - [Test a release](#test-a-release)
 - [Create a release to a different branch](#create-a-release-to-a-different-branch)
 - [Create a release and update repository contents](#create-a-release-and-update-repository-contents)
@@ -110,7 +113,7 @@ steps:
     name: Release
     uses: ridedott/release-me-action@master
     with:
-      disable-changelog: true
+      disable-generate-changelog: true
 ```
 
 ## Output release details
