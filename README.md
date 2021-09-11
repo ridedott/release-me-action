@@ -124,13 +124,14 @@ Output parameters supported:
 ```yaml
 steps:
   - name: Release
+    id: release
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     uses: ridedott/release-me-action@master
   - name: Output
-        if: steps.build_package.outputs.released == 'true'
+        if: steps.release.outputs.released == 'true'
         run: |
-          echo released version: ${{ steps.build_package.outputs.version }}, type: ${{ steps.build_package.outputs.level }}
+          echo released version: ${{ steps.release.outputs.version }}, type: ${{ steps.release.outputs.level }}
 ```
 
 ## Test a release
