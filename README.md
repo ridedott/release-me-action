@@ -85,7 +85,7 @@ with the required permissions enabled on it.
 # Scenarios
 
 - [Create a release](#create-a-release)
-- [Create a release without a CHANGELOG.md file](#create-a-release-without-a-changelogmd-file)
+- [Create a release without a CHANGELOG.md file](#create-a-release-without-a-changelog-file)
 - [Test a release](#test-a-release)
 - [Create a release to a different branch](#create-a-release-to-a-different-branch)
 - [Create a release and update repository contents](#create-a-release-and-update-repository-contents)
@@ -104,7 +104,7 @@ steps:
     uses: ridedott/release-me-action@master
 ```
 
-## Create a release without a CHANGELOG.md file
+## Create a release without a CHANGELOG file
 
 ```yaml
 steps:
