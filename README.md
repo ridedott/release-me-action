@@ -129,9 +129,9 @@ steps:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     uses: ridedott/release-me-action@master
   - name: Output
-      if: steps.release.outputs.released == 'true'
-      run: |
-        echo released version: ${{ steps.release.outputs.version }}, type: ${{ steps.release.outputs.level }}
+    if: steps.release.outputs.released == 'true'
+    run: |
+      echo released version: ${{ steps.release.outputs.version }}, type: ${{ steps.release.outputs.level }}
 ```
 
 ## Test a release
