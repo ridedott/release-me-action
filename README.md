@@ -248,9 +248,13 @@ to authenticate to GitHub.
 
 ```yaml
 steps:
-  - env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
-    name: Release
+  - name: Checkout
+    uses: actions/checkout@v2
+    with:
+      persist-credentials: false # to prevent interference with default `GITHUB_TOKEN` - [see docs](https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/github-actions.md#pushing-packagejson-changes-to-a-master-branch] 
+  - name: Release
+    env:
+      GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
     uses: ridedott/release-me-action@master
 ```
 
