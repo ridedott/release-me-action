@@ -251,7 +251,9 @@ steps:
   - name: Checkout
     uses: actions/checkout@v2
     with:
-      persist-credentials: false # to prevent interference with default `GITHUB_TOKEN` - [see docs](https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/github-actions.md#pushing-packagejson-changes-to-a-master-branch] 
+      # to prevent interference with default `GITHUB_TOKEN`
+      # [see docs](https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/github-actions.md#pushing-packagejson-changes-to-a-master-branch] 
+      persist-credentials: false 
   - name: Release
     env:
       GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
