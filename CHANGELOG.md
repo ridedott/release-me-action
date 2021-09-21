@@ -1,3 +1,18 @@
+## [3.5.58](https://github.com/ridedott/release-me-action/compare/v3.5.57...v3.5.58) (2021-09-21)
+
+### Chores
+
+- **deps-dev:** bump @types/jest from 27.0.1 to 27.0.2
+  ([7ab5523](https://github.com/ridedott/release-me-action/commit/7ab552307ee635a46bcf2f4304b0046bbca50c19))
+- **deps-dev:** bump @types/node from 16.9.2 to 16.9.4
+  ([6fdb343](https://github.com/ridedott/release-me-action/commit/6fdb343f931a12eb1abe9a1f0e7772d17f2fbd5b))
+- **deps-dev:** bump @types/semantic-release from 17.2.1 to 17.2.2
+  ([57f7ac3](https://github.com/ridedott/release-me-action/commit/57f7ac3ad337b549a0c65c9fbbbdb71dc2d6f3f1))
+- **deps-dev:** bump cspell from 5.9.0 to 5.10.1
+  ([a423c82](https://github.com/ridedott/release-me-action/commit/a423c82fcabc68928e12c12bd188099fea3b9088))
+- **deps-dev:** bump typescript from 4.4.2 to 4.4.3
+  ([99841ea](https://github.com/ridedott/release-me-action/commit/99841ea72b4578e68807c0b4a368639c34354f36))
+
 ## [3.5.57](https://github.com/ridedott/release-me-action/compare/v3.5.56...v3.5.57) (2021-09-21)
 
 ### Chores
