@@ -28,7 +28,7 @@
     "@types/hapi__joi": "^17.1.7",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.9.2",
-    "@types/semantic-release": "^17.2.1",
+    "@types/semantic-release": "^17.2.2",
     "@zeit/ncc": "^0.22.3",
     "commitizen": "^4.2.4",
     "cspell": "^5.9.0",
