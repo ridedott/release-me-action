@@ -1,3 +1,17 @@
+## [3.5.57](https://github.com/ridedott/release-me-action/compare/v3.5.56...v3.5.57) (2021-09-21)
+
+### Chores
+
+- **deps:** bump tmpl from 1.0.4 to 1.0.5
+  ([b18876b](https://github.com/ridedott/release-me-action/commit/b18876be6b4df72bb2d61f184b08ef0c12195736))
+- **deps-dev:** bump @types/node from 16.9.1 to 16.9.2
+  ([d09ba82](https://github.com/ridedott/release-me-action/commit/d09ba82778c0cbb438e00dc3845e6f449538e2f3))
+
+### Documentation
+
+- update changelog generation docs
+  ([edd80e9](https://github.com/ridedott/release-me-action/commit/edd80e93da2cff499dd644913a616b8f41296410))
+
 ## [3.5.56](https://github.com/ridedott/release-me-action/compare/v3.5.55...v3.5.56) (2021-09-10)
 
 ### Reverts
