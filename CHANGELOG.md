@@ -1,3 +1,10 @@
+## [3.5.59](https://github.com/ridedott/release-me-action/compare/v3.5.58...v3.5.59) (2021-09-22)
+
+### Chores
+
+- **deps:** bump semantic-release, @semantic-release/changelog, @sem…
+  ([93b2b2f](https://github.com/ridedott/release-me-action/commit/93b2b2f63f5c21b2590f4ced1a986ea7dcaf0430))
+
 ## [3.5.58](https://github.com/ridedott/release-me-action/compare/v3.5.57...v3.5.58) (2021-09-21)
 
 ### Chores
