@@ -1,3 +1,39 @@
+## [3.5.59](https://github.com/ridedott/release-me-action/compare/v3.5.58...v3.5.59) (2021-09-22)
+
+### Chores
+
+- **deps:** bump semantic-release, @semantic-release/changelog, @sem…
+  ([93b2b2f](https://github.com/ridedott/release-me-action/commit/93b2b2f63f5c21b2590f4ced1a986ea7dcaf0430))
+
+## [3.5.58](https://github.com/ridedott/release-me-action/compare/v3.5.57...v3.5.58) (2021-09-21)
+
+### Chores
+
+- **deps-dev:** bump @types/jest from 27.0.1 to 27.0.2
+  ([7ab5523](https://github.com/ridedott/release-me-action/commit/7ab552307ee635a46bcf2f4304b0046bbca50c19))
+- **deps-dev:** bump @types/node from 16.9.2 to 16.9.4
+  ([6fdb343](https://github.com/ridedott/release-me-action/commit/6fdb343f931a12eb1abe9a1f0e7772d17f2fbd5b))
+- **deps-dev:** bump @types/semantic-release from 17.2.1 to 17.2.2
+  ([57f7ac3](https://github.com/ridedott/release-me-action/commit/57f7ac3ad337b549a0c65c9fbbbdb71dc2d6f3f1))
+- **deps-dev:** bump cspell from 5.9.0 to 5.10.1
+  ([a423c82](https://github.com/ridedott/release-me-action/commit/a423c82fcabc68928e12c12bd188099fea3b9088))
+- **deps-dev:** bump typescript from 4.4.2 to 4.4.3
+  ([99841ea](https://github.com/ridedott/release-me-action/commit/99841ea72b4578e68807c0b4a368639c34354f36))
+
+## [3.5.57](https://github.com/ridedott/release-me-action/compare/v3.5.56...v3.5.57) (2021-09-21)
+
+### Chores
+
+- **deps:** bump tmpl from 1.0.4 to 1.0.5
+  ([b18876b](https://github.com/ridedott/release-me-action/commit/b18876be6b4df72bb2d61f184b08ef0c12195736))
+- **deps-dev:** bump @types/node from 16.9.1 to 16.9.2
+  ([d09ba82](https://github.com/ridedott/release-me-action/commit/d09ba82778c0cbb438e00dc3845e6f449538e2f3))
+
+### Documentation
+
+- update changelog generation docs
+  ([edd80e9](https://github.com/ridedott/release-me-action/commit/edd80e93da2cff499dd644913a616b8f41296410))
+
 ## [3.5.56](https://github.com/ridedott/release-me-action/compare/v3.5.55...v3.5.56) (2021-09-10)
 
 ### Reverts
