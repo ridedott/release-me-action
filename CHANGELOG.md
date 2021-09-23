@@ -1,3 +1,12 @@
+## [3.5.60](https://github.com/ridedott/release-me-action/compare/v3.5.59...v3.5.60) (2021-09-23)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 16.9.4 to 16.9.6
+  ([60b3e2b](https://github.com/ridedott/release-me-action/commit/60b3e2b37a3d63d3a55e1c093c260c8fd9478235))
+- **deps:** bump @semantic-release/github from 8.0.0 to 8.0.1
+  ([64891bf](https://github.com/ridedott/release-me-action/commit/64891bff9cdf5a81ffd0051dd1b0fc268b821b61))
+
 ## [3.5.59](https://github.com/ridedott/release-me-action/compare/v3.5.58...v3.5.59) (2021-09-22)
 
 ### Chores
