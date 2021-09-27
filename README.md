@@ -58,7 +58,7 @@ steps:
         ./generated/my-asset.tar.gz
       # Do not generate CHANGELOG.md file
       # Default: false
-      disable-generate-changelog: true
+      disable-changelog: true
       # Configure the semantic release commit analyzer rules that are used to
       # determine the correct release version.
       # https://www.npmjs.com/package/@semantic-release/commit-analyzer#releaserules
@@ -113,7 +113,7 @@ steps:
     name: Release
     uses: ridedott/release-me-action@master
     with:
-      disable-generate-changelog: true
+      disable-changelog: true
 ```
 
 ## Output release details
