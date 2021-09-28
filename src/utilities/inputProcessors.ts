@@ -18,6 +18,7 @@ export enum InputParameters {
   ReleaseAssets = 'release-assets',
   ReleaseBranches = 'release-branches',
   ReleaseRules = 'release-rules',
+  ReleaseRulesAppend = 'release-rules-append',
 }
 
 export interface ReleaseRule {
@@ -219,6 +220,10 @@ export const processInputConfigFile = (): string | undefined => {
 
 export const processInputReleaseRules = (): ReleaseRule[] => {
   const input = getInput(InputParameters.ReleaseRules);
+  const appendInput = getInput(InputParameters.ReleaseRulesAppend);
+
+  /* eslint-disable-next-line no-console */
+  console.log('Append Rules', appendInput);
 
   if (input.length === 0) {
     return DEFAULT_RELEASE_RULES;
