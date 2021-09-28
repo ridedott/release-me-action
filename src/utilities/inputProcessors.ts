@@ -222,10 +222,6 @@ export const processInputReleaseRules = (): ReleaseRule[] => {
   const input = getInput(InputParameters.ReleaseRules);
   const appendInput = getInput(InputParameters.ReleaseRulesAppend);
 
-  if (input.length === 0) {
-    return DEFAULT_RELEASE_RULES;
-  }
-
   /* eslint-disable-next-line no-console */
   console.log('Append Rules', appendInput.length, appendInput);
 
@@ -238,6 +234,10 @@ export const processInputReleaseRules = (): ReleaseRule[] => {
 
     /* eslint-disable-next-line no-console */
     console.log('Valid Append Rules', validAppendInputRules);
+  }
+
+  if (input.length === 0) {
+    return DEFAULT_RELEASE_RULES;
   }
 
   const parsedInput = parseInputReleaseRules(input);
