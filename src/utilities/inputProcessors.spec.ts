@@ -139,7 +139,7 @@ describe('processInputReleaseRules', (): void => {
   it('throws an error if the input parameter value is set to an invalid JSON string', (): void => {
     expect.assertions(1);
 
-    getInputSpy.mockReturnValue('test');
+    getInputSpy.mockReturnValueOnce('test').mockReturnValueOnce('');
 
     expect(processInputReleaseRules).toThrow(
       'Invalid JSON string for input parameter release-rules.',
@@ -170,7 +170,7 @@ describe('processInputReleaseRules', (): void => {
     ({ value }: { value: string }): void => {
       expect.assertions(1);
 
-      getInputSpy.mockReturnValue(value);
+      getInputSpy.mockReturnValueOnce(value).mockReturnValueOnce('');
 
       /* eslint-disable-next-line jest/require-to-throw-message */
       expect(processInputReleaseRules).toThrow();
@@ -180,7 +180,7 @@ describe('processInputReleaseRules', (): void => {
   it("returns the default release rules if the input parameter value is set to an empty string''", (): void => {
     expect.assertions(1);
 
-    getInputSpy.mockReturnValue('');
+    getInputSpy.mockReturnValueOnce('').mockReturnValueOnce('');
 
     const result = processInputReleaseRules();
 
@@ -198,13 +198,15 @@ describe('processInputReleaseRules', (): void => {
   it('returns a valid branches configuration array passed as json-string', (): void => {
     expect.assertions(1);
 
-    getInputSpy.mockReturnValue(
-      JSON.stringify([
-        { release: 'patch', type: 'build' },
-        { release: 'patch', type: 'chore(deps)' },
-        { release: 'patch', type: 'chore(deps-dev)' },
-      ]),
-    );
+    getInputSpy
+      .mockReturnValueOnce(
+        JSON.stringify([
+          { release: 'patch', type: 'build' },
+          { release: 'patch', type: 'chore(deps)' },
+          { release: 'patch', type: 'chore(deps-dev)' },
+        ]),
+      )
+      .mockReturnValueOnce('');
 
     const result = processInputReleaseRules();
 
@@ -212,6 +214,102 @@ describe('processInputReleaseRules', (): void => {
       { release: 'patch', type: 'build' },
       { release: 'patch', type: 'chore(deps)' },
       { release: 'patch', type: 'chore(deps-dev)' },
+    ]);
+  });
+});
+
+describe('processInputReleaseRulesAppend', (): void => {
+  it('throws an error if the release-rules-append input parameter value is set to an invalid JSON string', (): void => {
+    expect.assertions(1);
+
+    getInputSpy.mockReturnValueOnce('').mockReturnValueOnce('test');
+
+    expect(processInputReleaseRules).toThrow(
+      'Invalid JSON string for input parameter release-rules.',
+    );
+  });
+
+  it.each([
+    {
+      value: '[]',
+    },
+    {
+      value: '[{}]',
+    },
+    {
+      value: '[{"release": 2}]',
+    },
+    {
+      value: '[{"release": "test"}]',
+    },
+    {
+      value: '[{"release": "patch", "scope": false}]',
+    },
+    {
+      value: '[{"release": "patch", "subject": false}]',
+    },
+  ])(
+    'throws an error if the release-rules-append input parameter is set to an invalid value %j',
+    ({ value }: { value: string }): void => {
+      expect.assertions(1);
+
+      getInputSpy.mockReturnValueOnce('').mockReturnValueOnce(value);
+
+      /* eslint-disable-next-line jest/require-to-throw-message */
+      expect(processInputReleaseRules).toThrow();
+    },
+  );
+
+  it('throws and error when both release-rules and release-rules-append are defined', (): void => {
+    expect.assertions(1);
+    getInputSpy
+      .mockReturnValueOnce(
+        JSON.stringify([
+          { release: 'patch', type: 'build' },
+          { release: 'patch', type: 'chore(deps)' },
+        ]),
+      )
+      .mockReturnValueOnce(
+        JSON.stringify([{ release: 'patch', type: 'chore(deps-dev)' }]),
+      );
+
+    expect(processInputReleaseRules).toThrow(
+      'Invalid input release-rules-append and release rules cannot both be used.',
+    );
+  });
+
+  it('returns default release rules with append rules added to the end', (): void => {
+    expect.assertions(1);
+
+    getInputSpy.mockReturnValueOnce('').mockReturnValueOnce(
+      JSON.stringify([
+        {
+          release: 'patch',
+          scope: 'deps-dev',
+          subject: 'bump typescript*',
+          type: 'chore',
+        },
+        { release: false, scope: 'deps-dev', type: 'chore' },
+      ]),
+    );
+
+    const result = processInputReleaseRules();
+
+    expect(result).toStrictEqual([
+      { release: 'patch', type: 'build' },
+      { release: 'patch', type: 'chore' },
+      { release: 'patch', type: 'ci' },
+      { release: 'patch', type: 'docs' },
+      { release: 'patch', type: 'improvement' },
+      { release: 'patch', type: 'refactor' },
+      { release: false, subject: '*\\[skip release\\]*' },
+      {
+        release: 'patch',
+        scope: 'deps-dev',
+        subject: 'bump typescript*',
+        type: 'chore',
+      },
+      { release: false, scope: 'deps-dev', type: 'chore' },
     ]);
   });
 });

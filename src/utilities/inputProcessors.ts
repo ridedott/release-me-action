@@ -222,21 +222,21 @@ export const processInputReleaseRules = (): ReleaseRule[] => {
   const input = getInput(InputParameters.ReleaseRules);
   const appendInput = getInput(InputParameters.ReleaseRulesAppend);
 
-  /* eslint-disable-next-line no-console */
-  console.log('Append Rules', appendInput.length, appendInput);
+  /**
+   * Using release-rules-append when release rules empty in the config
+   * Allow to user to append rules onto end of default rules set
+   * instead of replacing them.
+   */
 
-  if (appendInput.length > 0) {
+  if (input.length > 0 && appendInput.length > 0) {
+    throw new Error(
+      'Invalid input release-rules-append and release rules cannot both be used.',
+    );
+  }
+
+  if (appendInput.length > 0 && input.length === 0) {
     const parsedAppendInput = parseInputReleaseRules(appendInput);
     const validAppendInputRules = validateInputReleaseRules(parsedAppendInput);
-
-    /* eslint-disable-next-line no-console */
-    console.log('Append Rules Parse', parsedAppendInput);
-
-    /* eslint-disable-next-line no-console */
-    console.log('DEFAULT Valid Append Rules', [
-      ...DEFAULT_RELEASE_RULES,
-      ...validAppendInputRules,
-    ]);
 
     return [...DEFAULT_RELEASE_RULES, ...validAppendInputRules];
   }
