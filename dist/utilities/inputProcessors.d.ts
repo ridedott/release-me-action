@@ -11,8 +11,7 @@ export declare enum InputParameters {
     NodeModule = "node-module",
     ReleaseAssets = "release-assets",
     ReleaseBranches = "release-branches",
-    ReleaseRules = "release-rules",
-    ReleaseRulesAppend = "release-rules-append"
+    ReleaseRules = "release-rules"
 }
 export interface ReleaseRule {
     release: string | false;
