@@ -1,3 +1,23 @@
+## [3.5.62](https://github.com/ridedott/release-me-action/compare/v3.5.61...v3.5.62) (2021-09-29)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 13.1.0 to 13.2.0
+  ([67c9e37](https://github.com/ridedott/release-me-action/commit/67c9e37399254731ac193700be2e738f74975f0f))
+- **deps-dev:** bump @commitlint/config-conventional
+  ([384afb8](https://github.com/ridedott/release-me-action/commit/384afb8624c653a61316a3e49efa0217187eb567))
+- **deps-dev:** bump @jest/types from 27.1.1 to 27.2.3
+  ([f7393f8](https://github.com/ridedott/release-me-action/commit/f7393f8a8f903bfe9d17b2dc584ff1656537fbab))
+- **deps-dev:** bump cspell from 5.10.1 to 5.11.0
+  ([6d1474f](https://github.com/ridedott/release-me-action/commit/6d1474fe617754173ba36d17aa9e18f47997b050))
+- **deps:** bump @actions/core from 1.5.0 to 1.6.0
+  ([6b5da89](https://github.com/ridedott/release-me-action/commit/6b5da893c11b33ccb6aa4fd07724451fb51bf604))
+
+### Documentation
+
+- fix incorrect parameter to disable changelog generation
+  ([6237815](https://github.com/ridedott/release-me-action/commit/623781516306e253ab4da0591e57ec1abd1a486b))
+
 ## [3.5.61](https://github.com/ridedott/release-me-action/compare/v3.5.60...v3.5.61) (2021-09-28)
 
 ### Chores
