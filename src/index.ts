@@ -68,5 +68,9 @@ export const release = async (
 release()
   .then(reportResults)
   .catch((error: unknown): void => {
+    
+    /* eslint-disable-next-line no-console */
+    console.log('Error thrown in release =>', error);
+    
     setFailed(JSON.stringify(error));
   });
