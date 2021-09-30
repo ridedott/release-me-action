@@ -234,7 +234,7 @@ export const processInputReleaseRules = (): ReleaseRule[] => {
     );
   }
 
-  if (appendInput.length > 0 && input.length === 0) {
+  if (appendInput.length > 0) {
     const parsedAppendInput = parseInputReleaseRules(appendInput);
     const validAppendInputRules = validateInputReleaseRules(parsedAppendInput);
 

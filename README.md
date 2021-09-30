@@ -76,7 +76,7 @@ steps:
       #  { "release": "patch", "type": "refactor" },
       #  { "release": false, "subject": "*\\[skip release\\]*" },
       # ]
-      # Note: these do not override the default rules. You cannot configure 'release-rules' if you wish to append rules.
+      # Note: cannot be used in conjunction with 'release-rules' as these do not override the default rules.
       release-rules-append:
         '[{"release":false,"subject":"*\\[skip release\\]*"}]'
       # Loads a custom Semantic Release configuration from this file. See
