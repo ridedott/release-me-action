@@ -1,8 +1,8 @@
 import { handleMessageOrError } from './parseError';
 
 interface TestCase {
-  expected: string,
-  messageOrError: unknown
+  expected: string;
+  messageOrError: unknown;
 }
 
 describe('handleMessageOrError', (): void => {
