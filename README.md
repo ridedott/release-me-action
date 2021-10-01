@@ -58,13 +58,27 @@ steps:
         ./generated/my-asset.tar.gz
       # Do not generate CHANGELOG.md file
       # Default: false
-      disable-generate-changelog: true
+      disable-changelog: true
       # Configure the semantic release commit analyzer rules that are used to
       # determine the correct release version.
       # https://www.npmjs.com/package/@semantic-release/commit-analyzer#releaserules
       release-rules:
         '[{ "release": "patch", "type": "build" }, { "release": "patch", "type":
         "chore(deps)" }, { "release": "patch", "type": "chore(deps-dev)" }]'
+      # Append additional semantic release commit analyzer rules to the default set of rules already included in the action.
+      # Default rules:
+      # [
+      #  { "release": "patch", "type": "build" },
+      #  { "release": "patch", "type": "chore" },
+      #  { "release": "patch", "type": "ci" },
+      #  { "release": "patch", "type": "docs" },
+      #  { "release": "patch", "type": "improvement" },
+      #  { "release": "patch", "type": "refactor" },
+      #  { "release": false, "subject": "*\\[skip release\\]*" },
+      # ]
+      # Note: cannot be used in conjunction with 'release-rules' as these do not override the default rules.
+      release-rules-append:
+        '[{"release":false,"subject":"*\\[skip release\\]*"}]'
       # Loads a custom Semantic Release configuration from this file. See
       # https://semantic-release.gitbook.io/semantic-release/usage/configuration#configuration-file.
       # Provided configuration will be shallow merged with defaults. Supported
@@ -113,7 +127,7 @@ steps:
     name: Release
     uses: ridedott/release-me-action@master
     with:
-      disable-generate-changelog: true
+      disable-changelog: true
 ```
 
 ## Output release details

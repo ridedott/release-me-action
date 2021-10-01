@@ -1,3 +1,93 @@
+# [3.6.0](https://github.com/ridedott/release-me-action/compare/v3.5.62...v3.6.0) (2021-09-30)
+
+### Chores
+
+- **deps-dev:** bump @jest/types from 27.2.3 to 27.2.4
+  ([a492d47](https://github.com/ridedott/release-me-action/commit/a492d47e29c26603b9cdae910ee1d0ee91599007))
+- **deps-dev:** bump @types/node from 16.10.1 to 16.10.2
+  ([58bd9ec](https://github.com/ridedott/release-me-action/commit/58bd9eca2c8f33c807c0cf56ddc52c2b9cae3834))
+- **deps-dev:** bump cspell from 5.11.0 to 5.11.1
+  ([661722a](https://github.com/ridedott/release-me-action/commit/661722a345ebed59ae1df3468010476daf414cd3))
+
+### Features
+
+- implement ability to append release rules to the default rules set
+  ([e187715](https://github.com/ridedott/release-me-action/commit/e1877153ee1dda0c392bea639efe8110cbe5af5b))
+
+## [3.5.62](https://github.com/ridedott/release-me-action/compare/v3.5.61...v3.5.62) (2021-09-29)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 13.1.0 to 13.2.0
+  ([67c9e37](https://github.com/ridedott/release-me-action/commit/67c9e37399254731ac193700be2e738f74975f0f))
+- **deps-dev:** bump @commitlint/config-conventional
+  ([384afb8](https://github.com/ridedott/release-me-action/commit/384afb8624c653a61316a3e49efa0217187eb567))
+- **deps-dev:** bump @jest/types from 27.1.1 to 27.2.3
+  ([f7393f8](https://github.com/ridedott/release-me-action/commit/f7393f8a8f903bfe9d17b2dc584ff1656537fbab))
+- **deps-dev:** bump cspell from 5.10.1 to 5.11.0
+  ([6d1474f](https://github.com/ridedott/release-me-action/commit/6d1474fe617754173ba36d17aa9e18f47997b050))
+- **deps:** bump @actions/core from 1.5.0 to 1.6.0
+  ([6b5da89](https://github.com/ridedott/release-me-action/commit/6b5da893c11b33ccb6aa4fd07724451fb51bf604))
+
+### Documentation
+
+- fix incorrect parameter to disable changelog generation
+  ([6237815](https://github.com/ridedott/release-me-action/commit/623781516306e253ab4da0591e57ec1abd1a486b))
+
+## [3.5.61](https://github.com/ridedott/release-me-action/compare/v3.5.60...v3.5.61) (2021-09-28)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 16.9.6 to 16.10.1
+  ([763c830](https://github.com/ridedott/release-me-action/commit/763c830871b92299242aaba0bb8994c1e8bb21f5))
+- **deps:** bump actions/setup-node from 2.4.0 to 2.4.1
+  ([2f94dd3](https://github.com/ridedott/release-me-action/commit/2f94dd33a83c2a28ba151fa5e7480bb842f7633c))
+
+## [3.5.60](https://github.com/ridedott/release-me-action/compare/v3.5.59...v3.5.60) (2021-09-23)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 16.9.4 to 16.9.6
+  ([60b3e2b](https://github.com/ridedott/release-me-action/commit/60b3e2b37a3d63d3a55e1c093c260c8fd9478235))
+- **deps:** bump @semantic-release/github from 8.0.0 to 8.0.1
+  ([64891bf](https://github.com/ridedott/release-me-action/commit/64891bff9cdf5a81ffd0051dd1b0fc268b821b61))
+
+## [3.5.59](https://github.com/ridedott/release-me-action/compare/v3.5.58...v3.5.59) (2021-09-22)
+
+### Chores
+
+- **deps:** bump semantic-release, @semantic-release/changelog, @sem…
+  ([93b2b2f](https://github.com/ridedott/release-me-action/commit/93b2b2f63f5c21b2590f4ced1a986ea7dcaf0430))
+
+## [3.5.58](https://github.com/ridedott/release-me-action/compare/v3.5.57...v3.5.58) (2021-09-21)
+
+### Chores
+
+- **deps-dev:** bump @types/jest from 27.0.1 to 27.0.2
+  ([7ab5523](https://github.com/ridedott/release-me-action/commit/7ab552307ee635a46bcf2f4304b0046bbca50c19))
+- **deps-dev:** bump @types/node from 16.9.2 to 16.9.4
+  ([6fdb343](https://github.com/ridedott/release-me-action/commit/6fdb343f931a12eb1abe9a1f0e7772d17f2fbd5b))
+- **deps-dev:** bump @types/semantic-release from 17.2.1 to 17.2.2
+  ([57f7ac3](https://github.com/ridedott/release-me-action/commit/57f7ac3ad337b549a0c65c9fbbbdb71dc2d6f3f1))
+- **deps-dev:** bump cspell from 5.9.0 to 5.10.1
+  ([a423c82](https://github.com/ridedott/release-me-action/commit/a423c82fcabc68928e12c12bd188099fea3b9088))
+- **deps-dev:** bump typescript from 4.4.2 to 4.4.3
+  ([99841ea](https://github.com/ridedott/release-me-action/commit/99841ea72b4578e68807c0b4a368639c34354f36))
+
+## [3.5.57](https://github.com/ridedott/release-me-action/compare/v3.5.56...v3.5.57) (2021-09-21)
+
+### Chores
+
+- **deps:** bump tmpl from 1.0.4 to 1.0.5
+  ([b18876b](https://github.com/ridedott/release-me-action/commit/b18876be6b4df72bb2d61f184b08ef0c12195736))
+- **deps-dev:** bump @types/node from 16.9.1 to 16.9.2
+  ([d09ba82](https://github.com/ridedott/release-me-action/commit/d09ba82778c0cbb438e00dc3845e6f449538e2f3))
+
+### Documentation
+
+- update changelog generation docs
+  ([edd80e9](https://github.com/ridedott/release-me-action/commit/edd80e93da2cff499dd644913a616b8f41296410))
+
 ## [3.5.56](https://github.com/ridedott/release-me-action/compare/v3.5.55...v3.5.56) (2021-09-10)
 
 ### Reverts
