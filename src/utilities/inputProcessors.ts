@@ -12,7 +12,7 @@ export enum InputParameters {
   AdditionalPlugins = 'additional-plugins',
   CommitAssets = 'commit-assets',
   ConfigFile = 'config-file',
-  DisableChangelog = 'disable-generate-changelog',
+  DisableChangelog = 'disable-changelog',
   DryRun = 'dry-run',
   NodeModule = 'node-module',
   ReleaseAssets = 'release-assets',
