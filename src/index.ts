@@ -1,5 +1,6 @@
 import { setFailed } from '@actions/core';
 import { Config, Options, Result } from 'semantic-release';
+import { inspect }  from "util";
 
 import { generatePlugins } from './utilities/generatePlugins';
 import {
@@ -21,6 +22,20 @@ type SemanticRelease = (
   options: Options,
   environment?: Config,
 ) => Promise<Result>;
+
+const handleMessageOrError = (messageOrError: unknown): string => {
+  if (typeof messageOrError === 'string') {
+    return messageOrError;
+  } else if (messageOrError instanceof Error) {
+    return messageOrError.stack ?? messageOrError.toString();
+  }
+
+  /**
+   * Arrays, booleans, functions, objects, numbers, null and undefined objects
+   * fall here.
+   */
+  return inspect(messageOrError);
+};
 
 export const release = async (
   overrideOptions?: Options,
@@ -67,6 +82,7 @@ export const release = async (
 
 release()
   .then(reportResults)
-  .catch((error: unknown): void => {
-    setFailed(JSON.stringify(error));
+  .catch((error: Error | unknown): void => {
+    const finalError = handleMessageOrError(error)
+    setFailed(JSON.stringify(finalError));
   });
