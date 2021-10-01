@@ -1,7 +1,12 @@
 import { handleMessageOrError } from './parseError';
 
+interface TestCase {
+  expected: string,
+  messageOrError: unknown
+}
+
 describe('handleMessageOrError', (): void => {
-  const testCases = [
+  const testCases: TestCase[] = [
     {
       expected: 'This is an error message',
       messageOrError: new Error('This is an error message'),
@@ -31,7 +36,7 @@ describe('handleMessageOrError', (): void => {
     },
   ];
 
-  testCases.forEach((test) => {
+  testCases.forEach((test): void => {
     it(`given an Error: ${test.messageOrError} should return: ${test.expected}`, (): void => {
       expect.assertions(1);
       const result = handleMessageOrError(test.messageOrError);
