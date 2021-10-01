@@ -1,6 +1,5 @@
 import { setFailed } from '@actions/core';
 import { Config, Options, Result } from 'semantic-release';
-import { inspect } from 'util';
 
 import { generatePlugins } from './utilities/generatePlugins';
 import {
@@ -17,29 +16,12 @@ import {
 import { installDependencies } from './utilities/installDependencies';
 import { reportResults } from './utilities/outputParsers';
 import { parseConfiguration } from './utilities/parseConfiguration';
+import { handleMessageOrError } from './utilities/parseError';
 
 type SemanticRelease = (
   options: Options,
   environment?: Config,
 ) => Promise<Result>;
-
-/**
- * Helper function to help the message part of the type Error
- */
-
-const handleMessageOrError = (messageOrError: unknown): string => {
-  if (typeof messageOrError === 'string') {
-    return messageOrError;
-  } else if (messageOrError instanceof Error) {
-    return messageOrError.message;
-  }
-
-  /**
-   * Arrays, booleans, functions, objects, numbers, null and undefined objects
-   * fall here.
-   */
-  return inspect(messageOrError);
-};
 
 export const release = async (
   overrideOptions?: Options,
