@@ -27,7 +27,7 @@ const handleMessageOrError = (messageOrError: unknown): string => {
   if (typeof messageOrError === 'string') {
     return messageOrError;
   } else if (messageOrError instanceof Error) {
-    return messageOrError.stack ?? messageOrError.toString();
+    return messageOrError.message
   }
 
   /**
