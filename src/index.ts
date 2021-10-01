@@ -1,6 +1,6 @@
 import { setFailed } from '@actions/core';
 import { Config, Options, Result } from 'semantic-release';
-import { inspect }  from "util";
+import { inspect } from 'util';
 
 import { generatePlugins } from './utilities/generatePlugins';
 import {
@@ -23,11 +23,15 @@ type SemanticRelease = (
   environment?: Config,
 ) => Promise<Result>;
 
+/**
+ * Helper function to help the message part of the type Error
+ */
+
 const handleMessageOrError = (messageOrError: unknown): string => {
   if (typeof messageOrError === 'string') {
     return messageOrError;
   } else if (messageOrError instanceof Error) {
-    return messageOrError.message
+    return messageOrError.message;
   }
 
   /**
@@ -82,7 +86,7 @@ export const release = async (
 
 release()
   .then(reportResults)
-  .catch((error: Error | unknown): void => {
-    const finalError = handleMessageOrError(error)
+  .catch((error: unknown): void => {
+    const finalError = handleMessageOrError(error);
     setFailed(JSON.stringify(finalError));
   });
