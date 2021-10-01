@@ -43,6 +43,10 @@ inputs:
       Configures the rules that Semantic Release will use to determine the
       correct release version.
     required: false
+  release-rules-append:
+    description:
+      Appends additional rules to the defaults that Semantic Release will use to
+      determine the correct release version.
 outputs:
   build:
     description: Build component of the released version.
