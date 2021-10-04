@@ -1,3 +1,10 @@
+## [3.6.1](https://github.com/ridedott/release-me-action/compare/v3.6.0...v3.6.1) (2021-10-04)
+
+### Bug Fixes
+
+- wrong input parameter for disable-changelog
+  ([67473d5](https://github.com/ridedott/release-me-action/commit/67473d58351d552cd0c679eb320d2793f2d30986))
+
 # [3.6.0](https://github.com/ridedott/release-me-action/compare/v3.5.62...v3.6.0) (2021-09-30)
 
 ### Chores
