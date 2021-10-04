@@ -1,4 +1,4 @@
-import { handleMessageOrError } from './parseError';
+import { handleMessageOrError } from './error';
 
 interface TestCase {
   expected: string;

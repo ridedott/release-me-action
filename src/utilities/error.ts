@@ -3,7 +3,6 @@ import { inspect } from 'util';
 /**
  * Helper function to help the message part of the type Error
  */
-
 export const handleMessageOrError = (messageOrError: unknown): string => {
   if (typeof messageOrError === 'string') {
     return messageOrError;

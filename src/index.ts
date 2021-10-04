@@ -1,6 +1,7 @@
 import { setFailed } from '@actions/core';
 import { Config, Options, Result } from 'semantic-release';
 
+import { handleMessageOrError } from './utilities/error';
 import { generatePlugins } from './utilities/generatePlugins';
 import {
   processInputAdditionalPlugins,
@@ -16,7 +17,6 @@ import {
 import { installDependencies } from './utilities/installDependencies';
 import { reportResults } from './utilities/outputParsers';
 import { parseConfiguration } from './utilities/parseConfiguration';
-import { handleMessageOrError } from './utilities/parseError';
 
 type SemanticRelease = (
   options: Options,
@@ -69,6 +69,6 @@ export const release = async (
 release()
   .then(reportResults)
   .catch((error: unknown): void => {
-    const finalError = handleMessageOrError(error);
-    setFailed(JSON.stringify(finalError));
+    const getSetFailedErrorString = handleMessageOrError(error);
+    setFailed(JSON.stringify(getSetFailedErrorString));
   });
