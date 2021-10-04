@@ -16,3 +16,6 @@ parserOptions:
   sourceType: module
 rules:
   '@typescript-eslint/restrict-template-expressions': off
+  # TODO(rustyb)[2021-10-30]: Issue upstream in typescript-eslint stopping this rule from working
+  # and not in release yet (https://github.com/typescript-eslint/typescript-eslint/pull/3947)
+  '@typescript-eslint/no-restricted-imports': ['error', {}]
