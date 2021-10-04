@@ -30,9 +30,9 @@ export const release = async (
 
   await installDependencies(additionalPlugins);
 
-  const semanticRelease = ((await import(
+  const semanticRelease = (await import(
     'semantic-release'
-  )) as unknown) as SemanticRelease;
+  )) as unknown as SemanticRelease;
 
   const branches = processInputReleaseBranches();
   const configFile = processInputConfigFile();
