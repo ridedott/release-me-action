@@ -1,3 +1,26 @@
+## [3.6.1](https://github.com/ridedott/release-me-action/compare/v3.6.0...v3.6.1) (2021-10-04)
+
+### Bug Fixes
+
+- wrong input parameter for disable-changelog
+  ([67473d5](https://github.com/ridedott/release-me-action/commit/67473d58351d552cd0c679eb320d2793f2d30986))
+
+# [3.6.0](https://github.com/ridedott/release-me-action/compare/v3.5.62...v3.6.0) (2021-09-30)
+
+### Chores
+
+- **deps-dev:** bump @jest/types from 27.2.3 to 27.2.4
+  ([a492d47](https://github.com/ridedott/release-me-action/commit/a492d47e29c26603b9cdae910ee1d0ee91599007))
+- **deps-dev:** bump @types/node from 16.10.1 to 16.10.2
+  ([58bd9ec](https://github.com/ridedott/release-me-action/commit/58bd9eca2c8f33c807c0cf56ddc52c2b9cae3834))
+- **deps-dev:** bump cspell from 5.11.0 to 5.11.1
+  ([661722a](https://github.com/ridedott/release-me-action/commit/661722a345ebed59ae1df3468010476daf414cd3))
+
+### Features
+
+- implement ability to append release rules to the default rules set
+  ([e187715](https://github.com/ridedott/release-me-action/commit/e1877153ee1dda0c392bea639efe8110cbe5af5b))
+
 ## [3.5.62](https://github.com/ridedott/release-me-action/compare/v3.5.61...v3.5.62) (2021-09-29)
 
 ### Chores
