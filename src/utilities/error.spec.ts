@@ -1,11 +1,11 @@
-import { handleMessageOrError } from './error';
+import { getSetFailedErrorString } from './error';
 
 interface TestCase {
   expected: string;
   messageOrError: unknown;
 }
 
-describe('handleMessageOrError', (): void => {
+describe('getSetFailedErrorString', (): void => {
   const testCases: TestCase[] = [
     {
       expected: 'This is an error message',
@@ -39,7 +39,7 @@ describe('handleMessageOrError', (): void => {
   testCases.forEach((test): void => {
     it(`given an Error: ${test.messageOrError} should return: ${test.expected}`, (): void => {
       expect.assertions(1);
-      const result = handleMessageOrError(test.messageOrError);
+      const result = getSetFailedErrorString(test.messageOrError);
 
       expect(result).toStrictEqual(test.expected);
     });

@@ -1,7 +1,7 @@
 import { setFailed } from '@actions/core';
 import { Config, Options, Result } from 'semantic-release';
 
-import { handleMessageOrError } from './utilities/error';
+import { getSetFailedErrorString } from './utilities/error';
 import { generatePlugins } from './utilities/generatePlugins';
 import {
   processInputAdditionalPlugins,
@@ -69,6 +69,6 @@ export const release = async (
 release()
   .then(reportResults)
   .catch((error: unknown): void => {
-    const getSetFailedErrorString = handleMessageOrError(error);
-    setFailed(JSON.stringify(getSetFailedErrorString));
+    const finalErrorString = getSetFailedErrorString(error);
+    setFailed(JSON.stringify(finalErrorString));
   });
