@@ -71,8 +71,8 @@ describe('release', (): void => {
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
-      expect(result.nextRelease.type).toStrictEqual('minor');
-      expect(result.nextRelease.version).toStrictEqual('1.1.0');
+      expect(result.nextRelease.type).toBe('minor');
+      expect(result.nextRelease.version).toBe('1.1.0');
     }
   });
 
@@ -94,8 +94,8 @@ describe('release', (): void => {
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
-      expect(result.nextRelease.type).toStrictEqual('major');
-      expect(result.nextRelease.version).toStrictEqual('2.0.0');
+      expect(result.nextRelease.type).toBe('major');
+      expect(result.nextRelease.version).toBe('2.0.0');
     }
   });
 
@@ -114,8 +114,8 @@ describe('release', (): void => {
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
-      expect(result.nextRelease.type).toStrictEqual('patch');
-      expect(result.nextRelease.version).toStrictEqual('1.0.1');
+      expect(result.nextRelease.type).toBe('patch');
+      expect(result.nextRelease.version).toBe('1.0.1');
     }
   });
 
@@ -134,8 +134,8 @@ describe('release', (): void => {
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
-      expect(result.nextRelease.type).toStrictEqual('patch');
-      expect(result.nextRelease.version).toStrictEqual('1.0.1');
+      expect(result.nextRelease.type).toBe('patch');
+      expect(result.nextRelease.version).toBe('1.0.1');
     }
   });
 
@@ -154,8 +154,8 @@ describe('release', (): void => {
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
-      expect(result.nextRelease.type).toStrictEqual('patch');
-      expect(result.nextRelease.version).toStrictEqual('1.0.1');
+      expect(result.nextRelease.type).toBe('patch');
+      expect(result.nextRelease.version).toBe('1.0.1');
     }
   });
 
@@ -174,8 +174,8 @@ describe('release', (): void => {
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
-      expect(result.nextRelease.type).toStrictEqual('patch');
-      expect(result.nextRelease.version).toStrictEqual('1.0.1');
+      expect(result.nextRelease.type).toBe('patch');
+      expect(result.nextRelease.version).toBe('1.0.1');
     }
   });
 
@@ -194,8 +194,8 @@ describe('release', (): void => {
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
-      expect(result.nextRelease.type).toStrictEqual('patch');
-      expect(result.nextRelease.version).toStrictEqual('1.0.1');
+      expect(result.nextRelease.type).toBe('patch');
+      expect(result.nextRelease.version).toBe('1.0.1');
     }
   });
 
@@ -214,8 +214,8 @@ describe('release', (): void => {
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
-      expect(result.nextRelease.type).toStrictEqual('patch');
-      expect(result.nextRelease.version).toStrictEqual('1.0.1');
+      expect(result.nextRelease.type).toBe('patch');
+      expect(result.nextRelease.version).toBe('1.0.1');
     }
   });
 
@@ -234,8 +234,8 @@ describe('release', (): void => {
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
-      expect(result.nextRelease.type).toStrictEqual('patch');
-      expect(result.nextRelease.version).toStrictEqual('1.0.1');
+      expect(result.nextRelease.type).toBe('patch');
+      expect(result.nextRelease.version).toBe('1.0.1');
     }
   });
 
@@ -253,6 +253,6 @@ describe('release', (): void => {
 
     const result = await release(optionsOverride, configurationOverride);
 
-    expect(result).toStrictEqual(false);
+    expect(result).toBe(false);
   });
 });

@@ -36,12 +36,12 @@ describe('getSetFailedErrorString', (): void => {
     },
   ];
 
-  testCases.forEach((test): void => {
+  for (const test of testCases) {
     it(`given an Error: ${test.messageOrError} should return: ${test.expected}`, (): void => {
       expect.assertions(1);
       const result = getSetFailedErrorString(test.messageOrError);
 
       expect(result).toStrictEqual(test.expected);
     });
-  });
+  }
 });
