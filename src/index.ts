@@ -70,5 +70,6 @@ release()
   .then(reportResults)
   .catch((error: unknown): void => {
     const finalErrorString = getSetFailedErrorString(error);
+
     setFailed(JSON.stringify(finalErrorString));
   });
