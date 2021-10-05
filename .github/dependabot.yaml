@@ -8,7 +8,7 @@ updates:
       prefix: chore
     directory: /
     ignore:
-      # keep everything compatible with older NodeJS runtimes
+      # Ignore >2.x versions of Tempy as long as ESM is not supported
       - dependency-name: 'tempy'
         versions:
           - '>=2'
