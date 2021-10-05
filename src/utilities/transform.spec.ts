@@ -8,14 +8,14 @@ import { transform } from './transform';
  */
 const makeCommit = (
   overrides: { [key: string]: Commit.Field | object } = {},
-): Commit => 
+): Commit =>
   /*
    * This ts-ignore relates to the types provided by the commit-parser
    * being incorrect.
    */
   /* eslint-disable-next-line @typescript-eslint/ban-ts-comment */
   // @ts-expect-error
-   ({
+  ({
     body: null,
     footer: null,
     header: null,
@@ -26,9 +26,7 @@ const makeCommit = (
     revert: null,
     type: 'random',
     ...overrides,
-  })
-;
-
+  });
 describe('transform', (): void => {
   it.each([
     { commit: makeCommit({ type: 'build' }), expectedType: 'Build System' },

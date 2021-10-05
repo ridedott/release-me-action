@@ -16,9 +16,9 @@ export const generatePlugins = ({
   isNodeModule: boolean;
   releaseAssets: string[];
   releaseRules: ReleaseRule[];
-}): PluginSpec[] => 
+}): PluginSpec[] =>
   /* eslint-disable unicorn/prevent-abbreviations */
-   [
+  [
     [
       '@semantic-release/commit-analyzer',
       {
@@ -83,6 +83,5 @@ export const generatePlugins = ({
         successComment: false,
       },
     ],
-  ]
-  /* eslint-enable unicorn/prevent-abbreviations */
-;
+  ];
+/* eslint-enable unicorn/prevent-abbreviations */
