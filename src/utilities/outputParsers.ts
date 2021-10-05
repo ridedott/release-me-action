@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { setOutput } from '@actions/core';
 import { Result } from 'semantic-release';
 

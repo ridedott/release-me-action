@@ -52,6 +52,7 @@ export const parseConfiguration = async (
   filePath: string,
   defaultOptions: Options,
 ): Promise<object> => {
+  /* eslint-disable-next-line functional/immutable-data */
   const extension = filePath.split('.').pop();
 
   switch (extension) {

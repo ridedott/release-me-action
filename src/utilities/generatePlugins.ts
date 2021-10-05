@@ -3,7 +3,6 @@ import { PluginSpec } from 'semantic-release';
 import { ReleaseRule } from './inputProcessors';
 import { transform } from './transform';
 
-/* eslint-disable-next-line max-lines-per-function */
 export const generatePlugins = ({
   commitAssets,
   disableChangeLog = false,

@@ -1,4 +1,5 @@
 /* cspell:ignore lcov */
+/* eslint-disable import/no-default-export */
 
 import type { Config } from '@jest/types';
 

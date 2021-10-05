@@ -68,6 +68,7 @@ export const release = async (
 
 release()
   .then(reportResults)
+  // eslint-disable-next-line unicorn/prefer-top-level-await
   .catch((error: unknown): void => {
     const finalErrorString = getSetFailedErrorString(error);
 
