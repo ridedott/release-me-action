@@ -1,3 +1,22 @@
+## [3.6.2](https://github.com/ridedott/release-me-action/compare/v3.6.1...v3.6.2) (2021-10-05)
+
+### Bug Fixes
+
+- error message not displayed on action failure
+  ([efa884e](https://github.com/ridedott/release-me-action/commit/efa884e14c83692ea7acef778d2cd2d565cdf31f))
+
+### Chores
+
+- **deps-dev:** bump lint-staged from 11.1.2 to 11.2.0
+  ([b3eee6e](https://github.com/ridedott/release-me-action/commit/b3eee6ef31fda39a8b6bfd1a7ae67d73b61a3466))
+
+## [3.6.1](https://github.com/ridedott/release-me-action/compare/v3.6.0...v3.6.1) (2021-10-04)
+
+### Bug Fixes
+
+- wrong input parameter for disable-changelog
+  ([67473d5](https://github.com/ridedott/release-me-action/commit/67473d58351d552cd0c679eb320d2793f2d30986))
+
 # [3.6.0](https://github.com/ridedott/release-me-action/compare/v3.5.62...v3.6.0) (2021-09-30)
 
 ### Chores
