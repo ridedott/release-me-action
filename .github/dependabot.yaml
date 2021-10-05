@@ -7,6 +7,11 @@ updates:
       include: scope
       prefix: chore
     directory: /
+    ignore:
+      # keep everything compatible with older NodeJS runtimes
+      - dependency-name: 'tempy'
+        versions:
+          - '>=2'
     open-pull-requests-limit: 99
     package-ecosystem: github-actions
     reviewers:
