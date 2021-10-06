@@ -1,3 +1,14 @@
+## [3.6.3](https://github.com/ridedott/release-me-action/compare/v3.6.2...v3.6.3) (2021-10-06)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 16.10.2 to 16.10.3
+  ([a12d25c](https://github.com/ridedott/release-me-action/commit/a12d25ce6c5a9365f0c6c4f1c60002128e05cfbb))
+- **deps-dev:** bump cspell from 5.11.1 to 5.12.0
+  ([cdbe4f9](https://github.com/ridedott/release-me-action/commit/cdbe4f97635fa0cb2bff11211632b1246c1652f7))
+- pin dependency version of tempy
+  ([6ca33f7](https://github.com/ridedott/release-me-action/commit/6ca33f79d740ef3bc3359b96e234df3c75ff028d))
+
 ## [3.6.2](https://github.com/ridedott/release-me-action/compare/v3.6.1...v3.6.2) (2021-10-05)
 
 ### Bug Fixes
