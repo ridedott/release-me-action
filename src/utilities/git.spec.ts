@@ -155,10 +155,8 @@ describe('git utility', (): void => {
     it('pushes to the remote repository from the git repository present in the `cwd` option', async (): Promise<void> => {
       expect.assertions(1);
 
-      const {
-        cwd: remoteWorkingDirectory,
-        remoteRepositoryUrl,
-      } = await initGitRemote();
+      const { cwd: remoteWorkingDirectory, remoteRepositoryUrl } =
+        await initGitRemote();
       const cloneWorkingDirectory = await gitShallowClone(remoteRepositoryUrl);
 
       await execa('git', ['config', 'user.email', 'test@ridedott.com'], {
