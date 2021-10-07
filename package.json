@@ -27,11 +27,11 @@
     "@types/conventional-changelog-writer": "^4.0.1",
     "@types/hapi__joi": "^17.1.7",
     "@types/jest": "^27.0.2",
-    "@types/node": "^16.10.2",
+    "@types/node": "^16.10.3",
     "@types/semantic-release": "^17.2.2",
     "@zeit/ncc": "^0.22.3",
     "commitizen": "^4.2.4",
-    "cspell": "^5.11.1",
+    "cspell": "^5.12.2",
     "eslint": "^7.32.0",
     "execa": "^5.1.1",
     "file-url": "^3.0.0",
@@ -98,5 +98,5 @@
     "test:watch": "jest --watch --verbose false",
     "types": "tsc --noEmit"
   },
-  "version": "3.6.2"
+  "version": "3.6.3"
 }
