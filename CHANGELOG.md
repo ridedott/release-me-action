@@ -1,3 +1,14 @@
+## [3.6.5](https://github.com/ridedott/release-me-action/compare/v3.6.4...v3.6.5) (2021-10-18)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 16.10.4 to 16.10.9
+  ([795f0a8](https://github.com/ridedott/release-me-action/commit/795f0a85d61e64e922602731ab40c7cf60ffaf29))
+- **deps-dev:** bump @types/node from 16.10.9 to 16.11.0
+  ([5187cbb](https://github.com/ridedott/release-me-action/commit/5187cbb64b27850057e8ec675672ca70362ce7e6))
+- **deps:** bump actions/checkout from 2.3.4 to 2.3.5
+  ([e96526e](https://github.com/ridedott/release-me-action/commit/e96526e8a3db09ea04a91a96967e83f01db45eac))
+
 ## [3.6.4](https://github.com/ridedott/release-me-action/compare/v3.6.3...v3.6.4) (2021-10-13)
 
 ### Chores
