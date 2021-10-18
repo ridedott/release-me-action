@@ -1,3 +1,12 @@
+## [3.6.6](https://github.com/ridedott/release-me-action/compare/v3.6.5...v3.6.6) (2021-10-18)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 16.11.0 to 16.11.1
+  ([b9cbdb3](https://github.com/ridedott/release-me-action/commit/b9cbdb39802565678cd10c54d3c599b75ae41752))
+- **deps:** bump @semantic-release/npm from 8.0.0 to 8.0.1
+  ([ea75aae](https://github.com/ridedott/release-me-action/commit/ea75aae6c3f0d2ed18b18b2b1e33351642b892be))
+
 ## [3.6.5](https://github.com/ridedott/release-me-action/compare/v3.6.4...v3.6.5) (2021-10-18)
 
 ### Chores
