@@ -1,3 +1,10 @@
+## [3.6.7](https://github.com/ridedott/release-me-action/compare/v3.6.6...v3.6.7) (2021-10-20)
+
+### Chores
+
+- **deps:** bump @semantic-release/npm from 8.0.1 to 8.0.2
+  ([2d28c5a](https://github.com/ridedott/release-me-action/commit/2d28c5a8f7ccb5eafca64c79865176a35fb38da9))
+
 ## [3.6.6](https://github.com/ridedott/release-me-action/compare/v3.6.5...v3.6.6) (2021-10-18)
 
 ### Chores
