@@ -1,3 +1,12 @@
+## [3.6.9](https://github.com/ridedott/release-me-action/compare/v3.6.8...v3.6.9) (2021-11-01)
+
+### Chores
+
+- **deps-dev:** bump cspell from 5.12.3 to 5.12.4
+  ([e2060d8](https://github.com/ridedott/release-me-action/commit/e2060d87dd4352fc5d2755b4e7ebdb5458dd1fa7))
+- **deps:** bump @semantic-release/exec from 6.0.1 to 6.0.2
+  ([454b429](https://github.com/ridedott/release-me-action/commit/454b429aaf28a0d7c405864d90556c26a3913493))
+
 ## [3.6.8](https://github.com/ridedott/release-me-action/compare/v3.6.7...v3.6.8) (2021-11-01)
 
 ### Chores
