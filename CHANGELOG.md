@@ -1,3 +1,28 @@
+## [3.6.8](https://github.com/ridedott/release-me-action/compare/v3.6.7...v3.6.8) (2021-11-01)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 16.11.1 to 16.11.2
+  ([f455dd7](https://github.com/ridedott/release-me-action/commit/f455dd757f6687a934f38cd8e9ca3e9cdfc12fb8))
+- **deps-dev:** bump @types/node from 16.11.2 to 16.11.4
+  ([f84ecfe](https://github.com/ridedott/release-me-action/commit/f84ecfe8150561d1cc24d3fdb7895d4996bacef2))
+- **deps-dev:** bump @types/node from 16.11.4 to 16.11.6
+  ([ce3de53](https://github.com/ridedott/release-me-action/commit/ce3de53328d355179d61e005a8c4bb9f537a6d86))
+- **deps-dev:** bump husky from 7.0.2 to 7.0.4
+  ([331c67c](https://github.com/ridedott/release-me-action/commit/331c67c55cc239f411a9099a085bf43ae7649a04))
+- **deps-dev:** bump lint-staged from 11.2.3 to 11.2.4
+  ([d91ce28](https://github.com/ridedott/release-me-action/commit/d91ce282255d11055c670c7ddb442301053108b6))
+- **deps-dev:** bump lint-staged from 11.2.4 to 11.2.6
+  ([411e3ce](https://github.com/ridedott/release-me-action/commit/411e3cebab380cba03a3274d0cc4028622d82f7b))
+- **deps-dev:** bump ts-node from 10.3.0 to 10.3.1
+  ([2fc7dfe](https://github.com/ridedott/release-me-action/commit/2fc7dfe26862cfd7e72073a096dfa2b18179671e))
+- **deps-dev:** bump ts-node from 10.3.1 to 10.4.0
+  ([e63e654](https://github.com/ridedott/release-me-action/commit/e63e65443518c7250c039b767a37e4129f7bcf56))
+- **deps:** bump @semantic-release/changelog from 6.0.0 to 6.0.1
+  ([7280749](https://github.com/ridedott/release-me-action/commit/7280749062d81d9ee47a48d6b829b39dc9be73dd))
+- **deps:** bump @semantic-release/git from 10.0.0 to 10.0.1
+  ([8c090cd](https://github.com/ridedott/release-me-action/commit/8c090cd82681ade3120ea6402ebf4e236dfe48cd))
+
 ## [3.6.7](https://github.com/ridedott/release-me-action/compare/v3.6.6...v3.6.7) (2021-10-20)
 
 ### Chores
