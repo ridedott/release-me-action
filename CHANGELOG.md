@@ -1,3 +1,12 @@
+## [3.6.10](https://github.com/ridedott/release-me-action/compare/v3.6.9...v3.6.10) (2021-11-03)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/config-conventional
+  ([bc7d31d](https://github.com/ridedott/release-me-action/commit/bc7d31d6fa2812afd1512b2397ec3bd21ada719c))
+- **deps:** bump actions/checkout from 2.3.5 to 2.4.0
+  ([e4fdfaa](https://github.com/ridedott/release-me-action/commit/e4fdfaab9299e2d7f25e9049e0e69d5886d53f02))
+
 ## [3.6.9](https://github.com/ridedott/release-me-action/compare/v3.6.8...v3.6.9) (2021-11-01)
 
 ### Chores
