@@ -1,3 +1,14 @@
+## [3.6.11](https://github.com/ridedott/release-me-action/compare/v3.6.10...v3.6.11) (2021-11-04)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 13.2.1 to 14.1.0
+  ([175ba0d](https://github.com/ridedott/release-me-action/commit/175ba0d345aa9073f40781d13bd806f3b5550e45))
+- **deps-dev:** bump cspell from 5.12.4 to 5.12.5
+  ([b907d80](https://github.com/ridedott/release-me-action/commit/b907d80747286e7cddf37217845b6d1003132b04))
+- **deps:** bump @semantic-release/github from 8.0.1 to 8.0.2
+  ([5c8d6b3](https://github.com/ridedott/release-me-action/commit/5c8d6b307eceb34b60dda02da74184a955a9decd))
+
 ## [3.6.10](https://github.com/ridedott/release-me-action/compare/v3.6.9...v3.6.10) (2021-11-03)
 
 ### Chores
