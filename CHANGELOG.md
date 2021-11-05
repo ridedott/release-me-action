@@ -1,3 +1,14 @@
+## [3.6.13](https://github.com/ridedott/release-me-action/compare/v3.6.12...v3.6.13) (2021-11-05)
+
+### Chores
+
+- **deps:** bump minimist from 1.2.0 to 1.2.5
+  ([b1191a3](https://github.com/ridedott/release-me-action/commit/b1191a38db451cdcc3ec1eca5f10669129106ec6))
+- **deps:** bump path-parse from 1.0.6 to 1.0.7
+  ([8d06d2d](https://github.com/ridedott/release-me-action/commit/8d06d2deb296438843f8e53041db45f31e091f3a))
+- **deps:** bump y18n from 4.0.0 to 4.0.3
+  ([52a4460](https://github.com/ridedott/release-me-action/commit/52a4460754574739a79d4639ba8f9548d9c3a251))
+
 ## [3.6.12](https://github.com/ridedott/release-me-action/compare/v3.6.11...v3.6.12) (2021-11-05)
 
 ### Chores
