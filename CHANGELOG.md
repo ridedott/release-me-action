@@ -1,3 +1,16 @@
+## [3.6.14](https://github.com/ridedott/release-me-action/compare/v3.6.13...v3.6.14) (2021-11-18)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 16.11.6 to 16.11.7
+  ([6b7a608](https://github.com/ridedott/release-me-action/commit/6b7a6088ea46c1b4de1e2087637c66e3b388cfe0))
+- **deps-dev:** bump @types/semantic-release from 17.2.2 to 17.2.3
+  ([2319e30](https://github.com/ridedott/release-me-action/commit/2319e30126fde7b43b3b9311ce215b7ef2fbe2a9))
+- **deps-dev:** bump lint-staged from 11.2.6 to 12.0.2
+  ([afb8613](https://github.com/ridedott/release-me-action/commit/afb8613f101ef73f9482c447e1360dbf0bb6c9e7))
+- **deps-dev:** bump typescript from 4.4.4 to 4.5.2
+  ([20431de](https://github.com/ridedott/release-me-action/commit/20431decf44cd55fd64128fd2b66380fea1c6960))
+
 ## [3.6.13](https://github.com/ridedott/release-me-action/compare/v3.6.12...v3.6.13) (2021-11-05)
 
 ### Chores
