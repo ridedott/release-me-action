@@ -1,3 +1,12 @@
+## [3.6.16](https://github.com/ridedott/release-me-action/compare/v3.6.15...v3.6.16) (2021-11-24)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 16.11.9 to 16.11.10
+  ([feaef69](https://github.com/ridedott/release-me-action/commit/feaef6959d8becbcbb2975fdebd53654eb7b935c))
+- **deps:** bump @semantic-release/commit-analyzer from 9.0.1 to 9.0.2
+  ([bb0911d](https://github.com/ridedott/release-me-action/commit/bb0911d3e24dad454f2ee8649149fa3b1bbab944))
+
 ## [3.6.15](https://github.com/ridedott/release-me-action/compare/v3.6.14...v3.6.15) (2021-11-24)
 
 ### Chores
