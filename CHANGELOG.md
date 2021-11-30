@@ -1,3 +1,14 @@
+## [3.6.19](https://github.com/ridedott/release-me-action/compare/v3.6.18...v3.6.19) (2021-11-30)
+
+### Chores
+
+- **deps-dev:** bump @jest/types from 27.2.5 to 27.4.0
+  ([f348c77](https://github.com/ridedott/release-me-action/commit/f348c7785d83f0054f1d20f6befb8f04b23be9f6))
+- **deps-dev:** bump prettier from 2.4.1 to 2.5.0
+  ([cac19d4](https://github.com/ridedott/release-me-action/commit/cac19d4f0a6d738beb619c18898be390a20defb3))
+- **deps:** bump actions/setup-node from 2.4.1 to 2.5.0
+  ([2aaee2b](https://github.com/ridedott/release-me-action/commit/2aaee2ba27ef2bf25d4668552d39e348340d3717))
+
 ## [3.6.18](https://github.com/ridedott/release-me-action/compare/v3.6.17...v3.6.18) (2021-11-25)
 
 ### Chores
