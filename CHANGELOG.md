@@ -1,3 +1,20 @@
+## [3.6.20](https://github.com/ridedott/release-me-action/compare/v3.6.19...v3.6.20) (2021-12-10)
+
+### Chores
+
+- **deps-dev:** bump @jest/types from 27.4.0 to 27.4.2
+  ([0071703](https://github.com/ridedott/release-me-action/commit/007170331cea44c6835bf8931c7d5afd81b648ef))
+- **deps-dev:** bump @types/node from 16.11.10 to 16.11.11
+  ([38c21d0](https://github.com/ridedott/release-me-action/commit/38c21d0c623b418dd74987da5605854f6e25f8bc))
+- **deps-dev:** bump @types/node from 16.11.11 to 16.11.12
+  ([7503bb5](https://github.com/ridedott/release-me-action/commit/7503bb5d721f4e0790f07282e8e6d4c4b2921f15))
+- **deps-dev:** bump cspell from 5.13.1 to 5.13.2
+  ([5b924dd](https://github.com/ridedott/release-me-action/commit/5b924dde4a46bace3ea321b5a4b160342764a003))
+- **deps-dev:** bump prettier from 2.5.0 to 2.5.1
+  ([c48771f](https://github.com/ridedott/release-me-action/commit/c48771f0e739bfa7665434b8020ba469269f804a))
+- **deps-dev:** bump typescript from 4.5.2 to 4.5.3
+  ([c67fbb2](https://github.com/ridedott/release-me-action/commit/c67fbb2ad53a80186e81650958bd45712d0c16c8))
+
 ## [3.6.19](https://github.com/ridedott/release-me-action/compare/v3.6.18...v3.6.19) (2021-11-30)
 
 ### Chores
