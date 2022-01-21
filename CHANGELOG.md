@@ -1,3 +1,52 @@
+## [3.6.24](https://github.com/ridedott/release-me-action/compare/v3.6.23...v3.6.24) (2022-01-21)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 16.0.0 to 16.0.1
+  ([c0a8fbe](https://github.com/ridedott/release-me-action/commit/c0a8fbe0f1e7b1d7f6a704101a8a761dbdfda6ab))
+- **deps-dev:** bump @commitlint/cli from 16.0.1 to 16.0.2
+  ([cc4ecc0](https://github.com/ridedott/release-me-action/commit/cc4ecc0ac8d06203956f58746d6c13d72b6af9cb))
+- **deps-dev:** bump @commitlint/cli from 16.0.2 to 16.0.3
+  ([75f0e72](https://github.com/ridedott/release-me-action/commit/75f0e72b7913b99509e82f4470eb813e4f66c9a7))
+- **deps-dev:** bump @commitlint/cli from 16.0.3 to 16.1.0
+  ([8b60ae4](https://github.com/ridedott/release-me-action/commit/8b60ae48f1cc07e7745014c8beb47dfd3be20b89))
+- **deps-dev:** bump @commitlint/config-conventional
+  ([f57ffdb](https://github.com/ridedott/release-me-action/commit/f57ffdb061ab893ca8707e4aa1e5275053456e87))
+- **deps-dev:** bump @types/jest from 27.0.3 to 27.4.0
+  ([9be6110](https://github.com/ridedott/release-me-action/commit/9be61102365be47fe6cc2318fe2da7179f87e700))
+- **deps-dev:** bump @types/node from 17.0.4 to 17.0.5
+  ([76d4488](https://github.com/ridedott/release-me-action/commit/76d448892ee08690c9429a2c989e3b8de33b779a))
+- **deps-dev:** bump @types/node from 17.0.5 to 17.0.6
+  ([dd43db1](https://github.com/ridedott/release-me-action/commit/dd43db1d0ce4dbdf208924261961ccbb901256ba))
+- **deps-dev:** bump @types/node from 17.0.6 to 17.0.7
+  ([e58c8f1](https://github.com/ridedott/release-me-action/commit/e58c8f159874490f78dd7502a285ddeeb9109a73))
+- **deps-dev:** bump @types/node from 17.0.7 to 17.0.8
+  ([790f82e](https://github.com/ridedott/release-me-action/commit/790f82e6c0f777b91b18bf238a588410fc529ac4))
+- **deps-dev:** bump @types/node from 17.0.8 to 17.0.9
+  ([10ef8a3](https://github.com/ridedott/release-me-action/commit/10ef8a3eecd29f900a7c8bbf7fdc28160be5fbb8))
+- **deps-dev:** bump @types/node from 17.0.9 to 17.0.10
+  ([e487228](https://github.com/ridedott/release-me-action/commit/e4872282111ca40d3511315f3d67c1273a494cb4))
+- **deps-dev:** bump cspell from 5.13.4 to 5.14.0
+  ([83b3bcb](https://github.com/ridedott/release-me-action/commit/83b3bcb34a1c0978b9d870a21c6ce204ca6f755c))
+- **deps-dev:** bump cspell from 5.14.0 to 5.15.1
+  ([4bbe028](https://github.com/ridedott/release-me-action/commit/4bbe028c484cd7523209aadea62193f866046b64))
+- **deps-dev:** bump cspell from 5.15.1 to 5.15.2
+  ([34a55ef](https://github.com/ridedott/release-me-action/commit/34a55ef0bad879c0644ebccd86c2c7aad33d30d6))
+- **deps-dev:** bump cspell from 5.15.2 to 5.16.0
+  ([4de345c](https://github.com/ridedott/release-me-action/commit/4de345cb29727388c9bbb39984704bad5d7361e2))
+- **deps-dev:** bump lint-staged from 12.1.3 to 12.1.5
+  ([9fa0af5](https://github.com/ridedott/release-me-action/commit/9fa0af5af8538ed7440886c3d9d9bcbb5bb43a52))
+- **deps-dev:** bump lint-staged from 12.1.5 to 12.1.7
+  ([f71661e](https://github.com/ridedott/release-me-action/commit/f71661e8b87f0a7792026789fae47133ab7e360a))
+- **deps-dev:** bump lint-staged from 12.1.7 to 12.2.0
+  ([ad99745](https://github.com/ridedott/release-me-action/commit/ad997457e4d196466f729e4f9aebfb7ec6e7bd3b))
+- **deps-dev:** bump lint-staged from 12.2.0 to 12.2.1
+  ([4203926](https://github.com/ridedott/release-me-action/commit/4203926d439574c4e6cc8856d9acaacd47356289))
+- **deps-dev:** bump lint-staged from 12.2.1 to 12.2.2
+  ([61f5b08](https://github.com/ridedott/release-me-action/commit/61f5b085b530dbca5e0731a615c48c760d2bbea7))
+- **deps-dev:** bump typescript from 4.5.4 to 4.5.5
+  ([298f8c8](https://github.com/ridedott/release-me-action/commit/298f8c8920239e90979478fc2c9b930b780d4bd5))
+
 ## [3.6.23](https://github.com/ridedott/release-me-action/compare/v3.6.22...v3.6.23) (2021-12-29)
 
 ### Chores
