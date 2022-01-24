@@ -1,3 +1,12 @@
+## [3.6.25](https://github.com/ridedott/release-me-action/compare/v3.6.24...v3.6.25) (2022-01-24)
+
+### Chores
+
+- **deps-dev:** bump lint-staged from 12.2.2 to 12.3.1
+  ([3ba7510](https://github.com/ridedott/release-me-action/commit/3ba75103df059053fadd3f5b09fd0e8551f1f6e9))
+- **deps:** bump node-fetch from 2.6.6 to 2.6.7
+  ([f2832a8](https://github.com/ridedott/release-me-action/commit/f2832a8d28a82f3ed65786e4aca42562deb16509))
+
 ## [3.6.24](https://github.com/ridedott/release-me-action/compare/v3.6.23...v3.6.24) (2022-01-21)
 
 ### Chores
