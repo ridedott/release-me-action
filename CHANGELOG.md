@@ -1,3 +1,12 @@
+## [3.6.27](https://github.com/ridedott/release-me-action/compare/v3.6.26...v3.6.27) (2022-03-01)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 17.0.19 to 17.0.21
+  ([1015ed5](https://github.com/ridedott/release-me-action/commit/1015ed5be989319ec8809da089c561bd79458b93))
+- **deps-dev:** bump typescript from 4.5.5 to 4.6.2
+  ([975931e](https://github.com/ridedott/release-me-action/commit/975931e296d89b0ca589c188bc5745d520d40841))
+
 ## [3.6.26](https://github.com/ridedott/release-me-action/compare/v3.6.25...v3.6.26) (2022-02-25)
 
 ### Chores
