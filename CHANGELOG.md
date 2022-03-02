@@ -1,3 +1,10 @@
+## [3.6.28](https://github.com/ridedott/release-me-action/compare/v3.6.27...v3.6.28) (2022-03-02)
+
+### Chores
+
+- **deps:** bump actions/checkout from 2.4.0 to 3
+  ([0fa6ecf](https://github.com/ridedott/release-me-action/commit/0fa6ecfe5d8c8a7e65e02bab84e047d657889925))
+
 ## [3.6.27](https://github.com/ridedott/release-me-action/compare/v3.6.26...v3.6.27) (2022-03-01)
 
 ### Chores
