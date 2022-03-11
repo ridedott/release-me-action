@@ -12,12 +12,13 @@ export enum InputParameters {
   AdditionalPlugins = 'additional-plugins',
   CommitAssets = 'commit-assets',
   ConfigFile = 'config-file',
-  DisableChangelog = 'disable-generate-changelog',
+  DisableChangelog = 'disable-changelog',
   DryRun = 'dry-run',
   NodeModule = 'node-module',
   ReleaseAssets = 'release-assets',
   ReleaseBranches = 'release-branches',
   ReleaseRules = 'release-rules',
+  ReleaseRulesAppend = 'release-rules-append',
 }
 
 export interface ReleaseRule {
@@ -219,6 +220,26 @@ export const processInputConfigFile = (): string | undefined => {
 
 export const processInputReleaseRules = (): ReleaseRule[] => {
   const input = getInput(InputParameters.ReleaseRules);
+  const appendInput = getInput(InputParameters.ReleaseRulesAppend);
+
+  /**
+   * Using release-rules-append when release rules empty in the config
+   * Allow to user to append rules onto end of default rules set
+   * instead of replacing them.
+   */
+
+  if (input.length > 0 && appendInput.length > 0) {
+    throw new Error(
+      'Invalid input release-rules-append and release rules cannot both be used.',
+    );
+  }
+
+  if (appendInput.length > 0) {
+    const parsedAppendInput = parseInputReleaseRules(appendInput);
+    const validAppendInputRules = validateInputReleaseRules(parsedAppendInput);
+
+    return [...DEFAULT_RELEASE_RULES, ...validAppendInputRules];
+  }
 
   if (input.length === 0) {
     return DEFAULT_RELEASE_RULES;
