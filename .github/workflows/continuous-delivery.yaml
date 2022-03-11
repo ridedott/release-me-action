@@ -12,15 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v3
         with:
           # Fetch all history.
           fetch-depth: 0
           persist-credentials: false
       - name: Setup Node.js
-        uses: actions/setup-node@v2.4.0
+        uses: actions/setup-node@v3.0.0
       - name: Cache dependencies
-        uses: actions/cache@v2.1.6
+        uses: actions/cache@v2.1.7
         with:
           key: npm-${{ hashFiles('./package-lock.json') }}
           path: ~/.npm
@@ -53,7 +53,7 @@ jobs:
             ]
       - if: steps.release.outputs.released == 'true'
         name: Authenticate
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v3
         with:
           fetch-depth: 1
           persist-credentials: true

@@ -1,6 +1,7 @@
 import { setFailed } from '@actions/core';
 import { Config, Options, Result } from 'semantic-release';
 
+import { getSetFailedErrorString } from './utilities/error';
 import { generatePlugins } from './utilities/generatePlugins';
 import {
   processInputAdditionalPlugins,
@@ -30,9 +31,9 @@ export const release = async (
 
   await installDependencies(additionalPlugins);
 
-  const semanticRelease = ((await import(
+  const semanticRelease = (await import(
     'semantic-release'
-  )) as unknown) as SemanticRelease;
+  )) as unknown as SemanticRelease;
 
   const branches = processInputReleaseBranches();
   const configFile = processInputConfigFile();
@@ -68,5 +69,7 @@ export const release = async (
 release()
   .then(reportResults)
   .catch((error: unknown): void => {
-    setFailed(JSON.stringify(error));
+    const finalErrorString = getSetFailedErrorString(error);
+
+    setFailed(JSON.stringify(finalErrorString));
   });
