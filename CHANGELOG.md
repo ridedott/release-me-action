@@ -1,3 +1,35 @@
+## [3.6.29](https://github.com/ridedott/release-me-action/compare/v3.6.28...v3.6.29) (2022-03-18)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 16.2.1 to 16.2.3
+  ([bfba233](https://github.com/ridedott/release-me-action/commit/bfba2334b73503390a2953f7d588ec273b76bda9))
+- **deps-dev:** bump cspell from 5.18.5 to 5.19.1
+  ([195cd0a](https://github.com/ridedott/release-me-action/commit/195cd0a421833e12539c3fd0120f1343cab5c44c))
+- **deps-dev:** bump cspell from 5.19.1 to 5.19.2
+  ([c4df49c](https://github.com/ridedott/release-me-action/commit/c4df49c0785717966554dc892018317aa76e5bfe))
+- **deps-dev:** bump lint-staged from 12.3.4 to 12.3.5
+  ([c0ee053](https://github.com/ridedott/release-me-action/commit/c0ee053b36e4db5f1e1e91d74850df91f05178cf))
+- **deps-dev:** bump lint-staged from 12.3.5 to 12.3.6
+  ([570a984](https://github.com/ridedott/release-me-action/commit/570a9846b94bbe1596ae81b36eb82f0c6c59bba9))
+- **deps-dev:** bump lint-staged from 12.3.6 to 12.3.7
+  ([dbc27b6](https://github.com/ridedott/release-me-action/commit/dbc27b6326379cce2ee705fa78d26c263e441e23))
+- **deps-dev:** bump prettier from 2.5.1 to 2.6.0
+  ([b5743a1](https://github.com/ridedott/release-me-action/commit/b5743a14773dee5eef6b3fcc5cdd6122b70c5f12))
+- **deps-dev:** bump ts-node from 10.5.0 to 10.6.0
+  ([6052b8c](https://github.com/ridedott/release-me-action/commit/6052b8cafbb55cf0060c8a57e81e77ac766750e3))
+- **deps-dev:** bump ts-node from 10.6.0 to 10.7.0
+  ([3186c65](https://github.com/ridedott/release-me-action/commit/3186c65f516f1b85dec589055d584ca0f94a8e67))
+- **deps:** bump @actions/exec from 1.1.0 to 1.1.1
+  ([1a0e873](https://github.com/ridedott/release-me-action/commit/1a0e8739afef6c6599df3aa3162ea06915bd084e))
+
+### Documentation
+
+- update example about release on a protected branch
+  ([08137d5](https://github.com/ridedott/release-me-action/commit/08137d5b58d071cf0ff77e07171ec9b3791cc714))
+- update example with action outputs
+  ([ff27d55](https://github.com/ridedott/release-me-action/commit/ff27d55ecff5a96887da15003b6fa10b4f4095b3))
+
 ## [3.6.28](https://github.com/ridedott/release-me-action/compare/v3.6.27...v3.6.28) (2022-03-02)
 
 ### Chores
