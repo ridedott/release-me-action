@@ -1,3 +1,12 @@
+## [3.6.32](https://github.com/ridedott/release-me-action/compare/v3.6.31...v3.6.32) (2022-03-30)
+
+### Chores
+
+- **deps-dev:** bump prettier from 2.6.0 to 2.6.1
+  ([aa1e2ba](https://github.com/ridedott/release-me-action/commit/aa1e2ba6a76bb42b623e94d1a6c01b4af863b469))
+- **deps:** bump @semantic-release/github from 8.0.2 to 8.0.4
+  ([04db370](https://github.com/ridedott/release-me-action/commit/04db37059098410dbd110a795d5d5cfcab65cc00))
+
 ## [3.6.31](https://github.com/ridedott/release-me-action/compare/v3.6.30...v3.6.31) (2022-03-25)
 
 ### Chores
