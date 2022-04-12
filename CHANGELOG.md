@@ -1,3 +1,16 @@
+## [3.6.34](https://github.com/ridedott/release-me-action/compare/v3.6.33...v3.6.34) (2022-04-12)
+
+### Chores
+
+- **deps-dev:** bump cspell from 5.19.3 to 5.19.5
+  ([c7a70b6](https://github.com/ridedott/release-me-action/commit/c7a70b6441e54242c5df9153f6e38165a29417e7))
+- **deps-dev:** bump cspell from 5.19.5 to 5.19.7
+  ([31fe2b6](https://github.com/ridedott/release-me-action/commit/31fe2b60d0b90c0b6aae0bce9859ce9d2f96578e))
+- **deps-dev:** bump prettier from 2.6.1 to 2.6.2
+  ([296b2d9](https://github.com/ridedott/release-me-action/commit/296b2d95878c10c8ef01ddae40ac6ba8d709f449))
+- **deps:** bump actions/setup-node from 3.1.0 to 3.1.1
+  ([4167257](https://github.com/ridedott/release-me-action/commit/41672574f6ec75a9af7845f0de77bb006d74f22c))
+
 ## [3.6.33](https://github.com/ridedott/release-me-action/compare/v3.6.32...v3.6.33) (2022-04-04)
 
 ### Chores
