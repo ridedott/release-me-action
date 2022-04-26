@@ -1,3 +1,20 @@
+## [3.6.35](https://github.com/ridedott/release-me-action/compare/v3.6.34...v3.6.35) (2022-04-26)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 17.0.23 to 17.0.24
+  ([827f034](https://github.com/ridedott/release-me-action/commit/827f03416c5539dbb84936fda970fc81cc21dc06))
+- **deps-dev:** bump @types/node from 17.0.24 to 17.0.25
+  ([65841f1](https://github.com/ridedott/release-me-action/commit/65841f1162825c345111b08387e36eec033b0ca0))
+- **deps-dev:** bump @types/node from 17.0.25 to 17.0.26
+  ([7e8da68](https://github.com/ridedott/release-me-action/commit/7e8da68e2553a311cfa0b61843b993bfbc5ebe0e))
+- **deps-dev:** bump lint-staged from 12.3.7 to 12.3.8
+  ([5d2807e](https://github.com/ridedott/release-me-action/commit/5d2807ef1f7ff6bbf9eff48683f090651e1916c7))
+- **deps-dev:** bump lint-staged from 12.3.8 to 12.4.0
+  ([512eda0](https://github.com/ridedott/release-me-action/commit/512eda085fe9bfbf83049364f2e3872f401b99b6))
+- **deps:** bump @actions/core from 1.6.0 to 1.7.0
+  ([edc0e83](https://github.com/ridedott/release-me-action/commit/edc0e83d8753d07327d4ea5b97a2c0ed3d9b552b))
+
 ## [3.6.34](https://github.com/ridedott/release-me-action/compare/v3.6.33...v3.6.34) (2022-04-12)
 
 ### Chores
