@@ -1,3 +1,22 @@
+## [3.6.38](https://github.com/ridedott/release-me-action/compare/v3.6.37...v3.6.38) (2022-05-16)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 16.2.4 to 16.3.0
+  ([3bacd51](https://github.com/ridedott/release-me-action/commit/3bacd51fccb4d2481e19457cd1ba5fffd14f8205))
+- **deps-dev:** bump @jest/types from 28.0.2 to 28.1.0
+  ([75444a7](https://github.com/ridedott/release-me-action/commit/75444a7df97b20d046540b912f1996e5f63249ec))
+- **deps-dev:** bump @types/node from 17.0.31 to 17.0.32
+  ([b101e0f](https://github.com/ridedott/release-me-action/commit/b101e0f26529a664e3bab8bce70790d6815531ef))
+- **deps-dev:** bump @types/node from 17.0.32 to 17.0.33
+  ([2b9889a](https://github.com/ridedott/release-me-action/commit/2b9889aa8e67eeb0d15516b008ee722e07fbc922))
+- **deps-dev:** bump husky from 7.0.4 to 8.0.0
+  ([abd83f0](https://github.com/ridedott/release-me-action/commit/abd83f0f3a80e8f49583754d5a0c2edfa0240505))
+- **deps-dev:** bump husky from 8.0.0 to 8.0.1
+  ([5ccc01f](https://github.com/ridedott/release-me-action/commit/5ccc01f76effae952db2efa787204f91e5339290))
+- **deps:** bump @actions/core from 1.8.0 to 1.8.2
+  ([b2cc209](https://github.com/ridedott/release-me-action/commit/b2cc2096ca878f01f7a923f8f8ac48495bbbb572))
+
 ## [3.6.37](https://github.com/ridedott/release-me-action/compare/v3.6.36...v3.6.37) (2022-05-06)
 
 ### Chores
