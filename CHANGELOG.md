@@ -1,3 +1,10 @@
+## [3.6.43](https://github.com/ridedott/release-me-action/compare/v3.6.42...v3.6.43) (2022-06-07)
+
+### Chores
+
+- **deps:** bump actions/setup-node from 3.2.0 to 3.3.0
+  ([038b690](https://github.com/ridedott/release-me-action/commit/038b690e9cc334079332db9355ba33a601801097))
+
 ## [3.6.42](https://github.com/ridedott/release-me-action/compare/v3.6.41...v3.6.42) (2022-06-06)
 
 ### Chores
