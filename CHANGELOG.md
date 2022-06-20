@@ -1,3 +1,14 @@
+## [3.6.45](https://github.com/ridedott/release-me-action/compare/v3.6.44...v3.6.45) (2022-06-20)
+
+### Chores
+
+- **deps-dev:** bump lint-staged from 13.0.1 to 13.0.2
+  ([e8da3e0](https://github.com/ridedott/release-me-action/commit/e8da3e072c5e8be75a62db7aea079d80e7ae2826))
+- **deps-dev:** bump prettier from 2.7.0 to 2.7.1
+  ([4355b56](https://github.com/ridedott/release-me-action/commit/4355b56e597882a669c6b0dacbe96c00d5f7a808))
+- **deps-dev:** bump typescript from 4.7.3 to 4.7.4
+  ([38a590c](https://github.com/ridedott/release-me-action/commit/38a590cf862593951d16ed98596b6343337485a3))
+
 ## [3.6.44](https://github.com/ridedott/release-me-action/compare/v3.6.43...v3.6.44) (2022-06-16)
 
 ### Chores
