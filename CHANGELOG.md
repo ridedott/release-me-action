@@ -1,3 +1,10 @@
+## [3.6.46](https://github.com/ridedott/release-me-action/compare/v3.6.45...v3.6.46) (2022-06-23)
+
+### Chores
+
+- **deps:** bump shell-quote from 1.7.2 to 1.7.3
+  ([b570338](https://github.com/ridedott/release-me-action/commit/b570338f911745fc24e7210b04866ccfc7e98f28))
+
 ## [3.6.45](https://github.com/ridedott/release-me-action/compare/v3.6.44...v3.6.45) (2022-06-20)
 
 ### Chores
