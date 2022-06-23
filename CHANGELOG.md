@@ -1,3 +1,10 @@
+## [3.6.47](https://github.com/ridedott/release-me-action/compare/v3.6.46...v3.6.47) (2022-06-23)
+
+### Chores
+
+- **deps:** bump jsdom from 16.4.0 to 16.7.0
+  ([7cdd26b](https://github.com/ridedott/release-me-action/commit/7cdd26b450cda0a362245c8d582c3890c200e1fa))
+
 ## [3.6.46](https://github.com/ridedott/release-me-action/compare/v3.6.45...v3.6.46) (2022-06-23)
 
 ### Chores
