@@ -21,7 +21,7 @@
   "description": "GitHub Action for Semantic Release.",
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
-    "@commitlint/config-conventional": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.3",
     "@jest/types": "^28.1.1",
     "@ridedott/eslint-config": "^2.5.51",
     "@types/conventional-changelog-writer": "^4.0.1",
