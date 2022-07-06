@@ -27,7 +27,7 @@
     "@types/conventional-changelog-writer": "^4.0.1",
     "@types/hapi__joi": "^17.1.8",
     "@types/jest": "^27.5.0",
-    "@types/node": "^18.0.1",
+    "@types/node": "^18.0.2",
     "@types/semantic-release": "^17.2.3",
     "@zeit/ncc": "^0.22.3",
     "commitizen": "^4.2.4",
