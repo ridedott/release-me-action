@@ -1,3 +1,24 @@
+## [3.6.48](https://github.com/ridedott/release-me-action/compare/v3.6.47...v3.6.48) (2022-07-08)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 17.0.2 to 17.0.3
+  ([a17e378](https://github.com/ridedott/release-me-action/commit/a17e37896fbb61aa5fd171a0fc80b4453dbc849e))
+- **deps-dev:** bump @commitlint/config-conventional
+  ([38c6a05](https://github.com/ridedott/release-me-action/commit/38c6a052196bb373ac534676b46bb6a210d6dd82))
+- **deps-dev:** bump @types/node from 18.0.0 to 18.0.1
+  ([6001be8](https://github.com/ridedott/release-me-action/commit/6001be8644f4f3c662483b5404050d5129545298))
+- **deps-dev:** bump @types/node from 18.0.1 to 18.0.2
+  ([09a9c2e](https://github.com/ridedott/release-me-action/commit/09a9c2e2c131989eb35a0e06bf7d2294c6c25f0b))
+- **deps-dev:** bump @types/node from 18.0.2 to 18.0.3
+  ([3a1e839](https://github.com/ridedott/release-me-action/commit/3a1e8393431b7d58c85a46e2bc43c9f61f266b6f))
+- **deps-dev:** bump lint-staged from 13.0.2 to 13.0.3
+  ([2076614](https://github.com/ridedott/release-me-action/commit/207661459d5434468ab4ae2cee73595d90a45884))
+- **deps-dev:** bump ts-node from 10.8.1 to 10.8.2
+  ([140e590](https://github.com/ridedott/release-me-action/commit/140e590c1699224f342e6d4497dde98baa7ae717))
+- **deps:** bump @semantic-release/github from 8.0.4 to 8.0.5
+  ([1378be7](https://github.com/ridedott/release-me-action/commit/1378be743c5bc8d567c2bae8f3c7ac412d41ce82))
+
 ## [3.6.47](https://github.com/ridedott/release-me-action/compare/v3.6.46...v3.6.47) (2022-06-23)
 
 ### Chores
