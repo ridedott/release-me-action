@@ -1,3 +1,16 @@
+## [3.6.50](https://github.com/ridedott/release-me-action/compare/v3.6.49...v3.6.50) (2022-07-15)
+
+### Chores
+
+- **deps-dev:** bump @jest/types from 28.1.1 to 28.1.3
+  ([b027e58](https://github.com/ridedott/release-me-action/commit/b027e580ac37662c049c678f9b8d1b442466e415))
+- **deps-dev:** bump @types/node from 18.0.3 to 18.0.4
+  ([da41576](https://github.com/ridedott/release-me-action/commit/da415765e05d50c5fcbb81f2c17d4fa0c0dc382b))
+- **deps-dev:** bump ts-node from 10.8.2 to 10.9.1
+  ([557a6e6](https://github.com/ridedott/release-me-action/commit/557a6e64be2c2cef3d8ad8ef4b8135361ec92a36))
+- **deps:** bump actions/setup-node from 3.4.0 to 3.4.1
+  ([5fcec5b](https://github.com/ridedott/release-me-action/commit/5fcec5bcd03998be3f4ac2d9cdf7e837a648aa7d))
+
 ## [3.6.49](https://github.com/ridedott/release-me-action/compare/v3.6.48...v3.6.49) (2022-07-12)
 
 ### Chores
