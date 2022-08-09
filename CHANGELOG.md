@@ -1,3 +1,18 @@
+## [3.6.52](https://github.com/ridedott/release-me-action/compare/v3.6.51...v3.6.52) (2022-08-09)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 18.6.1 to 18.6.2
+  ([7a90409](https://github.com/ridedott/release-me-action/commit/7a90409fc32beeae772ef83f7d51490c098c3570))
+- **deps-dev:** bump @types/node from 18.6.2 to 18.6.3
+  ([485b0c7](https://github.com/ridedott/release-me-action/commit/485b0c7d90ae41882adeb4fb26a35dc5f2de9c4f))
+- **deps-dev:** bump @types/node from 18.6.3 to 18.6.4
+  ([00ce894](https://github.com/ridedott/release-me-action/commit/00ce8943cd0af79a02894d02edcea4eb3a745982))
+- **deps-dev:** bump @types/node from 18.6.4 to 18.6.5
+  ([ec092fa](https://github.com/ridedott/release-me-action/commit/ec092fa01e71578a770a5f3ca6f995467d7c2d51))
+- **deps:** bump @actions/core from 1.9.0 to 1.9.1
+  ([7ac644c](https://github.com/ridedott/release-me-action/commit/7ac644cd51a29d735e5b115ed0b75e4f33b624d0))
+
 ## [3.6.51](https://github.com/ridedott/release-me-action/compare/v3.6.50...v3.6.51) (2022-07-25)
 
 ### Chores
