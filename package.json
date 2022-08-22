@@ -16,7 +16,7 @@
     "@semantic-release/npm": "^8.0.3",
     "@semantic-release/release-notes-generator": "^10.0.3",
     "js-yaml": "^4.1.0",
-    "semantic-release": "^18.0.1"
+    "semantic-release": "^19.0.3"
   },
   "description": "GitHub Action for Semantic Release.",
   "devDependencies": {
