@@ -1,3 +1,14 @@
+## [3.6.54](https://github.com/ridedott/release-me-action/compare/v3.6.53...v3.6.54) (2022-08-29)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/config-conventional
+  ([12961bb](https://github.com/ridedott/release-me-action/commit/12961bb45264b9a40c7278e10cba2fa4c707e422))
+- **deps-dev:** bump @jest/types from 28.1.3 to 29.0.0
+  ([3f53d7b](https://github.com/ridedott/release-me-action/commit/3f53d7bb6fe8413831728c00bf32194990691285))
+- **deps:** bump @semantic-release/github from 8.0.5 to 8.0.6
+  ([7970115](https://github.com/ridedott/release-me-action/commit/7970115f9a36c8e111bedc5b7826fce8f07df96c))
+
 ## [3.6.53](https://github.com/ridedott/release-me-action/compare/v3.6.52...v3.6.53) (2022-08-26)
 
 ### Chores
