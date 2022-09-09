@@ -1,3 +1,24 @@
+## [3.6.55](https://github.com/ridedott/release-me-action/compare/v3.6.54...v3.6.55) (2022-09-09)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 17.0.3 to 17.1.1
+  ([eb6bb34](https://github.com/ridedott/release-me-action/commit/eb6bb346482f1714e2c28916e8282192665b0710))
+- **deps-dev:** bump @commitlint/cli from 17.1.1 to 17.1.2
+  ([f9d27b5](https://github.com/ridedott/release-me-action/commit/f9d27b5d2368d05e21378be5c3cddac04095a281))
+- **deps-dev:** bump @jest/types from 29.0.0 to 29.0.1
+  ([68a7c65](https://github.com/ridedott/release-me-action/commit/68a7c65156e6d7ec65a0a5ffda2678f4a9655691))
+- **deps-dev:** bump @jest/types from 29.0.1 to 29.0.2
+  ([6f12670](https://github.com/ridedott/release-me-action/commit/6f1267098aa5f5ba70f9172713b1e61649172b74))
+- **deps-dev:** bump @types/node from 18.7.13 to 18.7.14
+  ([4a863b0](https://github.com/ridedott/release-me-action/commit/4a863b0fc752ed84a23e636fd2e82cacbb6363e4))
+- **deps-dev:** bump @types/node from 18.7.14 to 18.7.15
+  ([2a342ff](https://github.com/ridedott/release-me-action/commit/2a342ff104e4a16b50eb1cf429f1612a9c660280))
+- **deps-dev:** bump @types/node from 18.7.15 to 18.7.16
+  ([1abe1c6](https://github.com/ridedott/release-me-action/commit/1abe1c69330fc90ea36379827140ed8adf73f362))
+- **deps-dev:** bump typescript from 4.8.2 to 4.8.3
+  ([7cd2f77](https://github.com/ridedott/release-me-action/commit/7cd2f770009cc0037d2e347c1d87d57e952fe08c))
+
 ## [3.6.54](https://github.com/ridedott/release-me-action/compare/v3.6.53...v3.6.54) (2022-08-29)
 
 ### Chores
