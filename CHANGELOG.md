@@ -1,3 +1,16 @@
+## [3.6.56](https://github.com/ridedott/release-me-action/compare/v3.6.55...v3.6.56) (2022-09-14)
+
+### Chores
+
+- **deps-dev:** bump @jest/types from 29.0.2 to 29.0.3
+  ([4ffaace](https://github.com/ridedott/release-me-action/commit/4ffaace02b20184f6c9c795940fc88673066a18a))
+- **deps-dev:** bump @types/node from 18.7.16 to 18.7.17
+  ([e3244f5](https://github.com/ridedott/release-me-action/commit/e3244f598087fa50994ebbe12b8dca658851e238))
+- **deps-dev:** bump @types/node from 18.7.17 to 18.7.18
+  ([148e7a3](https://github.com/ridedott/release-me-action/commit/148e7a3422d0f66f1b42466e509d3d1524fdb505))
+- **deps:** bump hosted-git-info and hosted-git-info
+  ([ee89b57](https://github.com/ridedott/release-me-action/commit/ee89b57774bb584ed2117463723ee8083d195d0f))
+
 ## [3.6.55](https://github.com/ridedott/release-me-action/compare/v3.6.54...v3.6.55) (2022-09-09)
 
 ### Chores
