@@ -1,3 +1,10 @@
+## [3.6.59](https://github.com/ridedott/release-me-action/compare/v3.6.58...v3.6.59) (2022-09-28)
+
+### Chores
+
+- **deps-dev:** bump typescript from 4.8.3 to 4.8.4
+  ([cc71220](https://github.com/ridedott/release-me-action/commit/cc7122086ba6dd5491cb060f62d3da4af59b3142))
+
 ## [3.6.58](https://github.com/ridedott/release-me-action/compare/v3.6.57...v3.6.58) (2022-09-28)
 
 ### Chores
