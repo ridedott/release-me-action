@@ -1,3 +1,12 @@
+## [3.6.60](https://github.com/ridedott/release-me-action/compare/v3.6.59...v3.6.60) (2022-09-30)
+
+### Chores
+
+- **deps-dev:** bump @jest/types from 29.0.3 to 29.1.0
+  ([be9e6a6](https://github.com/ridedott/release-me-action/commit/be9e6a64f2749598811773131d7129cab4adddd6))
+- **deps:** bump @actions/core from 1.9.1 to 1.10.0
+  ([113207c](https://github.com/ridedott/release-me-action/commit/113207c125d2fd504a80e9e94dbd8f84a5287fd1))
+
 ## [3.6.59](https://github.com/ridedott/release-me-action/compare/v3.6.58...v3.6.59) (2022-09-28)
 
 ### Chores
