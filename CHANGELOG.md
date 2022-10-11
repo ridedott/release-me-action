@@ -1,3 +1,22 @@
+## [3.6.61](https://github.com/ridedott/release-me-action/compare/v3.6.60...v3.6.61) (2022-10-11)
+
+### Chores
+
+- **deps-dev:** bump @jest/types from 29.1.0 to 29.1.2
+  ([cd86053](https://github.com/ridedott/release-me-action/commit/cd86053d4835185b94136de8e36996791b89754f))
+- **deps-dev:** bump @types/node from 18.7.23 to 18.8.0
+  ([b578833](https://github.com/ridedott/release-me-action/commit/b57883350124141e2b82c29e75985ea3c46c9bd9))
+- **deps-dev:** bump @types/node from 18.8.0 to 18.8.1
+  ([208783e](https://github.com/ridedott/release-me-action/commit/208783ef5cdee20eda74aa0a01c3a7c281f0776e))
+- **deps-dev:** bump @types/node from 18.8.1 to 18.8.2
+  ([01e2e8e](https://github.com/ridedott/release-me-action/commit/01e2e8e05ab66f1942067d8b45532cc079227cc5))
+- **deps-dev:** bump @types/node from 18.8.2 to 18.8.3
+  ([c03c5b8](https://github.com/ridedott/release-me-action/commit/c03c5b8bb32550ca773e4923c6fe98aef799cff3))
+- **deps-dev:** bump @types/node from 18.8.3 to 18.8.4
+  ([d79b41c](https://github.com/ridedott/release-me-action/commit/d79b41c5719ce37413eaedef71f9e353743c7fa9))
+- **deps:** bump ansi-regex and ansi-regex
+  ([48f0607](https://github.com/ridedott/release-me-action/commit/48f06071ea0eff75f2da6682e0f9993724a70ce9))
+
 ## [3.6.60](https://github.com/ridedott/release-me-action/compare/v3.6.59...v3.6.60) (2022-09-30)
 
 ### Chores
