@@ -1,3 +1,12 @@
+## [3.6.64](https://github.com/ridedott/release-me-action/compare/v3.6.63...v3.6.64) (2022-11-22)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 17.2.0 to 17.3.0
+  ([1c104c2](https://github.com/ridedott/release-me-action/commit/1c104c2bb0550b1dfab0ed14a7f1842412382db5))
+- **deps:** bump minimatch from 3.0.4 to 3.1.2
+  ([e044f33](https://github.com/ridedott/release-me-action/commit/e044f33995706e673f4058cbb987306156b000ce))
+
 ## [3.6.63](https://github.com/ridedott/release-me-action/compare/v3.6.62...v3.6.63) (2022-11-16)
 
 ### Chores
