@@ -1,3 +1,10 @@
+## [3.6.66](https://github.com/ridedott/release-me-action/compare/v3.6.65...v3.6.66) (2022-11-29)
+
+### Chores
+
+- **deps:** bump @semantic-release/github from 8.0.6 to 8.0.7
+  ([ab766f8](https://github.com/ridedott/release-me-action/commit/ab766f8eb84dd5a97e5a83756a85ae23f239acdc))
+
 ## [3.6.65](https://github.com/ridedott/release-me-action/compare/v3.6.64...v3.6.65) (2022-11-29)
 
 ### Chores
