@@ -1,3 +1,16 @@
+## [3.6.65](https://github.com/ridedott/release-me-action/compare/v3.6.64...v3.6.65) (2022-11-29)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/config-conventional
+  ([f327f69](https://github.com/ridedott/release-me-action/commit/f327f6933229a7efffb56442577bb0e9765a7c8d))
+- **deps-dev:** bump lint-staged from 13.0.3 to 13.0.4
+  ([104a932](https://github.com/ridedott/release-me-action/commit/104a93266316d3b9a967607615f79a5ce99f9072))
+- **deps-dev:** bump prettier from 2.7.1 to 2.8.0
+  ([5843755](https://github.com/ridedott/release-me-action/commit/5843755e9406981bc6901ea2c3845592960cefec))
+- **deps:** bump @semantic-release/changelog from 6.0.1 to 6.0.2
+  ([b23dd33](https://github.com/ridedott/release-me-action/commit/b23dd3310b28776e9041c66456826fa21ee5975e))
+
 ## [3.6.64](https://github.com/ridedott/release-me-action/compare/v3.6.63...v3.6.64) (2022-11-22)
 
 ### Chores
