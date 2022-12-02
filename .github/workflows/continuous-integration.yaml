@@ -18,16 +18,11 @@ jobs:
         with:
           persist-credentials: false
       - name: Setup Node.js
-        uses: actions/setup-node@v3.5.1
+        uses: actions/setup-node@v3
         with:
-          node-version: 12
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        with:
-          key: npm-${{ hashFiles('./package-lock.json') }}
-          path: ~/.npm
-          restore-keys: |
-            npm-
+          cache: 'npm'
+          node-version-file: '.nvmrc'
+          registry-url: 'https://npm.pkg.github.com'
       - name: Install dependencies
         run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
       - name: Format
@@ -42,16 +37,11 @@ jobs:
         with:
           persist-credentials: false
       - name: Setup Node.js
-        uses: actions/setup-node@v3.5.1
+        uses: actions/setup-node@v3
         with:
-          node-version: 12
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        with:
-          key: npm-${{ hashFiles('./package-lock.json') }}
-          path: ~/.npm
-          restore-keys: |
-            npm-
+          cache: 'npm'
+          node-version-file: '.nvmrc'
+          registry-url: 'https://npm.pkg.github.com'
       - name: Install dependencies
         run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
       - name: Lint
@@ -66,16 +56,11 @@ jobs:
         with:
           persist-credentials: false
       - name: Setup Node.js
-        uses: actions/setup-node@v3.5.1
+        uses: actions/setup-node@v3
         with:
-          node-version: 12
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        with:
-          key: npm-${{ hashFiles('./package-lock.json') }}
-          path: ~/.npm
-          restore-keys: |
-            npm-
+          cache: 'npm'
+          node-version-file: '.nvmrc'
+          registry-url: 'https://npm.pkg.github.com'
       - name: Install dependencies
         run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
       - name: Spellcheck
@@ -90,16 +75,11 @@ jobs:
         with:
           persist-credentials: false
       - name: Setup Node.js
-        uses: actions/setup-node@v3.5.1
+        uses: actions/setup-node@v3
         with:
-          node-version: 12
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        with:
-          key: npm-${{ hashFiles('./package-lock.json') }}
-          path: ~/.npm
-          restore-keys: |
-            npm-
+          cache: 'npm'
+          node-version-file: '.nvmrc'
+          registry-url: 'https://npm.pkg.github.com'
       - name: Install dependencies
         run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
       - name: Test
@@ -118,16 +98,11 @@ jobs:
         with:
           persist-credentials: false
       - name: Setup Node.js
-        uses: actions/setup-node@v3.5.1
+        uses: actions/setup-node@v3
         with:
-          node-version: 12
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        with:
-          key: npm-${{ hashFiles('./package-lock.json') }}
-          path: ~/.npm
-          restore-keys: |
-            npm-
+          cache: 'npm'
+          node-version-file: '.nvmrc'
+          registry-url: 'https://npm.pkg.github.com'
       - name: Install dependencies
         run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
       - name: Types
