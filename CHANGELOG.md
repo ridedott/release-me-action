@@ -1,3 +1,14 @@
+## [3.6.67](https://github.com/ridedott/release-me-action/compare/v3.6.66...v3.6.67) (2022-12-05)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 18.11.9 to 18.11.10
+  ([ff10a4e](https://github.com/ridedott/release-me-action/commit/ff10a4e652878484b10be186f34e2d48ecb45dc8))
+- **deps-dev:** bump lint-staged from 13.0.4 to 13.1.0
+  ([a6d3d92](https://github.com/ridedott/release-me-action/commit/a6d3d92f97e186f078c95034d8d2821a79640fee))
+- **deps:** bump decode-uri-component from 0.2.0 to 0.2.2
+  ([862a943](https://github.com/ridedott/release-me-action/commit/862a9430fb41db9eeb5d45042296a19eede89eeb))
+
 ## [3.6.66](https://github.com/ridedott/release-me-action/compare/v3.6.65...v3.6.66) (2022-11-29)
 
 ### Chores
