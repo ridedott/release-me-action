@@ -1,3 +1,17 @@
+# [3.7.0](https://github.com/ridedott/release-me-action/compare/v3.6.67...v3.7.0) (2022-12-07)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 18.11.10 to 18.11.11
+  ([3f97ead](https://github.com/ridedott/release-me-action/commit/3f97ead206159ebb7a13f4b87bc72d1df1545540))
+- **deps-dev:** bump commitizen from 4.2.5 to 4.2.6
+  ([3aa34e2](https://github.com/ridedott/release-me-action/commit/3aa34e258013742371df73491ab971460b077086))
+
+### Features
+
+- update action to use node16
+  ([f6a9327](https://github.com/ridedott/release-me-action/commit/f6a9327cab190701a7bfd65c845ce3c422777670))
+
 ## [3.6.67](https://github.com/ridedott/release-me-action/compare/v3.6.66...v3.6.67) (2022-12-05)
 
 ### Chores
