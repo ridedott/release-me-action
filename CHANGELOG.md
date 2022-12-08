@@ -1,3 +1,14 @@
+## [3.7.1](https://github.com/ridedott/release-me-action/compare/v3.7.0...v3.7.1) (2022-12-08)
+
+### Chores
+
+- **deps-dev:** bump cspell from 5.21.0 to 6.17.0
+  ([85c9660](https://github.com/ridedott/release-me-action/commit/85c96600a8eeea6cba7296c64c32c437faf4b1a7))
+- **deps-dev:** bump prettier from 2.8.0 to 2.8.1
+  ([5d15b69](https://github.com/ridedott/release-me-action/commit/5d15b69193cafe6652607adc3de481a6d19227e2))
+- **deps-dev:** bump typescript from 4.9.3 to 4.9.4
+  ([4b53ecc](https://github.com/ridedott/release-me-action/commit/4b53eccaa3b6060c991e6c57c93a1766c2beac7e))
+
 # [3.7.0](https://github.com/ridedott/release-me-action/compare/v3.6.67...v3.7.0) (2022-12-07)
 
 ### Chores
