@@ -1,3 +1,24 @@
+## [3.7.2](https://github.com/ridedott/release-me-action/compare/v3.7.1...v3.7.2) (2022-12-30)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 18.11.11 to 18.11.12
+  ([25afd71](https://github.com/ridedott/release-me-action/commit/25afd719d921767e8d34720dd1fe99ccab2881ee))
+- **deps-dev:** bump @types/node from 18.11.12 to 18.11.13
+  ([7b23f66](https://github.com/ridedott/release-me-action/commit/7b23f6691472d19293448f1e0da58c390689169e))
+- **deps-dev:** bump @types/node from 18.11.13 to 18.11.15
+  ([20bf6f8](https://github.com/ridedott/release-me-action/commit/20bf6f8a9f14db2410b312e59a7125052c0686ff))
+- **deps-dev:** bump @types/node from 18.11.15 to 18.11.17
+  ([dbe20fb](https://github.com/ridedott/release-me-action/commit/dbe20fb4e4cb3c54154e9fbab0e032af597211f7))
+- **deps-dev:** bump @types/node from 18.11.17 to 18.11.18
+  ([0c3067c](https://github.com/ridedott/release-me-action/commit/0c3067cfef47662463f85fe704aea046a3f7d2f7))
+- **deps-dev:** bump cspell from 6.17.0 to 6.18.0
+  ([6403752](https://github.com/ridedott/release-me-action/commit/6403752341274eb9ae61b067301439ac98485e7f))
+- **deps-dev:** bump cspell from 6.18.0 to 6.18.1
+  ([a1bb0ad](https://github.com/ridedott/release-me-action/commit/a1bb0ad17cddc7cb0ad8065cd5ecadf63edef60e))
+- **deps:** bump json5 from 2.2.0 to 2.2.2
+  ([0541eff](https://github.com/ridedott/release-me-action/commit/0541eff100c8061f98aebee346d0dddca95bc8e8))
+
 ## [3.7.1](https://github.com/ridedott/release-me-action/compare/v3.7.0...v3.7.1) (2022-12-08)
 
 ### Chores
