@@ -25,7 +25,7 @@
     "@jest/types": "^29.3.1",
     "@ridedott/eslint-config": "^2.5.51",
     "@types/conventional-changelog-writer": "^4.0.1",
-    "@types/hapi__joi": "^17.1.8",
+    "@types/hapi__joi": "^17.1.9",
     "@types/jest": "^27.5.0",
     "@types/node": "^18.11.18",
     "@types/semantic-release": "^17.2.3",
