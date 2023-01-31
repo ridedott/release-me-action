@@ -1,3 +1,38 @@
+## [3.7.3](https://github.com/ridedott/release-me-action/compare/v3.7.2...v3.7.3) (2023-01-31)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 17.3.0 to 17.4.0
+  ([eaa6e1d](https://github.com/ridedott/release-me-action/commit/eaa6e1d812ef8285016276f0e637673ad2946df0))
+- **deps-dev:** bump @commitlint/cli from 17.4.0 to 17.4.1
+  ([058cd27](https://github.com/ridedott/release-me-action/commit/058cd2779dc031a3fa4c27c9167d692b4c711ece))
+- **deps-dev:** bump @commitlint/cli from 17.4.1 to 17.4.2
+  ([ec681a4](https://github.com/ridedott/release-me-action/commit/ec681a46600562296163bfc59ff875e8b50b446e))
+- **deps-dev:** bump @commitlint/config-conventional
+  ([ddeb944](https://github.com/ridedott/release-me-action/commit/ddeb9446276739af9e7ac4b98409c02a6d2cb7ef))
+- **deps-dev:** bump @commitlint/config-conventional
+  ([553e2f8](https://github.com/ridedott/release-me-action/commit/553e2f892c6f61ff18dc266af617c76f289aa8d1))
+- **deps-dev:** bump @jest/types from 29.3.1 to 29.4.0
+  ([0bea11f](https://github.com/ridedott/release-me-action/commit/0bea11f8e64ee7cfff7f0dd8bf70012ab0513838))
+- **deps-dev:** bump @jest/types from 29.4.0 to 29.4.1
+  ([43bc596](https://github.com/ridedott/release-me-action/commit/43bc596acbe326b7d9ebe15cc83d25dfbe1bc6c5))
+- **deps-dev:** bump @types/conventional-changelog-writer
+  ([caffc14](https://github.com/ridedott/release-me-action/commit/caffc142b8beb41dd3daa8a4d1312cf91f79a893))
+- **deps-dev:** bump @types/hapi\_\_joi from 17.1.8 to 17.1.9
+  ([1f5957c](https://github.com/ridedott/release-me-action/commit/1f5957c0a5ccf903b924be5d0cf0a509b745a3ac))
+- **deps-dev:** bump commitizen from 4.2.6 to 4.3.0
+  ([86a61cd](https://github.com/ridedott/release-me-action/commit/86a61cd0b4760bffc3bebe1a61b71b86ccd45ba9))
+- **deps-dev:** bump cspell from 6.18.1 to 6.19.2
+  ([e2ac9a5](https://github.com/ridedott/release-me-action/commit/e2ac9a5eb932ae372ef71f32afd5901d8b90ed52))
+- **deps-dev:** bump husky from 8.0.2 to 8.0.3
+  ([cf6fb6f](https://github.com/ridedott/release-me-action/commit/cf6fb6f7561b7b7611c4b88731edd65c47011969))
+- **deps-dev:** bump prettier from 2.8.1 to 2.8.2
+  ([5340fa5](https://github.com/ridedott/release-me-action/commit/5340fa5ca4f482efc25089415ac0fc133543e8e4))
+- **deps-dev:** bump prettier from 2.8.2 to 2.8.3
+  ([a3e9f01](https://github.com/ridedott/release-me-action/commit/a3e9f01d776a377b1da31c2d3bd763d9ad2b3f8a))
+- **deps-dev:** bump typescript from 4.9.4 to 4.9.5
+  ([04475f4](https://github.com/ridedott/release-me-action/commit/04475f424bdb6b9aaef710c2d42ce4c0abfc7e7a))
+
 ## [3.7.2](https://github.com/ridedott/release-me-action/compare/v3.7.1...v3.7.2) (2022-12-30)
 
 ### Chores
