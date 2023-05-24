@@ -3,6 +3,8 @@ import { Result } from 'semantic-release';
 
 enum OutputParameters {
   Build = 'build',
+  GitHead = 'git-head',
+  GitTag = 'git-tag',
   Level = 'level',
   Major = 'major',
   Minor = 'minor',
@@ -29,6 +31,7 @@ const extractVersionComponents = (version: string): SemVerComponents => {
   return (groups as unknown) as SemVerComponents;
 };
 
+// eslint-disable-next-line max-statements
 export const reportResults = (result: Result): void => {
   if (result === false) {
     setOutput(OutputParameters.Released, 'false');
@@ -58,4 +61,6 @@ export const reportResults = (result: Result): void => {
 
   setOutput(OutputParameters.Released, 'true');
   setOutput(OutputParameters.Version, nextRelease.version);
+  setOutput(OutputParameters.GitHead, nextRelease.gitHead);
+  setOutput(OutputParameters.GitTag, nextRelease.gitTag);
 };
