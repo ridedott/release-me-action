@@ -14,20 +14,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v3
         with:
           persist-credentials: false
       - name: Setup Node.js
-        uses: actions/setup-node@v2.4.0
+        uses: actions/setup-node@v3
         with:
-          node-version: 12
-      - name: Cache dependencies
-        uses: actions/cache@v2.1.6
-        with:
-          key: npm-${{ hashFiles('./package-lock.json') }}
-          path: ~/.npm
-          restore-keys: |
-            npm-
+          cache: 'npm'
+          node-version-file: '.nvmrc'
+          registry-url: 'https://npm.pkg.github.com'
       - name: Install dependencies
         run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
       - name: Format
@@ -38,20 +33,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v3
         with:
           persist-credentials: false
       - name: Setup Node.js
-        uses: actions/setup-node@v2.4.0
+        uses: actions/setup-node@v3
         with:
-          node-version: 12
-      - name: Cache dependencies
-        uses: actions/cache@v2.1.6
-        with:
-          key: npm-${{ hashFiles('./package-lock.json') }}
-          path: ~/.npm
-          restore-keys: |
-            npm-
+          cache: 'npm'
+          node-version-file: '.nvmrc'
+          registry-url: 'https://npm.pkg.github.com'
       - name: Install dependencies
         run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
       - name: Lint
@@ -62,20 +52,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v3
         with:
           persist-credentials: false
       - name: Setup Node.js
-        uses: actions/setup-node@v2.4.0
+        uses: actions/setup-node@v3
         with:
-          node-version: 12
-      - name: Cache dependencies
-        uses: actions/cache@v2.1.6
-        with:
-          key: npm-${{ hashFiles('./package-lock.json') }}
-          path: ~/.npm
-          restore-keys: |
-            npm-
+          cache: 'npm'
+          node-version-file: '.nvmrc'
+          registry-url: 'https://npm.pkg.github.com'
       - name: Install dependencies
         run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
       - name: Spellcheck
@@ -86,20 +71,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v3
         with:
           persist-credentials: false
       - name: Setup Node.js
-        uses: actions/setup-node@v2.4.0
+        uses: actions/setup-node@v3
         with:
-          node-version: 12
-      - name: Cache dependencies
-        uses: actions/cache@v2.1.6
-        with:
-          key: npm-${{ hashFiles('./package-lock.json') }}
-          path: ~/.npm
-          restore-keys: |
-            npm-
+          cache: 'npm'
+          node-version-file: '.nvmrc'
+          registry-url: 'https://npm.pkg.github.com'
       - name: Install dependencies
         run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
       - name: Test
@@ -114,20 +94,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v3
         with:
           persist-credentials: false
       - name: Setup Node.js
-        uses: actions/setup-node@v2.4.0
+        uses: actions/setup-node@v3
         with:
-          node-version: 12
-      - name: Cache dependencies
-        uses: actions/cache@v2.1.6
-        with:
-          key: npm-${{ hashFiles('./package-lock.json') }}
-          path: ~/.npm
-          restore-keys: |
-            npm-
+          cache: 'npm'
+          node-version-file: '.nvmrc'
+          registry-url: 'https://npm.pkg.github.com'
       - name: Install dependencies
         run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
       - name: Types

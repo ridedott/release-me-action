@@ -1,5 +1,3 @@
-<!-- cspell:ignore YALM -->
-
 [![license](https://img.shields.io/github/license/ridedott/release-me-action)](https://github.com/ridedott/release-me-action/blob/master/LICENSE)
 [![GitHub Actions Status](https://github.com/ridedott/release-me-action/workflows/Continuous%20Integration/badge.svg?branch=master)](https://github.com/ridedott/release-me-action/actions)
 [![GitHub Actions Status](https://github.com/ridedott/release-me-action/workflows/Continuous%20Delivery/badge.svg?branch=master)](https://github.com/ridedott/release-me-action/actions)
@@ -56,16 +54,33 @@ steps:
       # Attach the new line separated listed glob patterns to the release.
       release-assets: |
         ./generated/my-asset.tar.gz
+      # Do not generate CHANGELOG.md file
+      # Default: false
+      disable-changelog: true
       # Configure the semantic release commit analyzer rules that are used to
       # determine the correct release version.
       # https://www.npmjs.com/package/@semantic-release/commit-analyzer#releaserules
       release-rules:
         '[{ "release": "patch", "type": "build" }, { "release": "patch", "type":
         "chore(deps)" }, { "release": "patch", "type": "chore(deps-dev)" }]'
+      # Append additional semantic release commit analyzer rules to the default set of rules already included in the action.
+      # Default rules:
+      # [
+      #  { "release": "patch", "type": "build" },
+      #  { "release": "patch", "type": "chore" },
+      #  { "release": "patch", "type": "ci" },
+      #  { "release": "patch", "type": "docs" },
+      #  { "release": "patch", "type": "improvement" },
+      #  { "release": "patch", "type": "refactor" },
+      #  { "release": false, "subject": "*\\[skip release\\]*" },
+      # ]
+      # Note: cannot be used in conjunction with 'release-rules' as these do not override the default rules.
+      release-rules-append:
+        '[{"release":false,"subject":"*\\[skip release\\]*"}]'
       # Loads a custom Semantic Release configuration from this file. See
       # https://semantic-release.gitbook.io/semantic-release/usage/configuration#configuration-file.
       # Provided configuration will be shallow merged with defaults. Supported
-      # formats are YALM or CommonJS.
+      # formats are YAML or CommonJS.
       config-file: ./path/to/config.yaml
       # Specify additional semantic-release plugins to install. Accepts packages
       # in typical package.json format.
@@ -82,7 +97,7 @@ with the required permissions enabled on it.
 # Scenarios
 
 - [Create a release](#create-a-release)
-- [Create a release without a CHANGELOG.md file](#create-a-release-without-changelog)
+- [Create a release without a CHANGELOG.md file](#create-a-release-without-a-changelog-file)
 - [Test a release](#test-a-release)
 - [Create a release to a different branch](#create-a-release-to-a-different-branch)
 - [Create a release and update repository contents](#create-a-release-and-update-repository-contents)
@@ -101,7 +116,7 @@ steps:
     uses: ridedott/release-me-action@master
 ```
 
-## Create a release without a CHANGELOG.md file
+## Create a release without a CHANGELOG file
 
 ```yaml
 steps:
@@ -124,13 +139,14 @@ Output parameters supported:
 ```yaml
 steps:
   - name: Release
+    id: release
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     uses: ridedott/release-me-action@master
   - name: Output
-        if: steps.build_package.outputs.released == 'true'
-        run: |
-          echo released version: ${{ steps.build_package.outputs.version }}, type: ${{ steps.build_package.outputs.level }}
+    if: steps.release.outputs.released == 'true'
+    run: |
+      echo released version: ${{ steps.release.outputs.version }}, type: ${{ steps.release.outputs.level }}
 ```
 
 ## Test a release
@@ -245,9 +261,15 @@ to authenticate to GitHub.
 
 ```yaml
 steps:
-  - env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
-    name: Release
+  - name: Checkout
+    uses: actions/checkout@v2
+    with:
+      # to prevent interference with default `GITHUB_TOKEN`:
+      # https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/github-actions.md#pushing-packagejson-changes-to-a-master-branch
+      persist-credentials: false
+  - name: Release
+    env:
+      GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
     uses: ridedott/release-me-action@master
 ```
 
