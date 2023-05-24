@@ -12,13 +12,13 @@ describe('reportResults', (): void => {
     const input: Result = {
       commits: [],
       lastRelease: {
-        gitHead: 'refs/heads/master',
-        gitTag: '1.1.0',
+        gitHead: 'ca39a3ee5e6b4b0d3255bfef95601890afd80708',
+        gitTag: 'v1.1.0',
         version: '1.1.0',
       },
       nextRelease: {
-        gitHead: 'refs/heads/master',
-        gitTag: '1.1.1',
+        gitHead: 'da39a3ee5e6b4b0d3255bfef95601890afd80709',
+        gitTag: 'v1.1.1',
         notes: 'Note',
         type: 'patch',
         version: '1.1.1',
@@ -40,8 +40,8 @@ describe('reportResults', (): void => {
     expect(setOutputSpy).toHaveBeenCalledWith('minor', '1');
     expect(setOutputSpy).toHaveBeenCalledWith('patch', '1');
 
-    expect(setOutputSpy).toHaveBeenCalledWith('git-head', 'refs/heads/master');
-    expect(setOutputSpy).toHaveBeenCalledWith('git-tag', '1.1.1');
+    expect(setOutputSpy).toHaveBeenCalledWith('git-head', 'da39a3ee5e6b4b0d3255bfef95601890afd80709');
+    expect(setOutputSpy).toHaveBeenCalledWith('git-tag', 'v1.1.1');
   });
 
   it('sets prerelease and meta outputs if they are included in the version', (): void => {
