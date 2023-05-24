@@ -7,7 +7,7 @@ const setOutputSpy = jest.spyOn(actionsCore, 'setOutput').mockImplementation();
 
 describe('reportResults', (): void => {
   it('sets output based on nextRelease', (): void => {
-    expect.assertions(7);
+    expect.assertions(9);
 
     const input: Result = {
       commits: [],
@@ -28,7 +28,7 @@ describe('reportResults', (): void => {
 
     reportResults(input);
 
-    expect(setOutputSpy).toHaveBeenCalledTimes(6);
+    expect(setOutputSpy).toHaveBeenCalledTimes(8);
     expect(setOutputSpy).toHaveBeenCalledWith(
       'version',
       input.nextRelease.version,
@@ -39,6 +39,9 @@ describe('reportResults', (): void => {
     expect(setOutputSpy).toHaveBeenCalledWith('major', '1');
     expect(setOutputSpy).toHaveBeenCalledWith('minor', '1');
     expect(setOutputSpy).toHaveBeenCalledWith('patch', '1');
+
+    expect(setOutputSpy).toHaveBeenCalledWith('git-head', 'refs/heads/master');
+    expect(setOutputSpy).toHaveBeenCalledWith('git-tag', '1.1.1');
   });
 
   it('sets prerelease and meta outputs if they are included in the version', (): void => {
@@ -63,7 +66,7 @@ describe('reportResults', (): void => {
 
     reportResults(input);
 
-    expect(setOutputSpy).toHaveBeenCalledTimes(8);
+    expect(setOutputSpy).toHaveBeenCalledTimes(10);
     expect(setOutputSpy).toHaveBeenCalledWith('pre-release', 'prerelease');
     expect(setOutputSpy).toHaveBeenCalledWith('build', 'build');
   });
