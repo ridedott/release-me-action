@@ -40,7 +40,10 @@ describe('reportResults', (): void => {
     expect(setOutputSpy).toHaveBeenCalledWith('minor', '1');
     expect(setOutputSpy).toHaveBeenCalledWith('patch', '1');
 
-    expect(setOutputSpy).toHaveBeenCalledWith('git-head', 'da39a3ee5e6b4b0d3255bfef95601890afd80709');
+    expect(setOutputSpy).toHaveBeenCalledWith(
+      'git-head',
+      'da39a3ee5e6b4b0d3255bfef95601890afd80709',
+    );
     expect(setOutputSpy).toHaveBeenCalledWith('git-tag', 'v1.1.1');
   });
 
