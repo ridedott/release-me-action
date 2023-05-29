@@ -1,3 +1,10 @@
+## [3.8.1](https://github.com/ridedott/release-me-action/compare/v3.8.0...v3.8.1) (2023-05-29)
+
+### Chores
+
+- **deps:** bump @semantic-release/github from 8.0.7 to 8.1.0
+  ([ce1975e](https://github.com/ridedott/release-me-action/commit/ce1975e0f0da866cdfc2919af03162df74e31cd7))
+
 # [3.8.0](https://github.com/ridedott/release-me-action/compare/v3.7.5...v3.8.0) (2023-05-26)
 
 ### Chores
