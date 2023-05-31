@@ -1,3 +1,57 @@
+## [3.8.1](https://github.com/ridedott/release-me-action/compare/v3.8.0...v3.8.1) (2023-05-29)
+
+### Chores
+
+- **deps:** bump @semantic-release/github from 8.0.7 to 8.1.0
+  ([ce1975e](https://github.com/ridedott/release-me-action/commit/ce1975e0f0da866cdfc2919af03162df74e31cd7))
+
+# [3.8.0](https://github.com/ridedott/release-me-action/compare/v3.7.5...v3.8.0) (2023-05-26)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 17.6.1 to 17.6.3
+  ([35c31aa](https://github.com/ridedott/release-me-action/commit/35c31aa57cdb58078d106e1b338ee60ab36b30f9))
+- **deps-dev:** bump @commitlint/config-conventional
+  ([bcffa70](https://github.com/ridedott/release-me-action/commit/bcffa70dd3e62537237a43ae7dd913b952171858))
+- **deps-dev:** bump @types/conventional-changelog-writer
+  ([73a7cb5](https://github.com/ridedott/release-me-action/commit/73a7cb52e7d0417bb7d10949e3d8744bf7ab219b))
+- **deps-dev:** bump @types/node from 18.16.1 to 18.16.2
+  ([886dcf8](https://github.com/ridedott/release-me-action/commit/886dcf81a3feaea13ebd567e3e826356f7eec66f))
+- **deps-dev:** bump @types/node from 18.16.2 to 18.16.3
+  ([1f5dba8](https://github.com/ridedott/release-me-action/commit/1f5dba8dff73b7461918605068f6bcc095da39ea))
+- **deps-dev:** bump @types/node from 18.16.3 to 20.1.0
+  ([d7901f5](https://github.com/ridedott/release-me-action/commit/d7901f57500e222e91139537b24feeeadccf8c0a))
+- **deps-dev:** bump @types/node from 20.1.0 to 20.1.1
+  ([2af040b](https://github.com/ridedott/release-me-action/commit/2af040b0bfd04c0b654f278bf6d477885a1c2360))
+- **deps-dev:** bump @types/node from 20.1.1 to 20.1.2
+  ([e93fe67](https://github.com/ridedott/release-me-action/commit/e93fe67e6205ee03cee3e8e18e3977bb20141761))
+- **deps-dev:** bump @types/node from 20.1.2 to 20.1.3
+  ([4411888](https://github.com/ridedott/release-me-action/commit/4411888fe9fd3c7c6197a82afa93c2b1f2674101))
+- **deps-dev:** bump @types/node from 20.1.3 to 20.1.4
+  ([46bdafd](https://github.com/ridedott/release-me-action/commit/46bdafdfd5fa318733619308d54636582b6b4826))
+- **deps-dev:** bump @types/node from 20.1.4 to 20.1.5
+  ([31af7ca](https://github.com/ridedott/release-me-action/commit/31af7caf6f677d3b2aefe6fbc807d2dbb3031dd6))
+- **deps-dev:** bump @types/node from 20.1.5 to 20.1.7
+  ([4eec33c](https://github.com/ridedott/release-me-action/commit/4eec33c546bd6e9f927fb75fa06c4056ad2e83aa))
+- **deps-dev:** bump @types/node from 20.1.7 to 20.2.0
+  ([397fc16](https://github.com/ridedott/release-me-action/commit/397fc169840d23a4c10d01a8b535b53947dc07a0))
+- **deps-dev:** bump @types/node from 20.2.0 to 20.2.1
+  ([d81a6c3](https://github.com/ridedott/release-me-action/commit/d81a6c357154ee7593f66b038420fc97ae479c2a))
+- **deps-dev:** bump @types/node from 20.2.1 to 20.2.3
+  ([8bee332](https://github.com/ridedott/release-me-action/commit/8bee332a317596dbcd435e35a31a598e3bae3540))
+- **deps-dev:** bump @types/node from 20.2.3 to 20.2.4
+  ([f3412b2](https://github.com/ridedott/release-me-action/commit/f3412b2d940d826460a4125c243699d1576bdb0b))
+- **deps-dev:** bump lint-staged from 13.2.1 to 13.2.2
+  ([640d64f](https://github.com/ridedott/release-me-action/commit/640d64fdd8678bcbb65ba5db076c2a85f95eacba))
+- **deps-dev:** bump prettier from 2.8.7 to 2.8.8
+  ([f530014](https://github.com/ridedott/release-me-action/commit/f530014ebf63d270481f07d8ce036f4562fe72f1))
+
+### Features
+
+- return git tag and head commit in the output (#1359)
+  ([9e67b49](https://github.com/ridedott/release-me-action/commit/9e67b49712c5ff58cf1684191082fcd5563ab0a5)),
+  closes [#1359](https://github.com/ridedott/release-me-action/issues/1359)
+
 ## [3.7.5](https://github.com/ridedott/release-me-action/compare/v3.7.4...v3.7.5) (2023-04-26)
 
 ### Chores

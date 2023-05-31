@@ -50,6 +50,10 @@ inputs:
 outputs:
   build:
     description: Build component of the released version.
+  git-head:
+    description: The Git checksum of the last commit of the release.
+  git-tag:
+    description: The Git tag of the release.
   level:
     description: Released level (major, minor or patch).
   major:

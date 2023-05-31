@@ -12,7 +12,7 @@
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^8.0.7",
+    "@semantic-release/github": "^8.1.0",
     "@semantic-release/npm": "^8.0.3",
     "@semantic-release/release-notes-generator": "^10.0.3",
     "js-yaml": "^4.1.0",
@@ -24,10 +24,10 @@
     "@commitlint/config-conventional": "^17.6.3",
     "@jest/types": "^29.5.0",
     "@ridedott/eslint-config": "^2.5.51",
-    "@types/conventional-changelog-writer": "^4.0.2",
+    "@types/conventional-changelog-writer": "^4.0.3",
     "@types/hapi__joi": "^17.1.9",
     "@types/jest": "^27.5.0",
-    "@types/node": "^20.2.3",
+    "@types/node": "^20.2.5",
     "@types/semantic-release": "^17.2.3",
     "@zeit/ncc": "^0.22.3",
     "commitizen": "^4.3.0",
@@ -98,5 +98,5 @@
     "test:watch": "jest --watch --verbose false",
     "types": "tsc --noEmit"
   },
-  "version": "3.7.5"
+  "version": "3.8.1"
 }
