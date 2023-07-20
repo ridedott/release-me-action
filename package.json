@@ -20,7 +20,7 @@
   },
   "description": "GitHub Action for Semantic Release.",
   "devDependencies": {
-    "@commitlint/cli": "^17.6.6",
+    "@commitlint/cli": "^17.6.7",
     "@commitlint/config-conventional": "^17.6.6",
     "@jest/types": "^29.6.1",
     "@ridedott/eslint-config": "^2.5.51",
