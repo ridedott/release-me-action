@@ -24,7 +24,7 @@
     "@commitlint/config-conventional": "^17.7.0",
     "@jest/types": "^29.6.3",
     "@ridedott/eslint-config": "^2.5.51",
-    "@types/conventional-changelog-writer": "^4.0.3",
+    "@types/conventional-changelog-writer": "^4.0.4",
     "@types/hapi__joi": "^17.1.10",
     "@types/jest": "^27.5.0",
     "@types/node": "^20.5.4",
