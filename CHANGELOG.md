@@ -1,3 +1,10 @@
+## [3.8.5](https://github.com/ridedott/release-me-action/compare/v3.8.4...v3.8.5) (2023-10-25)
+
+### Chores
+
+- **deps:** bump actions/setup-node from 3 to 4
+  ([1a23bd6](https://github.com/ridedott/release-me-action/commit/1a23bd65fa6cf0ea552d3a9c760a1521946996e9))
+
 ## [3.8.4](https://github.com/ridedott/release-me-action/compare/v3.8.3...v3.8.4) (2023-10-25)
 
 ### Chores
