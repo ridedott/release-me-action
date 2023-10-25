@@ -108,3 +108,18 @@ jobs:
       - name: Types
         run: npm run types
     timeout-minutes: 5
+  merge-me:
+    needs:
+      - format
+      - lint
+      - spellcheck
+      - test
+      - types
+    name: Merge me!
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge me!
+        uses: ridedott/merge-me-action@master
+        with:
+          GITHUB_TOKEN: ${{ secrets.DOTTBOTT_TOKEN }}
+    timeout-minutes: 5
