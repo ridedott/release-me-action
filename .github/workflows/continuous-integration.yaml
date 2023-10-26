@@ -4,6 +4,9 @@ on:
   pull_request:
     branches:
       - master
+  push:
+    branches:
+      - maartenRamadan-ci/bump-node-version
 
 jobs:
   format:
