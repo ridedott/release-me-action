@@ -12,13 +12,17 @@ describe('reportResults', (): void => {
     const input: Result = {
       commits: [],
       lastRelease: {
+        channels: [],
         gitHead: 'ca39a3ee5e6b4b0d3255bfef95601890afd80708',
         gitTag: 'v1.1.0',
+        name: 'v1.1.0',
         version: '1.1.0',
       },
       nextRelease: {
+        channel: 'latest',
         gitHead: 'da39a3ee5e6b4b0d3255bfef95601890afd80709',
         gitTag: 'v1.1.1',
+        name: 'v1.1.1',
         notes: 'Note',
         type: 'patch',
         version: '1.1.1',
@@ -53,13 +57,17 @@ describe('reportResults', (): void => {
     const input: Result = {
       commits: [],
       lastRelease: {
+        channels: [],
         gitHead: 'refs/heads/master',
         gitTag: '1.1.0',
+        name: '1.1.0',
         version: '1.1.0',
       },
       nextRelease: {
+        channel: 'latest',
         gitHead: 'refs/heads/master',
         gitTag: '1.1.1-prerelease+build',
+        name: '1.1.1-prerelease+build',
         notes: 'Note',
         type: 'patch',
         version: '1.1.1-prerelease+build',
