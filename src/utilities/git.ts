@@ -1,7 +1,7 @@
 /* eslint-disable no-await-in-loop */
 import * as execa from 'execa';
 import * as fileUrl from 'file-url';
-import { directory } from 'tempy';
+import { temporaryDirectory } from 'tempy';
 
 /**
  * Initialize local `remote` git repository in a temporary directory.
@@ -10,7 +10,7 @@ export const initGitRemote = async (): Promise<{
   cwd: string;
   remoteRepositoryUrl: string;
 }> => {
-  const cwd = directory();
+  const cwd = temporaryDirectory();
 
   await execa('git', ['init', '--bare'], { cwd });
 
@@ -25,7 +25,7 @@ export const gitShallowClone = async (
   repositoryUrl: string,
   depth: number = 1,
 ): Promise<string> => {
-  const cloneWorkingDirectory = directory();
+  const cloneWorkingDirectory = temporaryDirectory();
 
   await execa(
     'git',

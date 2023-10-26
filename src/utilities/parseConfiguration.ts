@@ -9,7 +9,7 @@ import { Options } from 'semantic-release';
 const parseYamlConfiguration = async (filePath: string): Promise<object> => {
   const file = await fs.readFile(filePath, 'utf8');
 
-  const config = yaml.load(file) as string | object | undefined;
+  const config = yaml.load(file) as object | string | undefined;
 
   if (typeof config !== 'object') {
     throw new Error('Invalid config file contents; not an object');
@@ -52,6 +52,7 @@ export const parseConfiguration = async (
   filePath: string,
   defaultOptions: Options,
 ): Promise<object> => {
+  // eslint-disable-next-line functional/immutable-data
   const extension = filePath.split('.').pop();
 
   switch (extension) {

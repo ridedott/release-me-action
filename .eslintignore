@@ -1,2 +1,3 @@
 dist
 lib
+__mocks__/env-ci.ts

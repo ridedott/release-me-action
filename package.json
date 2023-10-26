@@ -17,7 +17,9 @@
     "@semantic-release/release-notes-generator": "^10.0.3",
     "@vercel/ncc": "^0.38.1",
     "js-yaml": "^4.1.0",
-    "semantic-release": "^20.1.0"
+    "semantic-release": "^22.0.5",
+    "signale": "^1.4.0",
+    "tempy": "^3.1.0"
   },
   "description": "GitHub Action for Semantic Release.",
   "devDependencies": {
@@ -33,14 +35,11 @@
     "commitizen": "^4.3.0",
     "cspell": "^7.3.8",
     "eslint": "^8.51.0",
-    "execa": "^5.1.1",
-    "file-url": "^3.0.0",
     "husky": "^8.0.3",
     "jest": "^26.6.3",
     "lint-staged": "^15.0.2",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.0.3",
-    "tempy": "^1.0.1",
     "ts-jest": "^26.5.6",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"

@@ -22,7 +22,7 @@ describe('git utility', (): void => {
         })
       ).stdout;
 
-      expect(isBareRepository).toStrictEqual('true');
+      expect(isBareRepository).toBe('true');
     });
   });
 
@@ -39,7 +39,7 @@ describe('git utility', (): void => {
         })
       ).stdout;
 
-      expect(isGitRepository).toStrictEqual('.git');
+      expect(isGitRepository).toBe('.git');
     });
   });
 
@@ -59,7 +59,7 @@ describe('git utility', (): void => {
         })
       ).stdout;
 
-      expect(commitMessage).toStrictEqual('feat: initial commit');
+      expect(commitMessage).toBe('feat: initial commit');
     });
 
     it('creates commits in order on the git repository present in the `cwd` option', async (): Promise<void> => {
@@ -143,10 +143,10 @@ describe('git utility', (): void => {
         })
       ).stdout;
 
-      expect(commitMessage).toStrictEqual('feat: initial commit');
-      expect(configurationUserName).toStrictEqual('test@ridedott.com');
-      expect(configurationUserEmail).toStrictEqual('test@ridedott.com');
-      expect(configurationGpgSign).toStrictEqual('false');
+      expect(commitMessage).toBe('feat: initial commit');
+      expect(configurationUserName).toBe('test@ridedott.com');
+      expect(configurationUserEmail).toBe('test@ridedott.com');
+      expect(configurationGpgSign).toBe('false');
       expect(tagName).toContain('v1.0.0');
     });
   });
@@ -179,7 +179,7 @@ describe('git utility', (): void => {
         })
       ).stdout;
 
-      expect(commitMessage).toStrictEqual('feat: initial commit');
+      expect(commitMessage).toBe('feat: initial commit');
     });
   });
 });

@@ -1,6 +1,3 @@
-/* eslint-disable immutable/no-mutation */
-/* eslint-disable unicorn/filename-case */
-/* eslint-disable unicorn/prevent-abbreviations */
 import * as envCi from 'env-ci';
 
 module.exports = ({

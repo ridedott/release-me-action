@@ -1,3 +1,4 @@
+/* eslint-disable jest/no-conditional-in-test */
 import * as actionsCore from '@actions/core';
 import * as actionsExec from '@actions/exec';
 
@@ -21,23 +22,23 @@ describe('release', (): void => {
   beforeEach((): void => {
     execSpy.mockImplementation();
     getInputSpy.mockImplementation((name: string): string => {
-      if (name === InputParameters.CommitAssets) {
+      if (name === (InputParameters.CommitAssets as string)) {
         return './src';
       }
 
-      if (name === InputParameters.DryRun) {
+      if (name === (InputParameters.DryRun as string)) {
         return 'true';
       }
 
-      if (name === InputParameters.NodeModule) {
+      if (name === (InputParameters.NodeModule as string)) {
         return 'true';
       }
 
-      if (name === InputParameters.ReleaseAssets) {
+      if (name === (InputParameters.ReleaseAssets as string)) {
         return './src';
       }
 
-      if (name === InputParameters.ReleaseBranches) {
+      if (name === (InputParameters.ReleaseBranches as string)) {
         return JSON.stringify([
           '+([0-9])?(.{+([0-9]),x}).x',
           'master',
@@ -48,7 +49,7 @@ describe('release', (): void => {
         ]);
       }
 
-      if (name === InputParameters.ReleaseRules) {
+      if (name === (InputParameters.ReleaseRules as string)) {
         return '';
       }
 
@@ -71,8 +72,8 @@ describe('release', (): void => {
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
-      expect(result.nextRelease.type).toStrictEqual('minor');
-      expect(result.nextRelease.version).toStrictEqual('1.1.0');
+      expect(result.nextRelease.type).toBe('minor');
+      expect(result.nextRelease.version).toBe('1.1.0');
     }
   });
 
@@ -94,8 +95,8 @@ describe('release', (): void => {
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
-      expect(result.nextRelease.type).toStrictEqual('major');
-      expect(result.nextRelease.version).toStrictEqual('2.0.0');
+      expect(result.nextRelease.type).toBe('major');
+      expect(result.nextRelease.version).toBe('2.0.0');
     }
   });
 
@@ -114,8 +115,8 @@ describe('release', (): void => {
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
-      expect(result.nextRelease.type).toStrictEqual('patch');
-      expect(result.nextRelease.version).toStrictEqual('1.0.1');
+      expect(result.nextRelease.type).toBe('patch');
+      expect(result.nextRelease.version).toBe('1.0.1');
     }
   });
 
@@ -134,8 +135,8 @@ describe('release', (): void => {
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
-      expect(result.nextRelease.type).toStrictEqual('patch');
-      expect(result.nextRelease.version).toStrictEqual('1.0.1');
+      expect(result.nextRelease.type).toBe('patch');
+      expect(result.nextRelease.version).toBe('1.0.1');
     }
   });
 
@@ -154,8 +155,8 @@ describe('release', (): void => {
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
-      expect(result.nextRelease.type).toStrictEqual('patch');
-      expect(result.nextRelease.version).toStrictEqual('1.0.1');
+      expect(result.nextRelease.type).toBe('patch');
+      expect(result.nextRelease.version).toBe('1.0.1');
     }
   });
 
@@ -174,8 +175,8 @@ describe('release', (): void => {
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
-      expect(result.nextRelease.type).toStrictEqual('patch');
-      expect(result.nextRelease.version).toStrictEqual('1.0.1');
+      expect(result.nextRelease.type).toBe('patch');
+      expect(result.nextRelease.version).toBe('1.0.1');
     }
   });
 
@@ -194,8 +195,8 @@ describe('release', (): void => {
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
-      expect(result.nextRelease.type).toStrictEqual('patch');
-      expect(result.nextRelease.version).toStrictEqual('1.0.1');
+      expect(result.nextRelease.type).toBe('patch');
+      expect(result.nextRelease.version).toBe('1.0.1');
     }
   });
 
@@ -214,8 +215,8 @@ describe('release', (): void => {
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
-      expect(result.nextRelease.type).toStrictEqual('patch');
-      expect(result.nextRelease.version).toStrictEqual('1.0.1');
+      expect(result.nextRelease.type).toBe('patch');
+      expect(result.nextRelease.version).toBe('1.0.1');
     }
   });
 
@@ -234,8 +235,8 @@ describe('release', (): void => {
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
-      expect(result.nextRelease.type).toStrictEqual('patch');
-      expect(result.nextRelease.version).toStrictEqual('1.0.1');
+      expect(result.nextRelease.type).toBe('patch');
+      expect(result.nextRelease.version).toBe('1.0.1');
     }
   });
 
@@ -253,6 +254,6 @@ describe('release', (): void => {
 
     const result = await release(optionsOverride, configurationOverride);
 
-    expect(result).toStrictEqual(false);
+    expect(result).toBe(false);
   });
 });

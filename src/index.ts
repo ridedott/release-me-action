@@ -66,10 +66,14 @@ export const release = async (
   return result;
 };
 
-release()
-  .then(reportResults)
-  .catch((error: unknown): void => {
+await (async (): Promise<void> => {
+  const result = await release();
+
+  try {
+    reportResults(result);
+  } catch (error: unknown) {
     const finalErrorString = getSetFailedErrorString(error);
 
     setFailed(JSON.stringify(finalErrorString));
-  });
+  }
+})();

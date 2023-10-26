@@ -3,7 +3,7 @@ import { PluginSpec } from 'semantic-release';
 import { ReleaseRule } from './inputProcessors';
 import { transform } from './transform';
 
-/* eslint-disable-next-line max-lines-per-function */
+ 
 export const generatePlugins = ({
   commitAssets,
   disableChangeLog = false,
@@ -16,9 +16,9 @@ export const generatePlugins = ({
   isNodeModule: boolean;
   releaseAssets: string[];
   releaseRules: ReleaseRule[];
-}): PluginSpec[] => {
+}): PluginSpec[] => 
   /* eslint-disable unicorn/prevent-abbreviations */
-  return [
+   [
     [
       '@semantic-release/commit-analyzer',
       {
@@ -83,6 +83,6 @@ export const generatePlugins = ({
         successComment: false,
       },
     ],
-  ];
+  ]
   /* eslint-enable unicorn/prevent-abbreviations */
-};
+;
