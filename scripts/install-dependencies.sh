@@ -2,7 +2,7 @@
 
 set -ex
 
-nvm use && npm --prefix "$1" ci "$1" --only=production --no-audit --no-progress --prefer-offline
+npm --prefix "$1" ci "$1" --only=production --no-audit --no-progress --prefer-offline
 
 if [ "$#" -gt 1 ]; then
   # Install additional packages.
