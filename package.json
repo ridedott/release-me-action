@@ -13,11 +13,11 @@
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^8.1.0",
-    "@semantic-release/npm": "^8.0.3",
+    "@semantic-release/npm": "^11.0.0",
     "@semantic-release/release-notes-generator": "^10.0.3",
     "@vercel/ncc": "^0.38.1",
     "js-yaml": "^4.1.0",
-    "semantic-release": "^18.0.1"
+    "semantic-release": "^22.0.5"
   },
   "description": "GitHub Action for Semantic Release.",
   "devDependencies": {
