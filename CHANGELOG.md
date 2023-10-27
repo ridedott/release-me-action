@@ -1,3 +1,26 @@
+## [3.8.6](https://github.com/ridedott/release-me-action/compare/v3.8.5...v3.8.6) (2023-10-27)
+
+### Bug Fixes
+
+- fix path
+  ([df57422](https://github.com/ridedott/release-me-action/commit/df574226745f1f6681e3ff95827a768bd167dc83))
+- restore install dependency script
+  ([4d3d85e](https://github.com/ridedott/release-me-action/commit/4d3d85e167a119876636baf924756d591794b295))
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 18.1.0 to 18.2.0
+  ([83fb0a2](https://github.com/ridedott/release-me-action/commit/83fb0a29c090f24aa8ab6410b96d7f7a74b978ed))
+- **deps-dev:** bump @types/node from 20.8.8 to 20.8.9
+  ([c2c29a4](https://github.com/ridedott/release-me-action/commit/c2c29a42361fb636ba16d9716727dd1fa197c9c6))
+- replace deprecated ncc dependency
+  ([dbe406e](https://github.com/ridedott/release-me-action/commit/dbe406e2fe121aeffc4f989095d72e7beb9a732e))
+
+### Continuous Integration
+
+- bump node version
+  ([bc3c6af](https://github.com/ridedott/release-me-action/commit/bc3c6af09b365c62a4e92f5d6fc2374e41781e49))
+
 ## [3.8.5](https://github.com/ridedott/release-me-action/compare/v3.8.4...v3.8.5) (2023-10-25)
 
 ### Chores
