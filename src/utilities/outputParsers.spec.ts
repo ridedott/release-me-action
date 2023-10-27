@@ -1,5 +1,3 @@
-/* eslint-disable jest/max-expects */
-
 import * as actionsCore from '@actions/core';
 import { Result } from 'semantic-release';
 
