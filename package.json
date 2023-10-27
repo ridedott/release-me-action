@@ -15,6 +15,7 @@
     "@semantic-release/github": "^8.1.0",
     "@semantic-release/npm": "^8.0.3",
     "@semantic-release/release-notes-generator": "^10.0.3",
+    "@vercel/ncc": "^0.38.1",
     "js-yaml": "^4.1.0",
     "semantic-release": "^18.0.1"
   },
@@ -29,7 +30,6 @@
     "@types/jest": "^27.5.0",
     "@types/node": "^20.8.9",
     "@types/semantic-release": "^17.2.3",
-    "@zeit/ncc": "^0.22.3",
     "commitizen": "^4.3.0",
     "cspell": "^7.3.8",
     "eslint": "^7.32.0",
