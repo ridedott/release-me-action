@@ -12,13 +12,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           # Fetch all history.
           fetch-depth: 0
           persist-credentials: false
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           cache: 'npm'
           node-version-file: '.nvmrc'
@@ -42,7 +42,7 @@ jobs:
               { "release": "patch", "type": "chore" },
               { "release": false, "type": "chore", "scope": "deps-dev" },
               { "release": "patch", "type": "chore", "scope": "deps-dev", "subject": "bump typescript from*" },
-              { "release": "patch", "type": "chore", "scope": "deps-dev", "subject": "bump @zeit/ncc from*" },
+              { "release": "patch", "type": "chore", "scope": "deps-dev", "subject": "bump @vercel/ncc from*" },
               { "release": "patch", "type": "ci" },
               { "release": "patch", "type": "improvement" },
               { "release": "patch", "type": "refactor" },
@@ -50,7 +50,7 @@ jobs:
             ]
       - if: steps.release.outputs.released == 'true'
         name: Authenticate
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 1
           persist-credentials: true
