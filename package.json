@@ -103,8 +103,8 @@
     "release": "semantic-release",
     "spellcheck": "cspell \"**/*\"",
     "test": "NODE_OPTIONS='--experimental-vm-modules' jest",
-    "test:ci": "NODE_OPTIONS='--experimental-vm-modules' jest --ci --collect-coverage",
-    "test:coverage": "NODE_OPTIONS='--experimental-vm-modules' jest --collect-coverage",
+    "test:ci": "NODE_OPTIONS='--experimental-vm-modules' jest --ci --coverage",
+    "test:coverage": "NODE_OPTIONS='--experimental-vm-modules' jest --coverage",
     "test:watch": "NODE_OPTIONS='--experimental-vm-modules' jest --watch --verbose false",
     "types": "tsc --noEmit"
   },
