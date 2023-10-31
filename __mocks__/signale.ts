@@ -1,5 +1,3 @@
- 
-
 import signale from 'signale';
 
 class Signale extends signale.Signale {
