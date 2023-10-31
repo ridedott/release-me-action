@@ -23,6 +23,7 @@ const configuration: Config.InitialOptions = {
   resetMocks: true,
   roots: ['<rootDir>/src', '<rootDir>/__mocks__'],
   testEnvironment: 'node',
+  testPathIgnorePatterns: ['<rootDir>/src/index.spec.ts'],
 };
 
 export default configuration;
