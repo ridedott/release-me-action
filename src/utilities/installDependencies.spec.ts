@@ -1,7 +1,6 @@
 import * as actionsExec from '@actions/exec';
 
-import { installDependencies } from './installDependencies';
-
+import { installDependencies } from './installDependencies.js';
 const execSpy = jest.spyOn(actionsExec, 'exec').mockImplementation();
 
 describe('installDependencies', (): void => {
@@ -22,10 +21,10 @@ describe('installDependencies', (): void => {
     });
 
     expect(execSpy.mock.calls[0][1]?.slice(1)).toMatchInlineSnapshot(`
-      Array [
-        "@semantic-release/git@^4.0.2",
-        "@semantic-release/test@^5.0.2",
-      ]
-    `);
+[
+  "@semantic-release/git@^4.0.2",
+  "@semantic-release/test@^5.0.2",
+]
+`);
   });
 });

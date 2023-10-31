@@ -1,8 +1,8 @@
 import { setFailed } from '@actions/core';
 import { Config, Options, Result } from 'semantic-release';
 
-import { getSetFailedErrorString } from './utilities/error';
-import { generatePlugins } from './utilities/generatePlugins';
+import { getSetFailedErrorString } from './utilities/error.js';
+import { generatePlugins } from './utilities/generatePlugins.js';
 import {
   processInputAdditionalPlugins,
   processInputCommitAssets,
@@ -13,15 +13,10 @@ import {
   processInputReleaseAssets,
   processInputReleaseBranches,
   processInputReleaseRules,
-} from './utilities/inputProcessors';
-import { installDependencies } from './utilities/installDependencies';
-import { reportResults } from './utilities/outputParsers';
-import { parseConfiguration } from './utilities/parseConfiguration';
-
-type SemanticRelease = (
-  options: Options,
-  environment?: Config,
-) => Promise<Result>;
+} from './utilities/inputProcessors.js';
+import { installDependencies } from './utilities/installDependencies.js';
+import { reportResults } from './utilities/outputParsers.js';
+import { parseConfiguration } from './utilities/parseConfiguration.js';
 
 export const release = async (
   overrideOptions?: Options,
@@ -31,9 +26,7 @@ export const release = async (
 
   await installDependencies(additionalPlugins);
 
-  const semanticRelease = (await import(
-    'semantic-release'
-  )) as unknown as SemanticRelease;
+  const semanticRelease = await import('semantic-release');
 
   const branches = processInputReleaseBranches();
   const configFile = processInputConfigFile();
@@ -52,7 +45,7 @@ export const release = async (
   };
 
   /* istanbul ignore next */
-  const result: Result = await semanticRelease(
+  const result: Result = await semanticRelease.default(
     {
       ...defaultOptions,
       ...(configFile === undefined
@@ -66,10 +59,12 @@ export const release = async (
   return result;
 };
 
-release()
-  .then(reportResults)
-  .catch((error: unknown): void => {
-    const finalErrorString = getSetFailedErrorString(error);
+try {
+  const result = await release();
 
-    setFailed(JSON.stringify(finalErrorString));
-  });
+  reportResults(result);
+} catch (error: unknown) {
+  const finalErrorString = getSetFailedErrorString(error);
+
+  setFailed(JSON.stringify(finalErrorString));
+}

@@ -1,7 +1,12 @@
 {
+  "files": [],
+  "include": ["src/**/*.ts"],
+  "exclude": ["src/**/*.spec.ts"],
   "compilerOptions": {
-    "rootDir": "."
+    "rootDir": "./src",
+    "outDir": "./lib",
+    "noEmit": false,
+    "types": ["node"]
   },
-  "extends": "./tsconfig.production.json",
-  "include": ["./**/*"]
+  "extends": "./tsconfig.json"
 }

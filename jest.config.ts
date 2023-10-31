@@ -15,9 +15,14 @@ const configuration: Config.InitialOptions = {
   },
   logHeapUsage: true,
   preset: 'ts-jest',
+  prettierPath: null,
   resetMocks: true,
   roots: ['<rootDir>/src', '<rootDir>/__mocks__'],
   testEnvironment: 'node',
+  transform: {
+    '^.+\\.ts?$': ['ts-jest', { tsconfig: './tsconfig.json' }],
+  },
+  transformIgnorePatterns: ['node_modules/(?!semantic-release/.*)'],
 };
 
 export default configuration;

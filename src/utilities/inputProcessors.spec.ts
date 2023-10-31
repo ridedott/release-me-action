@@ -10,8 +10,7 @@ import {
   processInputReleaseAssets,
   processInputReleaseBranches,
   processInputReleaseRules,
-} from './inputProcessors';
-
+} from './inputProcessors.js';
 const getInputSpy = jest.spyOn(actionsCore, 'getInput').mockImplementation();
 
 describe('processInputNodeModule', (): void => {
@@ -22,7 +21,7 @@ describe('processInputNodeModule', (): void => {
 
     const result = processInputNodeModule();
 
-    expect(result).toStrictEqual(true);
+    expect(result).toBe(true);
   });
 });
 
@@ -34,7 +33,7 @@ describe('processInputDisableGenerateChangelog', (): void => {
 
     const result = processInputDisableChangelog();
 
-    expect(result).toStrictEqual(true);
+    expect(result).toBe(true);
   });
 });
 
@@ -46,7 +45,7 @@ describe('processInputDryRun', (): void => {
 
     const result = processInputDryRun();
 
-    expect(result).toStrictEqual(true);
+    expect(result).toBe(true);
   });
 });
 
@@ -350,7 +349,7 @@ describe('processInputConfigFile', (): void => {
 
     const result = processInputConfigFile();
 
-    expect(result).toStrictEqual('./src.yaml');
+    expect(result).toBe('./src.yaml');
   });
 
   it('throws if the provided path is not a YAML file', (): void => {

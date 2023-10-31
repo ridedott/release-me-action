@@ -1,7 +1,6 @@
 import { promises as fs } from 'fs';
 
-import { parseConfiguration } from './parseConfiguration';
-
+import { parseConfiguration } from './parseConfiguration.js';
 const readFileSpy = jest.spyOn(fs, 'readFile');
 
 it('returns an object from a specified YAML file', async (): Promise<void> => {
@@ -12,7 +11,7 @@ it('returns an object from a specified YAML file', async (): Promise<void> => {
   const config = await parseConfiguration('./dir/config.yml', {});
 
   expect(config).toStrictEqual({ foo: true });
-  expect(readFileSpy.mock.calls[0][0]).toStrictEqual('./dir/config.yml');
+  expect(readFileSpy.mock.calls[0][0]).toBe('./dir/config.yml');
 });
 
 it('throws if the YAML file is not parsed to an object', async (): Promise<void> => {

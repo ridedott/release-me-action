@@ -1,7 +1,7 @@
 import { exec } from '@actions/exec';
 import { resolve as pathResolve } from 'path';
 
-import { AdditionalPluginsSpec } from './inputProcessors';
+import { AdditionalPluginsSpec } from './inputProcessors.js';
 
 export const installDependencies = async (
   additionalPlugins?: AdditionalPluginsSpec,

@@ -1,16 +1,15 @@
-/* eslint-disable immutable/no-mutation */
-/* eslint-disable unicorn/filename-case */
+/* eslint-disable functional/immutable-data */
 /* eslint-disable unicorn/prevent-abbreviations */
-import * as envCi from 'env-ci';
+import environmentCi from 'env-ci';
 
 module.exports = ({
   cwd,
   env,
 }: {
   cwd: string;
-  env: string;
+  env: { [key: string]: string };
 }): { [key: string]: unknown } => {
-  const { isCi, isPr, ...other } = envCi({ cwd, env });
+  const { isCi, ...other } = environmentCi({ cwd, env });
 
   return { isCi: false, isPr: false, ...other };
 };

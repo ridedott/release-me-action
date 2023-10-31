@@ -1,5 +1,5 @@
 import { promises as fs } from 'fs';
-import * as yaml from 'js-yaml';
+import yaml from 'js-yaml';
 import { Options } from 'semantic-release';
 
 /**
@@ -9,7 +9,7 @@ import { Options } from 'semantic-release';
 const parseYamlConfiguration = async (filePath: string): Promise<object> => {
   const file = await fs.readFile(filePath, 'utf8');
 
-  const config = yaml.load(file) as string | object | undefined;
+  const config = yaml.load(file) as object | string | undefined;
 
   if (typeof config !== 'object') {
     throw new Error('Invalid config file contents; not an object');
@@ -34,7 +34,7 @@ const parseJsConfiguration = async (
 
     // Not harmful: script runs in sandbox environment.
     /* eslint-disable-next-line no-eval */
-    const config = eval(file) as (object) => object;
+    const config = eval(file) as (object: unknown) => object;
 
     return config(defaultOptions);
   } catch (error: unknown) {
@@ -52,6 +52,7 @@ export const parseConfiguration = async (
   filePath: string,
   defaultOptions: Options,
 ): Promise<object> => {
+  // eslint-disable-next-line functional/immutable-data
   const extension = filePath.split('.').pop();
 
   switch (extension) {

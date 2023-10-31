@@ -1,6 +1,6 @@
-/* eslint-disable class-methods-use-this */
+ 
 
-import * as signale from 'signale';
+import signale from 'signale';
 
 class Signale extends signale.Signale {
   /* eslint-disable @typescript-eslint/naming-convention */

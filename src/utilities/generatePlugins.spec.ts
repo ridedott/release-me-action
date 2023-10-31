@@ -1,4 +1,4 @@
-import { generatePlugins } from './generatePlugins';
+import { generatePlugins } from './generatePlugins.js';
 
 describe('generatePlugins', (): void => {
   it('excludes the changelog plugin when called with the disableChangelog parameter set to true', (): void => {

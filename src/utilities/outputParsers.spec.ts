@@ -1,8 +1,7 @@
 import * as actionsCore from '@actions/core';
 import { Result } from 'semantic-release';
 
-import { reportResults } from './outputParsers';
-
+import { reportResults } from './outputParsers.js';
 const setOutputSpy = jest.spyOn(actionsCore, 'setOutput').mockImplementation();
 
 describe('reportResults', (): void => {
