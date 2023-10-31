@@ -3,8 +3,8 @@
 set -ex
 
 # Workaround https://github.com/zeit/ncc/issues/457.
-mv tsconfig.production.json tsconfig.temp.json
-mv tsconfig.json tsconfig.json
+mv tsconfig.json tsconfig.temp.json
+mv tsconfig.production.json tsconfig.json
 
 ncc build src/index.ts \
 --external @semantic-release/changelog \
