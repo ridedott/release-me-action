@@ -1,10 +1,18 @@
-import { promises as fs } from 'fs';
+import { jest } from '@jest/globals';
 
-import { parseConfiguration } from './parseConfiguration.js';
-const readFileSpy = jest.spyOn(fs, 'readFile');
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const readFileSpy = jest.fn() as jest.MockedFunction<any>;
+
+jest.unstable_mockModule('fs', (): unknown => ({
+  promises: {
+    readFile: readFileSpy,
+  },
+}));
 
 it('returns an object from a specified YAML file', async (): Promise<void> => {
   expect.assertions(2);
+
+  const { parseConfiguration } = await import('./parseConfiguration.js');
 
   readFileSpy.mockResolvedValue('{foo: true}');
 
@@ -16,6 +24,8 @@ it('returns an object from a specified YAML file', async (): Promise<void> => {
 
 it('throws if the YAML file is not parsed to an object', async (): Promise<void> => {
   expect.assertions(1);
+
+  const { parseConfiguration } = await import('./parseConfiguration.js');
 
   readFileSpy.mockResolvedValue('foo');
 
@@ -29,8 +39,10 @@ it('throws if the YAML file is not parsed to an object', async (): Promise<void>
 it('returns an object from a specified JS file', async (): Promise<void> => {
   expect.assertions(1);
 
+  const { parseConfiguration } = await import('./parseConfiguration.js');
+
   readFileSpy.mockResolvedValue(`
-module.exports = (defaultConfig) => ({
+export default (defaultConfig) => ({
   ...defaultConfig,
   foo: 'bar',
 });
@@ -47,6 +59,8 @@ module.exports = (defaultConfig) => ({
 
 it('throws if the JS module could not be imported', async (): Promise<void> => {
   expect.assertions(1);
+
+  const { parseConfiguration } = await import('./parseConfiguration.js');
 
   readFileSpy.mockResolvedValue('foo');
 

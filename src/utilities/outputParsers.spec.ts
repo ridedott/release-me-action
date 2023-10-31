@@ -1,12 +1,19 @@
-import * as actionsCore from '@actions/core';
+import { jest } from '@jest/globals';
 import { Result } from 'semantic-release';
 
-import { reportResults } from './outputParsers.js';
-const setOutputSpy = jest.spyOn(actionsCore, 'setOutput').mockImplementation();
+const setOutputSpy = jest.fn() as unknown as jest.SpiedFunction<
+  (_: never, packages: string[]) => unknown
+>;
+
+jest.unstable_mockModule('@actions/core', (): unknown => ({
+  setOutput: setOutputSpy,
+}));
 
 describe('reportResults', (): void => {
-  it('sets output based on nextRelease', (): void => {
+  it('sets output based on nextRelease', async (): Promise<void> => {
     expect.assertions(9);
+
+    const { reportResults } = await import('./outputParsers.js');
 
     const input: Result = {
       commits: [],
@@ -50,8 +57,10 @@ describe('reportResults', (): void => {
     expect(setOutputSpy).toHaveBeenCalledWith('git-tag', 'v1.1.1');
   });
 
-  it('sets prerelease and meta outputs if they are included in the version', (): void => {
+  it('sets prerelease and meta outputs if they are included in the version', async (): Promise<void> => {
     expect.assertions(3);
+
+    const { reportResults } = await import('./outputParsers.js');
 
     const input: Result = {
       commits: [],
@@ -81,8 +90,10 @@ describe('reportResults', (): void => {
     expect(setOutputSpy).toHaveBeenCalledWith('build', 'build');
   });
 
-  it('throws an error if there is no released version', (): void => {
+  it('throws an error if there is no released version', async (): Promise<void> => {
     expect.assertions(2);
+
+    const { reportResults } = await import('./outputParsers.js');
 
     reportResults(false);
 
