@@ -1,12 +1,26 @@
 {
-  "files": [],
-  "include": ["src/**/*.ts"],
-  "exclude": ["src/**/*.spec.ts"],
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "files": ["./src/index.ts"],
+  "exclude": ["node_modules"],
+  "include": ["./jest.config.ts", "./src/**/*.ts", "./__mocks__/**/*.ts"],
   "compilerOptions": {
-    "rootDir": "./src",
-    "outDir": "./lib",
-    "noEmit": false,
-    "types": ["node"]
+    "rootDir": ".",
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "target": "es2022",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "noEmit": true,
+    "types": ["node", "jest"]
   },
-  "extends": "./tsconfig.json"
+  "ts-node": {
+    "esm": true
+  }
 }
