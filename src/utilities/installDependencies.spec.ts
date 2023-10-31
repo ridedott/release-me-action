@@ -1,7 +1,14 @@
-import * as actionsExec from '@actions/exec';
+import { jest } from '@jest/globals';
 
 import { installDependencies } from './installDependencies.js';
-const execSpy = jest.spyOn(actionsExec, 'exec').mockImplementation();
+
+const execSpy = jest.fn() as unknown as jest.SpiedFunction<
+  typeof import('@actions/exec').exec
+>;
+
+jest.unstable_mockModule('@actions/exec', (): unknown => ({
+  exec: execSpy,
+}));
 
 describe('installDependencies', (): void => {
   it('executes the install-dependencies script', async (): Promise<void> => {

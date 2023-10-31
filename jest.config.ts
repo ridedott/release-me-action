@@ -14,6 +14,7 @@ const configuration: Config.InitialOptions = {
     },
   },
   extensionsToTreatAsEsm: ['.ts'],
+  injectGlobals: true,
   logHeapUsage: true,
   moduleNameMapper: {
     '^(\\.{1,2}/.*)\\.js$': '$1',
