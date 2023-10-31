@@ -14,7 +14,7 @@ describe('processInputNodeModule', (): void => {
 
     const { processInputNodeModule } = await import('./inputProcessors.js');
 
-    getInputSpy.mockReturnValue('true');
+    getInputSpy.mockReturnValueOnce('true');
 
     const result = processInputNodeModule();
 
@@ -30,7 +30,7 @@ describe('processInputDisableGenerateChangelog', (): void => {
       './inputProcessors.js'
     );
 
-    getInputSpy.mockReturnValue('true');
+    getInputSpy.mockReturnValueOnce('true');
 
     const result = processInputDisableChangelog();
 
@@ -44,7 +44,7 @@ describe('processInputDryRun', (): void => {
 
     const { processInputDryRun } = await import('./inputProcessors.js');
 
-    getInputSpy.mockReturnValue('true');
+    getInputSpy.mockReturnValueOnce('true');
 
     const result = processInputDryRun();
 
@@ -60,7 +60,7 @@ describe('processInputReleaseBranches', (): void => {
       './inputProcessors.js'
     );
 
-    getInputSpy.mockReturnValue('test');
+    getInputSpy.mockReturnValueOnce('test');
 
     expect(processInputReleaseBranches).toThrow(
       'Invalid JSON string for input parameter release-branches.',
@@ -98,7 +98,7 @@ describe('processInputReleaseBranches', (): void => {
         './inputProcessors.js'
       );
 
-      getInputSpy.mockReturnValue(value);
+      getInputSpy.mockReturnValueOnce(value);
 
       try {
         processInputReleaseBranches();
@@ -115,7 +115,7 @@ describe('processInputReleaseBranches', (): void => {
       './inputProcessors.js'
     );
 
-    getInputSpy.mockReturnValue('');
+    getInputSpy.mockReturnValueOnce('');
 
     const result = processInputReleaseBranches();
 
@@ -128,7 +128,7 @@ describe('processInputReleaseBranches', (): void => {
     const { processInputReleaseBranches } = await import(
       './inputProcessors.js'
     );
-    getInputSpy.mockReturnValue(
+    getInputSpy.mockReturnValueOnce(
       JSON.stringify([
         '+([0-9])?(.{+([0-9]),x}).x',
         'master',
@@ -354,7 +354,7 @@ describe('processInputCommitAssets', (): void => {
 
     const { processInputCommitAssets } = await import('./inputProcessors.js');
 
-    getInputSpy.mockReturnValue(`
+    getInputSpy.mockReturnValueOnce(`
     ./src
     `);
 
@@ -370,7 +370,7 @@ describe('processInputReleaseAssets', (): void => {
 
     const { processInputReleaseAssets } = await import('./inputProcessors.js');
 
-    getInputSpy.mockReturnValue(`
+    getInputSpy.mockReturnValueOnce(`
     ./src
     `);
 
@@ -381,12 +381,24 @@ describe('processInputReleaseAssets', (): void => {
 });
 
 describe('processInputConfigFile', (): void => {
+  it('returns undefined when the input is an empty string', async (): Promise<void> => {
+    expect.assertions(1);
+
+    const { processInputConfigFile } = await import('./inputProcessors.js');
+
+    getInputSpy.mockReturnValueOnce('');
+
+    const result = processInputConfigFile();
+
+    expect(result).toBeUndefined();
+  });
+
   it('returns a valid path relative to the project root', async (): Promise<void> => {
     expect.assertions(1);
 
     const { processInputConfigFile } = await import('./inputProcessors.js');
 
-    getInputSpy.mockReturnValue('./src.yaml');
+    getInputSpy.mockReturnValueOnce('./src.yaml');
 
     const result = processInputConfigFile();
 
@@ -398,7 +410,7 @@ describe('processInputConfigFile', (): void => {
 
     const { processInputConfigFile } = await import('./inputProcessors.js');
 
-    getInputSpy.mockReturnValue('./src.json');
+    getInputSpy.mockReturnValueOnce('./src.json');
 
     try {
       processInputConfigFile();
@@ -409,6 +421,20 @@ describe('processInputConfigFile', (): void => {
 });
 
 describe('processInputAdditionalPlugins', (): void => {
+  it('returns undefined if the input an empty string', async (): Promise<void> => {
+    expect.assertions(1);
+
+    const { processInputAdditionalPlugins } = await import(
+      './inputProcessors.js'
+    );
+
+    getInputSpy.mockReturnValueOnce('');
+
+    const result = processInputAdditionalPlugins();
+
+    expect(result).toBeUndefined();
+  });
+
   it('returns an object in package.json format', async (): Promise<void> => {
     expect.assertions(1);
 
@@ -416,7 +442,7 @@ describe('processInputAdditionalPlugins', (): void => {
       './inputProcessors.js'
     );
 
-    getInputSpy.mockReturnValue(
+    getInputSpy.mockReturnValueOnce(
       '{"@google/semantic-release-replace-plugin":"^4.0.2"}',
     );
 
@@ -434,7 +460,7 @@ describe('processInputAdditionalPlugins', (): void => {
       './inputProcessors.js'
     );
 
-    getInputSpy.mockReturnValue('foo');
+    getInputSpy.mockReturnValueOnce('foo');
 
     try {
       processInputAdditionalPlugins();
@@ -450,7 +476,7 @@ describe('processInputAdditionalPlugins', (): void => {
       './inputProcessors.js'
     );
 
-    getInputSpy.mockReturnValue('{"foo":1}');
+    getInputSpy.mockReturnValueOnce('{"foo":1}');
 
     try {
       processInputAdditionalPlugins();
