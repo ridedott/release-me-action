@@ -27,6 +27,7 @@ const makeCommit = (
     type: 'random',
     ...overrides,
   });
+
 describe('transform', (): void => {
   it.each([
     { commit: makeCommit({ type: 'build' }), expectedType: 'Build System' },
