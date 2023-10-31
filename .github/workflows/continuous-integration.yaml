@@ -81,8 +81,8 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
       - name: Test
         run: npm run test:ci
-      - name: Run ls in coverage directory
-        run: ls -la ./coverage
+      - name: Run ls in directory
+        run: ls -la .
       - name: Upload coverage to Coveralls
         uses: coverallsapp/github-action@master
         with:
