@@ -41,8 +41,11 @@ it('returns an object from a specified JS file', async (): Promise<void> => {
 
   const { parseConfiguration } = await import('./parseConfiguration.js');
 
+  // eslint-disable-next-line functional/immutable-data
+  global.module = {} as unknown as NodeModule;
+
   readFileSpy.mockResolvedValue(`
-export default (defaultConfig) => ({
+module.exports = (defaultConfig) => ({
   ...defaultConfig,
   foo: 'bar',
 });

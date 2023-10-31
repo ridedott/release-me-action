@@ -38,8 +38,6 @@ const parseJsConfiguration = async (
 
     return config(defaultOptions);
   } catch (error: unknown) {
-    console.error(error);
-
     throw new Error(`Could not import config file ${filePath}`);
   }
 };
