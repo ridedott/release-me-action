@@ -1,6 +1,5 @@
 {
   "extends": "@tsconfig/node20/tsconfig.json",
-  "files": ["./src/index.ts"],
   "exclude": ["node_modules"],
   "include": ["./jest.config.ts", "./src/**/*.ts", "./__mocks__/**/*.ts"],
   "compilerOptions": {

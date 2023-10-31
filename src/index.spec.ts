@@ -4,6 +4,7 @@ import * as actionsExec from '@actions/exec';
 import { release } from './index.js';
 import { gitCommits, gitPush, gitRepo } from './utilities/git.js';
 import { InputParameters } from './utilities/inputProcessors.js';
+
 const execSpy = jest.spyOn(actionsExec, 'exec');
 const getInputSpy = jest.spyOn(actionsCore, 'getInput');
 

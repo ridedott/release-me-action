@@ -13,16 +13,15 @@ const configuration: Config.InitialOptions = {
       statements: 100,
     },
   },
+  extensionsToTreatAsEsm: ['.ts'],
   logHeapUsage: true,
-  preset: 'ts-jest',
-  prettierPath: null,
+  moduleNameMapper: {
+    '^(\\.{1,2}/.*)\\.js$': '$1',
+  },
+  preset: 'ts-jest/presets/default-esm',
   resetMocks: true,
   roots: ['<rootDir>/src', '<rootDir>/__mocks__'],
   testEnvironment: 'node',
-  transform: {
-    '^.+\\.ts?$': ['ts-jest', { tsconfig: './tsconfig.json' }],
-  },
-  transformIgnorePatterns: ['node_modules/(?!semantic-release/.*)'],
 };
 
 export default configuration;

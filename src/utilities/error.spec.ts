@@ -1,4 +1,5 @@
 import { getSetFailedErrorString } from './error.js';
+
 interface TestCase {
   expected: string;
   messageOrError: unknown;

@@ -11,6 +11,7 @@ import {
   processInputReleaseBranches,
   processInputReleaseRules,
 } from './inputProcessors.js';
+
 const getInputSpy = jest.spyOn(actionsCore, 'getInput').mockImplementation();
 
 describe('processInputNodeModule', (): void => {
