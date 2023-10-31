@@ -9,7 +9,7 @@ jest.unstable_mockModule('@actions/core', (): unknown => ({
 }));
 
 describe('processInputNodeModule', (): void => {
-  it("reurns true when the value of the npm-package input is set to 'true'", async (): Promise<void> => {
+  it("returns true when the value of the npm-package input is set to 'true'", async (): Promise<void> => {
     expect.assertions(1);
 
     const { processInputNodeModule } = await import('./inputProcessors.js');
