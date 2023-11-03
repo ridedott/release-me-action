@@ -28,7 +28,6 @@ export const gitShallowClone = async (
   const cloneWorkingDirectory = directory();
 
   const gitArguments = [
-    'clone',
     '--no-hardlinks',
     '--no-tags',
     '--depth',
@@ -36,7 +35,7 @@ export const gitShallowClone = async (
     repositoryUrl,
     cloneWorkingDirectory,
   ];
-  await $({ cwd: cloneWorkingDirectory })`git ${gitArguments}`;
+  await $({ cwd: cloneWorkingDirectory })`git clone ${gitArguments}`;
 
   return cloneWorkingDirectory;
 };
@@ -49,15 +48,9 @@ export const gitCommits = async (
   execaOptions: Options,
 ): Promise<void> => {
   for (const message of messages) {
-    const gitArguments = [
-      'commit',
-      '-m',
-      message,
-      '--allow-empty',
-      '--no-gpg-sign',
-    ];
+    const gitArguments = ['-m', message, '--allow-empty', '--no-gpg-sign'];
 
-    await $(execaOptions)`git ${gitArguments}`;
+    await $(execaOptions)`git commit ${gitArguments}`;
   }
 };
 
@@ -114,6 +107,6 @@ export const gitPush = async (
   branch: string,
   execaOptions: Options,
 ): Promise<void> => {
-  const gitPushArguments = ['push', '--tags', repositoryUrl, `HEAD:${branch}`];
+  const gitPushArguments = ['--tags', repositoryUrl, `HEAD:${branch}`];
   await $(execaOptions)`git push ${gitPushArguments}`;
 };

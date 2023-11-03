@@ -31,9 +31,9 @@ describe('git utility', (): void => {
       const { remoteRepositoryUrl } = await initGitRemote();
       const cloneWorkingDirectory = await gitShallowClone(remoteRepositoryUrl);
 
-      const isGitRepository = $({
+      const { stdout: isGitRepository } = await $({
         cwd: cloneWorkingDirectory,
-      })`git rev-parse --git-dir`.stdout;
+      })`git rev-parse --git-dir`;
 
       expect(isGitRepository).toBe('.git');
     });
@@ -128,20 +128,19 @@ describe('git utility', (): void => {
       const { cwd: remoteWorkingDirectory, remoteRepositoryUrl } =
         await initGitRemote();
       const cloneWorkingDirectory = await gitShallowClone(remoteRepositoryUrl);
+      const options = { cwd: cloneWorkingDirectory };
 
-      const $$ = $({ cwd: cloneWorkingDirectory });
+      const $$ = $(options);
 
       await $$`git config user.email test@ridedott.com`;
       await $$`git config user.name test@ridedott.com`;
       await $$`git config commit.gpgsign false`;
-      await gitCommits(['feat: initial commit'], {
-        cwd: cloneWorkingDirectory,
-      });
-      await gitPush('origin', 'master', { cwd: cloneWorkingDirectory });
+      await gitCommits(['feat: initial commit'], options);
+      await gitPush('origin', 'master', options);
 
-      const commitMessage = (
-        await $({ cwd: remoteWorkingDirectory })`git log -1 --pretty=%s`
-      ).stdout;
+      const { stdout: commitMessage } = await $({
+        cwd: remoteWorkingDirectory,
+      })`git log -1 --pretty=%s`;
 
       expect(commitMessage).toBe('feat: initial commit');
     });
