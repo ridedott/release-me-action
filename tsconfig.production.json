@@ -8,5 +8,5 @@
     "noEmit": false,
     "types": ["node"]
   },
-  "extends": "./tsconfig.json"
+  "extends": "./tsconfig.common.json"
 }
