@@ -125,10 +125,11 @@ describe('git utility', (): void => {
     it('pushes to the remote repository from the git repository present in the `cwd` option', async (): Promise<void> => {
       expect.assertions(1);
 
+      await $`git config --global init.defaultBranch master`;
+
       const { cwd: remoteWorkingDirectory, remoteRepositoryUrl } =
         await initGitRemote();
       const cloneWorkingDirectory = await gitShallowClone(remoteRepositoryUrl);
-
       const options = { cwd: cloneWorkingDirectory };
       const $$ = $(options);
 
@@ -136,7 +137,7 @@ describe('git utility', (): void => {
       await $$`git config user.name test@ridedott.com`;
       await $$`git config commit.gpgsign false`;
       await gitCommits(['feat: initial commit'], options);
-      await gitPush('origin', 'main', options);
+      await gitPush('origin', 'master', options);
 
       const { stdout: commitMessage } = await $({
         cwd: remoteWorkingDirectory,
