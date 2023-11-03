@@ -128,15 +128,15 @@ describe('git utility', (): void => {
       const { cwd: remoteWorkingDirectory, remoteRepositoryUrl } =
         await initGitRemote();
       const cloneWorkingDirectory = await gitShallowClone(remoteRepositoryUrl);
-      const options = { cwd: cloneWorkingDirectory };
 
+      const options = { cwd: cloneWorkingDirectory };
       const $$ = $(options);
 
       await $$`git config user.email test@ridedott.com`;
       await $$`git config user.name test@ridedott.com`;
       await $$`git config commit.gpgsign false`;
       await gitCommits(['feat: initial commit'], options);
-      await gitPush('origin', 'master', options);
+      await gitPush('origin', 'main', options);
 
       const { stdout: commitMessage } = await $({
         cwd: remoteWorkingDirectory,
