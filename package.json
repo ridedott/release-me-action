@@ -31,7 +31,7 @@
     "@types/node": "^20.9.0",
     "@types/semantic-release": "^17.2.3",
     "commitizen": "^4.3.0",
-    "cspell": "^7.3.8",
+    "cspell": "^8.0.0",
     "eslint": "^7.32.0",
     "execa": "^5.1.1",
     "file-url": "^3.0.0",
