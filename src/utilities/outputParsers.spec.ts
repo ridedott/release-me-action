@@ -1,5 +1,5 @@
 import { jest } from '@jest/globals';
-import { Result } from 'semantic-release';
+import type { Result } from 'semantic-release';
 
 const setOutputSpy = jest.fn() as unknown as jest.SpiedFunction<
   (_: never, packages: string[]) => unknown

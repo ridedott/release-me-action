@@ -1,6 +1,6 @@
 import { getInput } from '@actions/core';
 import joi from 'joi';
-import { BranchSpec } from 'semantic-release';
+import type { BranchSpec } from 'semantic-release';
 
 const MATCH_CONFIG_FILE_EXTENSION_REGEXP = /\.(?:ya?ml|js)$/u;
 

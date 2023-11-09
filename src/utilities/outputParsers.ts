@@ -1,5 +1,5 @@
 import { setOutput } from '@actions/core';
-import { Result } from 'semantic-release';
+import type { Result } from 'semantic-release';
 
 enum OutputParameters {
   Build = 'build',

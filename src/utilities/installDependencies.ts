@@ -2,7 +2,7 @@ import { exec } from '@actions/exec';
 import { resolve as pathResolve } from 'path';
 import * as url from 'url';
 
-import { AdditionalPluginsSpec } from './inputProcessors.js';
+import type { AdditionalPluginsSpec } from './inputProcessors.js';
 
 // eslint-disable-next-line max-len
 // eslint-disable-next-line @typescript-eslint/naming-convention, no-underscore-dangle

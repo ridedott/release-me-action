@@ -1,4 +1,4 @@
-import { Commit } from 'conventional-commits-parser';
+import type { Commit } from 'conventional-commits-parser';
 
 import { transform } from './transform.js';
 

@@ -1,7 +1,9 @@
+/* eslint-disable no-duplicate-imports */
 /* eslint-disable no-await-in-loop */
-import { $, Options } from "execa";
-import fileUrl from "file-url";
-import { temporaryDirectory } from "tempy";
+import type { Options } from 'execa';
+import { $ } from 'execa';
+import fileUrl from 'file-url';
+import { temporaryDirectory } from 'tempy';
 
 /**
  * Initialize local `remote` git repository in a temporary temporaryDirectory.
@@ -28,9 +30,9 @@ export const gitShallowClone = async (
   const cloneWorkingDirectory = temporaryDirectory();
 
   const gitArguments = [
-    "--no-hardlinks",
-    "--no-tags",
-    "--depth",
+    '--no-hardlinks',
+    '--no-tags',
+    '--depth',
     depth.toString(),
     repositoryUrl,
     cloneWorkingDirectory,
@@ -48,7 +50,7 @@ export const gitCommits = async (
   execaOptions: Options,
 ): Promise<void> => {
   for (const message of messages) {
-    const gitArguments = ["-m", message, "--allow-empty", "--no-gpg-sign"];
+    const gitArguments = ['-m', message, '--allow-empty', '--no-gpg-sign'];
 
     await $(execaOptions)`git commit ${gitArguments}`;
   }
@@ -62,7 +64,7 @@ export const gitTagVersion = async (
   tagName: string,
   execaOptions: Options,
 ): Promise<void> => {
-  const gitArguments = ["tag", tagName];
+  const gitArguments = ['tag', tagName];
   await $(execaOptions)`git ${gitArguments}`;
 };
 
@@ -79,20 +81,20 @@ export const gitRepo = async (): Promise<{
   const cloneWorkingDirectory = await gitShallowClone(remoteRepositoryUrl);
   const execaOptions = { cwd: cloneWorkingDirectory };
 
-  const gitArgumentsEmail = ["config", "user.email", "test@ridedott.com"];
+  const gitArgumentsEmail = ['config', 'user.email', 'test@ridedott.com'];
   await $(execaOptions)`git ${gitArgumentsEmail}`;
 
-  const gitArgumentsName = ["config", "user.name", "test@ridedott.com"];
+  const gitArgumentsName = ['config', 'user.name', 'test@ridedott.com'];
   await $(execaOptions)`git ${gitArgumentsName}`;
 
-  const gitArgumentsGpgSign = ["config", "commit.gpgsign", "false"];
+  const gitArgumentsGpgSign = ['config', 'commit.gpgsign', 'false'];
   await $(execaOptions)`git ${gitArgumentsGpgSign}`;
   await $(execaOptions)`npm init -y`;
   await $(execaOptions)`git add --all`;
-  await gitCommits(["feat: initial commit"], { cwd: cloneWorkingDirectory });
-  await gitTagVersion("v1.0.0", { cwd: cloneWorkingDirectory });
+  await gitCommits(['feat: initial commit'], { cwd: cloneWorkingDirectory });
+  await gitTagVersion('v1.0.0', { cwd: cloneWorkingDirectory });
 
-  const gitArgumentsPush = ["push", remoteRepositoryUrl];
+  const gitArgumentsPush = ['push', remoteRepositoryUrl];
   await $(execaOptions)`git ${gitArgumentsPush}`;
 
   return { cwd: cloneWorkingDirectory, repositoryUrl: remoteRepositoryUrl };
@@ -107,6 +109,6 @@ export const gitPush = async (
   branch: string,
   execaOptions: Options,
 ): Promise<void> => {
-  const gitPushArguments = ["--tags", repositoryUrl, `HEAD:${branch}`];
+  const gitPushArguments = ['--tags', repositoryUrl, `HEAD:${branch}`];
   await $(execaOptions)`git push ${gitPushArguments}`;
 };

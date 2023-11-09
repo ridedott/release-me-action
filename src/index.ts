@@ -1,5 +1,5 @@
 import { setFailed } from '@actions/core';
-import { Config, Options, Result } from 'semantic-release';
+import type { Config, Options, Result } from 'semantic-release';
 
 import { getSetFailedErrorString } from './utilities/error.js';
 import { generatePlugins } from './utilities/generatePlugins.js';

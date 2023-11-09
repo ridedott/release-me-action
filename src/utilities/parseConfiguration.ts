@@ -1,6 +1,6 @@
 import { promises as fs } from 'fs';
 import yaml from 'js-yaml';
-import { Options } from 'semantic-release';
+import type { Options } from 'semantic-release';
 
 /**
  * Read and evaluates a yaml file at the given path and returns a
