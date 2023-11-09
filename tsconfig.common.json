@@ -18,8 +18,7 @@
     "strict": true,
     "strictNullChecks": true,
     "target": "es2020",
-    "types": ["node", "jest"],
-    "verbatimModuleSyntax": true
+    "types": ["node", "jest"]
   },
   "ts-node": {
     "esm": true

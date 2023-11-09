@@ -3,10 +3,11 @@
   "include": ["src/**/*.ts"],
   "exclude": ["src/**/*.spec.ts"],
   "compilerOptions": {
-    "rootDir": "./src",
-    "outDir": "./lib",
     "noEmit": false,
-    "types": ["node"]
+    "outDir": "./lib",
+    "rootDir": "./src",
+    "types": ["node"],
+    "verbatimModuleSyntax": true
   },
   "extends": "./tsconfig.common.json"
 }
