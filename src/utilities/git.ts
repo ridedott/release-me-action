@@ -76,8 +76,6 @@ export const gitRepo = async (): Promise<{
   cwd: string;
   repositoryUrl: string;
 }> => {
-  await $`git config --global init.defaultBranch master`;
-
   const { remoteRepositoryUrl } = await initGitRemote();
 
   const cloneWorkingDirectory = await gitShallowClone(remoteRepositoryUrl);

@@ -1,4 +1,5 @@
 import { jest } from '@jest/globals';
+import { $ } from 'execa';
 
 import { gitCommits, gitPush, gitRepo } from './utilities/git.js';
 
@@ -33,7 +34,9 @@ const optionsOverride = {
   verifyRelease: (jest.fn() as JestSpyBooleanPromise).mockResolvedValue(true),
 };
 
-beforeEach((): void => {
+beforeEach(async (): Promise<void> => {
+  await $`git config --global init.defaultBranch master`;
+
   execSpy.mockImplementation(async (): Promise<number> => 0);
   getInputSpy.mockImplementation((name: string): string => {
     if (name === InputParameters.CommitAssets) {
@@ -73,7 +76,7 @@ beforeEach((): void => {
 
 describe('release', (): void => {
   it('"feat" makes a minor release using the default release rules', async (): Promise<void> => {
-    expect.assertions(2);
+    expect.assertions(3);
 
     // Generate git
     const { cwd } = await gitRepo();
@@ -87,6 +90,8 @@ describe('release', (): void => {
     const { release } = await import('./release.js');
     const result = await release(optionsOverride, configurationOverride);
 
+    expect(result).not.toBe(false);
+
     if (result !== false) {
       expect(result.nextRelease.type).toBe('minor');
       expect(result.nextRelease.version).toBe('1.1.0');
@@ -94,7 +99,7 @@ describe('release', (): void => {
   });
 
   it('"feat" with a BREAKING CHANGE makes a major release using the default release rules', async (): Promise<void> => {
-    expect.assertions(2);
+    expect.assertions(3);
 
     // Generate git
     const { cwd } = await gitRepo();
@@ -118,7 +123,7 @@ describe('release', (): void => {
   });
 
   it('"fix" makes a patch release using the default release rules', async (): Promise<void> => {
-    expect.assertions(2);
+    expect.assertions(3);
 
     // Generate git
     const { cwd } = await gitRepo();
@@ -132,6 +137,8 @@ describe('release', (): void => {
     const { release } = await import('./release.js');
     const result = await release(optionsOverride, configurationOverride);
 
+    expect(result).not.toBe(false);
+
     if (result !== false) {
       expect(result.nextRelease.type).toBe('patch');
       expect(result.nextRelease.version).toBe('1.0.1');
@@ -139,7 +146,7 @@ describe('release', (): void => {
   });
 
   it('"perf" makes a patch release using the default release rules', async (): Promise<void> => {
-    expect.assertions(2);
+    expect.assertions(3);
 
     // Generate git
     const { cwd } = await gitRepo();
@@ -153,6 +160,8 @@ describe('release', (): void => {
     const { release } = await import('./release.js');
     const result = await release(optionsOverride, configurationOverride);
 
+    expect(result).not.toBe(false);
+
     if (result !== false) {
       expect(result.nextRelease.type).toBe('patch');
       expect(result.nextRelease.version).toBe('1.0.1');
@@ -160,7 +169,7 @@ describe('release', (): void => {
   });
 
   it('"build" makes a patch release using the default release rules', async (): Promise<void> => {
-    expect.assertions(2);
+    expect.assertions(3);
 
     // Generate git
     const { cwd } = await gitRepo();
@@ -174,6 +183,8 @@ describe('release', (): void => {
     const { release } = await import('./release.js');
     const result = await release(optionsOverride, configurationOverride);
 
+    expect(result).not.toBe(false);
+
     if (result !== false) {
       expect(result.nextRelease.type).toBe('patch');
       expect(result.nextRelease.version).toBe('1.0.1');
@@ -181,7 +192,7 @@ describe('release', (): void => {
   });
 
   it('"ci" makes a patch release using the default release rules', async (): Promise<void> => {
-    expect.assertions(2);
+    expect.assertions(3);
 
     // Generate git
     const { cwd } = await gitRepo();
@@ -195,6 +206,8 @@ describe('release', (): void => {
     const { release } = await import('./release.js');
     const result = await release(optionsOverride, configurationOverride);
 
+    expect(result).not.toBe(false);
+
     if (result !== false) {
       expect(result.nextRelease.type).toBe('patch');
       expect(result.nextRelease.version).toBe('1.0.1');
@@ -202,7 +215,7 @@ describe('release', (): void => {
   });
 
   it('"docs" makes a patch release using the default release rules', async (): Promise<void> => {
-    expect.assertions(2);
+    expect.assertions(3);
 
     // Generate git
     const { cwd } = await gitRepo();
@@ -216,6 +229,8 @@ describe('release', (): void => {
     const { release } = await import('./release.js');
     const result = await release(optionsOverride, configurationOverride);
 
+    expect(result).not.toBe(false);
+
     if (result !== false) {
       expect(result.nextRelease.type).toBe('patch');
       expect(result.nextRelease.version).toBe('1.0.1');
@@ -223,7 +238,7 @@ describe('release', (): void => {
   });
 
   it('"improvement" makes a patch release using the default release rules', async (): Promise<void> => {
-    expect.assertions(2);
+    expect.assertions(3);
 
     // Generate git
     const { cwd } = await gitRepo();
@@ -237,6 +252,8 @@ describe('release', (): void => {
     const { release } = await import('./release.js');
     const result = await release(optionsOverride, configurationOverride);
 
+    expect(result).not.toBe(false);
+
     if (result !== false) {
       expect(result.nextRelease.type).toBe('patch');
       expect(result.nextRelease.version).toBe('1.0.1');
@@ -244,7 +261,7 @@ describe('release', (): void => {
   });
 
   it('"refactor" makes a patch release using the default release rules', async (): Promise<void> => {
-    expect.assertions(2);
+    expect.assertions(3);
 
     // Generate git
     const { cwd } = await gitRepo();
@@ -257,6 +274,8 @@ describe('release', (): void => {
 
     const { release } = await import('./release.js');
     const result = await release(optionsOverride, configurationOverride);
+
+    expect(result).not.toBe(false);
 
     if (result !== false) {
       expect(result.nextRelease.type).toBe('patch');
