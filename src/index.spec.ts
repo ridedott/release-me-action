@@ -2,7 +2,7 @@ import { jest } from '@jest/globals';
 
 import { gitCommits, gitPush, gitRepo } from './utilities/git.js';
 
-jest.setTimeout(15000);
+jest.setTimeout(15_000);
 
 const setFailedSpy = jest.fn();
 const execSpy = jest.fn() as unknown as jest.SpiedFunction<
