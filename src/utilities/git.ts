@@ -76,6 +76,8 @@ export const gitRepo = async (): Promise<{
   cwd: string;
   repositoryUrl: string;
 }> => {
+  await $`git config --global init.defaultBranch master`;
+
   const { remoteRepositoryUrl } = await initGitRemote();
 
   const cloneWorkingDirectory = await gitShallowClone(remoteRepositoryUrl);
@@ -84,7 +86,6 @@ export const gitRepo = async (): Promise<{
   await $(execaOptions)`git config user.email test@ridedott.com`;
   await $(execaOptions)`git config user.name test@ridedott.com`;
   await $(execaOptions)`git config commit.gpgsign false`;
-  await $(execaOptions)`git config init.defaultBranch master`;
 
   await $(execaOptions)`npm init -y`;
   await $(execaOptions)`git add --all`;
