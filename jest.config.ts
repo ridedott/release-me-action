@@ -20,6 +20,7 @@ const configuration: Config.InitialOptions = {
     '^(\\.{1,2}/.*)\\.js$': '$1',
   },
   preset: 'ts-jest/presets/default-esm',
+  prettierPath: null,
   resetMocks: true,
   roots: ['<rootDir>/src', '<rootDir>/__mocks__'],
   testEnvironment: 'node',

@@ -1,0 +1,36 @@
+{
+  "configurations": [
+    {
+      "args": ["--runInBand", "${relativeFile}"],
+      "console": "integratedTerminal",
+      "env": {
+        "NODE_OPTIONS": "--enable-source-maps --experimental-vm-modules"
+      },
+      "internalConsoleOptions": "neverOpen",
+      "name": "test:current",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "request": "launch",
+      "runtimeVersion": "20",
+      "type": "node",
+      "windows": {
+        "program": "${workspaceFolder}/node_modules/jest/bin/jest"
+      }
+    },
+    {
+      "args": ["--runInBand", "${relativeFile}", "--t", "${selectedText}"],
+      "console": "integratedTerminal",
+      "env": {
+        "NODE_OPTIONS": "--enable-source-maps --experimental-vm-modules"
+      },
+      "internalConsoleOptions": "neverOpen",
+      "name": "test:current:selected",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "request": "launch",
+      "runtimeVersion": "20",
+      "type": "node",
+      "windows": {
+        "program": "${workspaceFolder}/node_modules/jest/bin/jest"
+      }
+    }
+  ]
+}

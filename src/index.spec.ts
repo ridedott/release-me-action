@@ -2,7 +2,12 @@ import { jest } from '@jest/globals';
 
 import { gitCommits, gitPush, gitRepo } from './utilities/git.js';
 
-const execSpy = jest.fn();
+jest.setTimeout(15000);
+
+const setFailedSpy = jest.fn();
+const execSpy = jest.fn() as unknown as jest.SpiedFunction<
+  (typeof import('@actions/exec'))['exec']
+>;
 
 const getInputSpy = jest.fn() as unknown as jest.SpiedFunction<
   (name: string) => string
@@ -10,7 +15,7 @@ const getInputSpy = jest.fn() as unknown as jest.SpiedFunction<
 
 jest.unstable_mockModule('@actions/core', (): unknown => ({
   getInput: getInputSpy,
-  setFailed: jest.fn(),
+  setFailed: setFailedSpy,
   setOutput: jest.fn(),
 }));
 
@@ -32,51 +37,65 @@ const optionsOverride = {
   verifyRelease: (jest.fn() as JestSpyBooleanPromise).mockResolvedValue(true),
 };
 
-describe('release', (): void => {
-  // eslint-disable-next-line @typescript-eslint/init-declarations
-  let release: typeof import('./index.js').release;
+beforeEach((): void => {
+  execSpy.mockImplementation(async (): Promise<number> => 0);
+  getInputSpy.mockImplementation((name: string): string => {
+    if (name === InputParameters.CommitAssets) {
+      return './src';
+    }
 
-  beforeEach(async (): Promise<void> => {
-    const indexModule = await import('./index.js');
+    if (name === InputParameters.DryRun) {
+      return 'true';
+    }
 
-    // eslint-disable-next-line @typescript-eslint/prefer-destructuring
-    release = indexModule.release;
+    if (name === InputParameters.NodeModule) {
+      return 'true';
+    }
 
-    execSpy.mockImplementation((): void => undefined);
-    getInputSpy.mockImplementation((name: string): string => {
-      if (name === InputParameters.CommitAssets) {
-        return './src';
-      }
+    if (name === InputParameters.ReleaseAssets) {
+      return './src';
+    }
 
-      if (name === InputParameters.DryRun) {
-        return 'true';
-      }
+    if (name === InputParameters.ReleaseBranches) {
+      return JSON.stringify([
+        '+([0-9])?(.{+([0-9]),x}).x',
+        'master',
+        'next',
+        'next-major',
+        { name: 'beta', prerelease: 'beta' },
+        { name: 'alpha', prerelease: 'alpha' },
+      ]);
+    }
 
-      if (name === InputParameters.NodeModule) {
-        return 'true';
-      }
-
-      if (name === InputParameters.ReleaseAssets) {
-        return './src';
-      }
-
-      if (name === InputParameters.ReleaseBranches) {
-        return JSON.stringify([
-          '+([0-9])?(.{+([0-9]),x}).x',
-          'master',
-          'next',
-          'next-major',
-          { name: 'beta', prerelease: 'beta' },
-          { name: 'alpha', prerelease: 'alpha' },
-        ]);
-      }
-
-      if (name === InputParameters.ReleaseRules) {
-        return '';
-      }
-
+    if (name === InputParameters.ReleaseRules) {
       return '';
+    }
+
+    return '';
+  });
+});
+
+describe('release', (): void => {
+  it('handles errors properly', async (): Promise<void> => {
+    expect.assertions(1);
+
+    getInputSpy.mockImplementationOnce((): string => {
+      throw new Error('test error');
     });
+
+    // Generate git
+    const { cwd } = await gitRepo();
+    await gitCommits(['feat: add a minor change'], { cwd });
+    await gitPush('origin', 'master', { cwd });
+
+    const configurationOverride = {
+      cwd,
+    };
+
+    const { release } = await import('./index.js');
+    const result = await release(optionsOverride, configurationOverride);
+
+    expect(setFailedSpy).toHaveBeenCalledWith('"test error"');
   });
 
   it('"feat" makes a minor release using the default release rules', async (): Promise<void> => {
@@ -91,6 +110,7 @@ describe('release', (): void => {
       cwd,
     };
 
+    const { release } = await import('./index.js');
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
@@ -114,6 +134,7 @@ describe('release', (): void => {
       cwd,
     };
 
+    const { release } = await import('./index.js');
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
@@ -134,6 +155,7 @@ describe('release', (): void => {
       cwd,
     };
 
+    const { release } = await import('./index.js');
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
@@ -154,6 +176,7 @@ describe('release', (): void => {
       cwd,
     };
 
+    const { release } = await import('./index.js');
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
@@ -174,6 +197,7 @@ describe('release', (): void => {
       cwd,
     };
 
+    const { release } = await import('./index.js');
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
@@ -194,6 +218,7 @@ describe('release', (): void => {
       cwd,
     };
 
+    const { release } = await import('./index.js');
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
@@ -214,6 +239,7 @@ describe('release', (): void => {
       cwd,
     };
 
+    const { release } = await import('./index.js');
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
@@ -234,6 +260,7 @@ describe('release', (): void => {
       cwd,
     };
 
+    const { release } = await import('./index.js');
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
@@ -254,6 +281,7 @@ describe('release', (): void => {
       cwd,
     };
 
+    const { release } = await import('./index.js');
     const result = await release(optionsOverride, configurationOverride);
 
     if (result !== false) {
@@ -274,6 +302,7 @@ describe('release', (): void => {
       cwd,
     };
 
+    const { release } = await import('./index.js');
     const result = await release(optionsOverride, configurationOverride);
 
     expect(result).toBe(false);

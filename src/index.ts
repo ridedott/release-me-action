@@ -26,7 +26,7 @@ export const release = async (
 
   await installDependencies(additionalPlugins);
 
-  const semanticRelease = await import('semantic-release');
+  const { default: semanticRelease } = await import('semantic-release');
 
   const branches = processInputReleaseBranches();
   const configFile = processInputConfigFile();
@@ -44,15 +44,17 @@ export const release = async (
     }),
   };
 
+  const semanticReleaseOptiopns = {
+    ...defaultOptions,
+    ...(configFile === undefined
+      ? {}
+      : await parseConfiguration(configFile, defaultOptions)),
+    ...overrideOptions,
+  };
+
   /* istanbul ignore next */
-  const result: Result = await semanticRelease.default(
-    {
-      ...defaultOptions,
-      ...(configFile === undefined
-        ? {}
-        : await parseConfiguration(configFile, defaultOptions)),
-      ...overrideOptions,
-    },
+  const result: Result = await semanticRelease(
+    semanticReleaseOptiopns,
     overrideConfig ?? {},
   );
 
