@@ -1,25 +1,48 @@
-import * as actionsCore from '@actions/core';
-import * as actionsExec from '@actions/exec';
+import { jest } from '@jest/globals';
 
-import { release } from './index.js';
 import { gitCommits, gitPush, gitRepo } from './utilities/git.js';
-import { InputParameters } from './utilities/inputProcessors.js';
 
-const execSpy = jest.spyOn(actionsExec, 'exec');
-const getInputSpy = jest.spyOn(actionsCore, 'getInput');
+const execSpy = jest.fn();
 
+const getInputSpy = jest.fn() as unknown as jest.SpiedFunction<
+  (name: string) => string
+>;
+
+jest.unstable_mockModule('@actions/core', (): unknown => ({
+  getInput: getInputSpy,
+  setFailed: jest.fn(),
+  setOutput: jest.fn(),
+}));
+
+jest.unstable_mockModule('@actions/exec', (): unknown => ({
+  exec: execSpy,
+}));
+
+const { InputParameters } = await import('./utilities/inputProcessors.js');
+
+type JestSpyBooleanPromise = jest.SpiedFunction<() => Promise<boolean>>;
 const optionsOverride = {
-  addChannel: jest.fn().mockResolvedValue(true),
-  prepare: jest.fn().mockResolvedValue(true),
-  publish: jest.fn().mockResolvedValue(true),
-  success: jest.fn().mockResolvedValue(true),
-  verifyConditions: jest.fn().mockResolvedValue(true),
-  verifyRelease: jest.fn().mockResolvedValue(true),
+  addChannel: (jest.fn() as JestSpyBooleanPromise).mockResolvedValue(true),
+  prepare: (jest.fn() as JestSpyBooleanPromise).mockResolvedValue(true),
+  publish: (jest.fn() as JestSpyBooleanPromise).mockResolvedValue(true),
+  success: (jest.fn() as JestSpyBooleanPromise).mockResolvedValue(true),
+  verifyConditions: (jest.fn() as JestSpyBooleanPromise).mockResolvedValue(
+    true,
+  ),
+  verifyRelease: (jest.fn() as JestSpyBooleanPromise).mockResolvedValue(true),
 };
 
 describe('release', (): void => {
-  beforeEach((): void => {
-    execSpy.mockImplementation();
+  // eslint-disable-next-line @typescript-eslint/init-declarations
+  let release: typeof import('./index.js').release;
+
+  beforeEach(async (): Promise<void> => {
+    const indexModule = await import('./index.js');
+
+    // eslint-disable-next-line @typescript-eslint/prefer-destructuring
+    release = indexModule.release;
+
+    execSpy.mockImplementation((): void => undefined);
     getInputSpy.mockImplementation((name: string): string => {
       if (name === InputParameters.CommitAssets) {
         return './src';
