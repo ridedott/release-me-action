@@ -81,14 +81,11 @@ export const gitRepo = async (): Promise<{
   const cloneWorkingDirectory = await gitShallowClone(remoteRepositoryUrl);
   const execaOptions = { cwd: cloneWorkingDirectory };
 
-  const gitArgumentsEmail = ['config', 'user.email', 'test@ridedott.com'];
-  await $(execaOptions)`git ${gitArgumentsEmail}`;
+  await $(execaOptions)`git config user.email test@ridedott.com`;
+  await $(execaOptions)`git config user.name test@ridedott.com`;
+  await $(execaOptions)`git config commit.gpgsign false`;
+  await $(execaOptions)`git config init.defaultBranch master`;
 
-  const gitArgumentsName = ['config', 'user.name', 'test@ridedott.com'];
-  await $(execaOptions)`git ${gitArgumentsName}`;
-
-  const gitArgumentsGpgSign = ['config', 'commit.gpgsign', 'false'];
-  await $(execaOptions)`git ${gitArgumentsGpgSign}`;
   await $(execaOptions)`npm init -y`;
   await $(execaOptions)`git add --all`;
   await gitCommits(['feat: initial commit'], { cwd: cloneWorkingDirectory });
