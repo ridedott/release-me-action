@@ -44,29 +44,26 @@ export const release = async (
     }),
   };
 
-  const semanticReleaseOptiopns = {
-    ...defaultOptions,
-    ...(configFile === undefined
-      ? {}
-      : await parseConfiguration(configFile, defaultOptions)),
-    ...overrideOptions,
-  };
-
   /* istanbul ignore next */
   const result: Result = await semanticRelease(
-    semanticReleaseOptiopns,
+    {
+      ...defaultOptions,
+      ...(configFile === undefined
+        ? {}
+        : await parseConfiguration(configFile, defaultOptions)),
+      ...overrideOptions,
+    },
     overrideConfig ?? {},
   );
 
   return result;
 };
 
-try {
-  const result = await release();
+release()
+  .then(reportResults)
+  // eslint-disable-next-line unicorn/prefer-top-level-await
+  .catch((error: unknown): void => {
+    const finalErrorString = getSetFailedErrorString(error);
 
-  reportResults(result);
-} catch (error: unknown) {
-  const finalErrorString = getSetFailedErrorString(error);
-
-  setFailed(JSON.stringify(finalErrorString));
-}
+    setFailed(JSON.stringify(finalErrorString));
+  });
