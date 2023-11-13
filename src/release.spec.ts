@@ -116,6 +116,8 @@ describe('release', (): void => {
     const { release } = await import('./release.js');
     const result = await release(optionsOverride, configurationOverride);
 
+    expect(result).not.toBe(false);
+
     if (result !== false) {
       expect(result.nextRelease.type).toBe('major');
       expect(result.nextRelease.version).toBe('2.0.0');
