@@ -78,6 +78,8 @@ jobs:
           node-version-file: '.nvmrc'
           registry-url: 'https://npm.pkg.github.com'
       - name: Install dependencies
+        env:
+          GITHUB_EVENT_NAME: push
         run: npm ci --ignore-scripts --no-audit --no-progress --prefer-offline
       - name: Test
         run: npm run test:ci

@@ -3,12 +3,14 @@ import { $ } from 'execa';
 
 import { gitCommits, gitPush, gitRepo } from './utilities/git.js';
 
+jest.setTimeout(10_000);
+
 const execSpy = jest.fn() as unknown as jest.SpiedFunction<
   (typeof import('@actions/exec'))['exec']
 >;
 
 const getInputSpy = jest.fn() as unknown as jest.SpiedFunction<
-  (name: string) => string
+  (typeof import('@actions/core'))['getInput']
 >;
 
 jest.unstable_mockModule('@actions/core', (): unknown => ({
@@ -33,6 +35,13 @@ const optionsOverride = {
   ),
   verifyRelease: (jest.fn() as JestSpyBooleanPromise).mockResolvedValue(true),
 };
+
+beforeAll((): void => {
+  // eslint-disable-next-line functional/immutable-data
+  process.env.GITHUB_EVENT_NAME = 'push';
+  // eslint-disable-next-line functional/immutable-data
+  process.env.GITHUB_REF = 'master';
+});
 
 beforeEach(async (): Promise<void> => {
   await $`git config --global init.defaultBranch master`;
@@ -103,6 +112,7 @@ describe('release', (): void => {
 
     // Generate git
     const { cwd } = await gitRepo();
+
     await gitCommits(
       ['feat: add a major change\n\nBREAKING CHANGE: break something'],
       { cwd },

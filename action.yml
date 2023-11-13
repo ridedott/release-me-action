@@ -71,5 +71,5 @@ outputs:
       Released version in format of X.Y.Z (major.minor.patch-prerelease+build).
 name: Release me!
 runs:
-  main: dist/index.js
+  main: bootstrap.mjs
   using: node20

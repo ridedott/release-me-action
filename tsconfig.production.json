@@ -1,13 +1,12 @@
 {
-  "files": [],
-  "include": ["src/**/*.ts"],
-  "exclude": ["src/**/*.spec.ts"],
+  "files": ["src/index.ts"],
+  "include": [],
+  "exclude": [],
   "compilerOptions": {
     "noEmit": false,
     "outDir": "./lib",
     "rootDir": "./src",
-    "types": ["node"],
-    "verbatimModuleSyntax": true
+    "types": ["node"]
   },
   "extends": "./tsconfig.common.json"
 }
