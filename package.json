@@ -109,5 +109,5 @@
     "types": "tsc --noEmit"
   },
   "type": "module",
-  "version": "3.8.6"
+  "version": "3.9.0"
 }
