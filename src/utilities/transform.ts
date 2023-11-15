@@ -1,4 +1,4 @@
-import { Commit } from 'conventional-commits-parser';
+import type { Commit } from 'conventional-commits-parser';
 
 const extractShortHash = (commit: Commit): string | undefined => {
   if (commit.commit === null || commit.commit === undefined) {

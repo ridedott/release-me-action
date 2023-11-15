@@ -1,4 +1,4 @@
-import { BranchSpec } from 'semantic-release';
+import type { BranchSpec } from 'semantic-release';
 export interface AdditionalPluginsSpec {
     [plugin: string]: string;
 }

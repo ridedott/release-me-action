@@ -2,7 +2,7 @@
 
 set -ex
 
-npm --prefix "$1" ci "$1" --omit=dev --no-audit --no-progress --prefer-offline
+npm --prefix "$1" ci "$1" --only=production --no-audit --no-progress --prefer-offline
 
 if [ "$#" -gt 1 ]; then
   # Install additional packages.

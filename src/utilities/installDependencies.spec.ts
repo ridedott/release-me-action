@@ -1,12 +1,18 @@
-import * as actionsExec from '@actions/exec';
+import { jest } from '@jest/globals';
 
-import { installDependencies } from './installDependencies';
+const execSpy = jest.fn() as unknown as jest.SpiedFunction<
+  (_: never, packages: string[]) => unknown
+>;
 
-const execSpy = jest.spyOn(actionsExec, 'exec').mockImplementation();
+jest.unstable_mockModule('@actions/exec', (): unknown => ({
+  exec: execSpy,
+}));
 
 describe('installDependencies', (): void => {
   it('executes the install-dependencies script', async (): Promise<void> => {
     expect.assertions(1);
+
+    const { installDependencies } = await import('./installDependencies.js');
 
     await installDependencies();
 
@@ -16,16 +22,18 @@ describe('installDependencies', (): void => {
   it('calls the install-dependencies script with additional packages', async (): Promise<void> => {
     expect.assertions(1);
 
+    const { installDependencies } = await import('./installDependencies.js');
+
     await installDependencies({
       '@semantic-release/git': '^4.0.2',
       '@semantic-release/test': '^5.0.2',
     });
 
-    expect(execSpy.mock.calls[0][1]?.slice(1)).toMatchInlineSnapshot(`
-      Array [
-        "@semantic-release/git@^4.0.2",
-        "@semantic-release/test@^5.0.2",
-      ]
-    `);
+    expect(execSpy.mock.calls[0][1].slice(1)).toMatchInlineSnapshot(`
+[
+  "@semantic-release/git@^4.0.2",
+  "@semantic-release/test@^5.0.2",
+]
+`);
   });
 });

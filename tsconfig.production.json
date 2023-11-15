@@ -1,26 +1,12 @@
 {
+  "files": ["src/index.ts"],
+  "include": [],
+  "exclude": [],
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "alwaysStrict": true,
-    "charset": "utf-8",
-    "declaration": true,
-    "declarationMap": true,
-    "downlevelIteration": true,
-    "forceConsistentCasingInFileNames": true,
-    "lib": ["ES2019"],
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "noImplicitAny": false,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "outDir": "lib",
-    "pretty": true,
-    "rootDir": "src",
-    "sourceMap": true,
-    "strict": true,
-    "strictNullChecks": true,
-    "target": "ES2019"
+    "noEmit": false,
+    "outDir": "./lib",
+    "rootDir": "./src",
+    "types": ["node"]
   },
-  "files": ["./src/index.ts"]
+  "extends": "./tsconfig.common.json"
 }

@@ -1,60 +1,66 @@
-import * as actionsCore from '@actions/core';
+import { jest } from '@jest/globals';
 
-import {
-  processInputAdditionalPlugins,
-  processInputCommitAssets,
-  processInputConfigFile,
-  processInputDisableChangelog,
-  processInputDryRun,
-  processInputNodeModule,
-  processInputReleaseAssets,
-  processInputReleaseBranches,
-  processInputReleaseRules,
-} from './inputProcessors';
+const getInputSpy = jest.fn() as unknown as jest.SpiedFunction<
+  (_: never, packages: string[]) => unknown
+>;
 
-const getInputSpy = jest.spyOn(actionsCore, 'getInput').mockImplementation();
+jest.unstable_mockModule('@actions/core', (): unknown => ({
+  getInput: getInputSpy,
+}));
 
 describe('processInputNodeModule', (): void => {
-  it("returns true when the value of the npm-package input is set to 'true'", (): void => {
+  it("returns true when the value of the npm-package input is set to 'true'", async (): Promise<void> => {
     expect.assertions(1);
 
-    getInputSpy.mockReturnValue('true');
+    const { processInputNodeModule } = await import('./inputProcessors.js');
+
+    getInputSpy.mockReturnValueOnce('true');
 
     const result = processInputNodeModule();
 
-    expect(result).toStrictEqual(true);
+    expect(result).toBe(true);
   });
 });
 
 describe('processInputDisableGenerateChangelog', (): void => {
-  it("returns true when the value of the disable-generate-changelog input is set to 'true'", (): void => {
+  it("returns true when the value of the disable-generate-changelog input is set to 'true'", async (): Promise<void> => {
     expect.assertions(1);
 
-    getInputSpy.mockReturnValue('true');
+    const { processInputDisableChangelog } = await import(
+      './inputProcessors.js'
+    );
+
+    getInputSpy.mockReturnValueOnce('true');
 
     const result = processInputDisableChangelog();
 
-    expect(result).toStrictEqual(true);
+    expect(result).toBe(true);
   });
 });
 
 describe('processInputDryRun', (): void => {
-  it("returns true when the value of the dry-run input is set to 'true'", (): void => {
+  it("returns true when the value of the dry-run input is set to 'true'", async (): Promise<void> => {
     expect.assertions(1);
 
-    getInputSpy.mockReturnValue('true');
+    const { processInputDryRun } = await import('./inputProcessors.js');
+
+    getInputSpy.mockReturnValueOnce('true');
 
     const result = processInputDryRun();
 
-    expect(result).toStrictEqual(true);
+    expect(result).toBe(true);
   });
 });
 
 describe('processInputReleaseBranches', (): void => {
-  it('throws an error if the input parameter value is set to an invalid JSON string', (): void => {
+  it('throws an error if the input parameter value is set to an invalid JSON string', async (): Promise<void> => {
     expect.assertions(1);
 
-    getInputSpy.mockReturnValue('test');
+    const { processInputReleaseBranches } = await import(
+      './inputProcessors.js'
+    );
+
+    getInputSpy.mockReturnValueOnce('test');
 
     expect(processInputReleaseBranches).toThrow(
       'Invalid JSON string for input parameter release-branches.',
@@ -85,10 +91,14 @@ describe('processInputReleaseBranches', (): void => {
     },
   ])(
     'throws an error if the input parameter is set to an invalid value %j',
-    ({ value }: { value: string }): void => {
+    async ({ value }: { value: string }): Promise<void> => {
       expect.assertions(1);
 
-      getInputSpy.mockReturnValue(value);
+      const { processInputReleaseBranches } = await import(
+        './inputProcessors.js'
+      );
+
+      getInputSpy.mockReturnValueOnce(value);
 
       try {
         processInputReleaseBranches();
@@ -98,20 +108,27 @@ describe('processInputReleaseBranches', (): void => {
     },
   );
 
-  it("returns undefined if the input parameter value is set to an empty string''", (): void => {
+  it("returns undefined if the input parameter value is set to an empty string''", async (): Promise<void> => {
     expect.assertions(1);
 
-    getInputSpy.mockReturnValue('');
+    const { processInputReleaseBranches } = await import(
+      './inputProcessors.js'
+    );
+
+    getInputSpy.mockReturnValueOnce('');
 
     const result = processInputReleaseBranches();
 
     expect(result).toBeUndefined();
   });
 
-  it('returns a valid branches configuration array passed as json-string', (): void => {
+  it('returns a valid branches configuration array passed as json-string', async (): Promise<void> => {
     expect.assertions(1);
 
-    getInputSpy.mockReturnValue(
+    const { processInputReleaseBranches } = await import(
+      './inputProcessors.js'
+    );
+    getInputSpy.mockReturnValueOnce(
       JSON.stringify([
         '+([0-9])?(.{+([0-9]),x}).x',
         'master',
@@ -136,8 +153,10 @@ describe('processInputReleaseBranches', (): void => {
 });
 
 describe('processInputReleaseRules', (): void => {
-  it('throws an error if the input parameter value is set to an invalid JSON string', (): void => {
+  it('throws an error if the input parameter value is set to an invalid JSON string', async (): Promise<void> => {
     expect.assertions(1);
+
+    const { processInputReleaseRules } = await import('./inputProcessors.js');
 
     getInputSpy.mockReturnValueOnce('test').mockReturnValueOnce('');
 
@@ -167,8 +186,10 @@ describe('processInputReleaseRules', (): void => {
     },
   ])(
     'throws an error if the input parameter is set to an invalid value %j',
-    ({ value }: { value: string }): void => {
+    async ({ value }: { value: string }): Promise<void> => {
       expect.assertions(1);
+
+      const { processInputReleaseRules } = await import('./inputProcessors.js');
 
       getInputSpy.mockReturnValueOnce(value).mockReturnValueOnce('');
 
@@ -177,8 +198,10 @@ describe('processInputReleaseRules', (): void => {
     },
   );
 
-  it("returns the default release rules if the input parameter value is set to an empty string''", (): void => {
+  it("returns the default release rules if the input parameter value is set to an empty string''", async (): Promise<void> => {
     expect.assertions(1);
+
+    const { processInputReleaseRules } = await import('./inputProcessors.js');
 
     getInputSpy.mockReturnValueOnce('').mockReturnValueOnce('');
 
@@ -195,8 +218,10 @@ describe('processInputReleaseRules', (): void => {
     ]);
   });
 
-  it('returns a valid branches configuration array passed as json-string', (): void => {
+  it('returns a valid branches configuration array passed as json-string', async (): Promise<void> => {
     expect.assertions(1);
+
+    const { processInputReleaseRules } = await import('./inputProcessors.js');
 
     getInputSpy
       .mockReturnValueOnce(
@@ -219,8 +244,10 @@ describe('processInputReleaseRules', (): void => {
 });
 
 describe('processInputReleaseRulesAppend', (): void => {
-  it('throws an error if the release-rules-append input parameter value is set to an invalid JSON string', (): void => {
+  it('throws an error if the release-rules-append input parameter value is set to an invalid JSON string', async (): Promise<void> => {
     expect.assertions(1);
+
+    const { processInputReleaseRules } = await import('./inputProcessors.js');
 
     getInputSpy.mockReturnValueOnce('').mockReturnValueOnce('test');
 
@@ -250,8 +277,10 @@ describe('processInputReleaseRulesAppend', (): void => {
     },
   ])(
     'throws an error if the release-rules-append input parameter is set to an invalid value %j',
-    ({ value }: { value: string }): void => {
+    async ({ value }: { value: string }): Promise<void> => {
       expect.assertions(1);
+
+      const { processInputReleaseRules } = await import('./inputProcessors.js');
 
       getInputSpy.mockReturnValueOnce('').mockReturnValueOnce(value);
 
@@ -260,8 +289,11 @@ describe('processInputReleaseRulesAppend', (): void => {
     },
   );
 
-  it('throws and error when both release-rules and release-rules-append are defined', (): void => {
+  it('throws and error when both release-rules and release-rules-append are defined', async (): Promise<void> => {
     expect.assertions(1);
+
+    const { processInputReleaseRules } = await import('./inputProcessors.js');
+
     getInputSpy
       .mockReturnValueOnce(
         JSON.stringify([
@@ -278,8 +310,10 @@ describe('processInputReleaseRulesAppend', (): void => {
     );
   });
 
-  it('returns default release rules with append rules added to the end', (): void => {
+  it('returns default release rules with append rules added to the end', async (): Promise<void> => {
     expect.assertions(1);
+
+    const { processInputReleaseRules } = await import('./inputProcessors.js');
 
     getInputSpy.mockReturnValueOnce('').mockReturnValueOnce(
       JSON.stringify([
@@ -315,10 +349,12 @@ describe('processInputReleaseRulesAppend', (): void => {
 });
 
 describe('processInputCommitAssets', (): void => {
-  it('returns an array of valid paths relative to the project root', (): void => {
+  it('returns an array of valid paths relative to the project root', async (): Promise<void> => {
     expect.assertions(1);
 
-    getInputSpy.mockReturnValue(`
+    const { processInputCommitAssets } = await import('./inputProcessors.js');
+
+    getInputSpy.mockReturnValueOnce(`
     ./src
     `);
 
@@ -329,10 +365,12 @@ describe('processInputCommitAssets', (): void => {
 });
 
 describe('processInputReleaseAssets', (): void => {
-  it('returns an array of valid paths relative to the project root', (): void => {
+  it('returns an array of valid paths relative to the project root', async (): Promise<void> => {
     expect.assertions(1);
 
-    getInputSpy.mockReturnValue(`
+    const { processInputReleaseAssets } = await import('./inputProcessors.js');
+
+    getInputSpy.mockReturnValueOnce(`
     ./src
     `);
 
@@ -343,20 +381,36 @@ describe('processInputReleaseAssets', (): void => {
 });
 
 describe('processInputConfigFile', (): void => {
-  it('returns a valid path relative to the project root', (): void => {
+  it('returns undefined when the input is an empty string', async (): Promise<void> => {
     expect.assertions(1);
 
-    getInputSpy.mockReturnValue('./src.yaml');
+    const { processInputConfigFile } = await import('./inputProcessors.js');
+
+    getInputSpy.mockReturnValueOnce('');
 
     const result = processInputConfigFile();
 
-    expect(result).toStrictEqual('./src.yaml');
+    expect(result).toBeUndefined();
   });
 
-  it('throws if the provided path is not a YAML file', (): void => {
+  it('returns a valid path relative to the project root', async (): Promise<void> => {
     expect.assertions(1);
 
-    getInputSpy.mockReturnValue('./src.json');
+    const { processInputConfigFile } = await import('./inputProcessors.js');
+
+    getInputSpy.mockReturnValueOnce('./src.yaml');
+
+    const result = processInputConfigFile();
+
+    expect(result).toBe('./src.yaml');
+  });
+
+  it('throws if the provided path is not a YAML file', async (): Promise<void> => {
+    expect.assertions(1);
+
+    const { processInputConfigFile } = await import('./inputProcessors.js');
+
+    getInputSpy.mockReturnValueOnce('./src.json');
 
     try {
       processInputConfigFile();
@@ -367,10 +421,28 @@ describe('processInputConfigFile', (): void => {
 });
 
 describe('processInputAdditionalPlugins', (): void => {
-  it('returns an object in package.json format', (): void => {
+  it('returns undefined if the input an empty string', async (): Promise<void> => {
     expect.assertions(1);
 
-    getInputSpy.mockReturnValue(
+    const { processInputAdditionalPlugins } = await import(
+      './inputProcessors.js'
+    );
+
+    getInputSpy.mockReturnValueOnce('');
+
+    const result = processInputAdditionalPlugins();
+
+    expect(result).toBeUndefined();
+  });
+
+  it('returns an object in package.json format', async (): Promise<void> => {
+    expect.assertions(1);
+
+    const { processInputAdditionalPlugins } = await import(
+      './inputProcessors.js'
+    );
+
+    getInputSpy.mockReturnValueOnce(
       '{"@google/semantic-release-replace-plugin":"^4.0.2"}',
     );
 
@@ -381,10 +453,14 @@ describe('processInputAdditionalPlugins', (): void => {
     });
   });
 
-  it('throws if the input is not valid JSON', (): void => {
+  it('throws if the input is not valid JSON', async (): Promise<void> => {
     expect.assertions(1);
 
-    getInputSpy.mockReturnValue('foo');
+    const { processInputAdditionalPlugins } = await import(
+      './inputProcessors.js'
+    );
+
+    getInputSpy.mockReturnValueOnce('foo');
 
     try {
       processInputAdditionalPlugins();
@@ -393,10 +469,14 @@ describe('processInputAdditionalPlugins', (): void => {
     }
   });
 
-  it('throws if the object is not in package.json format', (): void => {
+  it('throws if the object is not in package.json format', async (): Promise<void> => {
     expect.assertions(1);
 
-    getInputSpy.mockReturnValue('{"foo":1}');
+    const { processInputAdditionalPlugins } = await import(
+      './inputProcessors.js'
+    );
+
+    getInputSpy.mockReturnValueOnce('{"foo":1}');
 
     try {
       processInputAdditionalPlugins();

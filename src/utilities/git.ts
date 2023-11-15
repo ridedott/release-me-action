@@ -1,18 +1,20 @@
+/* eslint-disable no-duplicate-imports */
 /* eslint-disable no-await-in-loop */
-import * as execa from 'execa';
-import * as fileUrl from 'file-url';
-import { directory } from 'tempy';
+import type { Options } from 'execa';
+import { $ } from 'execa';
+import fileUrl from 'file-url';
+import { temporaryDirectory } from 'tempy';
 
 /**
- * Initialize local `remote` git repository in a temporary directory.
+ * Initialize local `remote` git repository in a temporary temporaryDirectory.
  */
 export const initGitRemote = async (): Promise<{
   cwd: string;
   remoteRepositoryUrl: string;
 }> => {
-  const cwd = directory();
+  const cwd = temporaryDirectory();
 
-  await execa('git', ['init', '--bare'], { cwd });
+  await $({ cwd })`git init --bare`;
 
   return { cwd, remoteRepositoryUrl: fileUrl(cwd) };
 };
@@ -25,23 +27,17 @@ export const gitShallowClone = async (
   repositoryUrl: string,
   depth: number = 1,
 ): Promise<string> => {
-  const cloneWorkingDirectory = directory();
+  const cloneWorkingDirectory = temporaryDirectory();
 
-  await execa(
-    'git',
-    [
-      'clone',
-      '--no-hardlinks',
-      '--no-tags',
-      '--depth',
-      depth.toString(),
-      repositoryUrl,
-      cloneWorkingDirectory,
-    ],
-    {
-      cwd: cloneWorkingDirectory,
-    },
-  );
+  const gitArguments = [
+    '--no-hardlinks',
+    '--no-tags',
+    '--depth',
+    depth.toString(),
+    repositoryUrl,
+    cloneWorkingDirectory,
+  ];
+  await $({ cwd: cloneWorkingDirectory })`git clone ${gitArguments}`;
 
   return cloneWorkingDirectory;
 };
@@ -51,14 +47,12 @@ export const gitShallowClone = async (
  */
 export const gitCommits = async (
   messages: string[],
-  execaOptions: execa.Options,
+  execaOptions: Options,
 ): Promise<void> => {
   for (const message of messages) {
-    await execa(
-      'git',
-      ['commit', '-m', message, '--allow-empty', '--no-gpg-sign'],
-      execaOptions,
-    );
+    const gitArguments = ['-m', message, '--allow-empty', '--no-gpg-sign'];
+
+    await $(execaOptions)`git commit ${gitArguments}`;
   }
 };
 
@@ -68,14 +62,16 @@ export const gitCommits = async (
  */
 export const gitTagVersion = async (
   tagName: string,
-  execaOptions: execa.Options,
+  execaOptions: Options,
 ): Promise<void> => {
-  await execa('git', ['tag', tagName], execaOptions);
+  const gitArguments = ['tag', tagName];
+  await $(execaOptions)`git ${gitArguments}`;
 };
 
 /**
  * Creates a temporary git remote repository and a git clone repository.
  */
+// eslint-disable-next-line max-statements
 export const gitRepo = async (): Promise<{
   cwd: string;
   repositoryUrl: string;
@@ -83,23 +79,19 @@ export const gitRepo = async (): Promise<{
   const { remoteRepositoryUrl } = await initGitRemote();
 
   const cloneWorkingDirectory = await gitShallowClone(remoteRepositoryUrl);
+  const execaOptions = { cwd: cloneWorkingDirectory };
 
-  await execa('git', ['config', 'user.email', 'test@ridedott.com'], {
-    cwd: cloneWorkingDirectory,
-  });
-  await execa('git', ['config', 'user.name', 'test@ridedott.com'], {
-    cwd: cloneWorkingDirectory,
-  });
-  await execa('git', ['config', 'commit.gpgsign', 'false'], {
-    cwd: cloneWorkingDirectory,
-  });
-  await execa('npm', ['init', '-y'], { cwd: cloneWorkingDirectory });
-  await execa('git', ['add', '--all'], { cwd: cloneWorkingDirectory });
+  await $(execaOptions)`git config user.email test@ridedott.com`;
+  await $(execaOptions)`git config user.name test@ridedott.com`;
+  await $(execaOptions)`git config commit.gpgsign false`;
+
+  await $(execaOptions)`npm init -y`;
+  await $(execaOptions)`git add --all`;
   await gitCommits(['feat: initial commit'], { cwd: cloneWorkingDirectory });
   await gitTagVersion('v1.0.0', { cwd: cloneWorkingDirectory });
-  await execa('git', ['push', remoteRepositoryUrl], {
-    cwd: cloneWorkingDirectory,
-  });
+
+  const gitArgumentsPush = ['push', remoteRepositoryUrl];
+  await $(execaOptions)`git ${gitArgumentsPush}`;
 
   return { cwd: cloneWorkingDirectory, repositoryUrl: remoteRepositoryUrl };
 };
@@ -111,11 +103,8 @@ export const gitRepo = async (): Promise<{
 export const gitPush = async (
   repositoryUrl: string,
   branch: string,
-  execaOptions: execa.Options,
+  execaOptions: Options,
 ): Promise<void> => {
-  await execa(
-    'git',
-    ['push', '--tags', repositoryUrl, `HEAD:${branch}`],
-    execaOptions,
-  );
+  const gitPushArguments = ['--tags', repositoryUrl, `HEAD:${branch}`];
+  await $(execaOptions)`git push ${gitPushArguments}`;
 };

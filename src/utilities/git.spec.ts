@@ -1,4 +1,4 @@
-import * as execa from 'execa';
+import { $ } from 'execa';
 
 import {
   gitCommits,
@@ -7,7 +7,7 @@ import {
   gitShallowClone,
   gitTagVersion,
   initGitRemote,
-} from './git';
+} from './git.js';
 
 describe('git utility', (): void => {
   describe('initGitRemote', (): void => {
@@ -17,12 +17,10 @@ describe('git utility', (): void => {
       const { cwd } = await initGitRemote();
 
       const isBareRepository = (
-        await execa('git', ['rev-parse', '--is-bare-repository'], {
-          cwd,
-        })
+        await $({ cwd })`git rev-parse --is-bare-repository`
       ).stdout;
 
-      expect(isBareRepository).toStrictEqual('true');
+      expect(isBareRepository).toBe('true');
     });
   });
 
@@ -33,13 +31,11 @@ describe('git utility', (): void => {
       const { remoteRepositoryUrl } = await initGitRemote();
       const cloneWorkingDirectory = await gitShallowClone(remoteRepositoryUrl);
 
-      const isGitRepository = (
-        await execa('git', ['rev-parse', '--git-dir'], {
-          cwd: cloneWorkingDirectory,
-        })
-      ).stdout;
+      const { stdout: isGitRepository } = await $({
+        cwd: cloneWorkingDirectory,
+      })`git rev-parse --git-dir`;
 
-      expect(isGitRepository).toStrictEqual('.git');
+      expect(isGitRepository).toBe('.git');
     });
   });
 
@@ -53,13 +49,9 @@ describe('git utility', (): void => {
         cwd,
       });
 
-      const commitMessage = (
-        await execa('git', ['log', '-1', '--pretty=%s'], {
-          cwd,
-        })
-      ).stdout;
+      const commitMessage = (await $({ cwd })`git log -1 --pretty=%s`).stdout;
 
-      expect(commitMessage).toStrictEqual('feat: initial commit');
+      expect(commitMessage).toBe('feat: initial commit');
     });
 
     it('creates commits in order on the git repository present in the `cwd` option', async (): Promise<void> => {
@@ -72,11 +64,7 @@ describe('git utility', (): void => {
         { cwd },
       );
 
-      const commitMessages = (
-        await execa('git', ['log', '-3', '--pretty=%s'], {
-          cwd,
-        })
-      ).stdout;
+      const commitMessages = (await $({ cwd })`git log -3 --pretty=%s`).stdout;
 
       expect(commitMessages).toMatchInlineSnapshot(`
         "feat: third commit
@@ -97,11 +85,7 @@ describe('git utility', (): void => {
       });
       await gitTagVersion('v1.1.0', { cwd });
 
-      const tagName = (
-        await execa('git', ['describe', '--tags'], {
-          cwd,
-        })
-      ).stdout;
+      const tagName = (await $({ cwd })`git describe --tags`).stdout;
 
       expect(tagName).toContain('v1.1.0');
     });
@@ -114,39 +98,25 @@ describe('git utility', (): void => {
       const { cwd } = await gitRepo();
 
       const configurationUserName = (
-        await execa('git', ['config', '--get', 'user.name'], {
-          cwd,
-        })
+        await $({ cwd })`git config --get user.name`
       ).stdout;
 
       const configurationUserEmail = (
-        await execa('git', ['config', '--get', 'user.email'], {
-          cwd,
-        })
+        await $({ cwd })`git config --get user.email`
       ).stdout;
 
       const configurationGpgSign = (
-        await execa('git', ['config', '--get', 'commit.gpgsign'], {
-          cwd,
-        })
+        await $({ cwd })`git config --get commit.gpgsign`
       ).stdout;
 
-      const commitMessage = (
-        await execa('git', ['log', '-1', '--pretty=%s'], {
-          cwd,
-        })
-      ).stdout;
+      const commitMessage = (await $({ cwd })`git log -1 --pretty=%s`).stdout;
 
-      const tagName = (
-        await execa('git', ['describe', '--tags'], {
-          cwd,
-        })
-      ).stdout;
+      const tagName = (await $({ cwd })`git describe --tags`).stdout;
 
-      expect(commitMessage).toStrictEqual('feat: initial commit');
-      expect(configurationUserName).toStrictEqual('test@ridedott.com');
-      expect(configurationUserEmail).toStrictEqual('test@ridedott.com');
-      expect(configurationGpgSign).toStrictEqual('false');
+      expect(commitMessage).toBe('feat: initial commit');
+      expect(configurationUserName).toBe('test@ridedott.com');
+      expect(configurationUserEmail).toBe('test@ridedott.com');
+      expect(configurationGpgSign).toBe('false');
       expect(tagName).toContain('v1.0.0');
     });
   });
@@ -155,31 +125,25 @@ describe('git utility', (): void => {
     it('pushes to the remote repository from the git repository present in the `cwd` option', async (): Promise<void> => {
       expect.assertions(1);
 
+      await $`git config --global init.defaultBranch master`;
+
       const { cwd: remoteWorkingDirectory, remoteRepositoryUrl } =
         await initGitRemote();
       const cloneWorkingDirectory = await gitShallowClone(remoteRepositoryUrl);
+      const options = { cwd: cloneWorkingDirectory };
+      const $$ = $(options);
 
-      await execa('git', ['config', 'user.email', 'test@ridedott.com'], {
-        cwd: cloneWorkingDirectory,
-      });
-      await execa('git', ['config', 'user.name', 'test@ridedott.com'], {
-        cwd: cloneWorkingDirectory,
-      });
-      await execa('git', ['config', 'commit.gpgsign', 'false'], {
-        cwd: cloneWorkingDirectory,
-      });
-      await gitCommits(['feat: initial commit'], {
-        cwd: cloneWorkingDirectory,
-      });
-      await gitPush('origin', 'master', { cwd: cloneWorkingDirectory });
+      await $$`git config user.email test@ridedott.com`;
+      await $$`git config user.name test@ridedott.com`;
+      await $$`git config commit.gpgsign false`;
+      await gitCommits(['feat: initial commit'], options);
+      await gitPush('origin', 'master', options);
 
-      const commitMessage = (
-        await execa('git', ['log', '-1', '--pretty=%s'], {
-          cwd: remoteWorkingDirectory,
-        })
-      ).stdout;
+      const { stdout: commitMessage } = await $({
+        cwd: remoteWorkingDirectory,
+      })`git log -1 --pretty=%s`;
 
-      expect(commitMessage).toStrictEqual('feat: initial commit');
+      expect(commitMessage).toBe('feat: initial commit');
     });
   });
 });

@@ -1,18 +1,42 @@
 env:
   es6: true
   node: true
-extends: '@ridedott/eslint-config'
+extends:
+  - '@ridedott/eslint-config'
+  - 'plugin:jest-formatting/recommended'
+plugins:
+  - 'jest-formatting'
 overrides:
   - env:
       jest: true
     files:
-      - src/**/*.spec.ts
+      - ./jest.config.ts
+      - ./__mocks__/**/*.ts
+      - ./src/**/*.spec.ts
+      - ./test/**/*.ts
     rules:
-      '@typescript-eslint/no-magic-numbers': off
-      max-lines-per-function: off
+      '@ridedott/no-single-line-comment-block': 'off'
+      '@typescript-eslint/no-magic-numbers': 'off'
+      '@typescript-eslint/no-unsafe-enum-comparison': 'off'
+      '@typescript-eslint/class-methods-use-this': 'off'
+      '@typescript-eslint/no-non-null-assertion': 'off'
+      'import/no-extraneous-dependencies': 'off'
+      'max-lines-per-function': 'off'
+      'jest/max-expects': 'off'
+      'unicorn/filename-case': 'off'
+      'import/no-default-export': 'off'
+      'jest/no-conditional-in-test': 'off'
+  - files:
+      - src/**/*.ts
+    rules:
+      '@typescript-eslint/no-magic-numbers': 'off'
+      '@typescript-eslint/no-unsafe-enum-comparison': 'off'
+      '@typescript-eslint/class-methods-use-this': 'off'
+      '@typescript-eslint/no-non-null-assertion': 'off'
+      'import/no-extraneous-dependencies': 'off'
+      'jest/require-hook': off
+      'eslint-comments/no-unused-disable': off
 parserOptions:
   ecmaVersion: 2020
-  project: tsconfig.json
+  project: './tsconfig.json'
   sourceType: module
-rules:
-  '@typescript-eslint/restrict-template-expressions': off

@@ -1,24 +1,34 @@
-import * as actionsCore from '@actions/core';
-import { Result } from 'semantic-release';
+import { jest } from '@jest/globals';
+import type { Result } from 'semantic-release';
 
-import { reportResults } from './outputParsers';
+const setOutputSpy = jest.fn() as unknown as jest.SpiedFunction<
+  (_: never, packages: string[]) => unknown
+>;
 
-const setOutputSpy = jest.spyOn(actionsCore, 'setOutput').mockImplementation();
+jest.unstable_mockModule('@actions/core', (): unknown => ({
+  setOutput: setOutputSpy,
+}));
 
 describe('reportResults', (): void => {
-  it('sets output based on nextRelease', (): void => {
+  it('sets output based on nextRelease', async (): Promise<void> => {
     expect.assertions(9);
+
+    const { reportResults } = await import('./outputParsers.js');
 
     const input: Result = {
       commits: [],
       lastRelease: {
+        channels: [],
         gitHead: 'ca39a3ee5e6b4b0d3255bfef95601890afd80708',
         gitTag: 'v1.1.0',
+        name: 'v1.1.0',
         version: '1.1.0',
       },
       nextRelease: {
+        channel: 'latest',
         gitHead: 'da39a3ee5e6b4b0d3255bfef95601890afd80709',
         gitTag: 'v1.1.1',
+        name: 'v1.1.1',
         notes: 'Note',
         type: 'patch',
         version: '1.1.1',
@@ -47,19 +57,25 @@ describe('reportResults', (): void => {
     expect(setOutputSpy).toHaveBeenCalledWith('git-tag', 'v1.1.1');
   });
 
-  it('sets prerelease and meta outputs if they are included in the version', (): void => {
+  it('sets prerelease and meta outputs if they are included in the version', async (): Promise<void> => {
     expect.assertions(3);
+
+    const { reportResults } = await import('./outputParsers.js');
 
     const input: Result = {
       commits: [],
       lastRelease: {
+        channels: [],
         gitHead: 'refs/heads/master',
         gitTag: '1.1.0',
+        name: '1.1.0',
         version: '1.1.0',
       },
       nextRelease: {
+        channel: 'latest',
         gitHead: 'refs/heads/master',
         gitTag: '1.1.1-prerelease+build',
+        name: '1.1.1-prerelease+build',
         notes: 'Note',
         type: 'patch',
         version: '1.1.1-prerelease+build',
@@ -74,8 +90,10 @@ describe('reportResults', (): void => {
     expect(setOutputSpy).toHaveBeenCalledWith('build', 'build');
   });
 
-  it('throws an error if there is no released version', (): void => {
+  it('throws an error if there is no released version', async (): Promise<void> => {
     expect.assertions(2);
+
+    const { reportResults } = await import('./outputParsers.js');
 
     reportResults(false);
 

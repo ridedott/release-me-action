@@ -1,6 +1,6 @@
-import { Commit } from 'conventional-commits-parser';
+import type { Commit } from 'conventional-commits-parser';
 
-import { transform } from './transform';
+import { transform } from './transform.js';
 
 /**
  * The type is a union because inconsistent typing definitions
@@ -8,14 +8,14 @@ import { transform } from './transform';
  */
 const makeCommit = (
   overrides: { [key: string]: Commit.Field | object } = {},
-): Commit => {
+): Commit =>
   /*
    * This ts-ignore relates to the types provided by the commit-parser
    * being incorrect.
    */
   /* eslint-disable-next-line @typescript-eslint/ban-ts-comment */
   // @ts-expect-error
-  return {
+  ({
     body: null,
     footer: null,
     header: null,
@@ -26,8 +26,7 @@ const makeCommit = (
     revert: null,
     type: 'random',
     ...overrides,
-  };
-};
+  });
 
 describe('transform', (): void => {
   it.each([
@@ -81,7 +80,7 @@ describe('transform', (): void => {
       }),
     ) as Commit;
 
-    expect(result.shortHash).toStrictEqual('short-hash');
+    expect(result.shortHash).toBe('short-hash');
   });
 
   it('omits adding the commit short hash as a property of the commit when it does not exist on the input', (): void => {

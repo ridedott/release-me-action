@@ -1,51 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`generatePlugins configures the git plugin to commit the specified assets as part of the release process 1`] = `
-Array [
-  Array [
+[
+  [
     "@semantic-release/commit-analyzer",
-    Object {
-      "parserOpts": Object {
-        "mergeCorrespondence": Array [
+    {
+      "parserOpts": {
+        "mergeCorrespondence": [
           "id",
           "source",
         ],
         "mergePattern": /\\^Merge pull request #\\\\d\\+ from \\.\\*\\$/u,
       },
       "preset": "angular",
-      "releaseRules": Array [],
+      "releaseRules": [],
     },
   ],
-  Array [
+  [
     "@semantic-release/release-notes-generator",
-    Object {
+    {
       "preset": "angular",
-      "writerOpts": Object {
+      "writerOpts": {
         "transform": [Function],
       },
     },
   ],
   "@semantic-release/changelog",
-  Array [
+  [
     "@semantic-release/exec",
-    Object {
+    {
       "prepareCmd": "npx prettier --parser markdown --write CHANGELOG.md",
     },
   ],
-  Array [
+  [
     "@semantic-release/git",
-    Object {
-      "assets": Array [
+    {
+      "assets": [
         "./CHANGELOG.md",
         "./src",
       ],
       "message": "chore(release): v\${nextRelease.version}",
     },
   ],
-  Array [
+  [
     "@semantic-release/github",
-    Object {
-      "assets": Array [],
+    {
+      "assets": [],
       "failComment": false,
       "releasedLabels": false,
       "successComment": false,
@@ -55,47 +55,47 @@ Array [
 `;
 
 exports[`generatePlugins configures the git plugin to commit the updated package files when the isNodeModule parameter is set to true 1`] = `
-Array [
-  Array [
+[
+  [
     "@semantic-release/commit-analyzer",
-    Object {
-      "parserOpts": Object {
-        "mergeCorrespondence": Array [
+    {
+      "parserOpts": {
+        "mergeCorrespondence": [
           "id",
           "source",
         ],
         "mergePattern": /\\^Merge pull request #\\\\d\\+ from \\.\\*\\$/u,
       },
       "preset": "angular",
-      "releaseRules": Array [],
+      "releaseRules": [],
     },
   ],
-  Array [
+  [
     "@semantic-release/release-notes-generator",
-    Object {
+    {
       "preset": "angular",
-      "writerOpts": Object {
+      "writerOpts": {
         "transform": [Function],
       },
     },
   ],
   "@semantic-release/changelog",
-  Array [
+  [
     "@semantic-release/exec",
-    Object {
+    {
       "prepareCmd": "npx prettier --parser markdown --write CHANGELOG.md",
     },
   ],
-  Array [
+  [
     "@semantic-release/npm",
-    Object {
+    {
       "npmPublish": false,
     },
   ],
-  Array [
+  [
     "@semantic-release/git",
-    Object {
-      "assets": Array [
+    {
+      "assets": [
         "./CHANGELOG.md",
         "./package.json",
         "./package-lock.json",
@@ -104,10 +104,10 @@ Array [
       "message": "chore(release): v\${nextRelease.version}",
     },
   ],
-  Array [
+  [
     "@semantic-release/github",
-    Object {
-      "assets": Array [],
+    {
+      "assets": [],
       "failComment": false,
       "releasedLabels": false,
       "successComment": false,
@@ -117,50 +117,50 @@ Array [
 `;
 
 exports[`generatePlugins configures the git plugin to omit committing the updated package files when isNodeModule is set to false 1`] = `
-Array [
-  Array [
+[
+  [
     "@semantic-release/commit-analyzer",
-    Object {
-      "parserOpts": Object {
-        "mergeCorrespondence": Array [
+    {
+      "parserOpts": {
+        "mergeCorrespondence": [
           "id",
           "source",
         ],
         "mergePattern": /\\^Merge pull request #\\\\d\\+ from \\.\\*\\$/u,
       },
       "preset": "angular",
-      "releaseRules": Array [],
+      "releaseRules": [],
     },
   ],
-  Array [
+  [
     "@semantic-release/release-notes-generator",
-    Object {
+    {
       "preset": "angular",
-      "writerOpts": Object {
+      "writerOpts": {
         "transform": [Function],
       },
     },
   ],
   "@semantic-release/changelog",
-  Array [
+  [
     "@semantic-release/exec",
-    Object {
+    {
       "prepareCmd": "npx prettier --parser markdown --write CHANGELOG.md",
     },
   ],
-  Array [
+  [
     "@semantic-release/git",
-    Object {
-      "assets": Array [
+    {
+      "assets": [
         "./CHANGELOG.md",
       ],
       "message": "chore(release): v\${nextRelease.version}",
     },
   ],
-  Array [
+  [
     "@semantic-release/github",
-    Object {
-      "assets": Array [],
+    {
+      "assets": [],
       "failComment": false,
       "releasedLabels": false,
       "successComment": false,
@@ -170,50 +170,50 @@ Array [
 `;
 
 exports[`generatePlugins configures the github plugin to release the specified assets as part of the release process 1`] = `
-Array [
-  Array [
+[
+  [
     "@semantic-release/commit-analyzer",
-    Object {
-      "parserOpts": Object {
-        "mergeCorrespondence": Array [
+    {
+      "parserOpts": {
+        "mergeCorrespondence": [
           "id",
           "source",
         ],
         "mergePattern": /\\^Merge pull request #\\\\d\\+ from \\.\\*\\$/u,
       },
       "preset": "angular",
-      "releaseRules": Array [],
+      "releaseRules": [],
     },
   ],
-  Array [
+  [
     "@semantic-release/release-notes-generator",
-    Object {
+    {
       "preset": "angular",
-      "writerOpts": Object {
+      "writerOpts": {
         "transform": [Function],
       },
     },
   ],
   "@semantic-release/changelog",
-  Array [
+  [
     "@semantic-release/exec",
-    Object {
+    {
       "prepareCmd": "npx prettier --parser markdown --write CHANGELOG.md",
     },
   ],
-  Array [
+  [
     "@semantic-release/git",
-    Object {
-      "assets": Array [
+    {
+      "assets": [
         "./CHANGELOG.md",
       ],
       "message": "chore(release): v\${nextRelease.version}",
     },
   ],
-  Array [
+  [
     "@semantic-release/github",
-    Object {
-      "assets": Array [
+    {
+      "assets": [
         "./src",
       ],
       "failComment": false,
@@ -225,47 +225,47 @@ Array [
 `;
 
 exports[`generatePlugins configures the npm plugin to bump the package versions when the isNodeModule parameter is set to true 1`] = `
-Array [
-  Array [
+[
+  [
     "@semantic-release/commit-analyzer",
-    Object {
-      "parserOpts": Object {
-        "mergeCorrespondence": Array [
+    {
+      "parserOpts": {
+        "mergeCorrespondence": [
           "id",
           "source",
         ],
         "mergePattern": /\\^Merge pull request #\\\\d\\+ from \\.\\*\\$/u,
       },
       "preset": "angular",
-      "releaseRules": Array [],
+      "releaseRules": [],
     },
   ],
-  Array [
+  [
     "@semantic-release/release-notes-generator",
-    Object {
+    {
       "preset": "angular",
-      "writerOpts": Object {
+      "writerOpts": {
         "transform": [Function],
       },
     },
   ],
   "@semantic-release/changelog",
-  Array [
+  [
     "@semantic-release/exec",
-    Object {
+    {
       "prepareCmd": "npx prettier --parser markdown --write CHANGELOG.md",
     },
   ],
-  Array [
+  [
     "@semantic-release/npm",
-    Object {
+    {
       "npmPublish": false,
     },
   ],
-  Array [
+  [
     "@semantic-release/git",
-    Object {
-      "assets": Array [
+    {
+      "assets": [
         "./CHANGELOG.md",
         "./package.json",
         "./package-lock.json",
@@ -274,10 +274,10 @@ Array [
       "message": "chore(release): v\${nextRelease.version}",
     },
   ],
-  Array [
+  [
     "@semantic-release/github",
-    Object {
-      "assets": Array [],
+    {
+      "assets": [],
       "failComment": false,
       "releasedLabels": false,
       "successComment": false,
@@ -287,41 +287,41 @@ Array [
 `;
 
 exports[`generatePlugins excludes the changelog plugin when called with the disableChangelog parameter set to true 1`] = `
-Array [
-  Array [
+[
+  [
     "@semantic-release/commit-analyzer",
-    Object {
-      "parserOpts": Object {
-        "mergeCorrespondence": Array [
+    {
+      "parserOpts": {
+        "mergeCorrespondence": [
           "id",
           "source",
         ],
         "mergePattern": /\\^Merge pull request #\\\\d\\+ from \\.\\*\\$/u,
       },
       "preset": "angular",
-      "releaseRules": Array [],
+      "releaseRules": [],
     },
   ],
-  Array [
+  [
     "@semantic-release/release-notes-generator",
-    Object {
+    {
       "preset": "angular",
-      "writerOpts": Object {
+      "writerOpts": {
         "transform": [Function],
       },
     },
   ],
-  Array [
+  [
     "@semantic-release/git",
-    Object {
-      "assets": Array [],
+    {
+      "assets": [],
       "message": "chore(release): v\${nextRelease.version}",
     },
   ],
-  Array [
+  [
     "@semantic-release/github",
-    Object {
-      "assets": Array [],
+    {
+      "assets": [],
       "failComment": false,
       "releasedLabels": false,
       "successComment": false,
@@ -331,50 +331,50 @@ Array [
 `;
 
 exports[`generatePlugins excludes the npm plugin when called with the isNodeModule parameter set to false 1`] = `
-Array [
-  Array [
+[
+  [
     "@semantic-release/commit-analyzer",
-    Object {
-      "parserOpts": Object {
-        "mergeCorrespondence": Array [
+    {
+      "parserOpts": {
+        "mergeCorrespondence": [
           "id",
           "source",
         ],
         "mergePattern": /\\^Merge pull request #\\\\d\\+ from \\.\\*\\$/u,
       },
       "preset": "angular",
-      "releaseRules": Array [],
+      "releaseRules": [],
     },
   ],
-  Array [
+  [
     "@semantic-release/release-notes-generator",
-    Object {
+    {
       "preset": "angular",
-      "writerOpts": Object {
+      "writerOpts": {
         "transform": [Function],
       },
     },
   ],
   "@semantic-release/changelog",
-  Array [
+  [
     "@semantic-release/exec",
-    Object {
+    {
       "prepareCmd": "npx prettier --parser markdown --write CHANGELOG.md",
     },
   ],
-  Array [
+  [
     "@semantic-release/git",
-    Object {
-      "assets": Array [
+    {
+      "assets": [
         "./CHANGELOG.md",
       ],
       "message": "chore(release): v\${nextRelease.version}",
     },
   ],
-  Array [
+  [
     "@semantic-release/github",
-    Object {
-      "assets": Array [],
+    {
+      "assets": [],
       "failComment": false,
       "releasedLabels": false,
       "successComment": false,

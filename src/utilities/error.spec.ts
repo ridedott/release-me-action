@@ -1,4 +1,4 @@
-import { getSetFailedErrorString } from './error';
+import { getSetFailedErrorString } from './error.js';
 
 interface TestCase {
   expected: string;
@@ -36,12 +36,10 @@ describe('getSetFailedErrorString', (): void => {
     },
   ];
 
-  testCases.forEach((test): void => {
-    it(`given an Error: ${test.messageOrError} should return: ${test.expected}`, (): void => {
-      expect.assertions(1);
-      const result = getSetFailedErrorString(test.messageOrError);
+  it.each(testCases)('given an Error: %o return: %s', (test): void => {
+    expect.assertions(1);
+    const result = getSetFailedErrorString(test.messageOrError);
 
-      expect(result).toStrictEqual(test.expected);
-    });
+    expect(result).toStrictEqual(test.expected);
   });
 });

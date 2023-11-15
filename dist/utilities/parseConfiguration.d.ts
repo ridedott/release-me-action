@@ -1,4 +1,4 @@
-import { Options } from 'semantic-release';
+import type { Options } from 'semantic-release';
 /**
  * Returns a semantic release configuration object when given a filepath.
  * @param filePath File path of the .yaml or .js configuration file.

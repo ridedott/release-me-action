@@ -1,0 +1,25 @@
+{
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "exclude": ["node_modules"],
+  "include": ["./jest.config.ts", "./src/**/*.ts", "./__mocks__/**/*.ts"],
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "module": "node16",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "rootDir": ".",
+    "sourceMap": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "target": "es2022",
+    "types": ["node", "jest"]
+  },
+  "ts-node": {
+    "esm": true
+  }
+}

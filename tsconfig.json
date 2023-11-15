@@ -1,7 +1,3 @@
 {
-  "compilerOptions": {
-    "rootDir": "."
-  },
-  "extends": "./tsconfig.production.json",
-  "include": ["./**/*"]
+  "extends": "./tsconfig.common.json"
 }
