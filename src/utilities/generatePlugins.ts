@@ -8,14 +8,14 @@ export const generatePlugins = ({
   commitAssets,
   disableChangeLog = false,
   isNodeModule,
-  pkgRoot,
+  packageRoot,
   releaseAssets,
   releaseRules,
 }: {
   commitAssets: string[];
   disableChangeLog?: boolean;
   isNodeModule: boolean;
-  pkgRoot: string;
+  packageRoot: string;
   releaseAssets: string[];
   releaseRules: ReleaseRule[];
 }): PluginSpec[] /* eslint-disable unicorn/prevent-abbreviations */ => [
@@ -56,7 +56,7 @@ export const generatePlugins = ({
           '@semantic-release/npm',
           {
             npmPublish: false,
-            ...(pkgRoot && {pkgRoot}),
+            pkgRoot: packageRoot,
           },
         ] as PluginSpec,
       ]

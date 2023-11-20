@@ -90,6 +90,7 @@ exports[`generatePlugins configures the git plugin to commit the updated package
     "@semantic-release/npm",
     {
       "npmPublish": false,
+      "pkgRoot": ".",
     },
   ],
   [
@@ -260,6 +261,7 @@ exports[`generatePlugins configures the npm plugin to bump the package versions 
     "@semantic-release/npm",
     {
       "npmPublish": false,
+      "pkgRoot": ".",
     },
   ],
   [
