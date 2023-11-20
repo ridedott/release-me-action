@@ -15,6 +15,7 @@ export enum InputParameters {
   DisableChangelog = 'disable-changelog',
   DryRun = 'dry-run',
   NodeModule = 'node-module',
+  PkgRoot = 'pkg-root',
   ReleaseAssets = 'release-assets',
   ReleaseBranches = 'release-branches',
   ReleaseRules = 'release-rules',
@@ -185,6 +186,16 @@ export const processInputAdditionalPlugins = ():
 
 export const processInputNodeModule = (): boolean =>
   getInput(InputParameters.NodeModule) === 'true';
+
+export const processInputPkgRoot = (): string | undefined => {
+  const input = getInput(InputParameters.PkgRoot); 
+
+  if (input?.length === 0) {
+    return undefined;
+  }
+
+  return input;
+}
 
 export const processInputDisableChangelog = (): boolean =>
   getInput(InputParameters.DisableChangelog) === 'true';
