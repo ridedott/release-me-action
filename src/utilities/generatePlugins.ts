@@ -19,7 +19,8 @@ export const generatePlugins = ({
   releaseAssets: string[];
   releaseRules: ReleaseRule[];
 }): PluginSpec[] /* eslint-disable unicorn/prevent-abbreviations */ => {
-  console.log("root: ", packageRoot);
+  console.log('root:', packageRoot);
+
   return [
     [
       '@semantic-release/commit-analyzer',
@@ -52,6 +53,17 @@ export const generatePlugins = ({
           ] as PluginSpec,
         ]
       : []),
+    ...(isNodeModule === true
+      ? [
+          [
+            '@semantic-release/npm',
+            {
+              npmPublish: false,
+              pkgRoot: packageRoot,
+            },
+          ] as PluginSpec,
+        ]
+      : []),
     [
       '@semantic-release/git',
       {
@@ -75,5 +87,6 @@ export const generatePlugins = ({
         successComment: false,
       },
     ],
-]};
+  ];
+};
 /* eslint-enable unicorn/prevent-abbreviations */
