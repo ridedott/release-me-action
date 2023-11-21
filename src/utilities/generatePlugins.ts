@@ -52,17 +52,6 @@ export const generatePlugins = ({
           ] as PluginSpec,
         ]
       : []),
-    ...(isNodeModule === true
-      ? [
-          [
-            '@semantic-release/npm',
-            {
-              npmPublish: false,
-              pkgRoot: packageRoot,
-            },
-          ] as PluginSpec,
-        ]
-      : []),
     [
       '@semantic-release/git',
       {
