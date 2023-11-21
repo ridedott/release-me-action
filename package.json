@@ -32,7 +32,7 @@
     "@tsconfig/node20": "^20.1.2",
     "@types/conventional-changelog-writer": "^4.0.9",
     "@types/env-ci": "^3.1.4",
-    "@types/hapi__joi": "^17.1.13",
+    "@types/hapi__joi": "^17.1.14",
     "@types/jest": "^29.5.8",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^20.9.2",
