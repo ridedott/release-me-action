@@ -9,6 +9,7 @@ export declare enum InputParameters {
     DisableChangelog = "disable-changelog",
     DryRun = "dry-run",
     NodeModule = "node-module",
+    PackageRoot = "pkg-root",
     ReleaseAssets = "release-assets",
     ReleaseBranches = "release-branches",
     ReleaseRules = "release-rules",
@@ -29,6 +30,7 @@ export interface ReleaseRule {
 export declare const DEFAULT_RELEASE_RULES: ReleaseRule[];
 export declare const processInputAdditionalPlugins: () => AdditionalPluginsSpec | undefined;
 export declare const processInputNodeModule: () => boolean;
+export declare const processInputPackageRoot: () => string;
 export declare const processInputDisableChangelog: () => boolean;
 export declare const processInputDryRun: () => boolean;
 export declare const processInputReleaseBranches: () => BranchSpec[] | undefined;
