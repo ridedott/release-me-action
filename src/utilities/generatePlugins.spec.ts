@@ -9,6 +9,7 @@ describe('generatePlugins', (): void => {
         commitAssets: [],
         disableChangeLog: true,
         isNodeModule: false,
+        packageRoot: '.',
         releaseAssets: [],
         releaseRules: [],
       }),
@@ -22,6 +23,7 @@ describe('generatePlugins', (): void => {
       generatePlugins({
         commitAssets: [],
         isNodeModule: false,
+        packageRoot: '.',
         releaseAssets: [],
         releaseRules: [],
       }),
@@ -35,6 +37,7 @@ describe('generatePlugins', (): void => {
       generatePlugins({
         commitAssets: [],
         isNodeModule: false,
+        packageRoot: '.',
         releaseAssets: [],
         releaseRules: [],
       }),
@@ -48,6 +51,7 @@ describe('generatePlugins', (): void => {
       generatePlugins({
         commitAssets: [],
         isNodeModule: true,
+        packageRoot: '.',
         releaseAssets: [],
         releaseRules: [],
       }),
@@ -61,6 +65,7 @@ describe('generatePlugins', (): void => {
       generatePlugins({
         commitAssets: [],
         isNodeModule: true,
+        packageRoot: '.',
         releaseAssets: [],
         releaseRules: [],
       }),
@@ -74,6 +79,7 @@ describe('generatePlugins', (): void => {
       generatePlugins({
         commitAssets: ['./src'],
         isNodeModule: false,
+        packageRoot: '.',
         releaseAssets: [],
         releaseRules: [],
       }),
@@ -87,6 +93,7 @@ describe('generatePlugins', (): void => {
       generatePlugins({
         commitAssets: [],
         isNodeModule: false,
+        packageRoot: '.',
         releaseAssets: ['./src'],
         releaseRules: [],
       }),

@@ -30,6 +30,10 @@ inputs:
       Bumps the package version and updates the repository package.json and
       package-lock.json or yarn-lock.yaml.
     required: false
+  pkg-root:
+    default: '.'
+    description: Directory path to publish the npm module.
+    required: false
   release-assets:
     description:
       Configures the list of assets to attach to the release alongside the
