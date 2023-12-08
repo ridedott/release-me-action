@@ -1,3 +1,12 @@
+## [3.10.3](https://github.com/ridedott/release-me-action/compare/v3.10.2...v3.10.3) (2023-12-08)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 20.10.3 to 20.10.4
+  ([e60b9e3](https://github.com/ridedott/release-me-action/commit/e60b9e3496121a8e71f566276a3d619a6cc8681b))
+- **deps:** bump @semantic-release/github from 9.2.4 to 9.2.5
+  ([730d6fd](https://github.com/ridedott/release-me-action/commit/730d6fd9619ab1899280a1c3c3cf6f066e7df83b))
+
 ## [3.10.2](https://github.com/ridedott/release-me-action/compare/v3.10.1...v3.10.2) (2023-12-08)
 
 ### Chores
