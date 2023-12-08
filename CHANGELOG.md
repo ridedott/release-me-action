@@ -1,3 +1,26 @@
+## [3.10.2](https://github.com/ridedott/release-me-action/compare/v3.10.1...v3.10.2) (2023-12-08)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.3.99 to 1.3.100
+  ([3972dfb](https://github.com/ridedott/release-me-action/commit/3972dfb4d84fd6d6d2d749e9b1ff9015a6e87063))
+- **deps-dev:** bump @types/jest from 29.5.10 to 29.5.11
+  ([6270974](https://github.com/ridedott/release-me-action/commit/62709746abe2de4310a9f94eb35cb1207eff55b3))
+- **deps-dev:** bump @types/node from 20.10.1 to 20.10.3
+  ([65567f1](https://github.com/ridedott/release-me-action/commit/65567f154a6d255079bd74d788702ecea5054547))
+- **deps-dev:** bump cspell from 8.0.0 to 8.1.0
+  ([1025eff](https://github.com/ridedott/release-me-action/commit/1025eff54e917c3de275ea2ffec0d27bf03bfa24))
+- **deps-dev:** bump cspell from 8.1.0 to 8.1.2
+  ([b50333d](https://github.com/ridedott/release-me-action/commit/b50333d57ede4b8496fbd91faefecc97c3fdf86b))
+- **deps-dev:** bump cspell from 8.1.2 to 8.1.3
+  ([26861a6](https://github.com/ridedott/release-me-action/commit/26861a6a382e731a802e979a00dcbf95ad8d32e4))
+- **deps-dev:** bump eslint from 8.54.0 to 8.55.0
+  ([2534f90](https://github.com/ridedott/release-me-action/commit/2534f90548670e6e0b1711ae7745d0b4a2057822))
+- **deps-dev:** bump lint-staged from 15.1.0 to 15.2.0
+  ([7f19cfa](https://github.com/ridedott/release-me-action/commit/7f19cfa6fc21e0fa454e41f7848178e5e1592594))
+- **deps:** bump @semantic-release/npm from 11.0.1 to 11.0.2
+  ([c1e7ef5](https://github.com/ridedott/release-me-action/commit/c1e7ef555a704b640eb9cb98852de567b10651b9))
+
 ## [3.10.1](https://github.com/ridedott/release-me-action/compare/v3.10.0...v3.10.1) (2023-11-30)
 
 ### Chores
