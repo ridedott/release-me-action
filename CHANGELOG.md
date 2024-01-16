@@ -1,3 +1,54 @@
+## [3.10.6](https://github.com/ridedott/release-me-action/compare/v3.10.5...v3.10.6) (2024-01-16)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 18.4.3 to 18.4.4
+  ([a0c6ba6](https://github.com/ridedott/release-me-action/commit/a0c6ba6e9c0ca2685e651f7839ad19dfb6f5e2c8))
+- **deps-dev:** bump @commitlint/config-conventional from 18.4.3 to 18.4.4
+  ([5198086](https://github.com/ridedott/release-me-action/commit/5198086c86b0b8290ab866c87a5edd97d0adb99a))
+- **deps-dev:** bump @ridedott/eslint-config from 2.27.29 to 2.27.31
+  ([8460fc9](https://github.com/ridedott/release-me-action/commit/8460fc9172f61820253979c6ed764858caed2bf2))
+- **deps-dev:** bump @ridedott/eslint-config from 2.27.31 to 2.27.32
+  ([cb60fec](https://github.com/ridedott/release-me-action/commit/cb60fec111ff178384dffb8fd1ac7f423b8deca0))
+- **deps-dev:** bump @ridedott/eslint-config from 2.27.32 to 2.27.34
+  ([5b584e1](https://github.com/ridedott/release-me-action/commit/5b584e182677e965d5de7f5194df8fff62514679))
+- **deps-dev:** bump @ridedott/eslint-config from 2.27.34 to 2.27.35
+  ([2ccdb43](https://github.com/ridedott/release-me-action/commit/2ccdb433c60421b71c56b4369f3f9944596c63ab))
+- **deps-dev:** bump @ridedott/eslint-config from 2.27.35 to 2.27.37
+  ([6c6f622](https://github.com/ridedott/release-me-action/commit/6c6f622cb03cc3ae660e48e599433af2a7d7ed7b))
+- **deps-dev:** bump @ridedott/eslint-config from 2.27.37 to 2.27.39
+  ([dd4aae3](https://github.com/ridedott/release-me-action/commit/dd4aae3022d24201fc8873a03a981ffcc45f80c4))
+- **deps-dev:** bump @ridedott/eslint-config from 2.27.39 to 2.27.40
+  ([0edfa88](https://github.com/ridedott/release-me-action/commit/0edfa8821506b5c67add7e5a9f9b7a4b77f7b98b))
+- **deps-dev:** bump @ridedott/eslint-config from 2.27.40 to 2.27.42
+  ([87804ea](https://github.com/ridedott/release-me-action/commit/87804eaeb0493776c9ad7a1890c47a2fbd1c51da))
+- **deps-dev:** bump @swc/core from 1.3.101 to 1.3.102
+  ([21d08ba](https://github.com/ridedott/release-me-action/commit/21d08ba51bae2e210f3d916a44abf888993f75f8))
+- **deps-dev:** bump @types/node from 20.10.5 to 20.10.6
+  ([92d197c](https://github.com/ridedott/release-me-action/commit/92d197c3fb89b1addf387901feac461494d33b6d))
+- **deps-dev:** bump @types/node from 20.10.6 to 20.10.7
+  ([af6eeb7](https://github.com/ridedott/release-me-action/commit/af6eeb7b0e3739e803f5586ff7ee65bce9f8549e))
+- **deps-dev:** bump @types/node from 20.10.7 to 20.10.8
+  ([73d6ebd](https://github.com/ridedott/release-me-action/commit/73d6ebd410cd2ca88b8844d5d5e5c2d937d58816))
+- **deps-dev:** bump @types/node from 20.10.8 to 20.11.0
+  ([93cbb25](https://github.com/ridedott/release-me-action/commit/93cbb257a98a55cdeeefd1a9aadaec403b9e3d50))
+- **deps-dev:** bump @types/node from 20.11.0 to 20.11.1
+  ([54a9a4e](https://github.com/ridedott/release-me-action/commit/54a9a4e20874a94febd01201116b2d79583f8eb2))
+- **deps-dev:** bump @types/node from 20.11.1 to 20.11.3
+  ([5741831](https://github.com/ridedott/release-me-action/commit/5741831276e5cdacc1d901eac6a590947712228f))
+- **deps-dev:** bump cspell from 8.2.3 to 8.2.4
+  ([fc42e78](https://github.com/ridedott/release-me-action/commit/fc42e78e1e362fee1550111ff83e6f42e59c7dab))
+- **deps-dev:** bump cspell from 8.2.4 to 8.3.0
+  ([1ad6eb4](https://github.com/ridedott/release-me-action/commit/1ad6eb43b1b6a066e5cd2b2ef541137b24481cdd))
+- **deps-dev:** bump cspell from 8.3.0 to 8.3.1
+  ([52c9af8](https://github.com/ridedott/release-me-action/commit/52c9af8a8831a4681e38654c144ff8356e17a130))
+- **deps-dev:** bump cspell from 8.3.1 to 8.3.2
+  ([21e36a3](https://github.com/ridedott/release-me-action/commit/21e36a313c239f29b23bbb9b815d74fd00578260))
+- **deps-dev:** bump prettier from 3.1.1 to 3.2.2
+  ([36c5ab7](https://github.com/ridedott/release-me-action/commit/36c5ab79197652453462628a14fa2b2fea56af7a))
+- **deps:** bump joi from 17.11.0 to 17.11.1
+  ([669c612](https://github.com/ridedott/release-me-action/commit/669c612e0131355727926277c9d128eaabb1b255))
+
 ## [3.10.5](https://github.com/ridedott/release-me-action/compare/v3.10.4...v3.10.5) (2023-12-25)
 
 ### Chores
