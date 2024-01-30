@@ -1,3 +1,48 @@
+## [3.10.8](https://github.com/ridedott/release-me-action/compare/v3.10.7...v3.10.8) (2024-01-30)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 18.4.4 to 18.5.0
+  ([364daa9](https://github.com/ridedott/release-me-action/commit/364daa97490623222e90a4e6f67a78359570900c))
+- **deps-dev:** bump @commitlint/cli from 18.5.0 to 18.6.0
+  ([5cf9dcc](https://github.com/ridedott/release-me-action/commit/5cf9dccb35e3b4543fb3726178e836fd301bdf90))
+- **deps-dev:** bump @commitlint/config-conventional from 18.4.4 to 18.5.0
+  ([ecb6118](https://github.com/ridedott/release-me-action/commit/ecb6118e8c7b7def4d460a34869e784d220074ad))
+- **deps-dev:** bump @commitlint/config-conventional from 18.5.0 to 18.6.0
+  ([24cbab1](https://github.com/ridedott/release-me-action/commit/24cbab1a444634c2c2587a9294a28fe266e66c8a))
+- **deps-dev:** bump @ridedott/eslint-config from 2.27.44 to 2.27.46
+  ([091f2b2](https://github.com/ridedott/release-me-action/commit/091f2b260ca2c68f42a63ffc3a7b2c824d05de13))
+- **deps-dev:** bump @ridedott/eslint-config from 2.27.46 to 2.27.47
+  ([f571169](https://github.com/ridedott/release-me-action/commit/f571169ebdcceb42c63d560d3a78ac98038d967b))
+- **deps-dev:** bump @ridedott/eslint-config from 2.27.47 to 2.27.48
+  ([3e1320a](https://github.com/ridedott/release-me-action/commit/3e1320ad56c19a898bdb8065d6fc7c204543b21a))
+- **deps-dev:** bump @swc/core from 1.3.104 to 1.3.105
+  ([84c4aad](https://github.com/ridedott/release-me-action/commit/84c4aad4022c1e5047c2b7ef7df8f72471187085))
+- **deps-dev:** bump @swc/core from 1.3.105 to 1.3.106
+  ([1d19f4f](https://github.com/ridedott/release-me-action/commit/1d19f4f64e8946ac8a2ddde517ba9e0faca61e19))
+- **deps-dev:** bump @swc/core from 1.3.106 to 1.3.107
+  ([f45c619](https://github.com/ridedott/release-me-action/commit/f45c619d1869a1f20c4bb4d1a85c1cb12add2d39))
+- **deps-dev:** bump @swc/jest from 0.2.29 to 0.2.30
+  ([1d354e4](https://github.com/ridedott/release-me-action/commit/1d354e4dd85ce972249f1a8414e0c3c87e7c6f95))
+- **deps-dev:** bump @swc/jest from 0.2.30 to 0.2.31
+  ([3941718](https://github.com/ridedott/release-me-action/commit/3941718312675883b15c9d4c1db0223caac5133d))
+- **deps-dev:** bump @types/node from 20.11.5 to 20.11.6
+  ([e84974e](https://github.com/ridedott/release-me-action/commit/e84974e4f6041b9fada962ec157ecbfa5a558de6))
+- **deps-dev:** bump @types/node from 20.11.6 to 20.11.7
+  ([44987af](https://github.com/ridedott/release-me-action/commit/44987af6bb0d21a10c326ccbff2945c2f754adbe))
+- **deps-dev:** bump @types/node from 20.11.7 to 20.11.10
+  ([2e4ebd0](https://github.com/ridedott/release-me-action/commit/2e4ebd03b0ff2b7d72aff28ae041c75c887e8670))
+- **deps-dev:** bump husky from 8.0.3 to 9.0.1
+  ([6dd6b07](https://github.com/ridedott/release-me-action/commit/6dd6b076e5a8d30a3b7c50de2ac998d801f5d27c))
+- **deps-dev:** bump husky from 9.0.1 to 9.0.6
+  ([8035015](https://github.com/ridedott/release-me-action/commit/80350150a8de01a23151f35134239d6a42976695))
+- **deps-dev:** bump husky from 9.0.6 to 9.0.7
+  ([51682a5](https://github.com/ridedott/release-me-action/commit/51682a5f3389b8fd0b778c75a84e8d66b0a268fd))
+- **deps-dev:** bump ts-jest from 29.1.1 to 29.1.2
+  ([5599d14](https://github.com/ridedott/release-me-action/commit/5599d14b9510d0bc03ac8e736194f28b429c8ad0))
+- **deps:** bump joi from 17.12.0 to 17.12.1
+  ([5f4cf6a](https://github.com/ridedott/release-me-action/commit/5f4cf6aac807d4416aeaaefdc006c5366150098a))
+
 ## [3.10.7](https://github.com/ridedott/release-me-action/compare/v3.10.6...v3.10.7) (2024-01-18)
 
 ### Chores
