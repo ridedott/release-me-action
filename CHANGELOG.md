@@ -1,3 +1,24 @@
+## [3.10.12](https://github.com/ridedott/release-me-action/compare/v3.10.11...v3.10.12) (2024-03-07)
+
+### Chores
+
+- **deps-dev:** bump @ridedott/eslint-config from 2.27.66 to 2.27.68
+  ([0b64afd](https://github.com/ridedott/release-me-action/commit/0b64afdf7751ecd6ce87cd01b610b773da5b991b))
+- **deps-dev:** bump @ridedott/eslint-config from 2.27.68 to 2.27.69
+  ([184e2d4](https://github.com/ridedott/release-me-action/commit/184e2d4c4af2d05089ed0754f20969a3ab239cf9))
+- **deps-dev:** bump @swc/core from 1.4.2 to 1.4.4
+  ([fedec4e](https://github.com/ridedott/release-me-action/commit/fedec4ec4ca1ef29d1f5ccde662642df4f458dcd))
+- **deps-dev:** bump @swc/core from 1.4.4 to 1.4.5
+  ([99b8110](https://github.com/ridedott/release-me-action/commit/99b81100a1cf515b5f94775847dd135deda0505d))
+- **deps-dev:** bump @types/node from 20.11.24 to 20.11.25
+  ([c8ecd3d](https://github.com/ridedott/release-me-action/commit/c8ecd3dd06dfca6791466dceaa7a3389c997e48e))
+- **deps-dev:** bump cspell from 8.4.1 to 8.5.0
+  ([ea79335](https://github.com/ridedott/release-me-action/commit/ea7933577a325a33c46440f6de14e29308e494a4))
+- **deps-dev:** bump cspell from 8.5.0 to 8.6.0
+  ([b647b5f](https://github.com/ridedott/release-me-action/commit/b647b5fb2b656154547df7215fdc1c52cb50fbf8))
+- **deps-dev:** bump typescript from 5.3.3 to 5.4.2
+  ([86ebf6d](https://github.com/ridedott/release-me-action/commit/86ebf6de36c1e95bad933d90a043e22ebeb5cc17))
+
 ## [3.10.11](https://github.com/ridedott/release-me-action/compare/v3.10.10...v3.10.11) (2024-03-04)
 
 ### Chores
