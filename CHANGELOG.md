@@ -1,3 +1,10 @@
+## [3.10.15](https://github.com/ridedott/release-me-action/compare/v3.10.14...v3.10.15) (2024-03-18)
+
+### Chores
+
+- **deps:** bump @semantic-release/npm from 11.0.3 to 12.0.0
+  ([e57462c](https://github.com/ridedott/release-me-action/commit/e57462cd08323bd4b3a65d7a6cc939b4af885fe1))
+
 ## [3.10.14](https://github.com/ridedott/release-me-action/compare/v3.10.13...v3.10.14) (2024-03-18)
 
 ### Chores
