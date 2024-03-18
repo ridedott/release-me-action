@@ -1,3 +1,14 @@
+## [3.10.14](https://github.com/ridedott/release-me-action/compare/v3.10.13...v3.10.14) (2024-03-18)
+
+### Chores
+
+- **deps-dev:** bump @ridedott/eslint-config from 2.27.73 to 2.27.75
+  ([8284bcc](https://github.com/ridedott/release-me-action/commit/8284bcc8676991be08fdfe94f01991adf8656131))
+- **deps-dev:** bump @types/node from 20.11.27 to 20.11.28
+  ([3efc9e6](https://github.com/ridedott/release-me-action/commit/3efc9e65a7d8cfa647624591220b82ac3e46a97c))
+- **deps:** bump @semantic-release/commit-analyzer from 11.1.0 to 12.0.0
+  ([94ae61a](https://github.com/ridedott/release-me-action/commit/94ae61a060836bb1ea6a2ff6ff6e89c05669d133))
+
 ## [3.10.13](https://github.com/ridedott/release-me-action/compare/v3.10.12...v3.10.13) (2024-03-15)
 
 ### Chores
