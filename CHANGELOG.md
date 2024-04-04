@@ -1,3 +1,10 @@
+## [3.10.19](https://github.com/ridedott/release-me-action/compare/v3.10.18...v3.10.19) (2024-04-04)
+
+### Chores
+
+- **deps:** bump undici from 5.28.3 to 5.28.4
+  ([67211de](https://github.com/ridedott/release-me-action/commit/67211deb534d777001f9a700f6bf94e660f257f2))
+
 ## [3.10.18](https://github.com/ridedott/release-me-action/compare/v3.10.17...v3.10.18) (2024-04-04)
 
 ### Chores
