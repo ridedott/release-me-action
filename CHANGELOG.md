@@ -1,3 +1,12 @@
+## [3.10.20](https://github.com/ridedott/release-me-action/compare/v3.10.19...v3.10.20) (2024-04-05)
+
+### Chores
+
+- **deps-dev:** bump @ridedott/eslint-config from 2.27.85 to 2.27.87
+  ([69c8daf](https://github.com/ridedott/release-me-action/commit/69c8daf866960d416f1615ca5e948ca67935dd36))
+- **deps-dev:** bump typescript from 5.4.3 to 5.4.4
+  ([b42d9cc](https://github.com/ridedott/release-me-action/commit/b42d9ccdaaf2dc53b3d44e75d68671e7b3a1bef9))
+
 ## [3.10.19](https://github.com/ridedott/release-me-action/compare/v3.10.18...v3.10.19) (2024-04-04)
 
 ### Chores
