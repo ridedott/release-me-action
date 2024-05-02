@@ -35,7 +35,7 @@
     "@types/hapi__joi": "^17.1.14",
     "@types/jest": "^29.5.12",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^20.12.7",
+    "@types/node": "^20.12.8",
     "@types/semantic-release": "^20.0.5",
     "@types/signale": "^1.4.7",
     "commitizen": "^4.3.0",
