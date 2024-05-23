@@ -1,3 +1,16 @@
+## [3.10.28](https://github.com/ridedott/release-me-action/compare/v3.10.27...v3.10.28) (2024-05-23)
+
+### Chores
+
+- **deps-dev:** bump @ridedott/eslint-config from 2.27.107 to 2.27.109
+  ([23a5536](https://github.com/ridedott/release-me-action/commit/23a55361cca1f51b86b6ffe4b898bf111979d46a))
+- **deps-dev:** bump lint-staged from 15.2.2 to 15.2.4
+  ([ed96a94](https://github.com/ridedott/release-me-action/commit/ed96a94270e9d2f1ed9edf96831429b87f49ca4f))
+- **deps-dev:** bump ts-jest from 29.1.2 to 29.1.3
+  ([8798d0e](https://github.com/ridedott/release-me-action/commit/8798d0eaf57583128d4632a8af4f2edeae4145c6))
+- **deps:** bump @semantic-release/github from 10.0.4 to 10.0.5
+  ([5858af3](https://github.com/ridedott/release-me-action/commit/5858af3af102eac6e4da798d8836886b76b48781))
+
 ## [3.10.27](https://github.com/ridedott/release-me-action/compare/v3.10.26...v3.10.27) (2024-05-16)
 
 ### Chores
