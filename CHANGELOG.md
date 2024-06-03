@@ -1,3 +1,30 @@
+## [3.10.29](https://github.com/ridedott/release-me-action/compare/v3.10.28...v3.10.29) (2024-06-03)
+
+### Chores
+
+- **deps-dev:** bump @ridedott/eslint-config from 2.27.109 to 2.27.110
+  ([68a599a](https://github.com/ridedott/release-me-action/commit/68a599aca1bdca217aa70e67555662022ad66aeb))
+- **deps-dev:** bump @swc/core from 1.5.7 to 1.5.24
+  ([0b39434](https://github.com/ridedott/release-me-action/commit/0b394348c7269a3df81244be425b125b092a5617))
+- **deps-dev:** bump @types/node from 20.12.12 to 20.12.13
+  ([9cbffe3](https://github.com/ridedott/release-me-action/commit/9cbffe3fb93ff9a00c60b3593059a34ee1ce9282))
+- **deps-dev:** bump @types/node from 20.12.13 to 20.14.0
+  ([7834377](https://github.com/ridedott/release-me-action/commit/7834377a6eb56c05004c9f8feccafef5e268ac2c))
+- **deps-dev:** bump cspell from 8.8.1 to 8.8.2
+  ([a43e08e](https://github.com/ridedott/release-me-action/commit/a43e08e005f15d2ceba3d50186a1c909fbcf0fbc))
+- **deps-dev:** bump cspell from 8.8.2 to 8.8.3
+  ([b77022e](https://github.com/ridedott/release-me-action/commit/b77022e0017261895cbfcbc5654bd3c94dadf5e9))
+- **deps-dev:** bump lint-staged from 15.2.4 to 15.2.5
+  ([8478741](https://github.com/ridedott/release-me-action/commit/8478741573597dff03e56f9d2525ecaa8d8bf2b4))
+- **deps-dev:** bump prettier from 3.2.5 to 3.3.0
+  ([4c52537](https://github.com/ridedott/release-me-action/commit/4c52537297cd292db7ae1384216c43c1fc58d74c))
+- **deps-dev:** bump ts-jest from 29.1.3 to 29.1.4
+  ([402daf6](https://github.com/ridedott/release-me-action/commit/402daf64e62a2f81aa3022190e992ba06995677f))
+- **deps:** bump @semantic-release/commit-analyzer from 12.0.0 to 13.0.0
+  ([600d8ff](https://github.com/ridedott/release-me-action/commit/600d8ffcbd3d4c852839c82d98c9f57d74453609))
+- **deps:** bump @semantic-release/release-notes-generator from 13.0.0 to 14.0.0
+  ([ba4df56](https://github.com/ridedott/release-me-action/commit/ba4df564e21bb8aaae444824f2559aecb04b5d5c))
+
 ## [3.10.28](https://github.com/ridedott/release-me-action/compare/v3.10.27...v3.10.28) (2024-05-23)
 
 ### Chores
