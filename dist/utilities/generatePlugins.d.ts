@@ -1,4 +1,3 @@
-/// <reference types="/home/runner/work/release-me-action/release-me-action/node_modules/semantic-release/index.js" />
 import type { PluginSpec } from 'semantic-release';
 import type { ReleaseRule } from './inputProcessors.js';
 export declare const generatePlugins: ({ commitAssets, disableChangeLog, isNodeModule, packageRoot, releaseAssets, releaseRules, }: {

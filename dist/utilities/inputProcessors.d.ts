@@ -1,4 +1,3 @@
-/// <reference types="/home/runner/work/release-me-action/release-me-action/node_modules/semantic-release/index.js" />
 import type { BranchSpec } from 'semantic-release';
 export interface AdditionalPluginsSpec {
     [plugin: string]: string;

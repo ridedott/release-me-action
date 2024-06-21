@@ -1,4 +1,3 @@
-/// <reference types="/home/runner/work/release-me-action/release-me-action/node_modules/semantic-release/index.js" />
 import type { Options } from 'semantic-release';
 /**
  * Returns a semantic release configuration object when given a filepath.
