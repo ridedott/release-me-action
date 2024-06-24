@@ -1,3 +1,14 @@
+## [3.10.33](https://github.com/ridedott/release-me-action/compare/v3.10.32...v3.10.33) (2024-06-24)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.6.3 to 1.6.5
+  ([e90254f](https://github.com/ridedott/release-me-action/commit/e90254fe043d3b6feaa280f057783cd5bcbeda14))
+- **deps-dev:** bump @types/node from 20.14.7 to 20.14.8
+  ([e13380a](https://github.com/ridedott/release-me-action/commit/e13380a0b154d5147bd55436f7bdf34942de6218))
+- **deps:** bump @semantic-release/release-notes-generator from 14.0.0 to 14.0.1
+  ([a95042d](https://github.com/ridedott/release-me-action/commit/a95042d8f50bce2679882e7f49c839b517e08868))
+
 ## [3.10.32](https://github.com/ridedott/release-me-action/compare/v3.10.31...v3.10.32) (2024-06-21)
 
 ### Chores
