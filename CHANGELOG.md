@@ -1,3 +1,16 @@
+## [3.10.34](https://github.com/ridedott/release-me-action/compare/v3.10.33...v3.10.34) (2024-07-02)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.6.5 to 1.6.6
+  ([7f788cb](https://github.com/ridedott/release-me-action/commit/7f788cb128445a42f41bf67160c208a47abd605c))
+- **deps-dev:** bump @types/node from 20.14.8 to 20.14.9
+  ([02b54bb](https://github.com/ridedott/release-me-action/commit/02b54bb9b87fcc19be15ea4a51a654c746c0cf64))
+- **deps-dev:** bump typescript from 5.5.2 to 5.5.3
+  ([e985636](https://github.com/ridedott/release-me-action/commit/e985636ea1a6331d5da9c3d224ac05b0b0cb47fc))
+- **deps:** bump @semantic-release/github from 10.0.6 to 10.0.7
+  ([9d982c5](https://github.com/ridedott/release-me-action/commit/9d982c5d79b6f2319bded5d94f60c2c23c8d7575))
+
 ## [3.10.33](https://github.com/ridedott/release-me-action/compare/v3.10.32...v3.10.33) (2024-06-24)
 
 ### Chores
