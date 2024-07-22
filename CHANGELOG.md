@@ -1,3 +1,26 @@
+## [3.10.36](https://github.com/ridedott/release-me-action/compare/v3.10.35...v3.10.36) (2024-07-22)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.6.13 to 1.7.0
+  ([327f99b](https://github.com/ridedott/release-me-action/commit/327f99b77290bee2e1e8f3fb5dfb46beebaeb25e))
+- **deps-dev:** bump @types/node from 20.14.10 to 20.14.11
+  ([e2c6756](https://github.com/ridedott/release-me-action/commit/e2c67563f1703811bc50f7967f89132d3a931ea6))
+- **deps-dev:** bump cspell from 8.10.4 to 8.11.0
+  ([eb88cf4](https://github.com/ridedott/release-me-action/commit/eb88cf44330c612404f1b0ed755a0e26477bbd19))
+- **deps-dev:** bump husky from 9.0.11 to 9.1.0
+  ([ea20975](https://github.com/ridedott/release-me-action/commit/ea2097599d8794eb1cfc0fc38de9669a4fd478b1))
+- **deps-dev:** bump husky from 9.1.0 to 9.1.1
+  ([1b180bc](https://github.com/ridedott/release-me-action/commit/1b180bc4e44125107a6c8458167fbe2615b33b29))
+- **deps-dev:** bump prettier from 3.3.2 to 3.3.3
+  ([8cd5271](https://github.com/ridedott/release-me-action/commit/8cd5271ca5541cbfbabe33daa79b964e7b3f1b81))
+- **deps-dev:** bump ts-jest from 29.2.0 to 29.2.2
+  ([84b3554](https://github.com/ridedott/release-me-action/commit/84b35549d0aef9c7c4369c9644fe4559ac98ab1e))
+- **deps-dev:** bump ts-jest from 29.2.2 to 29.2.3
+  ([fd131db](https://github.com/ridedott/release-me-action/commit/fd131dbab37b3c67179d21fdc3be78ed458d9020))
+- **deps:** bump @semantic-release/github from 10.1.0 to 10.1.1
+  ([43480ea](https://github.com/ridedott/release-me-action/commit/43480ea9be14e795bcfabb7a3d48da95f97bddcd))
+
 ## [3.10.35](https://github.com/ridedott/release-me-action/compare/v3.10.34...v3.10.35) (2024-07-09)
 
 ### Chores
