@@ -1,3 +1,12 @@
+## [3.10.37](https://github.com/ridedott/release-me-action/compare/v3.10.36...v3.10.37) (2024-07-23)
+
+### Chores
+
+- **deps-dev:** bump cspell from 8.11.0 to 8.12.1
+  ([ba823f2](https://github.com/ridedott/release-me-action/commit/ba823f25ea03c1147fa4815e81ee99383c6d4fd2))
+- **deps-dev:** bump typescript from 5.5.3 to 5.5.4
+  ([f59e1b4](https://github.com/ridedott/release-me-action/commit/f59e1b464d4227c9111942e10e5af9284788d980))
+
 ## [3.10.36](https://github.com/ridedott/release-me-action/compare/v3.10.35...v3.10.36) (2024-07-22)
 
 ### Chores
