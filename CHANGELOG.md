@@ -1,3 +1,18 @@
+## [3.10.38](https://github.com/ridedott/release-me-action/compare/v3.10.37...v3.10.38) (2024-07-26)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.7.0 to 1.7.1
+  ([2190bbb](https://github.com/ridedott/release-me-action/commit/2190bbb1b493490766184fa26030888cb0f3f90b))
+- **deps-dev:** bump @swc/core from 1.7.1 to 1.7.2
+  ([2a1ec4e](https://github.com/ridedott/release-me-action/commit/2a1ec4ed6028fb0e8106f0da7801eac89587f219))
+- **deps-dev:** bump @types/node from 20.14.11 to 20.14.12
+  ([500e5c8](https://github.com/ridedott/release-me-action/commit/500e5c891d5fd808556b280e1580b234f4c76e8c))
+- **deps-dev:** bump husky from 9.1.1 to 9.1.2
+  ([6409f84](https://github.com/ridedott/release-me-action/commit/6409f8449a08d8c67d92e1c9a89ef2f02782b263))
+- **deps:** bump @semantic-release/github from 10.1.1 to 10.1.3
+  ([5f5e85b](https://github.com/ridedott/release-me-action/commit/5f5e85bb0ef63051acd4c0459cce4f48e0a3d5c1))
+
 ## [3.10.37](https://github.com/ridedott/release-me-action/compare/v3.10.36...v3.10.37) (2024-07-23)
 
 ### Chores
