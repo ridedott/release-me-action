@@ -1,3 +1,18 @@
+## [3.10.40](https://github.com/ridedott/release-me-action/compare/v3.10.39...v3.10.40) (2024-08-15)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 22.1.0 to 22.2.0
+  ([e4c9ed4](https://github.com/ridedott/release-me-action/commit/e4c9ed4d0a05a4f7c0b66783df0eca40b84b39a4))
+- **deps-dev:** bump @types/node from 22.2.0 to 22.3.0
+  ([60e156d](https://github.com/ridedott/release-me-action/commit/60e156d233110178d08de9df732dc0327d9d96a7))
+- **deps-dev:** bump cspell from 8.13.2 to 8.13.3
+  ([fb0b255](https://github.com/ridedott/release-me-action/commit/fb0b25581e99665dad0953f50407a77e4438fed0))
+- **deps-dev:** bump lint-staged from 15.2.8 to 15.2.9
+  ([ac40b76](https://github.com/ridedott/release-me-action/commit/ac40b765133e402c02a7d065203ef4e6f6f4a1eb))
+- **deps:** bump @semantic-release/github from 10.1.4 to 10.1.5
+  ([d820e82](https://github.com/ridedott/release-me-action/commit/d820e82243c5ba7bd805c7a927fb8de7b4568c64))
+
 ## [3.10.39](https://github.com/ridedott/release-me-action/compare/v3.10.38...v3.10.39) (2024-08-12)
 
 ### Chores
