@@ -1,3 +1,12 @@
+## [3.10.41](https://github.com/ridedott/release-me-action/compare/v3.10.40...v3.10.41) (2024-08-16)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.7.10 to 1.7.11
+  ([8413c55](https://github.com/ridedott/release-me-action/commit/8413c559bb4cff4fc0df20743015a3bc359ad447))
+- **deps:** bump @semantic-release/github from 10.1.5 to 10.1.6
+  ([3a757e8](https://github.com/ridedott/release-me-action/commit/3a757e88e877017c43284ad3563e7f0b323be869))
+
 ## [3.10.40](https://github.com/ridedott/release-me-action/compare/v3.10.39...v3.10.40) (2024-08-15)
 
 ### Chores
