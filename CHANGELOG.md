@@ -1,3 +1,24 @@
+## [3.10.42](https://github.com/ridedott/release-me-action/compare/v3.10.41...v3.10.42) (2024-08-21)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.7.11 to 1.7.12
+  ([c205345](https://github.com/ridedott/release-me-action/commit/c20534586e1bc6be33f31d7d47a9b2f024ff6b8e))
+- **deps-dev:** bump @swc/core from 1.7.12 to 1.7.14
+  ([643b3b4](https://github.com/ridedott/release-me-action/commit/643b3b44a3451e0e19a41038e8fba7031d67a02f))
+- **deps-dev:** bump @types/node from 22.3.0 to 22.4.1
+  ([17e5794](https://github.com/ridedott/release-me-action/commit/17e579435d54dc1929d33013a6d9c66e53626dd7))
+- **deps-dev:** bump @types/node from 22.4.1 to 22.4.2
+  ([81ffa40](https://github.com/ridedott/release-me-action/commit/81ffa40d3691ef8a33d17c9b56938b7e4bf0b11e))
+- **deps-dev:** bump cspell from 8.13.3 to 8.14.1
+  ([34d305f](https://github.com/ridedott/release-me-action/commit/34d305fcf17136a95875129eca234ba5f62608f4))
+- **deps-dev:** bump cspell from 8.14.1 to 8.14.2
+  ([20871d0](https://github.com/ridedott/release-me-action/commit/20871d0c727a6ddfc53fbb4df17803700e122bb6))
+- **deps-dev:** bump husky from 9.1.4 to 9.1.5
+  ([8067da6](https://github.com/ridedott/release-me-action/commit/8067da6f191c52ee4102f3389ce40069e7a93066))
+- **deps:** bump @semantic-release/github from 10.1.6 to 10.1.7
+  ([87fb68c](https://github.com/ridedott/release-me-action/commit/87fb68ccf22c924206a32e2d76545d8f48b7a743))
+
 ## [3.10.41](https://github.com/ridedott/release-me-action/compare/v3.10.40...v3.10.41) (2024-08-16)
 
 ### Chores
