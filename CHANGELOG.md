@@ -1,3 +1,16 @@
+## [3.10.43](https://github.com/ridedott/release-me-action/compare/v3.10.42...v3.10.43) (2024-08-26)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.7.14 to 1.7.18
+  ([43d9959](https://github.com/ridedott/release-me-action/commit/43d9959c5036177867ff0000a34a9f59c429c291))
+- **deps-dev:** bump @types/node from 22.4.2 to 22.5.0
+  ([f3f9775](https://github.com/ridedott/release-me-action/commit/f3f9775a8d64b3924419c3d15ce51d6fa7a48da5))
+- **deps-dev:** bump ts-jest from 29.2.4 to 29.2.5
+  ([7e397b1](https://github.com/ridedott/release-me-action/commit/7e397b1b5b2f94dfc1f6a8c8923ee14c8b590947))
+- **deps:** bump micromatch from 4.0.7 to 4.0.8
+  ([ba391b1](https://github.com/ridedott/release-me-action/commit/ba391b1b23691b7159adb9e0ec8b3a4d4d084a66))
+
 ## [3.10.42](https://github.com/ridedott/release-me-action/compare/v3.10.41...v3.10.42) (2024-08-21)
 
 ### Chores
