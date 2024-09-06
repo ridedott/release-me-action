@@ -1,3 +1,10 @@
+## [3.10.47](https://github.com/ridedott/release-me-action/compare/v3.10.46...v3.10.47) (2024-09-06)
+
+### Chores
+
+- **deps:** bump @semantic-release/github from 10.3.2 to 10.3.3
+  ([a1e11b6](https://github.com/ridedott/release-me-action/commit/a1e11b6fafde458b92e65a292a583ef21e7e6fda))
+
 ## [3.10.46](https://github.com/ridedott/release-me-action/compare/v3.10.45...v3.10.46) (2024-09-05)
 
 ### Chores
