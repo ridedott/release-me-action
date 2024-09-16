@@ -1,3 +1,24 @@
+## [3.10.48](https://github.com/ridedott/release-me-action/compare/v3.10.47...v3.10.48) (2024-09-16)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 19.4.1 to 19.5.0
+  ([99cca32](https://github.com/ridedott/release-me-action/commit/99cca32bf0aaf487810cf2c96d777352bfd169bc))
+- **deps-dev:** bump @commitlint/config-conventional from 19.4.1 to 19.5.0
+  ([9ff3e02](https://github.com/ridedott/release-me-action/commit/9ff3e020d3813c9549982f8447db7249d5bf3f8c))
+- **deps-dev:** bump @swc/core from 1.7.23 to 1.7.24
+  ([82722bc](https://github.com/ridedott/release-me-action/commit/82722bc6cd65842ee009dcc4137f0ef2667abcb9))
+- **deps-dev:** bump @swc/core from 1.7.24 to 1.7.26
+  ([49be2b9](https://github.com/ridedott/release-me-action/commit/49be2b94629d10f5bf5e43a9a67ca57dfda22d40))
+- **deps-dev:** bump @types/jest from 29.5.12 to 29.5.13
+  ([51a16b5](https://github.com/ridedott/release-me-action/commit/51a16b56333b0bd1e3aba3146655d49f5aa8fcd0))
+- **deps-dev:** bump @types/node from 22.5.4 to 22.5.5
+  ([e983a16](https://github.com/ridedott/release-me-action/commit/e983a16be55ad05bda1a300ccb2b1f562e10e346))
+- **deps-dev:** bump husky from 9.1.5 to 9.1.6
+  ([b3b260f](https://github.com/ridedott/release-me-action/commit/b3b260f9612885599a3e3cdab0cfce4c2f86a79e))
+- **deps:** bump @semantic-release/github from 10.3.3 to 10.3.4
+  ([ed9d29e](https://github.com/ridedott/release-me-action/commit/ed9d29efa88fa15e3928fa7bfa9f4172c1f0d572))
+
 ## [3.10.47](https://github.com/ridedott/release-me-action/compare/v3.10.46...v3.10.47) (2024-09-06)
 
 ### Chores
