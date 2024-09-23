@@ -1,3 +1,16 @@
+## [3.10.49](https://github.com/ridedott/release-me-action/compare/v3.10.48...v3.10.49) (2024-09-23)
+
+### Chores
+
+- **deps-dev:** bump cspell from 8.14.2 to 8.14.3
+  ([2d68cda](https://github.com/ridedott/release-me-action/commit/2d68cdaedc05139e9a0baf9c5cae211bf5d9a56a))
+- **deps-dev:** bump cspell from 8.14.3 to 8.14.4
+  ([0eb4eca](https://github.com/ridedott/release-me-action/commit/0eb4ecaeb9bf353fa5b0f79fb88e5a7e28820f1f))
+- **deps-dev:** bump eslint from 8.57.0 to 8.57.1
+  ([1c4ab6c](https://github.com/ridedott/release-me-action/commit/1c4ab6caa27fe2ad0678b380780b5e8097aa5081))
+- **deps:** bump @semantic-release/github from 10.3.4 to 10.3.5
+  ([9e94512](https://github.com/ridedott/release-me-action/commit/9e94512a58e6300b4a1c3074da88f640966c7f97))
+
 ## [3.10.48](https://github.com/ridedott/release-me-action/compare/v3.10.47...v3.10.48) (2024-09-16)
 
 ### Chores
