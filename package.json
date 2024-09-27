@@ -38,7 +38,7 @@
     "@types/node": "^22.7.2",
     "@types/semantic-release": "^20.0.5",
     "@types/signale": "^1.4.7",
-    "commitizen": "^4.3.0",
+    "commitizen": "^4.3.1",
     "cspell": "^8.14.4",
     "eslint": "^8.57.1",
     "eslint-plugin-jest-formatting": "^3.1.0",
