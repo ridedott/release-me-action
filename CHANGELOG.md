@@ -1,3 +1,24 @@
+## [3.10.51](https://github.com/ridedott/release-me-action/compare/v3.10.50...v3.10.51) (2024-10-03)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.7.26 to 1.7.28
+  ([42b4cdd](https://github.com/ridedott/release-me-action/commit/42b4cdd79ee28986de5af5cf6b3e79c935162234))
+- **deps-dev:** bump @types/node from 22.5.5 to 22.6.1
+  ([5d9ea17](https://github.com/ridedott/release-me-action/commit/5d9ea178b80425f3d2ee7a92128a61fc85cb057f))
+- **deps-dev:** bump @types/node from 22.6.1 to 22.7.0
+  ([b68b57c](https://github.com/ridedott/release-me-action/commit/b68b57c6057df8be8206cd4eb4533d4f97836677))
+- **deps-dev:** bump @types/node from 22.7.0 to 22.7.2
+  ([81063e9](https://github.com/ridedott/release-me-action/commit/81063e9bb3451048e4da6ac0d0a201cfd881c829))
+- **deps-dev:** bump @types/node from 22.7.2 to 22.7.3
+  ([ee4298a](https://github.com/ridedott/release-me-action/commit/ee4298ad2cfd7776fac5c520e03b080c93dc3f69))
+- **deps-dev:** bump @types/node from 22.7.3 to 22.7.4
+  ([9a853b6](https://github.com/ridedott/release-me-action/commit/9a853b64d4beba6539558379b6aa38b62f9da783))
+- **deps-dev:** bump commitizen from 4.3.0 to 4.3.1
+  ([ab1fcc9](https://github.com/ridedott/release-me-action/commit/ab1fcc958d73290df5154154115d4f56b2480bfc))
+- **deps:** bump @actions/core from 1.10.1 to 1.11.0
+  ([b90233f](https://github.com/ridedott/release-me-action/commit/b90233f3a9d0baa2538eb1251e1f58ba568953e3))
+
 ## [3.10.50](https://github.com/ridedott/release-me-action/compare/v3.10.49...v3.10.50) (2024-09-24)
 
 ### Chores
