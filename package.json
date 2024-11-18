@@ -14,7 +14,7 @@
     "@semantic-release/github": "^10.3.5",
     "@semantic-release/npm": "^12.0.1",
     "@semantic-release/release-notes-generator": "^14.0.1",
-    "@vercel/ncc": "^0.38.2",
+    "@vercel/ncc": "^0.38.3",
     "conventional-commits-parser": "^5.0.0",
     "eval": "^0.1.8",
     "joi": "^17.13.3",
