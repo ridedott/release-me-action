@@ -1,3 +1,10 @@
+## [3.10.54](https://github.com/ridedott/release-me-action/compare/v3.10.53...v3.10.54) (2024-11-18)
+
+### Chores
+
+- **deps:** bump @vercel/ncc from 0.38.2 to 0.38.3
+  ([e1e6b5d](https://github.com/ridedott/release-me-action/commit/e1e6b5d2e110e63c117e5698873684d72135b75a))
+
 ## [3.10.53](https://github.com/ridedott/release-me-action/compare/v3.10.52...v3.10.53) (2024-11-12)
 
 ### Chores
