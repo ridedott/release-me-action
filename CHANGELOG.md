@@ -1,3 +1,10 @@
+## [3.10.55](https://github.com/ridedott/release-me-action/compare/v3.10.54...v3.10.55) (2024-11-18)
+
+### Chores
+
+- **deps:** bump cross-spawn
+  ([ec45c01](https://github.com/ridedott/release-me-action/commit/ec45c01fcd13081d37e3d9c1ff8baae7d8d7d88c))
+
 ## [3.10.54](https://github.com/ridedott/release-me-action/compare/v3.10.53...v3.10.54) (2024-11-18)
 
 ### Chores
