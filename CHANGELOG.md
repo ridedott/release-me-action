@@ -1,3 +1,20 @@
+## [3.10.57](https://github.com/ridedott/release-me-action/compare/v3.10.56...v3.10.57) (2025-01-03)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.10.1 to 1.10.2
+  ([8f22659](https://github.com/ridedott/release-me-action/commit/8f22659a456e7d8633c98f4c77c1e5792e6bbb4e))
+- **deps-dev:** bump @swc/core from 1.10.2 to 1.10.4
+  ([71494b7](https://github.com/ridedott/release-me-action/commit/71494b77dfcb603d1a28be17778988ec414848f4))
+- **deps-dev:** bump @types/node from 22.10.2 to 22.10.4
+  ([8e79aa6](https://github.com/ridedott/release-me-action/commit/8e79aa6b6f24a88e675b6be2bf0fd89a2950c68e))
+- **deps-dev:** bump lint-staged from 15.2.11 to 15.3.0
+  ([2ee7b26](https://github.com/ridedott/release-me-action/commit/2ee7b2616657c4a4c8c4913f5e8d502458b39852))
+- **deps:** bump @semantic-release/commit-analyzer from 13.0.0 to 13.0.1
+  ([ae06503](https://github.com/ridedott/release-me-action/commit/ae065031403cb307587106a03df56e159188961b))
+- **deps:** bump @semantic-release/release-notes-generator from 14.0.2 to 14.0.3
+  ([406a424](https://github.com/ridedott/release-me-action/commit/406a424bdbe16165690cb22f783ee2172c106654))
+
 ## [3.10.56](https://github.com/ridedott/release-me-action/compare/v3.10.55...v3.10.56) (2024-12-17)
 
 ### Chores
