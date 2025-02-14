@@ -1,3 +1,10 @@
+## [3.10.60](https://github.com/ridedott/release-me-action/compare/v3.10.59...v3.10.60) (2025-02-14)
+
+### Chores
+
+- **deps:** bump @octokit/request-error
+  ([95d201a](https://github.com/ridedott/release-me-action/commit/95d201aa0c56237bdeb3c795bea0a61041db60f5))
+
 ## [3.10.59](https://github.com/ridedott/release-me-action/compare/v3.10.58...v3.10.59) (2025-02-14)
 
 ### Chores
