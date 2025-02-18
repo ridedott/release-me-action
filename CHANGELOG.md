@@ -1,3 +1,12 @@
+## [3.10.61](https://github.com/ridedott/release-me-action/compare/v3.10.60...v3.10.61) (2025-02-18)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.10.16 to 1.10.17
+  ([70f0404](https://github.com/ridedott/release-me-action/commit/70f0404879113f5d1e1578c4b73a5c341e76726f))
+- **deps:** bump @octokit/plugin-paginate-rest
+  ([19fd4c6](https://github.com/ridedott/release-me-action/commit/19fd4c61ce01be654013d650dc466aae6f1905b1))
+
 ## [3.10.60](https://github.com/ridedott/release-me-action/compare/v3.10.59...v3.10.60) (2025-02-14)
 
 ### Chores
