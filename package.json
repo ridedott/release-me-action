@@ -28,7 +28,7 @@
     "@jest/types": "^29.6.3",
     "@ridedott/eslint-config": "^2.27.110",
     "@swc/core": "^1.11.22",
-    "@swc/jest": "^0.2.37",
+    "@swc/jest": "^0.2.38",
     "@tsconfig/node20": "^20.1.5",
     "@types/conventional-changelog-writer": "^4.0.10",
     "@types/env-ci": "^3.1.4",
