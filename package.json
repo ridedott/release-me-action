@@ -27,7 +27,7 @@
     "@commitlint/config-conventional": "^19.8.0",
     "@jest/types": "^29.6.3",
     "@ridedott/eslint-config": "^2.27.110",
-    "@swc/core": "^1.11.21",
+    "@swc/core": "^1.11.22",
     "@swc/jest": "^0.2.37",
     "@tsconfig/node20": "^20.1.5",
     "@types/conventional-changelog-writer": "^4.0.10",
