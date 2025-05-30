@@ -40,7 +40,7 @@
     "@types/signale": "^1.4.7",
     "commitizen": "^4.3.1",
     "cspell": "^9.0.2",
-    "eslint": "^8.57.1",
+    "eslint": "^9.27.0",
     "eslint-plugin-jest-formatting": "^3.1.0",
     "execa": "^8.0.1",
     "file-url": "^4.0.0",
