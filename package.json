@@ -29,7 +29,7 @@
     "@ridedott/eslint-config": "^2.27.110",
     "@swc/core": "^1.12.1",
     "@swc/jest": "^0.2.38",
-    "@tsconfig/node20": "^20.1.5",
+    "@tsconfig/node20": "^20.1.6",
     "@types/conventional-changelog-writer": "^4.0.10",
     "@types/env-ci": "^3.1.4",
     "@types/hapi__joi": "^17.1.15",
