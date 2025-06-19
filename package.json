@@ -25,7 +25,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "@jest/types": "^30.0.0",
+    "@jest/types": "^30.0.1",
     "@ridedott/eslint-config": "^2.27.110",
     "@swc/core": "^1.12.1",
     "@swc/jest": "^0.2.38",
