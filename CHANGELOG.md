@@ -1,3 +1,14 @@
+## [3.10.68](https://github.com/ridedott/release-me-action/compare/v3.10.67...v3.10.68) (2025-08-04)
+
+### Chores
+
+- **deps-dev:** bump lint-staged from 16.1.2 to 16.1.4
+  ([580cda5](https://github.com/ridedott/release-me-action/commit/580cda56826fe15817d1e51bf209a3bedb621869))
+- **deps-dev:** bump ts-jest from 29.4.0 to 29.4.1
+  ([363a182](https://github.com/ridedott/release-me-action/commit/363a182a27fc6f046c9c77a878e65bf5eff6c54f))
+- **deps:** bump joi from 17.13.3 to 18.0.0
+  ([ca027a0](https://github.com/ridedott/release-me-action/commit/ca027a0272322e2c95f86ac80efd75a82eef6f2d))
+
 ## [3.10.67](https://github.com/ridedott/release-me-action/compare/v3.10.66...v3.10.67) (2025-08-01)
 
 ### Chores
