@@ -1,3 +1,18 @@
+## [3.10.71](https://github.com/ridedott/release-me-action/compare/v3.10.70...v3.10.71) (2025-09-04)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.13.3 to 1.13.4
+  ([6b76c68](https://github.com/ridedott/release-me-action/commit/6b76c6863db112090eaf74550c788df40adf2d3d))
+- **deps-dev:** bump @swc/core from 1.13.4 to 1.13.5
+  ([5f7070a](https://github.com/ridedott/release-me-action/commit/5f7070a27dfdb36deb2c511e9d4ceeeeada5e977))
+- **deps-dev:** bump cspell from 9.2.0 to 9.2.1
+  ([7a8a4c3](https://github.com/ridedott/release-me-action/commit/7a8a4c390db90afdec1199c7c3ceff703eac8a23))
+- **deps-dev:** bump lint-staged from 16.1.5 to 16.1.6
+  ([0e7b09a](https://github.com/ridedott/release-me-action/commit/0e7b09a65638118dae077fbea4bc9b82fd14f6c7))
+- **deps:** bump actions/setup-node from 4 to 5
+  ([92e80aa](https://github.com/ridedott/release-me-action/commit/92e80aa867c4b886156019e30b77b97b55c3cacb))
+
 ## [3.10.70](https://github.com/ridedott/release-me-action/compare/v3.10.69...v3.10.70) (2025-08-21)
 
 ### Chores
