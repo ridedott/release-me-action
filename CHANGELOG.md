@@ -1,3 +1,12 @@
+## [3.10.72](https://github.com/ridedott/release-me-action/compare/v3.10.71...v3.10.72) (2025-09-08)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 24.3.0 to 24.3.1
+  ([3abc491](https://github.com/ridedott/release-me-action/commit/3abc491844c38e5b7721071828827a04a043a58a))
+- **deps:** bump @semantic-release/release-notes-generator from 14.0.3 to 14.1.0
+  ([a6993f9](https://github.com/ridedott/release-me-action/commit/a6993f9cd8df79884041d999f2e8aa8200a90773))
+
 ## [3.10.71](https://github.com/ridedott/release-me-action/compare/v3.10.70...v3.10.71) (2025-09-04)
 
 ### Chores
