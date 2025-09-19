@@ -1,3 +1,18 @@
+## [3.10.73](https://github.com/ridedott/release-me-action/compare/v3.10.72...v3.10.73) (2025-09-19)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 24.3.1 to 24.5.0
+  ([cd7e813](https://github.com/ridedott/release-me-action/commit/cd7e8135264ba181b01a4ed5b353912c7f75e15a))
+- **deps-dev:** bump @types/node from 24.5.0 to 24.5.1
+  ([cbf9822](https://github.com/ridedott/release-me-action/commit/cbf98229b1456ccabd5a38671933eaaac3556510))
+- **deps-dev:** bump @types/node from 24.5.1 to 24.5.2
+  ([0a8dac0](https://github.com/ridedott/release-me-action/commit/0a8dac0f88c479d5ed211d86b02d7321e5671bc5))
+- **deps-dev:** bump ts-jest from 29.4.1 to 29.4.2
+  ([458714c](https://github.com/ridedott/release-me-action/commit/458714c268007804903a6f4d5f046a006868c418))
+- **deps:** bump @vercel/ncc from 0.38.3 to 0.38.4
+  ([2c90342](https://github.com/ridedott/release-me-action/commit/2c90342dc8578c389150a5fae8b0123ce3463057))
+
 ## [3.10.72](https://github.com/ridedott/release-me-action/compare/v3.10.71...v3.10.72) (2025-09-08)
 
 ### Chores
