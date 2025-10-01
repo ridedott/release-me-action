@@ -1,3 +1,28 @@
+## [3.10.74](https://github.com/ridedott/release-me-action/compare/v3.10.73...v3.10.74) (2025-10-01)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 19.8.1 to 20.0.0
+  ([4fee210](https://github.com/ridedott/release-me-action/commit/4fee210e8dd9aee8dd8e78c2079c5881fb50a352))
+- **deps-dev:** bump @commitlint/cli from 20.0.0 to 20.1.0
+  ([f1be647](https://github.com/ridedott/release-me-action/commit/f1be6474a718ca415527ddd62946f7e2a538cd36))
+- **deps-dev:** bump @commitlint/config-conventional from 19.8.1 to 20.0.0
+  ([bfca898](https://github.com/ridedott/release-me-action/commit/bfca8988001134616ba4093bdc09764ab5bee029))
+- **deps-dev:** bump @jest/types from 30.0.5 to 30.2.0
+  ([b1a39c7](https://github.com/ridedott/release-me-action/commit/b1a39c7f727a98c38fc9c70ffcdddf19adabac12))
+- **deps-dev:** bump @types/node from 24.5.2 to 24.6.0
+  ([8066fe9](https://github.com/ridedott/release-me-action/commit/8066fe95b251706ea3d2dde7b574816d047d7241))
+- **deps-dev:** bump @types/node from 24.6.0 to 24.6.1
+  ([72cd7a1](https://github.com/ridedott/release-me-action/commit/72cd7a1ae0eb66010a980177d17dc94c8f133e7e))
+- **deps-dev:** bump lint-staged from 16.1.6 to 16.2.3
+  ([545ad76](https://github.com/ridedott/release-me-action/commit/545ad7640dc677f718f2c3634683ee08965a4278))
+- **deps-dev:** bump ts-jest from 29.4.2 to 29.4.3
+  ([8bc6789](https://github.com/ridedott/release-me-action/commit/8bc67899f8fec6cf79bfda0a02de1d7cfd0c6262))
+- **deps-dev:** bump ts-jest from 29.4.3 to 29.4.4
+  ([64c9fc1](https://github.com/ridedott/release-me-action/commit/64c9fc1e9a28acaedb07d99233b9b0b7d19ac455))
+- **deps-dev:** bump typescript from 5.9.2 to 5.9.3
+  ([6c44b68](https://github.com/ridedott/release-me-action/commit/6c44b68da6c0aa6a4a60c1dd582b6e0cacd72c36))
+
 ## [3.10.73](https://github.com/ridedott/release-me-action/compare/v3.10.72...v3.10.73) (2025-09-19)
 
 ### Chores
