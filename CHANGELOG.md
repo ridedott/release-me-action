@@ -1,3 +1,20 @@
+## [3.10.75](https://github.com/ridedott/release-me-action/compare/v3.10.74...v3.10.75) (2025-10-14)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 24.6.1 to 24.6.2
+  ([7ded107](https://github.com/ridedott/release-me-action/commit/7ded107fae40448428f6e98c758d185d83de8554))
+- **deps-dev:** bump @types/node from 24.6.2 to 24.7.0
+  ([4479e6c](https://github.com/ridedott/release-me-action/commit/4479e6c4db62a07572ff9e852ce78efcfd7e2a82))
+- **deps-dev:** bump @types/node from 24.7.0 to 24.7.1
+  ([406498c](https://github.com/ridedott/release-me-action/commit/406498c7a310c7218c1f3331eb26911e0286ff45))
+- **deps-dev:** bump @types/node from 24.7.1 to 24.7.2
+  ([d772555](https://github.com/ridedott/release-me-action/commit/d7725556b75ab68b87a464c0f7eda785ec11d141))
+- **deps-dev:** bump lint-staged from 16.2.3 to 16.2.4
+  ([0065ebb](https://github.com/ridedott/release-me-action/commit/0065ebbea2c4d3136f10ef4dffc0eaa4c7def0ae))
+- **deps:** bump actions/setup-node from 5 to 6
+  ([0a90c0c](https://github.com/ridedott/release-me-action/commit/0a90c0cbe69076391b920fde9eb36782b9a1affd))
+
 ## [3.10.74](https://github.com/ridedott/release-me-action/compare/v3.10.73...v3.10.74) (2025-10-01)
 
 ### Chores
