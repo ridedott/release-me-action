@@ -1,3 +1,10 @@
+## [3.10.76](https://github.com/ridedott/release-me-action/compare/v3.10.75...v3.10.76) (2025-10-14)
+
+### Chores
+
+- **deps:** bump @semantic-release/npm from 12.0.2 to 13.0.0
+  ([0ccfb68](https://github.com/ridedott/release-me-action/commit/0ccfb681ec2aa1c868aa7e8e1ce0e32c6dd7e01b))
+
 ## [3.10.75](https://github.com/ridedott/release-me-action/compare/v3.10.74...v3.10.75) (2025-10-14)
 
 ### Chores
