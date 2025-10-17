@@ -19,7 +19,7 @@
     "eval": "^0.1.8",
     "joi": "^18.0.1",
     "js-yaml": "^4.1.0",
-    "semantic-release": "^22.0.7"
+    "semantic-release": "^25.0.0"
   },
   "description": "GitHub Action for Semantic Release.",
   "devDependencies": {
