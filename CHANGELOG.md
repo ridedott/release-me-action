@@ -1,3 +1,36 @@
+## [3.10.78](https://github.com/ridedott/release-me-action/compare/v3.10.77...v3.10.78) (2025-11-13)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.13.5 to 1.14.0
+  ([a563809](https://github.com/ridedott/release-me-action/commit/a563809fe9e286137564fcafc1d01810a82dc4f1))
+- **deps-dev:** bump @swc/core from 1.14.0 to 1.15.0
+  ([fce060b](https://github.com/ridedott/release-me-action/commit/fce060b12065c5654bc5dcf7ac59e0b8decf2187))
+- **deps-dev:** bump @swc/core from 1.15.0 to 1.15.1
+  ([bf53a7b](https://github.com/ridedott/release-me-action/commit/bf53a7b96dfe0748320fcf1cec1425483915a81b))
+- **deps-dev:** bump @types/conventional-changelog-writer from 4.0.10 to 4.0.11
+  ([92bf2c9](https://github.com/ridedott/release-me-action/commit/92bf2c9d50a7b34f9ec551b173a363c64012258c))
+- **deps-dev:** bump @types/node from 24.10.0 to 24.10.1
+  ([8cff489](https://github.com/ridedott/release-me-action/commit/8cff489f598b19ce27ec58c071def2a680152457))
+- **deps-dev:** bump @types/node from 24.8.1 to 24.9.1
+  ([87f131e](https://github.com/ridedott/release-me-action/commit/87f131ef17b7a8d14c8429915d0a7c3e764c4b24))
+- **deps-dev:** bump @types/node from 24.9.1 to 24.9.2
+  ([413b7f2](https://github.com/ridedott/release-me-action/commit/413b7f29610ae08a2cb080b41b6b4c5b21146842))
+- **deps-dev:** bump @types/node from 24.9.2 to 24.10.0
+  ([8b8a3bc](https://github.com/ridedott/release-me-action/commit/8b8a3bc5ce4fe28a210044f27eb17810f85eda03))
+- **deps-dev:** bump cspell from 9.2.1 to 9.2.2
+  ([aab8691](https://github.com/ridedott/release-me-action/commit/aab8691522b12909e8f33518b3aad323d50b7b53))
+- **deps-dev:** bump cspell from 9.2.2 to 9.3.0
+  ([5f33f66](https://github.com/ridedott/release-me-action/commit/5f33f66116746971dd2c12c4b813dc523f9c93f4))
+- **deps-dev:** bump cspell from 9.3.0 to 9.3.1
+  ([08300b0](https://github.com/ridedott/release-me-action/commit/08300b05acb192a98b0c7f7497dff65a2b0f8e76))
+- **deps-dev:** bump lint-staged from 16.2.4 to 16.2.5
+  ([cea3c64](https://github.com/ridedott/release-me-action/commit/cea3c64e805f9c7ee194121c4a2ac755a5c81bea))
+- **deps-dev:** bump lint-staged from 16.2.5 to 16.2.6
+  ([8ff4bef](https://github.com/ridedott/release-me-action/commit/8ff4befead17749d5a5622c935b62356f4f5bec3))
+- **deps:** bump js-yaml from 4.1.0 to 4.1.1
+  ([3ac756f](https://github.com/ridedott/release-me-action/commit/3ac756f6229cdbef4d45e46055475752276b7e2f))
+
 ## [3.10.77](https://github.com/ridedott/release-me-action/compare/v3.10.76...v3.10.77) (2025-10-20)
 
 ### Chores
