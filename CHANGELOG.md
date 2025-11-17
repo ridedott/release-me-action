@@ -1,3 +1,16 @@
+## [3.10.79](https://github.com/ridedott/release-me-action/compare/v3.10.78...v3.10.79) (2025-11-17)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.15.1 to 1.15.2
+  ([0852105](https://github.com/ridedott/release-me-action/commit/085210567c6d43e089068a187777c1131b4ee40c))
+- **deps-dev:** bump @tsconfig/node20 from 20.1.6 to 20.1.7
+  ([dd80521](https://github.com/ridedott/release-me-action/commit/dd805210069cdfc66627678e20e6eeb86531d6e6))
+- **deps-dev:** bump cspell from 9.3.1 to 9.3.2
+  ([461640c](https://github.com/ridedott/release-me-action/commit/461640ce658e6ea87e0998c2e706ec1f331eba82))
+- **deps:** bump @semantic-release/npm from 13.1.1 to 13.1.2
+  ([4d883fc](https://github.com/ridedott/release-me-action/commit/4d883fcb8242aae8bd5afbe962e588e202123f0d))
+
 ## [3.10.78](https://github.com/ridedott/release-me-action/compare/v3.10.77...v3.10.78) (2025-11-13)
 
 ### Chores
