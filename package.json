@@ -17,7 +17,7 @@
     "@vercel/ncc": "^0.38.4",
     "conventional-commits-parser": "^5.0.0",
     "eval": "^0.1.8",
-    "joi": "^18.0.1",
+    "joi": "^18.0.2",
     "js-yaml": "^4.1.1",
     "semantic-release": "^22.0.7"
   },
