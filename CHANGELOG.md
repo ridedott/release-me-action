@@ -1,3 +1,14 @@
+## [3.10.80](https://github.com/ridedott/release-me-action/compare/v3.10.79...v3.10.80) (2025-11-20)
+
+### Chores
+
+- **deps-dev:** bump @tsconfig/node20 from 20.1.7 to 20.1.8
+  ([253cce0](https://github.com/ridedott/release-me-action/commit/253cce06e2cf04a9591f107460dd05abf94a0b9c))
+- **deps-dev:** bump lint-staged from 16.2.6 to 16.2.7
+  ([d4ebcbd](https://github.com/ridedott/release-me-action/commit/d4ebcbdea8151eae3d0aa45272184594afddfa5b))
+- **deps:** bump joi from 18.0.1 to 18.0.2
+  ([828b90b](https://github.com/ridedott/release-me-action/commit/828b90bbae525636f429b6c298b4ded9b8dd301f))
+
 ## [3.10.79](https://github.com/ridedott/release-me-action/compare/v3.10.78...v3.10.79) (2025-11-17)
 
 ### Chores
