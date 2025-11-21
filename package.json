@@ -15,7 +15,7 @@
     "@semantic-release/npm": "^13.1.2",
     "@semantic-release/release-notes-generator": "^14.1.0",
     "@vercel/ncc": "^0.38.4",
-    "conventional-commits-parser": "^5.0.0",
+    "conventional-commits-parser": "^6.2.1",
     "eval": "^0.1.8",
     "joi": "^18.0.2",
     "js-yaml": "^4.1.1",
