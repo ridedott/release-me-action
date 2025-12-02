@@ -1,3 +1,16 @@
+## [3.10.82](https://github.com/ridedott/release-me-action/compare/v3.10.81...v3.10.82) (2025-12-02)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.15.2 to 1.15.3
+  ([b59eb9d](https://github.com/ridedott/release-me-action/commit/b59eb9dc4eca335ae88377560f7cad94cae1255a))
+- **deps-dev:** bump cspell from 9.3.2 to 9.4.0
+  ([e2ef9e5](https://github.com/ridedott/release-me-action/commit/e2ef9e55db0ba126e2bc9e11da68fa42b22a51d9))
+- **deps-dev:** bump ts-jest from 29.4.4 to 29.4.6
+  ([4ef1c97](https://github.com/ridedott/release-me-action/commit/4ef1c978301cb2a16df61e119657f28955fa9548))
+- **deps:** bump tar and npm
+  ([ed4b583](https://github.com/ridedott/release-me-action/commit/ed4b583ef25a2d5297e86597d7bbc2778940e0fd))
+
 ## [3.10.81](https://github.com/ridedott/release-me-action/compare/v3.10.80...v3.10.81) (2025-11-21)
 
 ### Chores
