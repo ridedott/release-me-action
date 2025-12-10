@@ -1,3 +1,16 @@
+## [3.10.83](https://github.com/ridedott/release-me-action/compare/v3.10.82...v3.10.83) (2025-12-10)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 20.1.0 to 20.2.0
+  ([5b3ce07](https://github.com/ridedott/release-me-action/commit/5b3ce07a8e64ce76bec59a5353f93d2137549901))
+- **deps-dev:** bump @commitlint/config-conventional from 20.0.0 to 20.2.0
+  ([a80bdfe](https://github.com/ridedott/release-me-action/commit/a80bdfe07a7b7301546df39befb19687256e8023))
+- **deps-dev:** bump @types/node from 24.10.1 to 24.10.2
+  ([98895c6](https://github.com/ridedott/release-me-action/commit/98895c6690b8ceccb97567293bf67d6a584d37e9))
+- **deps:** bump @actions/exec from 1.1.1 to 2.0.0
+  ([31a25cf](https://github.com/ridedott/release-me-action/commit/31a25cf82910d57504eef46b09a8e643fdb734fc))
+
 ## [3.10.82](https://github.com/ridedott/release-me-action/compare/v3.10.81...v3.10.82) (2025-12-02)
 
 ### Chores
