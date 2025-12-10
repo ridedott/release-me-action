@@ -1,3 +1,10 @@
+## [3.10.84](https://github.com/ridedott/release-me-action/compare/v3.10.83...v3.10.84) (2025-12-10)
+
+### Chores
+
+- **deps:** bump @actions/core from 1.11.1 to 2.0.0
+  ([bae5c92](https://github.com/ridedott/release-me-action/commit/bae5c92f8b2d6de3d3c9d1d9b7628b58b51a438d))
+
 ## [3.10.83](https://github.com/ridedott/release-me-action/compare/v3.10.82...v3.10.83) (2025-12-10)
 
 ### Chores
