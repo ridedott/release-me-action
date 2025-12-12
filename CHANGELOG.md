@@ -1,3 +1,14 @@
+## [3.10.85](https://github.com/ridedott/release-me-action/compare/v3.10.84...v3.10.85) (2025-12-12)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 24.10.2 to 25.0.0
+  ([0ced042](https://github.com/ridedott/release-me-action/commit/0ced04238efbd62b7db2d1c235a04f4470e23257))
+- **deps-dev:** bump @types/node from 25.0.0 to 25.0.1
+  ([e64ea31](https://github.com/ridedott/release-me-action/commit/e64ea3194814e4178a2af7030f5fa1efbda8a804))
+- **deps:** bump @actions/core from 2.0.0 to 2.0.1
+  ([75f1c22](https://github.com/ridedott/release-me-action/commit/75f1c22262fedcee6e8f624aa52a2c8f5fe0e57b))
+
 ## [3.10.84](https://github.com/ridedott/release-me-action/compare/v3.10.83...v3.10.84) (2025-12-10)
 
 ### Chores
