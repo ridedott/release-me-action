@@ -1,3 +1,12 @@
+## [3.10.86](https://github.com/ridedott/release-me-action/compare/v3.10.85...v3.10.86) (2025-12-15)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.15.3 to 1.15.4
+  ([89e212c](https://github.com/ridedott/release-me-action/commit/89e212c7089ead0c9f40369b0bf8946a75615d10))
+- **deps:** bump @semantic-release/npm from 13.1.2 to 13.1.3
+  ([926de98](https://github.com/ridedott/release-me-action/commit/926de981e2028b0f3c197f913c2b323c8c0cec8d))
+
 ## [3.10.85](https://github.com/ridedott/release-me-action/compare/v3.10.84...v3.10.85) (2025-12-12)
 
 ### Chores
