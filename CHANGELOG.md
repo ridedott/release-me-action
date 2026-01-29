@@ -1,3 +1,10 @@
+## [3.10.92](https://github.com/ridedott/release-me-action/compare/v3.10.91...v3.10.92) (2026-01-29)
+
+### Chores
+
+- **deps:** bump @actions/core from 2.0.3 to 3.0.0
+  ([057a2f4](https://github.com/ridedott/release-me-action/commit/057a2f441bec020272c87dde5dacbf41b18566ce))
+
 ## [3.10.91](https://github.com/ridedott/release-me-action/compare/v3.10.90...v3.10.91) (2026-01-29)
 
 ### Chores
