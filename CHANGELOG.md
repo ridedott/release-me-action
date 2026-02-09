@@ -1,3 +1,30 @@
+## [3.10.93](https://github.com/ridedott/release-me-action/compare/v3.10.92...v3.10.93) (2026-02-09)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 20.3.1 to 20.4.0
+  ([eb1689b](https://github.com/ridedott/release-me-action/commit/eb1689b390424d45dfc62a9ffa6f7b7ab0757781))
+- **deps-dev:** bump @commitlint/cli from 20.4.0 to 20.4.1
+  ([81e61df](https://github.com/ridedott/release-me-action/commit/81e61dfcf535382f031caf6c45fc29db20e272a0))
+- **deps-dev:** bump @commitlint/config-conventional from 20.3.1 to 20.4.0
+  ([95d097f](https://github.com/ridedott/release-me-action/commit/95d097f05826f40cac4f8463fb01a70e06372536))
+- **deps-dev:** bump @commitlint/config-conventional from 20.4.0 to 20.4.1
+  ([b1d5d1e](https://github.com/ridedott/release-me-action/commit/b1d5d1e1bdef538d05298e698b6df8597aa4a4fb))
+- **deps-dev:** bump @tsconfig/node20 from 20.1.8 to 20.1.9
+  ([b55a1bf](https://github.com/ridedott/release-me-action/commit/b55a1bfefe43d8eccfd3b293936d85df0d730b29))
+- **deps-dev:** bump @types/node from 25.1.0 to 25.2.0
+  ([098f175](https://github.com/ridedott/release-me-action/commit/098f1751b833dfd7446e0e440bafb7e38a8f788f))
+- **deps-dev:** bump @types/node from 25.2.0 to 25.2.1
+  ([265232f](https://github.com/ridedott/release-me-action/commit/265232f6003621353395b9b3d5941883b6bf89cb))
+- **deps-dev:** bump @types/node from 25.2.1 to 25.2.2
+  ([5dc9f5e](https://github.com/ridedott/release-me-action/commit/5dc9f5e62d4ba41316f878ac5d9939b6836189ab))
+- **deps-dev:** bump cspell from 9.6.2 to 9.6.3
+  ([6323523](https://github.com/ridedott/release-me-action/commit/6323523fdbb320ef1d3171b6be80271279602cb8))
+- **deps-dev:** bump cspell from 9.6.3 to 9.6.4
+  ([9485fff](https://github.com/ridedott/release-me-action/commit/9485fffddfdfedb105137dc655dd78a686d55900))
+- **deps:** bump @semantic-release/npm from 13.1.3 to 13.1.4
+  ([ff2a1c8](https://github.com/ridedott/release-me-action/commit/ff2a1c8ba87c81d7a69857f6b19a481cdc33d80e))
+
 ## [3.10.92](https://github.com/ridedott/release-me-action/compare/v3.10.91...v3.10.92) (2026-01-29)
 
 ### Chores
