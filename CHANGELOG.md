@@ -1,3 +1,24 @@
+## [3.10.95](https://github.com/ridedott/release-me-action/compare/v3.10.94...v3.10.95) (2026-03-11)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/cli from 20.4.2 to 20.4.3
+  ([fb63c48](https://github.com/ridedott/release-me-action/commit/fb63c48df91c69aeb1e1c028c339ac5f61a64d38))
+- **deps-dev:** bump @commitlint/config-conventional from 20.4.2 to 20.4.3
+  ([b328b80](https://github.com/ridedott/release-me-action/commit/b328b80ccff347db8785502408e348414a7d52a9))
+- **deps-dev:** bump @jest/types from 30.2.0 to 30.3.0
+  ([83036db](https://github.com/ridedott/release-me-action/commit/83036db3e2eb22a56d4cdeab25b3b157ed9317a6))
+- **deps-dev:** bump @types/node from 25.3.3 to 25.3.5
+  ([67b556b](https://github.com/ridedott/release-me-action/commit/67b556be1496c0f15d8a1780a5642da833cb6885))
+- **deps-dev:** bump @types/node from 25.3.5 to 25.4.0
+  ([7aa08f2](https://github.com/ridedott/release-me-action/commit/7aa08f2f212cb74c08d41d23e8c0132c620cdadf))
+- **deps-dev:** bump lint-staged from 16.3.1 to 16.3.2
+  ([b90001b](https://github.com/ridedott/release-me-action/commit/b90001be6a50d8e09f800aedf5cebf39666ef74e))
+- **deps-dev:** bump lint-staged from 16.3.2 to 16.3.3
+  ([bc1944e](https://github.com/ridedott/release-me-action/commit/bc1944e3a6451ee5193580731f9b81db1e43cef8))
+- **deps:** bump tar and npm
+  ([a53098c](https://github.com/ridedott/release-me-action/commit/a53098c5e49527307dfc00a343bb83d2d912eb6c))
+
 ## [3.10.94](https://github.com/ridedott/release-me-action/compare/v3.10.93...v3.10.94) (2026-03-02)
 
 ### Chores
