@@ -1,3 +1,16 @@
+## [3.10.96](https://github.com/ridedott/release-me-action/compare/v3.10.95...v3.10.96) (2026-03-14)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/config-conventional from 20.4.3 to 20.4.4
+  ([1fde488](https://github.com/ridedott/release-me-action/commit/1fde48839cc33826c0ebf7b24c2fd6a894478fae))
+- **deps-dev:** bump @types/node from 25.4.0 to 25.5.0
+  ([b5a9900](https://github.com/ridedott/release-me-action/commit/b5a990077a8c689527f9b184e7ef7f9b69ac07c2))
+- **deps-dev:** bump minimatch from 3.1.2 to 3.1.5
+  ([d7b41a8](https://github.com/ridedott/release-me-action/commit/d7b41a8a6bbcf2632ee7926c44be4eafb571b06b))
+- **deps:** bump undici from 6.23.0 to 6.24.0
+  ([722d16a](https://github.com/ridedott/release-me-action/commit/722d16afa97f77355c6f2bc82f10dd28c11bd8f4))
+
 ## [3.10.95](https://github.com/ridedott/release-me-action/compare/v3.10.94...v3.10.95) (2026-03-11)
 
 ### Chores
