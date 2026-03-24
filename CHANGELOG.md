@@ -1,3 +1,18 @@
+## [3.10.97](https://github.com/ridedott/release-me-action/compare/v3.10.96...v3.10.97) (2026-03-24)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/config-conventional from 20.4.4 to 20.5.0
+  ([54d77c0](https://github.com/ridedott/release-me-action/commit/54d77c0f29468d6650c1df2f85e5e3ca620646f2))
+- **deps-dev:** bump @swc/core from 1.15.18 to 1.15.21
+  ([1aa26ca](https://github.com/ridedott/release-me-action/commit/1aa26ca8c3da48a411552fd2030ded2a70e34ca2))
+- **deps-dev:** bump flatted from 3.3.3 to 3.4.2
+  ([f878d35](https://github.com/ridedott/release-me-action/commit/f878d35bf4ae77bffa3de4eca8022393ea9fb381))
+- **deps-dev:** bump lint-staged from 16.3.3 to 16.4.0
+  ([5bf7da0](https://github.com/ridedott/release-me-action/commit/5bf7da0a9a46429c5a8a3988263d83b314238372))
+- **deps:** bump joi from 18.0.2 to 18.1.1
+  ([6a5b0a1](https://github.com/ridedott/release-me-action/commit/6a5b0a19a074ead7146a7aeed3685861b10ca039))
+
 ## [3.10.96](https://github.com/ridedott/release-me-action/compare/v3.10.95...v3.10.96) (2026-03-14)
 
 ### Chores
