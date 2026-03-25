@@ -1,3 +1,10 @@
+## [3.10.98](https://github.com/ridedott/release-me-action/compare/v3.10.97...v3.10.98) (2026-03-25)
+
+### Chores
+
+- **deps:** bump picomatch
+  ([d7b7d62](https://github.com/ridedott/release-me-action/commit/d7b7d6291442cb11b89bb5dc3dc0c1c29a8174e6))
+
 ## [3.10.97](https://github.com/ridedott/release-me-action/compare/v3.10.96...v3.10.97) (2026-03-24)
 
 ### Chores
