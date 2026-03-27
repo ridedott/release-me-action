@@ -1,3 +1,10 @@
+## [3.10.99](https://github.com/ridedott/release-me-action/compare/v3.10.98...v3.10.99) (2026-03-27)
+
+### Chores
+
+- **deps:** bump brace-expansion
+  ([1a54dbc](https://github.com/ridedott/release-me-action/commit/1a54dbc420d87d2f3d551120ef8d897bd1192782))
+
 ## [3.10.98](https://github.com/ridedott/release-me-action/compare/v3.10.97...v3.10.98) (2026-03-25)
 
 ### Chores
