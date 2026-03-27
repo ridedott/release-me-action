@@ -1,3 +1,10 @@
+## [3.10.100](https://github.com/ridedott/release-me-action/compare/v3.10.99...v3.10.100) (2026-03-27)
+
+### Chores
+
+- **deps:** bump handlebars from 4.7.8 to 4.7.9
+  ([c6fb074](https://github.com/ridedott/release-me-action/commit/c6fb0741c5af5d420a1ba44bb13d975e78472513))
+
 ## [3.10.99](https://github.com/ridedott/release-me-action/compare/v3.10.98...v3.10.99) (2026-03-27)
 
 ### Chores
