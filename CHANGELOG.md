@@ -1,3 +1,10 @@
+## [3.10.101](https://github.com/ridedott/release-me-action/compare/v3.10.100...v3.10.101) (2026-03-31)
+
+### Chores
+
+- **deps:** bump joi from 18.1.1 to 18.1.2
+  ([0b8c6ab](https://github.com/ridedott/release-me-action/commit/0b8c6ab7262474199841fb5812c716fa767df80d))
+
 ## [3.10.100](https://github.com/ridedott/release-me-action/compare/v3.10.99...v3.10.100) (2026-03-27)
 
 ### Chores
