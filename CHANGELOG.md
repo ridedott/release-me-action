@@ -1,3 +1,10 @@
+## [3.10.103](https://github.com/ridedott/release-me-action/compare/v3.10.102...v3.10.103) (2026-04-02)
+
+### Chores
+
+- **deps:** bump lodash-es from 4.17.23 to 4.18.1
+  ([cf431dd](https://github.com/ridedott/release-me-action/commit/cf431dd14c521d6b547119608d5782e236ab86c3))
+
 ## [3.10.102](https://github.com/ridedott/release-me-action/compare/v3.10.101...v3.10.102) (2026-04-02)
 
 ### Chores
