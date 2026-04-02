@@ -1,3 +1,12 @@
+## [3.10.102](https://github.com/ridedott/release-me-action/compare/v3.10.101...v3.10.102) (2026-04-02)
+
+### Chores
+
+- **deps-dev:** bump ts-jest from 29.4.6 to 29.4.9
+  ([9652916](https://github.com/ridedott/release-me-action/commit/965291677e71a3e6a9d9ef019035a4f14efc25b5))
+- **deps-dev:** bump typescript from 5.9.3 to 6.0.2
+  ([1457edc](https://github.com/ridedott/release-me-action/commit/1457edcacc1101e26ca61341e3fda82124c226e6))
+
 ## [3.10.101](https://github.com/ridedott/release-me-action/compare/v3.10.100...v3.10.101) (2026-03-31)
 
 ### Chores
