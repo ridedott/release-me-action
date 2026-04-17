@@ -1,3 +1,20 @@
+## [3.10.104](https://github.com/ridedott/release-me-action/compare/v3.10.103...v3.10.104) (2026-04-17)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.15.21 to 1.15.24
+  ([4e7bcda](https://github.com/ridedott/release-me-action/commit/4e7bcdaabb269ebd56b7c6daef53be5bd75df142))
+- **deps-dev:** bump @swc/core from 1.15.24 to 1.15.26
+  ([3d42a5d](https://github.com/ridedott/release-me-action/commit/3d42a5d27824bdec60298adb95d54606e69d91db))
+- **deps-dev:** bump @types/node from 25.5.0 to 25.5.2
+  ([076e112](https://github.com/ridedott/release-me-action/commit/076e1122891dc87427f36c2ee07b9e439c504332))
+- **deps-dev:** bump @types/node from 25.5.2 to 25.6.0
+  ([d91e650](https://github.com/ridedott/release-me-action/commit/d91e650e6394cbfd77e65cb2373f28ba8ec927b1))
+- **deps-dev:** bump cspell from 9.7.0 to 9.8.0
+  ([5cb7db5](https://github.com/ridedott/release-me-action/commit/5cb7db5a18a0e310b54877425454f9251f4e3d1b))
+- **deps-dev:** bump typescript from 6.0.2 to 6.0.3
+  ([7496315](https://github.com/ridedott/release-me-action/commit/749631582818b15d6f5679ba196010943125f887))
+
 ## [3.10.103](https://github.com/ridedott/release-me-action/compare/v3.10.102...v3.10.103) (2026-04-02)
 
 ### Chores
