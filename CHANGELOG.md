@@ -1,3 +1,12 @@
+## [3.10.105](https://github.com/ridedott/release-me-action/compare/v3.10.104...v3.10.105) (2026-04-22)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.15.26 to 1.15.30
+  ([8f9a8f9](https://github.com/ridedott/release-me-action/commit/8f9a8f9b4584e2f998b397d86a04f1478889e02a))
+- **deps:** bump @actions/core from 3.0.0 to 3.0.1
+  ([16d1df0](https://github.com/ridedott/release-me-action/commit/16d1df0725304742a38431269d504f3330595e1a))
+
 ## [3.10.104](https://github.com/ridedott/release-me-action/compare/v3.10.103...v3.10.104) (2026-04-17)
 
 ### Chores
