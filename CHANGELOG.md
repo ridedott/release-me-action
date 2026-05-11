@@ -1,3 +1,22 @@
+## [3.10.107](https://github.com/ridedott/release-me-action/compare/v3.10.106...v3.10.107) (2026-05-11)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/config-conventional from 20.5.3 to 21.0.0
+  ([a37d4b1](https://github.com/ridedott/release-me-action/commit/a37d4b18548a619768f781dc362411b6696ab57e))
+- **deps-dev:** bump @jest/types from 30.3.0 to 30.4.0
+  ([683aa71](https://github.com/ridedott/release-me-action/commit/683aa717af12a67feadbca69890f93afb9f993d7))
+- **deps-dev:** bump @types/node from 25.6.0 to 25.6.2
+  ([1b748af](https://github.com/ridedott/release-me-action/commit/1b748af0970f48aeba56ba6b8826f3a5d9319cc6))
+- **deps-dev:** bump fast-uri from 3.1.0 to 3.1.2
+  ([5c2226c](https://github.com/ridedott/release-me-action/commit/5c2226c5a64651bc080dd9b18c9b88ab5f27ea05))
+- **deps-dev:** bump lint-staged from 16.4.0 to 17.0.2
+  ([84680c3](https://github.com/ridedott/release-me-action/commit/84680c34d2498117528e4370299b76bb9ac15959))
+- **deps-dev:** bump lint-staged from 17.0.2 to 17.0.4
+  ([359f3f1](https://github.com/ridedott/release-me-action/commit/359f3f1e438702e5708bff5eb08b92a1c0279ac9))
+- **deps:** bump @semantic-release/release-notes-generator from 14.1.0 to 14.1.1
+  ([08f1a63](https://github.com/ridedott/release-me-action/commit/08f1a63a19a9022afd0af1cacb08626537e2d3f4))
+
 ## [3.10.106](https://github.com/ridedott/release-me-action/compare/v3.10.105...v3.10.106) (2026-05-05)
 
 ### Chores
