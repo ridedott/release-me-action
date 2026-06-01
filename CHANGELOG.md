@@ -1,3 +1,30 @@
+## [3.10.108](https://github.com/ridedott/release-me-action/compare/v3.10.107...v3.10.108) (2026-06-01)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/config-conventional from 21.0.0 to 21.0.1
+  ([5341de4](https://github.com/ridedott/release-me-action/commit/5341de4dd3e1d062b5616aa59025cb2022ea85ed))
+- **deps-dev:** bump @jest/types from 30.4.0 to 30.4.1
+  ([3248148](https://github.com/ridedott/release-me-action/commit/3248148069f5ef816b5ce34b3159f2e506fc14bd))
+- **deps-dev:** bump @swc/core from 1.15.33 to 1.15.40
+  ([90a8086](https://github.com/ridedott/release-me-action/commit/90a80863f2c962016e1b8b1986d4f38d9e0c86b7))
+- **deps-dev:** bump @types/node from 25.6.2 to 25.7.0
+  ([1b02c3a](https://github.com/ridedott/release-me-action/commit/1b02c3a9cc8b400b1a8ab0ec8323155bc85ff979))
+- **deps-dev:** bump @types/node from 25.7.0 to 25.8.0
+  ([25c95a4](https://github.com/ridedott/release-me-action/commit/25c95a41a32c5934c575c7c58923d04fc9b2db6a))
+- **deps-dev:** bump @types/node from 25.8.0 to 25.9.0
+  ([566919f](https://github.com/ridedott/release-me-action/commit/566919f6eb62594c2ac23a207806894cf3d8df22))
+- **deps-dev:** bump @types/node from 25.9.0 to 25.9.1
+  ([cc24d03](https://github.com/ridedott/release-me-action/commit/cc24d0330904283a36875867026ea8f39e561cd6))
+- **deps-dev:** bump lint-staged from 17.0.4 to 17.0.5
+  ([6ebf1ad](https://github.com/ridedott/release-me-action/commit/6ebf1ad69f522acfcfde4ec2c32c6fc3ba58b0fa))
+- **deps-dev:** bump ts-jest from 29.4.10 to 29.4.11
+  ([1a4a2ab](https://github.com/ridedott/release-me-action/commit/1a4a2ab19f24b4b1de4a37591ee2ecf596677496))
+- **deps-dev:** bump ts-jest from 29.4.9 to 29.4.10
+  ([14b1e87](https://github.com/ridedott/release-me-action/commit/14b1e87a018690a86744d8db337abcc468f68093))
+- **deps:** bump js-yaml from 4.1.1 to 4.2.0
+  ([46c707c](https://github.com/ridedott/release-me-action/commit/46c707cfbe4db7c667cc546c6d7c3519b0f6b9c1))
+
 ## [3.10.107](https://github.com/ridedott/release-me-action/compare/v3.10.106...v3.10.107) (2026-05-11)
 
 ### Chores
