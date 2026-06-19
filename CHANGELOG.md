@@ -1,3 +1,10 @@
+## [3.10.111](https://github.com/ridedott/release-me-action/compare/v3.10.110...v3.10.111) (2026-06-19)
+
+### Chores
+
+- **deps:** bump actions/checkout from 6 to 7
+  ([ef79968](https://github.com/ridedott/release-me-action/commit/ef7996871b2c9cd23a707f561ceb7e4eb6f7f6c6))
+
 ## [3.10.110](https://github.com/ridedott/release-me-action/compare/v3.10.109...v3.10.110) (2026-06-18)
 
 ### Chores
