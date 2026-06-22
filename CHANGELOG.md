@@ -1,3 +1,12 @@
+## [3.10.112](https://github.com/ridedott/release-me-action/compare/v3.10.111...v3.10.112) (2026-06-22)
+
+### Chores
+
+- **deps-dev:** bump @types/node from 25.9.3 to 26.0.0
+  ([2b6a4eb](https://github.com/ridedott/release-me-action/commit/2b6a4eb11a4fc06bd6b79e6260696dc915eba28a))
+- **deps:** bump undici from 6.24.0 to 6.27.0
+  ([897f9e8](https://github.com/ridedott/release-me-action/commit/897f9e846454dba438684f39e7a8068e66d0e0c2))
+
 ## [3.10.111](https://github.com/ridedott/release-me-action/compare/v3.10.110...v3.10.111) (2026-06-19)
 
 ### Chores
