@@ -12,7 +12,7 @@ jobs:
     runs-on: blacksmith-2vcpu-ubuntu-2404
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           # Fetch all history.
           fetch-depth: 0
@@ -50,7 +50,7 @@ jobs:
             ]
       - if: steps.release.outputs.released == 'true'
         name: Authenticate
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 1
           persist-credentials: true
