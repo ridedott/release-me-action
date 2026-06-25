@@ -1,5 +1,5 @@
 {
-  "extends": "@tsconfig/node20/tsconfig.json",
+  "extends": "@tsconfig/node24/tsconfig.json",
   "exclude": ["node_modules"],
   "include": ["./jest.config.ts", "./src/**/*.ts", "./__mocks__/**/*.ts"],
   "compilerOptions": {
