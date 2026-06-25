@@ -1,3 +1,22 @@
+## [3.10.113](https://github.com/ridedott/release-me-action/compare/v3.10.112...v3.10.113) (2026-06-25)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/config-conventional from 21.0.2 to 21.1.0
+  ([4b7acd6](https://github.com/ridedott/release-me-action/commit/4b7acd6787a065de96c2ce4f4de18a5ba54d3bfd))
+- **deps-dev:** bump @swc/core from 1.15.41 to 1.15.43
+  ([a71f34a](https://github.com/ridedott/release-me-action/commit/a71f34ab72dd7fc2ebb374e8221fcca8f452defa))
+- **deps-dev:** bump @types/node from 26.0.0 to 26.0.1
+  ([c3690e7](https://github.com/ridedott/release-me-action/commit/c3690e708310a90e0c7c8f105a54167027f8d2b3))
+- **deps-dev:** bump lint-staged from 17.0.7 to 17.0.8
+  ([98705e6](https://github.com/ridedott/release-me-action/commit/98705e6d2769f0a67241355dfb58a86ce126a256))
+
+### Continuous Integration
+
+- migrate to Blacksmith runners (#2489)
+  ([3b66d6a](https://github.com/ridedott/release-me-action/commit/3b66d6ac86f9bddf5422921ff074bc0949209c1e)),
+  closes [#2489](https://github.com/ridedott/release-me-action/issues/2489)
+
 ## [3.10.112](https://github.com/ridedott/release-me-action/compare/v3.10.111...v3.10.112) (2026-06-22)
 
 ### Chores
