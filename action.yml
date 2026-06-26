@@ -76,4 +76,4 @@ outputs:
 name: Release me!
 runs:
   main: bootstrap.mjs
-  using: node20
+  using: node24
