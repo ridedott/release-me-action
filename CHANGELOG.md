@@ -1,3 +1,11 @@
+## [3.10.114](https://github.com/ridedott/release-me-action/compare/v3.10.113...v3.10.114) (2026-06-26)
+
+### Chores
+
+- upgrade to node24 (#2502)
+  ([8e6527f](https://github.com/ridedott/release-me-action/commit/8e6527ff8dafe8adb57edbf6a5757982246bdf9d)),
+  closes [#2502](https://github.com/ridedott/release-me-action/issues/2502)
+
 ## [3.10.113](https://github.com/ridedott/release-me-action/compare/v3.10.112...v3.10.113) (2026-06-25)
 
 ### Chores
