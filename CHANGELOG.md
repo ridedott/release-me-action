@@ -1,3 +1,16 @@
+## [3.10.116](https://github.com/ridedott/release-me-action/compare/v3.10.115...v3.10.116) (2026-07-14)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/config-conventional from 21.1.0 to 21.2.0
+  ([47baa4d](https://github.com/ridedott/release-me-action/commit/47baa4d3a10b262ab21a61ac84fcc91feb063c2f))
+- **deps-dev:** bump @types/node from 26.0.1 to 26.1.0
+  ([2c298dd](https://github.com/ridedott/release-me-action/commit/2c298dd21f008a92aa21948a5a488a87e152ddf8))
+- **deps-dev:** bump @types/node from 26.1.0 to 26.1.1
+  ([7068dd9](https://github.com/ridedott/release-me-action/commit/7068dd917ea731fd77dd95ac5352f144d6d0da98))
+- **deps:** bump actions/setup-node from 6 to 7
+  ([0401945](https://github.com/ridedott/release-me-action/commit/04019450d44205fc38129b3e498fb2280ac58897))
+
 ## [3.10.115](https://github.com/ridedott/release-me-action/compare/v3.10.114...v3.10.115) (2026-06-30)
 
 ### Chores
