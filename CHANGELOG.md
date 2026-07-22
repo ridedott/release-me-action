@@ -1,3 +1,14 @@
+## [3.10.118](https://github.com/ridedott/release-me-action/compare/v3.10.117...v3.10.118) (2026-07-22)
+
+### Chores
+
+- **deps-dev:** bump fast-uri from 3.1.2 to 3.1.4
+  ([56844c3](https://github.com/ridedott/release-me-action/commit/56844c380aae5fe32815873adb49d64f0806ea73))
+- **deps-dev:** bump shell-quote from 1.8.4 to 1.10.0
+  ([25a1fe7](https://github.com/ridedott/release-me-action/commit/25a1fe7819c952726b10ecf7d6e5b34e2dd1fd1b))
+- **deps:** bump @semantic-release/changelog from 6.0.3 to 7.0.0
+  ([a3c4706](https://github.com/ridedott/release-me-action/commit/a3c47060223ecb52fd0fc5d5136155cdb05b6b2e))
+
 ## [3.10.117](https://github.com/ridedott/release-me-action/compare/v3.10.116...v3.10.117) (2026-07-22)
 
 ### Chores
