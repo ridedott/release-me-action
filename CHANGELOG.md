@@ -1,3 +1,14 @@
+## [3.10.117](https://github.com/ridedott/release-me-action/compare/v3.10.116...v3.10.117) (2026-07-22)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.15.43 to 1.15.46
+  ([22736bb](https://github.com/ridedott/release-me-action/commit/22736bbe29a4d2251c86e2e303ec5fbdf47558c9))
+- **deps-dev:** bump lint-staged from 17.0.8 to 17.1.0
+  ([732727b](https://github.com/ridedott/release-me-action/commit/732727b1cf3fa3c0e4135fedef1301e7e8863fd9))
+- **deps:** bump @semantic-release/git from 10.0.1 to 11.0.0
+  ([7fecdab](https://github.com/ridedott/release-me-action/commit/7fecdab61d639f65c8e1114876d77300d6dbd7e1))
+
 ## [3.10.116](https://github.com/ridedott/release-me-action/compare/v3.10.115...v3.10.116) (2026-07-14)
 
 ### Chores
