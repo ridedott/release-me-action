@@ -1,3 +1,20 @@
+## [3.10.119](https://github.com/ridedott/release-me-action/compare/v3.10.118...v3.10.119) (2026-08-03)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.15.46 to 1.15.47
+  ([51e6804](https://github.com/ridedott/release-me-action/commit/51e68046efde6e43e4e3f55b24fc478fe802c8d0))
+- **deps-dev:** bump @types/node from 26.1.1 to 26.1.2
+  ([b3036a7](https://github.com/ridedott/release-me-action/commit/b3036a771cd144ed154d9a8040aab817bae7bc5b))
+- **deps-dev:** bump lint-staged from 17.1.0 to 17.1.1
+  ([ccfbbfc](https://github.com/ridedott/release-me-action/commit/ccfbbfc1ef74e43722c4260bb6842c011223e257))
+- **deps-dev:** bump lint-staged from 17.1.1 to 17.2.0
+  ([a1a5204](https://github.com/ridedott/release-me-action/commit/a1a520439ae3f96bd273017411391e9067cdbce6))
+- **deps-dev:** bump ts-jest from 29.4.11 to 29.4.12
+  ([79699be](https://github.com/ridedott/release-me-action/commit/79699be5fc0bae625210280d4b65a3af03f74937))
+- **deps:** bump brace-expansion
+  ([722b5bc](https://github.com/ridedott/release-me-action/commit/722b5bcaed5d4972c2852b16f36daf550f0abe6f))
+
 ## [3.10.118](https://github.com/ridedott/release-me-action/compare/v3.10.117...v3.10.118) (2026-07-22)
 
 ### Chores
