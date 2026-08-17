@@ -1,3 +1,18 @@
+## [3.10.121](https://github.com/ridedott/release-me-action/compare/v3.10.120...v3.10.121) (2026-08-17)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/config-conventional from 21.2.0 to 21.2.2
+  ([a11c899](https://github.com/ridedott/release-me-action/commit/a11c8993c50aa0ca3e98f0ca1d3abda0d1a50ee7))
+- **deps-dev:** bump @types/node from 26.1.2 to 26.2.0
+  ([f83af8f](https://github.com/ridedott/release-me-action/commit/f83af8f00c49efa940db6d1e7854b0bdb714dd78))
+- **deps-dev:** bump fast-uri from 3.1.4 to 3.1.5
+  ([4a099e4](https://github.com/ridedott/release-me-action/commit/4a099e4318bce91012f4b78578fb4b35e85f5cd3))
+- **deps-dev:** bump lint-staged from 17.2.0 to 17.3.0
+  ([bab799c](https://github.com/ridedott/release-me-action/commit/bab799c3496d67101c45236ef26b0dfa0fcc80c1))
+- **deps:** bump @vercel/ncc from 0.44.1 to 0.45.0
+  ([6097128](https://github.com/ridedott/release-me-action/commit/6097128a2340504bf2cdcdfa539bc25945c90e2c))
+
 ## [3.10.120](https://github.com/ridedott/release-me-action/compare/v3.10.119...v3.10.120) (2026-08-05)
 
 ### Chores
