@@ -1,3 +1,16 @@
+## [3.10.122](https://github.com/ridedott/release-me-action/compare/v3.10.121...v3.10.122) (2026-08-24)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.15.47 to 1.16.0
+  ([5c0b019](https://github.com/ridedott/release-me-action/commit/5c0b019bd193fb50773559e8524024a2c0a63572))
+- **deps-dev:** bump @swc/core from 1.16.0 to 1.16.1
+  ([ffe2f42](https://github.com/ridedott/release-me-action/commit/ffe2f4228c0f56421dd27c11f652ea5ff2921d48))
+- **deps-dev:** bump @tsconfig/node24 from 24.0.4 to 24.0.5
+  ([6e6bcaa](https://github.com/ridedott/release-me-action/commit/6e6bcaaa00ad66297751fb0db5f6136e36419b9e))
+- **deps:** bump joi from 18.2.3 to 18.2.5
+  ([c628d16](https://github.com/ridedott/release-me-action/commit/c628d16f94cb5ee82298fe10a20f7f663f7c89d9))
+
 ## [3.10.121](https://github.com/ridedott/release-me-action/compare/v3.10.120...v3.10.121) (2026-08-17)
 
 ### Chores
