@@ -1,3 +1,10 @@
+## [3.10.123](https://github.com/ridedott/release-me-action/compare/v3.10.122...v3.10.123) (2026-08-28)
+
+### Chores
+
+- **deps:** bump tar and npm
+  ([e0eee87](https://github.com/ridedott/release-me-action/commit/e0eee87a26c80cadd99ea82fb67e2b9a841d521f))
+
 ## [3.10.122](https://github.com/ridedott/release-me-action/compare/v3.10.121...v3.10.122) (2026-08-24)
 
 ### Chores
