@@ -1,3 +1,26 @@
+## [3.10.124](https://github.com/ridedott/release-me-action/compare/v3.10.123...v3.10.124) (2026-09-07)
+
+### Chores
+
+- **deps-dev:** bump @jest/types from 30.4.1 to 30.5.0
+  ([cf397e7](https://github.com/ridedott/release-me-action/commit/cf397e7011c6628aada6c8528c81ebec2fdee463))
+- **deps-dev:** bump @jest/types from 30.5.0 to 30.5.1
+  ([6f0a02c](https://github.com/ridedott/release-me-action/commit/6f0a02c2ee8c428def114a78eea4381ebf678cc7))
+- **deps-dev:** bump @types/node from 26.2.0 to 26.3.0
+  ([b7344da](https://github.com/ridedott/release-me-action/commit/b7344da0feaebdbb1ad9e1f43614b70bb0f58bae))
+- **deps-dev:** bump @types/node from 26.3.0 to 26.4.0
+  ([0ff6484](https://github.com/ridedott/release-me-action/commit/0ff6484118e312c5e271bb2468a170ba0182feb6))
+- **deps-dev:** bump @types/node from 26.4.0 to 26.4.1
+  ([9a2a070](https://github.com/ridedott/release-me-action/commit/9a2a070bcdf5a487fffc62c1e34da6aa3c1ca005))
+- **deps-dev:** bump browserslist from 4.25.0 to 4.28.8
+  ([7654241](https://github.com/ridedott/release-me-action/commit/76542411796baab2ac4a6507dd5a877e84f565f1))
+- **deps-dev:** bump fast-uri from 3.1.5 to 3.1.7
+  ([4056ca7](https://github.com/ridedott/release-me-action/commit/4056ca7aa89d61192d3b84513976c910edbec0f9))
+- **deps-dev:** bump lint-staged from 17.3.0 to 17.4.1
+  ([3214cd3](https://github.com/ridedott/release-me-action/commit/3214cd3788752931d0056a545745a30a693b472f))
+- **deps:** bump joi from 18.2.5 to 18.2.8
+  ([d29038e](https://github.com/ridedott/release-me-action/commit/d29038e51b78f6bb4d2f893b26a55bd0e2ef0e47))
+
 ## [3.10.123](https://github.com/ridedott/release-me-action/compare/v3.10.122...v3.10.123) (2026-08-28)
 
 ### Chores
