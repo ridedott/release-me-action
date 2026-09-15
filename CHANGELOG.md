@@ -1,3 +1,22 @@
+## [3.10.125](https://github.com/ridedott/release-me-action/compare/v3.10.124...v3.10.125) (2026-09-15)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.16.1 to 1.16.2
+  ([0a300d0](https://github.com/ridedott/release-me-action/commit/0a300d0acd3a773878115c6e4fd9974f73261723))
+- **deps-dev:** bump @types/node from 26.4.1 to 26.5.0
+  ([d47a3d3](https://github.com/ridedott/release-me-action/commit/d47a3d3b5bfe2468819fc410ffa133135d8e3138))
+- **deps-dev:** bump @types/node from 26.5.0 to 26.5.1
+  ([12ec252](https://github.com/ridedott/release-me-action/commit/12ec2524a7287274259d00cf899771ab11ee10ca))
+- **deps-dev:** bump lint-staged from 17.4.1 to 17.5.0
+  ([a679d3c](https://github.com/ridedott/release-me-action/commit/a679d3ce4b5bd0d5bb07757af3bedb131c35acde))
+- **deps-dev:** bump lint-staged from 17.5.0 to 17.5.1
+  ([6a69ead](https://github.com/ridedott/release-me-action/commit/6a69ead7f54f62a5ecddff51989465245d33d7ef))
+- **deps-dev:** bump smol-toml from 1.6.1 to 1.8.0
+  ([88c97d3](https://github.com/ridedott/release-me-action/commit/88c97d342fcab2efa8a8a4b5de7f33fe4dbdf4e6))
+- **deps:** bump joi from 18.2.8 to 18.2.9
+  ([46259b5](https://github.com/ridedott/release-me-action/commit/46259b501b07b49c825eb29658e56780f1c90981))
+
 ## [3.10.124](https://github.com/ridedott/release-me-action/compare/v3.10.123...v3.10.124) (2026-09-07)
 
 ### Chores
