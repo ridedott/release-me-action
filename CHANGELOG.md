@@ -1,3 +1,16 @@
+## [3.10.126](https://github.com/ridedott/release-me-action/compare/v3.10.125...v3.10.126) (2026-09-25)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/config-conventional from 21.2.2 to 21.2.3
+  ([35e1756](https://github.com/ridedott/release-me-action/commit/35e17566360f1c139dcde2c487162e7c92763d8c))
+- **deps-dev:** bump @types/node from 26.5.1 to 26.6.1
+  ([ba6081a](https://github.com/ridedott/release-me-action/commit/ba6081ad0dbb253ff571c1780a9f745c99c49496))
+- **deps-dev:** bump @types/node from 26.6.1 to 26.6.2
+  ([95a9cad](https://github.com/ridedott/release-me-action/commit/95a9cad9f7c1b38ff915124fa67ec9b4af8507a9))
+- **deps:** bump @semantic-release/npm from 13.1.5 to 13.2.0
+  ([5b4ddba](https://github.com/ridedott/release-me-action/commit/5b4ddba4962e2fc9bc0c9734fd2ff0cb9e519656))
+
 ## [3.10.125](https://github.com/ridedott/release-me-action/compare/v3.10.124...v3.10.125) (2026-09-15)
 
 ### Chores
