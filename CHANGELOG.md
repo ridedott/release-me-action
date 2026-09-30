@@ -1,3 +1,12 @@
+## [3.10.128](https://github.com/ridedott/release-me-action/compare/v3.10.127...v3.10.128) (2026-09-30)
+
+### Chores
+
+- **deps-dev:** bump lint-staged from 17.5.1 to 17.6.0
+  ([cf26035](https://github.com/ridedott/release-me-action/commit/cf260358c11780ab595c0b07f116bdfa336ed283))
+- **deps:** bump brace-expansion
+  ([03a76f4](https://github.com/ridedott/release-me-action/commit/03a76f4c815d164a0d0b2a37ecceb509a07b4ff8))
+
 ## [3.10.127](https://github.com/ridedott/release-me-action/compare/v3.10.126...v3.10.127) (2026-09-29)
 
 ### Chores
