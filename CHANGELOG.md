@@ -1,3 +1,18 @@
+## [3.10.129](https://github.com/ridedott/release-me-action/compare/v3.10.128...v3.10.129) (2026-10-13)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.16.2 to 1.16.13
+  ([269dad1](https://github.com/ridedott/release-me-action/commit/269dad1a49347a10b8177ab47def587e9088a2df))
+- **deps-dev:** bump @types/node from 26.6.3 to 26.6.4
+  ([1334952](https://github.com/ridedott/release-me-action/commit/13349529dc7e3f54fd42958942f603d44c41bc1e))
+- **deps-dev:** bump shell-quote from 1.10.0 to 1.12.0
+  ([a248d66](https://github.com/ridedott/release-me-action/commit/a248d664ed0ca9bed5fcdc371dcb6687b8df365d))
+- **deps-dev:** bump smol-toml from 1.8.0 to 1.9.1
+  ([25c8e8b](https://github.com/ridedott/release-me-action/commit/25c8e8bd6f08ad713b804c9df486a4df3e42ab15))
+- **deps:** bump handlebars from 4.7.9 to 4.7.10
+  ([f6e036c](https://github.com/ridedott/release-me-action/commit/f6e036cad1e9f9fa641e658f43fa2139e4df6313))
+
 ## [3.10.128](https://github.com/ridedott/release-me-action/compare/v3.10.127...v3.10.128) (2026-09-30)
 
 ### Chores
