@@ -1,3 +1,16 @@
+## [3.10.130](https://github.com/ridedott/release-me-action/compare/v3.10.129...v3.10.130) (2026-10-20)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.16.13 to 1.16.18
+  ([4476e4e](https://github.com/ridedott/release-me-action/commit/4476e4e3f140245da7d28f12427471232e187935))
+- **deps-dev:** bump @types/node from 26.6.4 to 26.6.5
+  ([35abaaa](https://github.com/ridedott/release-me-action/commit/35abaaa767bfa158c6ab2134e0dc5e8b5e353db2))
+- **deps-dev:** bump ts-jest from 29.4.14 to 29.4.15
+  ([251cd41](https://github.com/ridedott/release-me-action/commit/251cd41ff12ee809f3474edf600b826da397e919))
+- **deps:** bump joi from 18.2.9 to 18.3.0
+  ([06b154a](https://github.com/ridedott/release-me-action/commit/06b154a649edfcf4dd49cc76339c3108f4942340))
+
 ## [3.10.129](https://github.com/ridedott/release-me-action/compare/v3.10.128...v3.10.129) (2026-10-13)
 
 ### Chores
