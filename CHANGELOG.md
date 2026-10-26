@@ -1,3 +1,16 @@
+## [3.10.131](https://github.com/ridedott/release-me-action/compare/v3.10.130...v3.10.131) (2026-10-26)
+
+### Chores
+
+- **deps-dev:** bump @commitlint/config-conventional from 21.2.3 to 21.2.4
+  ([5a9c10d](https://github.com/ridedott/release-me-action/commit/5a9c10d9771950ba8ffee7e358db775361267c30))
+- **deps-dev:** bump @swc/core from 1.16.18 to 1.16.20
+  ([5fe3799](https://github.com/ridedott/release-me-action/commit/5fe379908ab2437cf4aae1eeb5b8789675872fb8))
+- **deps-dev:** bump fast-uri from 3.1.7 to 3.1.9
+  ([2a9bc60](https://github.com/ridedott/release-me-action/commit/2a9bc601c44093df30ff42bbd1d00e909f259779))
+- **deps:** bump undici from 6.29.0 to 6.29.1
+  ([8a33c33](https://github.com/ridedott/release-me-action/commit/8a33c339140bc061c9f1411a1a15cb4db9aa07e8))
+
 ## [3.10.130](https://github.com/ridedott/release-me-action/compare/v3.10.129...v3.10.130) (2026-10-20)
 
 ### Chores
