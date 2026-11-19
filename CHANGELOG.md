@@ -1,3 +1,20 @@
+## [3.10.133](https://github.com/ridedott/release-me-action/compare/v3.10.132...v3.10.133) (2026-11-19)
+
+### Chores
+
+- **deps-dev:** bump @swc/core from 1.16.20 to 1.16.21
+  ([1434a67](https://github.com/ridedott/release-me-action/commit/1434a67d1dfa1e40e054277b14d2616b0a9b25f1))
+- **deps-dev:** bump @tsconfig/node24 from 24.0.5 to 24.0.6
+  ([7bd423a](https://github.com/ridedott/release-me-action/commit/7bd423a6790a6fea06bb4509131542db763729ad))
+- **deps-dev:** bump @types/node from 26.6.5 to 26.6.6
+  ([4075f1a](https://github.com/ridedott/release-me-action/commit/4075f1ab3461cec9495249bfd572efbeac009521))
+- **deps-dev:** bump eslint-plugin-jest-formatting from 3.1.0 to 4.0.0
+  ([e4907bc](https://github.com/ridedott/release-me-action/commit/e4907bc1466de21be1c1082e57121e6e994a8390))
+- **deps-dev:** bump lint-staged from 17.6.0 to 17.6.1
+  ([51638ad](https://github.com/ridedott/release-me-action/commit/51638ad61e30bbba8c567efe06a9384a4e0dfef9))
+- **deps:** bump joi from 18.3.1 to 18.3.2
+  ([82c08a6](https://github.com/ridedott/release-me-action/commit/82c08a6ea57cbab9b63a08c954e73833d48b95e1))
+
 ## [3.10.132](https://github.com/ridedott/release-me-action/compare/v3.10.131...v3.10.132) (2026-11-02)
 
 ### Chores
